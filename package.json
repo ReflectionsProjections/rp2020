@@ -1,0 +1,28 @@
+{
+  "name": "rp2019",
+  "version": "1.0.0",
+  "description": "Reflections | Projections 2019 Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReflectionsProjections/rp2019.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReflectionsProjections/rp2019/issues"
+  },
+  "homepage": "https://github.com/ReflectionsProjections/rp2019#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "next": "^7.0.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}
