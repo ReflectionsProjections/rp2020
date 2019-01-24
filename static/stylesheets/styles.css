@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,600');
+
+html,body {
+  height: 100%
+}
+body {
+  background: url('/static/img/abstract.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: 'Raleway';
+}
+
+.logo {
+  display: block;
+  width: 8em;
+  height: 8em;
+  margin-top: 10em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brand-title {
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-size: 1.7em;
+}
+
+.brand-description {
+  font-family: 'Raleway';
+  font-weight: 200;
+  font-size: 1.2em;
+}
+
+.seperator {
+  font-weight: 600;
+}
+.coming-soon {
+  font-family: 'Raleway';
+  font-weight: 600;
+}
+
+.contact {
+  margin-top: 8em;
+  font-size: 1em;
+}
+@media (min-width: 576px) {
+  .logo {
+    width: 10em;
+    height: 10em;
+    margin-top: 13em;
+  }
+  .contact {
+    margin-top: 8em;
+  }
+}

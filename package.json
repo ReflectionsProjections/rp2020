@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ReflectionsProjections/rp2019#readme",
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
     "express": "^4.16.4",
     "next": "^7.0.2",
     "react": "^16.7.0",
