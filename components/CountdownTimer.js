@@ -61,7 +61,11 @@ class CountdownTimer extends React.Component {
                   <p>Seconds</p>
                 </div>
               </div>
-            ) : (<p>Loading Countdown...</p>)
+            ) : (
+              <div class="col-md-6 offset-md-3 text-center">
+                <p>Loading Countdown...</p>
+              </div>
+            )
           }
       </div>
     )
