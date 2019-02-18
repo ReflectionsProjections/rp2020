@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:200,300,600');
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:300');
 
-html,body {
-  height: 100%
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 body {
+  height: 100%;
   background: url('/static/img/abstract.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -48,47 +52,55 @@ p .alt {
   margin-top: 1.5em;
 }
 
-.logo {
+.event-date {
+  font-size: 3em;
+  margin-top: 4em;
+}
+
+.wordmark {
   display: block;
-  width: 8em;
-  height: 8em;
-  margin-top: 10em;
+  width: 16em;
+  height: 3em;
   margin-left: auto;
   margin-right: auto;
+  fill: white;
 }
 
-.brand-title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 1.7em;
+.countdown-timer {
+  height: 3em;
+  margin-top: 8em;
+  font-size: .6em;
 }
 
-.brand-description {
-  font-family: 'Roboto-Slab', sans-serif;
-  font-weight: 300;
-  font-size: 1.2em;
-}
-
-.seperator {
-  font-weight: 600;
-}
-.coming-soon {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 1.7em;
-}
 
 .contact {
-  margin-top: 8em;
-  font-size: 1em;
+  margin-top: 15em;
+  font-size: .5em;
 }
 @media (min-width: 576px) {
-  .logo {
-    width: 10em;
-    height: 10em;
-    margin-top: 13em;
+  .event-date {
+    font-size: 5em;
+    margin-top: 1.5em;
+  }
+  .wordmark {
+    display: block;
+    width: 30em;
+    height: 3em;
+    margin-top: 2.5em;
+    margin-left: auto;
+    margin-right: auto;
+    fill: white;
+  }
+  .countdown-timer {
+    height: 3em;
+    margin-top: 8em;
+    font-size: 1em;
+  }
+  .coming-soon {
+    margin-top: 2.2em;
   }
   .contact {
-    margin-top: 8em;
+    margin-top: 12em;
+    font-size: .8em;
   }
 }
