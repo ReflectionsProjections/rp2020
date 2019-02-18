@@ -36,10 +36,10 @@ class CountdownTimer extends React.Component {
 
   render () {
     return (
-      <div class="row">
+      <div class="countdown-timer animated fadeInUp row text-white">
         {
           this.state.duration != undefined ? (
-              <div class="col-md-6 offset-md-3 row text-center">
+              <div class="mx-auto row text-center">
                 <div class="col">
                   <p>{this.state.duration.months()}</p>
                   <p>Months</p>
@@ -63,7 +63,7 @@ class CountdownTimer extends React.Component {
               </div>
             ) : (
               <div class="col-md-6 offset-md-3 text-center">
-                <p>Loading Countdown...</p>
+                <p></p>
               </div>
             )
           }
