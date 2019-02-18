@@ -11,7 +11,7 @@ const Index = () => (
           <img className="logo mb-3" src="/static/img/logo.png" />
           <div className="text-center text-white">
             <h2 className="brand-title">reflections <span className="seperator">|</span> projections 2019</h2>
-            <p className="brand-description">25 years of connecting students with industry</p>
+            <p className="brand-description">Sep 16 - Sep 21</p>
           </div>
           <br/>
           <div className="text-white text-center">
