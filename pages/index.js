@@ -1,4 +1,6 @@
 import React from 'react'
+import CountdownTimer from '../components/CountdownTimer'
+
 const Index = () => (
   <div>
     <link rel="stylesheet" href="/static/stylesheets/styles.css"/>
@@ -10,8 +12,11 @@ const Index = () => (
         <main role="main" className="">
           <img className="logo mb-3" src="/static/img/2019logo.svg" />
           <div className="text-center text-white">
-            <h2 className="brand-title">Reflections<span className="seperator">|</span>Projections 2019</h2>
-            <p className="brand-description">25 years of connecting students with industry</p>
+
+            <h2 className="brand-title">reflections <span className="seperator">|</span> projections 2019</h2>
+            <p className="brand-description">Sep 16 - Sep 21</p>
+            <CountdownTimer />
+  
           </div>
           <br/>
           <div className="text-white text-center">
