@@ -30,8 +30,8 @@ class CountdownTimer extends React.Component {
     })
   }
 
-  componentWillUnMount () {
-
+  componentWillUnmount () {
+    clearInterval(this.state.timer);
   }
 
   render () {
