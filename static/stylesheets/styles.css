@@ -16,29 +16,36 @@ body {
 h1 {
   font-size: 2em;
   font-family: 'Roboto', sans-serif;
+  margin-bottom: 2.5em;
 }
 
 h2 {
   font-size: 1.7em;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  margin-bottom: 2em;
 }
 
 h2 .alt {
   font-size: 1.9em;
   font-family: 'Roboto-Slab', serif;
   font-weight: 300; /* Thin */
+  margin-bottom: 2em;
 }
 
 p {
   font-size: 1.2em;
   font-family: 'Roboto', sans-serif;
+  margin-top: 1.5em;
+  margin-top: 1.5em;
 }
 
 p .alt {
   font-size: 1.2em;
   font-family: 'Roboto-Slab', serif;
   font-weight: 300; /* Thin */
+  margin-top: 1.5em;
+  margin-top: 1.5em;
 }
 
 .logo {
@@ -53,11 +60,11 @@ p .alt {
 .brand-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 175%;
+  font-size: 1.7em;
 }
 
 .brand-description {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto-Slab', sans-serif;
   font-weight: 300;
   font-size: 1.2em;
 }
@@ -67,7 +74,8 @@ p .alt {
 }
 .coming-soon {
   font-family: 'Roboto', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 1.7em;
 }
 
 .contact {

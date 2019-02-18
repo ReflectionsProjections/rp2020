@@ -8,7 +8,7 @@ const Index = () => (
     <div>
       <div className="container">
         <main role="main" className="">
-          <img className="logo mb-3" src="/static/img/logo.png" />
+          <img className="logo mb-3" src="/static/img/2019logo.svg" />
           <div className="text-center text-white">
             <h2 className="brand-title">Reflections<span className="seperator">|</span>Projections 2019</h2>
             <p className="brand-description">25 years of connecting students with industry</p>
