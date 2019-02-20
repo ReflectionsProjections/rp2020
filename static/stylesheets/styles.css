@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:200,300,600');
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:300');
 
+html {
+  font-size: 1.1em;
+}
 html, body {
   height: 100%;
   margin: 0;
@@ -9,12 +12,16 @@ html, body {
 }
 body {
   height: 100%;
-  background: url('/static/img/abstract.jpg') no-repeat center center fixed;
+  background: url('/static/assets/websitebackground2.svg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   font-family: 'Roboto', sans-serif;
+}
+
+main {
+  height: 100%;
 }
 
 h1 {
@@ -32,7 +39,7 @@ h2 {
 
 h2 .alt {
   font-size: 1.9em;
-  font-family: 'Roboto-Slab', serif;
+  font-family: 'Roboto Slab', serif;
   font-weight: 300; /* Thin */
   margin-bottom: 2em;
 }
@@ -46,61 +53,120 @@ p {
 
 p .alt {
   font-size: 1.2em;
-  font-family: 'Roboto-Slab', serif;
+  font-family: 'Roboto Slab', serif;
   font-weight: 300; /* Thin */
-  margin-top: 1.5em;
-  margin-top: 1.5em;
+}
+
+#btn-register {
+  position: absolute;
+  right: 2em;
+  color: white;
+  border: none;
+  background-color: #7552CC;
+  border-color: #7552CC;
+  font-weight: 600;
+  font-size: .5em;
+}
+#btn-register-text {
+  height: 1.4em;
+  text-align: center;
+  line-height: 1.4em;
+}
+#btn-register:hover {
+  border: #7552CC solid 1px;
+  background-color: white;
+  color: #7552CC;
+  box-shadow: 0px 6px 22px -9px rgba(0,0,0,0.75);
+}
+.navbar {
+  height: 2em;
+}
+.bg-blue {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 6px 22px -9px rgba(0,0,0,0.75);
+}
+
+#rp-nav {
+  padding: 0 1em;
+}
+
+.navbar-logo {
+  margin-left: .5em;
+  display: inline-block;
+  width: 2.5em;
+  height: 2.5em;
 }
 
 .event-date {
-  font-size: 3em;
-  margin-top: 4em;
+  position: absolute;
+  font-size: 2.5em;
+  top: 25vh;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .wordmark {
-  display: block;
-  width: 16em;
-  height: 3em;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  width: 12em;
+  top: 35vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   fill: white;
 }
-
+#tagline {
+  position: absolute;
+  top: 46vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: .6em;
+  font-family: "Roboto Slab";
+}
 .countdown-timer {
+  position: absolute;
+  bottom: 24vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   height: 3em;
-  margin-top: 8em;
   font-size: .6em;
 }
-
-
-.contact {
-  margin-top: 15em;
+.footer-text {
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   font-size: .5em;
 }
+.footer-text p {
+  margin: 0 auto;
+}
 @media (min-width: 576px) {
-  .event-date {
-    font-size: 5em;
-    margin-top: 1.5em;
+  html {
+    font-size: 1.2em;
   }
-  .wordmark {
-    display: block;
-    width: 30em;
-    height: 3em;
-    margin-top: 2.5em;
-    margin-left: auto;
-    margin-right: auto;
-    fill: white;
+}
+@media (min-width: 992px) {
+  html {
+    font-size: 1.6em;
   }
-  .countdown-timer {
-    height: 3em;
-    margin-top: 8em;
-    font-size: 1em;
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 1.6em;
   }
-  .coming-soon {
-    margin-top: 2.2em;
+}
+@media (min-width: 1700px) {
+  html {
+    font-size: 1.7em;
   }
-  .contact {
-    margin-top: 12em;
-    font-size: .8em;
+}
+@media (min-width: 2000px) {
+  html {
+    font-size: 2em;
   }
 }
