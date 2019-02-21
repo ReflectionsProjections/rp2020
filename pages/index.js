@@ -21,6 +21,9 @@ class Index extends React.Component {
           <meta name="description" content="Reflections | Projections is a tech conference organized and run by students at the University of Illinois at Urbana-Champaign."/>
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossOrigin="anonymous"/>
+          <link rel="stylesheet" href="/static/stylesheets/styles.css"/>
+
           <link rel="apple-touch-icon" sizes="57x57" href="/static/assets/icons/apple-icon-57x57.png"/>
           <link rel="apple-touch-icon" sizes="60x60" href="/static/assets/icons/apple-icon-60x60.png"/>
           <link rel="apple-touch-icon" sizes="72x72" href="/static/assets/icons/apple-icon-72x72.png"/>
@@ -34,35 +37,50 @@ class Index extends React.Component {
           <link rel="icon" type="image/png" sizes="32x32" href="/static/assets/icons/favicon-32x32.png"/>
           <link rel="icon" type="image/png" sizes="96x96" href="/static/assets/icons/favicon-96x96.png"/>
           <link rel="icon" type="image/png" sizes="16x16" href="/static/assets/icons/favicon-16x16.png"/>
-          <link rel="manifest" href="/manifest.json"/>
-
-          <link rel="stylesheet" href="/static/stylesheets/styles.css"/>
+          <link rel="manifest" href="/static/assets/icons/manifest.json"/>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
-          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossOrigin="anonymous"/>
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
         </Head>
         <div>
           <nav className="navbar bg-blue" id="rp-nav">
-            <a className="navbar-brand" href="/">
+            <div classNAme="left-nav">
+              <a href="/">
               <SVG className="navbar-logo"
-                src="/static/assets/logowhitecircle.svg"/>
-            </a>
-            <a className="btn nav-item" id="btn-register" href="https://acmrp.typeform.com/to/a05uAe">
-              <div id="btn-register-text">Stay Informed</div>
-            </a>
+            src="/static/assets/2019logo.svg"/>
+              </a>
+            </div>
+            <div className="right-nav">
+              <div className="social-media-icons">
+                <a href="https://www.facebook.com/acmrp/">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/uiuc_rp/">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/uiuc_rp?lang=en">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+
+              <a className="btn nav-item" id="btn-register" href="https://acmrp.typeform.com/to/a05uAe">
+                <div id="btn-register-text">Updates</div>
+              </a>
+            </div>
           </nav>
           <div className="container">
             <main role="main" className="text-white text-center">
-              <h4 className="event-date animated fadeIn">SEPT 16 - 21</h4>
               <SVG className="wordmark animated fadeIn"
-                src="/static/assets/wordmarkblack.svg"/>
+            src="/static/assets/wordmarkblack.svg"/>
+              <h4 className="event-date animated fadeIn">Sept 16 - 21</h4>
               <p className="animated fadeInUp" id="tagline">Celebrating 25 Years</p>
               <div>
                 <CountdownTimer className="animated fadeIn"/>
               </div>
               <br/>
               <div className="text-white text-center footer-text animated fadeIn">
-                <p id="organized">Organized by University of Illinois at Urbana-Champaign ACM Chapter</p>
-                <p id="contact">Questions? Interested in sponsoring? Email us at contact@reflectionsprojections.org</p>
+                <p id="organized">Organized by ACM@UIUC</p>
+                <p id="contact">Questions? Interested in sponsoring? Email us at <a href="mailto:contact@reflectionsprojections.org">contact@reflectionsprojections.org</a>
+                </p>
               </div>
           </main>
           </div>

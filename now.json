@@ -6,5 +6,12 @@
   "builds":[{
       "src": "next.config.js",
       "use": "@now/next"
-    }]
+  }],
+  "routes": [
+    {
+      "src": "/_next",
+      "dest": "/",
+      "status": 404
+    }
+  ]
 }

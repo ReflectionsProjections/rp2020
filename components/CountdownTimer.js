@@ -14,13 +14,13 @@ class CountdownTimer extends React.Component {
   }
 
   componentDidMount () {
-    let timer = setInterval(this.updateCountdown, 1000)
+    let timer = setInterval(this.update, 1000)
     this.setState({
       timer: timer
     })
   }
 
-  updateCountdown = () => {
+  update = () => {
     const now = moment()
     const rpStartDate = moment(RP_STARTDATE, FORMAT)
     let diff = rpStartDate.diff(now, 'milliseconds')
@@ -42,23 +42,23 @@ class CountdownTimer extends React.Component {
               <div class="mx-auto row text-center">
                 <div class="col">
                   <p>{this.state.duration.months()}</p>
-                  <p>Months</p>
+                  <span>Months</span>
                 </div>
                 <div class="col">
                   <p>{this.state.duration.days()}</p>
-                  <p>Days</p>
+                  <span>Days</span>
                 </div>
                 <div class="col">
                   <p>{this.state.duration.hours()}</p>
-                  <p>Hours</p>
+                  <span>Hours</span>
                 </div>
                 <div class="col">
                   <p>{this.state.duration.minutes()}</p>
-                  <p>Minutes</p>
+                  <span>Minutes</span>
                 </div>
                 <div class="col">
                   <p>{this.state.duration.seconds()}</p>
-                  <p>Seconds</p>
+                  <span>Seconds</span>
                 </div>
               </div>
             ) : (
