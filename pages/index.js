@@ -39,13 +39,13 @@ class Index extends React.Component {
           <link rel="icon" type="image/png" sizes="16x16" href="/static/assets/icons/favicon-16x16.png"/>
           <link rel="manifest" href="/static/assets/icons/manifest.json"/>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
-          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossOrigin="anonymous"/>
         </Head>
         <div>
           <nav className="navbar bg-blue" id="rp-nav">
-            <div classNAme="left-nav">
+            <div className="left-nav">
               <a href="/">
-              <SVG className="navbar-logo"
+              <img className="navbar-logo"
             src="/static/assets/2019logo.svg"/>
               </a>
             </div>
@@ -69,22 +69,23 @@ class Index extends React.Component {
           </nav>
           <div className="container">
             <main role="main" className="text-white text-center">
-              <SVG className="wordmark animated fadeIn"
+              <SVG className="img-fluid wordmark animated fadeIn"
             src="/static/assets/wordmarkblack.svg"/>
-              <h4 className="event-date animated fadeIn">Sept 16 - 21</h4>
-              <p className="animated fadeInUp" id="tagline">Celebrating 25 Years</p>
+              <h2 className="event-date animated fadeIn">Sept 16 - 21</h2>
+              <h6 className="animated fadeInUp" id="tagline">Celebrating 25 Years</h6>
               <div>
                 <CountdownTimer className="animated fadeIn"/>
               </div>
               <br/>
               <div className="text-white text-center footer-text animated fadeIn">
-                <p id="organized">Organized by ACM@UIUC</p>
+                <p id="organized">Organized by <a href="https://acm.illinois.edu/">ACM@UIUC</a></p>
                 <p id="contact">Questions? Interested in sponsoring? Email us at <a href="mailto:contact@reflectionsprojections.org">contact@reflectionsprojections.org</a>
                 </p>
               </div>
           </main>
           </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossOrigin="anonymous"></script>
       </div>
     )

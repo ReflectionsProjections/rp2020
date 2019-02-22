@@ -11,8 +11,9 @@ html, body {
   padding: 0;
   overflow: hidden;
 }
+
 body {
-  background: url('/static/assets/minified-websitebackground-lg.webp') no-repeat center center fixed;
+  background: url('/static/assets/minified-websitebackground-lg.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -24,37 +25,6 @@ main {
   height: 100%;
 }
 
-h1 {
-  font-size: 2em;
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 2.5em;
-}
-h2 {
-  font-size: 1.7em;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  margin-bottom: 2em;
-}
-
-h2 .alt {
-  font-size: 1.9em;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300; /* Thin */
-  margin-bottom: 2em;
-}
-
-p {
-  font-size: 1.2em;
-  font-family: 'Roboto', sans-serif;
-  margin-top: 1.5em;
-  margin-top: 1.5em;
-}
-
-p .alt {
-  font-size: 1.2em;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300; /* Thin */
-}
 a {
   color: #C7FFFB;
 }
@@ -64,15 +34,16 @@ a:hover {
 }
 
 .navbar {
-  height: 3em;
+  height: 4em;
 }
 .left-nav {
   position: absolute;
-  left: 2em;
+  left: 1em;
 }
 .right-nav {
   position: absolute;
-  right: 2em;
+  right: 1em;
+  font-size: 1.3em;
 }
 .social-media-icons {
   display: none;
@@ -90,12 +61,12 @@ a:hover {
   background-color: #7552CC;
   border-color: #7552CC;
   font-weight: 600;
-  font-size: .6em;
 }
 #btn-register-text {
-  height: 1.5em;
-  line-height: 1.5em;
+  height: 1.8em;
+  line-height: 1.8em;
   padding: 0 1em;
+  font-size: .8em;
   text-align: center;
 }
 #btn-register:hover {
@@ -109,45 +80,45 @@ a:hover {
 }
 
 .navbar-logo {
-  margin-left: .5em;
   display: inline-block;
-  width: 2em;
-  height: 2em;
-}
-
-.event-date {
-  font-size: 1.5em;
-  margin: 10px auto;
-  margin-top: 1.3em;
-  font-family: 'Roboto Slab';
-  font-weight: 600;
-  /* margin-top: 20vh; */
+  width: 3em;
+  height: 3em;
 }
 
 .wordmark {
   display: block;
-  width: 23em;
+  width: 20em;
   height: 4.5em;
   margin: .1em auto;
   margin-top: 13vh;
   fill: white;
 }
+.event-date {
+  margin: 10px auto;
+  margin-top: 1.3em;
+  font-family: 'Roboto Slab';
+  font-weight: 600;
+  font-size: 1.6em;
+}
+
 #tagline {
   margin: 10px auto;
   font-weight: 100;
   font-size: .8em;
   font-family: "Roboto Slab";
 }
+
 .countdown-timer {
+  display: block;
   position: absolute;
-  bottom: 20vh;
+  bottom: 24vh;
   left: 0;
   right: 0;
   margin: 0 auto;
-  height: 3em;
-  font-size: .6em;
+  font-size: .4em;
   font-family: "Roboto";
 }
+
 .countdown-timer p {
   margin: 0 auto;
   font-size: 2em;
@@ -157,6 +128,7 @@ a:hover {
   font-family: "Roboto";
   font-weight: 300;
 }
+
 .footer-text {
   position: absolute;
   bottom: 3.5vh;
@@ -164,65 +136,92 @@ a:hover {
   right: 0;
   margin: 0 auto;
   font-weight: 200;
+  font-size: .8em;
 }
 .footer-text p {
   margin: 0 auto;
 }
 #organized {
-  font-size: .6em;
+  font-size: .85em;
   margin: 10px auto;
   font-weight: 400;
 }
 #contact {
-  font-size: .5em;
+  font-size: .7em;
 }
-
+@media (min-width: 350px) {
+  .countdown-timer {
+    font-size: .6em;
+  }
+}
 @media (min-width: 576px) {
-  html {
-    font-size: 1.2;
+  .wordmark {
+    width: 30em;
+    height: 6em;
+  }
+  .countdown-timer {
+    font-size: .8em;
+    bottom: 18vh;
+  }
+  .left-nav {
+    left: 2em;
+  }
+  .right-nav {
+    right: 2em;
+  }
+  .event-date {
+    font-size: 1.9em;
+  }
+  #tagline {
+    font-size: .8em;
+  }
+  .footer-text {
+    font-size: 1em;
   }
 }
 @media (min-width: 992px) {
-  html {
-    font-size: 1.35em;
-  }
   .social-media-icons {
     display: inline-block;
+  }
+  .event-date {
+    font-size: 2.1em;
+  }
+  .wordmark {
+    width: 35em;
+    height: 6em;
+  }
+  #tagline {
+    font-size: 1.1em;
+  }
+  .navbar-logo {
+    width: 3.5em;
+    height: 3.5em;
+  }
+  .navbar {
+    height: 4.5em;
   }
 }
 
 @media (min-width: 1200px) {
-  html {
-    font-size: 1.4em;
-  }
-  .social-media-icons {
-    display: inline-block;
-  }
 }
 
 @media (min-width: 1700px) {
-  html {
-    font-size: 1.6em;
-  }
-  .social-media-icons {
-    display: inline-block;
-  }
 }
 
 @media (min-width: 2000px) {
-  html {
-    font-size: 2.4em;
-  }
-  .social-media-icons {
-    display: inline-block;
-  }
 }
-@media all and (min-width: 992px) and (max-height: 400px), (max-height: 300px) {
+@media all and (min-width: 992px) and (max-height: 550px) {
+  .event-date {
+    display: none;
+  }
   .countdown-timer {
     display: none;
   }
+  #tagline {
+    display: none;
+  }
 }
-@media all and (min-width: 992px) and (max-height: 300px), (max-height: 300px) {
+@media all and (max-height: 450px) {
   .event-date {
     display: none;
   }
