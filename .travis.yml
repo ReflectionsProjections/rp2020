@@ -6,17 +6,17 @@ before_deploy:
     - npm run export
 deploy:
     - provider: s3
-      access_key_id: $HACKILLINOIS_ACCESS_KEY
-      secret_access_key: $HACKILLINOIS_SECRET_KEY
-      bucket: $HACKILLINOIS_BUCKET_NAME
+      access_key_id: $RP_ACCESS_KEY
+      secret_access_key: $RP_SECRET_KEY
+      bucket: $RP_BUCKET_NAME
       skip_cleanup: true
       local_dir: out
       on:
         branch: master
     - provider: s3
-      access_key_id: $HACKILLINOIS_ACCESS_KEY
-      secret_access_key: $HACKILLINOIS_SECRET_KEY
-      bucket: $HACKILLINOIS_TEST_BUCKET_NAME
+      access_key_id: $RP_ACCESS_KEY
+      secret_access_key: $RP_SECRET_KEY
+      bucket: $RP_TEST_BUCKET_NAME
       skip_cleanup: true
       local_dir: out
       on:
