@@ -18,9 +18,9 @@ deploy:
       on:
         branch: master
     - provider: s3
-      access_key_id: $RP_ACCESS_KEY
+      access_key_id: $access_key_id
       secret_access_key: $RP_SECRET_KEY
-      bucket: $RP_TEST_BUCKET_NAME
+      bucket: $secret_access_key
       skip_cleanup: true
       local_dir: out
       on:
