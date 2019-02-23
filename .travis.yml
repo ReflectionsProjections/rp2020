@@ -21,3 +21,5 @@ deploy:
       local_dir: out
       on:
         branch: staging
+after_deploy:
+  - ./scripts/invalidate.sh
