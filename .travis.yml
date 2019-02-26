@@ -9,21 +9,21 @@ before_deploy:
   - npm run build
   - npm run export
 deploy:
-  - provider: s3
-    access_key_id: $access_key_id
-    secret_access_key: $secret_access_key
-    bucket: $RP_BUCKET_NAME
-    skip_cleanup: true
-    local_dir: out
-    on:
-      branch: master
-  - provider: s3
-    access_key_id: $access_key_id
-    secret_access_key: $secret_access_key
-    bucket: $RP_BUCKET_NAME
-    skip_cleanup: true
-    local_dir: out
-    on:
-      branch: staging
+ - provider: s3
+   access_key_id: $RP_ACCESS_KEY
+   secret_access_key: $RP_SECRET_KEY
+   bucket: $RP_BUCKET_NAME
+   skip_cleanup: true
+   local_dir: out
+   on:
+    branch: master
+ - provider: s3
+   access_key_id: $RP_ACCESS_KEY
+   secret_access_key: $RP_SECRET_KEY
+   bucket: $RP_BUCKET_NAME
+   skip_cleanup: true
+   local_dir: out
+   on:
+    branch: staging
 after_deploy:
   - ./scripts/invalidate.sh
