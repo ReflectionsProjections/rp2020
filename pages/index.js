@@ -63,7 +63,7 @@ class Index extends React.Component {
               </div>
 
               <a className="btn nav-item" id="btn-register" href="https://acmrp.typeform.com/to/a05uAe">
-                <div id="btn-register-text">Updates</div>
+                <div id="btn-register-text">Get Updates</div>
               </a>
             </div>
           </nav>
