@@ -1,0 +1,92 @@
+.wordmark {
+  display: block;
+  width: 20em;
+  height: 4.5em;
+  margin: .1em auto;
+  margin-top: 13vh;
+  fill: white;
+}
+.event-date {
+  margin: 10px auto;
+  margin-top: 1.3em;
+  font-family: 'Roboto Slab';
+  font-weight: 600;
+  font-size: 1.6em;
+}
+
+#tagline {
+  margin: 10px auto;
+  font-weight: 100;
+  font-size: .8em;
+  font-family: "Roboto Slab";
+}
+
+.footer-text {
+  position: absolute;
+  bottom: 3.5vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-weight: 200;
+  font-size: .8em;
+}
+.footer-text p {
+  margin: 0 auto;
+}
+#organized {
+  font-size: .85em;
+  margin: 10px auto;
+  font-weight: 400;
+}
+#contact {
+  font-size: .7em;
+}
+
+@media (min-width: 576px) {
+  .wordmark {
+    width: 30em;
+    height: 6em;
+  }
+  .event-date {
+    font-size: 1.9em;
+  }
+  #tagline {
+    font-size: .8em;
+  }
+  .footer-text {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 992px) {
+  .event-date {
+    font-size: 2.1em;
+    margin-top: 2em;
+  }
+  .wordmark {
+    width: 35em;
+    height: 6em;
+  }
+  #tagline {
+    font-size: 1.1em;
+  }
+}
+
+@media all and (min-width: 992px) and (max-height: 550px) {
+  .event-date {
+    display: none;
+  }
+  #tagline {
+    display: none;
+  }
+}
+
+
+@media all and (max-height: 450px) {
+  .event-date {
+    display: none;
+  }
+  #tagline {
+    display: none;
+  }
+}

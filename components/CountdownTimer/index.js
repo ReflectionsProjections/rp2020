@@ -4,6 +4,8 @@ import moment from 'moment'
 const RP_STARTDATE = "16 SEP 2019"
 const FORMAT = "DD MMM YYYY"
 
+import './CountdownTimer.scss'
+
 class CountdownTimer extends Component {
   constructor (props) {
     super(props)
