@@ -1,13 +1,17 @@
-import CustomHead from '../components/CustomHead'
+import React, { Component } from 'react'
 
+class Sponsor extends Component {
+  constructor(props) {
+    super(props)
+  }
 
+  componentDidMount() {
+    window.location = '/static/corporateletter.pdf'
+  }
 
-const Sponsor = () => (
-  <div>
-    <CustomHead/>
-    <link rel="stylesheet" href="/static/stylesheets/sponsor.css"/>
-    <iframe class="frame" src="/static/corporateletter2019.pdf"/>
-  </div>
-)
+  render() {
+    return null
+  }
+}
 
 export default Sponsor
