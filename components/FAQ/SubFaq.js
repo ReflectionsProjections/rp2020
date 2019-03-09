@@ -5,23 +5,25 @@ import './FAQ.scss'
 class SubFaq extends FAQ {
     constructor(props) {
       super(props);
-  
       this.state = {
+        sections : props.sections
       };
     }
 
     render() {
         return(
-          // Some map here
-          <section className={props.sectionName}>
+         {sections.map((sectionName) =>
+           <section className={sectionName}>
             <div className="faq-container faq-column-container">
-            {/* Some map here */}
+            {questions.map((question, answer) =>
               <section className="faq-column">
-                <h2>{props.question}</h2>
-                <p>{props.answer}</p>
+                <h2>{question}</h2>
+                <p>{answer}</p>
               </section>
+            )}
             </div>
           </section>
+         )}
         );
     }
 }   
