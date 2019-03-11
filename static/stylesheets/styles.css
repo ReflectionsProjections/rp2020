@@ -5,7 +5,8 @@ html {
   font-size: 1em;
   font-display: swap;
 }
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -13,7 +14,8 @@ html, body {
 }
 
 body {
-  background: url('/static/assets/minified-websitebackground-lg.png') no-repeat center center fixed;
+  background: url('/static/assets/minified-websitebackground-lg.png') no-repeat
+    center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -26,9 +28,9 @@ main {
 }
 
 a {
-  color: #C7FFFB;
+  color: #c7fffb;
 }
 a:hover {
-  color: #70D0E0;
+  color: #70d0e0;
   text-decoration: none;
 }

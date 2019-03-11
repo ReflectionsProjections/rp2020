@@ -1,8 +1,6 @@
-import React from 'react'
-import PDFViewer from '../components/Util/PDFViewer'
+import React from 'react';
+import PDFViewer from '../components/Util/PDFViewer';
 
-const Startup = () => (
-  <PDFViewer filepath='/static/startup.pdf'/>
-)
+const Startup = () => <PDFViewer filepath="/static/startup.pdf" />;
 
-export default Startup
+export default Startup;
