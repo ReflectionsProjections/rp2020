@@ -8,7 +8,7 @@ class Startup extends Component {
 
   render() {
     return (
-      <PDFViewer filepath='/static/startupletter.pdf'/>
+      <PDFViewer filepath='/static/startup.pdf'/>
     )
   }
 }
