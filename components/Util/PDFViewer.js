@@ -1,12 +1,9 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 
 class PDFViewer extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   componentDidMount() {
-    window.location = this.props.filepath
+    const { filepath } = this.props
+    window.location = filepath
   }
 
   render() {

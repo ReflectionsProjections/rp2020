@@ -1,16 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PDFViewer from '../components/Util/PDFViewer'
 
-class Sponsor extends Component {
-  constructor(props) {
-    super(props)
-  }
-
-  render() {
-    return (
-      <PDFViewer filepath='/static/sponsor.pdf'/>
-    )
-  }
-}
+const Sponsor = () => (
+  <PDFViewer filepath='/static/sponsor.pdf'/>
+)
 
 export default Sponsor
