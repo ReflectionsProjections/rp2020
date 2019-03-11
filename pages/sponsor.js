@@ -8,7 +8,7 @@ class Sponsor extends Component {
 
   render() {
     return (
-      <PDFViewer filepath='/static/corporateletter.pdf'/>
+      <PDFViewer filepath='/static/sponsor.pdf'/>
     )
   }
 }
