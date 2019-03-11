@@ -1,16 +1,15 @@
 import React, { Component } from 'react'
+import PDFViewer from '../components/Util/PDFViewer'
 
 class Sponsor extends Component {
   constructor(props) {
     super(props)
   }
 
-  componentDidMount() {
-    window.location = '/static/corporateletter.pdf'
-  }
-
   render() {
-    return null
+    return (
+      <PDFViewer filepath='/static/corporateletter.pdf'/>
+    )
   }
 }
 
