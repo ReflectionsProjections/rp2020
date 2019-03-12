@@ -1,13 +1,6 @@
-import CustomHead from '../components/CustomHead'
+import React from 'react';
+import PDFViewer from '../components/Util/PDFViewer';
 
+const Sponsor = () => <PDFViewer filepath="/static/sponsor.pdf" />;
 
-
-const Sponsor = () => (
-  <div>
-    <CustomHead/>
-    <link rel="stylesheet" href="/static/stylesheets/sponsor.css"/>
-    <iframe class="frame" src="/static/corporateletter2019.pdf"/>
-  </div>
-)
-
-export default Sponsor
+export default Sponsor;
