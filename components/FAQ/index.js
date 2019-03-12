@@ -10,7 +10,7 @@ class FAQ extends Component {
   }
 
   componentDidMount() {
-    axios.get()
+    axios.get("/static/json/FAQ.json")
       .then(res => {
         const sections = res.data;
         this.setState({ sections });
