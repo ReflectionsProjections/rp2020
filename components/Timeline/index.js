@@ -1,20 +1,12 @@
-import React, { Component } from 'react'
-import TimelineBlock from './TimelineBlock'
+import React from 'react';
+import TimelineBlock from './TimelineBlock';
 
-import './Timeline.scss'
+import './Timeline.scss';
 
-class Timeline extends Component {
-    constructor(props) {
-        super(props)
-    }
+const Timeline = () => (
+  <div>
+    <TimelineBlock title="In the Beginning" />
+  </div>
+);
 
-    render() {
-        return (
-            <div>
-                <TimelineBlock title="Beginning"/>
-            </div>
-        )
-    }
-}
-
-export default Timeline
+export default Timeline;
