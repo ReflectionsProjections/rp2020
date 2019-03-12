@@ -5,8 +5,8 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  font-size: .4em;
-  font-family: "Roboto";
+  font-size: 0.4em;
+  font-family: 'Roboto';
 }
 
 .countdown-timer p {
@@ -15,19 +15,19 @@
 }
 .countdown-timer span {
   margin: 0 auto;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 300;
 }
 
 @media (min-width: 350px) {
   .countdown-timer {
-    font-size: .6em;
+    font-size: 0.6em;
   }
 }
 
 @media (min-width: 576px) {
   .countdown-timer {
-    font-size: .8em;
+    font-size: 0.8em;
     bottom: 18vh;
   }
 }
