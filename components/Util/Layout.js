@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import ReactGA from 'react-ga';
 import CustomHead from './CustomHead';
 import Nav from '../Nav';
+import Timeline from '../Timeline';
 
 class Layout extends Component {
   componentDidMount() {
@@ -17,7 +18,12 @@ class Layout extends Component {
         <CustomHead />
         <div>
           <Nav />
+<<<<<<< HEAD
           {children}
+=======
+          <div className="container">{children}</div>
+          <Timeline />
+>>>>>>> stateless component and class component
         </div>
       </div>
     );
