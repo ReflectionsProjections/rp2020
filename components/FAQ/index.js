@@ -17,12 +17,15 @@ class FAQ extends Component {
     });
   }
 
-  switchSection(section) {
-    this.state.currsection = section.name;
+  switchSection(sectionname) {
+    return () => {
+      this.setState({ currsection: sectionname });
+    };
   }
 
   render() {
     const { sections } = this.state;
+    const { currsection } = this.state;
     return (
       <>
         <link
@@ -43,7 +46,7 @@ class FAQ extends Component {
                       name={section.name}
                       id={section.name}
                       autoComplete="off"
-                      onClick={this.switchSection.bind(this, section)}
+                      onClick={this.switchSection(section.name)}
                     >
                       {' '}
                       {section.name}{' '}
@@ -56,7 +59,12 @@ class FAQ extends Component {
           <div className="container questions">
             <div className="row">
               {sections.map(section => (
-                <div className={section.name}>
+                <div
+                  className={section.name}
+                  visibility={
+                    currsection === section.name ? 'visible' : 'hidden'
+                  }
+                >
                   {section.questions.map(QA => (
                     <div className="col-sm">
                       <section className={QA.question}>
