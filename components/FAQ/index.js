@@ -7,7 +7,7 @@ import './FAQ.scss';
 class FAQ extends Component {
   state = {
     sections: [],
-    currsection: ''
+    currsection: 'General'
   };
 
   componentDidMount() {
@@ -61,8 +61,8 @@ class FAQ extends Component {
               {sections.map(section => (
                 <div
                   className={section.name}
-                  visibility={
-                    currsection === section.name ? 'visible' : 'hidden'
+                  style={
+                    currsection === section.name ? {} : { display: 'none' }
                   }
                 >
                   {section.questions.map(QA => (
