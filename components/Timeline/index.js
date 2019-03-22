@@ -13,7 +13,7 @@ class Timeline extends Component {
   }
 
   componentDidMount() {
-    axios.get('/static/Timeline_data.json').then(response => {
+    axios.get('/static/data/timeline.json').then(response => {
       this.setState({
         events: response.data
       });
@@ -28,7 +28,7 @@ class Timeline extends Component {
     return (
       <div>
         {events.map(event => (
-          <TimelineBlock key={event} title={event} />
+          <TimelineBlock key={event.content} title={event.content} />
         ))}
       </div>
     );
