@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import ReactGA from 'react-ga';
 import CustomHead from './CustomHead';
 import Nav from '../Nav';
-import Timeline from '../Timeline';
 
 class Layout extends Component {
   componentDidMount() {
@@ -19,7 +18,6 @@ class Layout extends Component {
         <div>
           <Nav />
           <div className="container">{children}</div>
-          <Timeline />
         </div>
       </div>
     );
