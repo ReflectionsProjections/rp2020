@@ -18,12 +18,8 @@ class Layout extends Component {
         <CustomHead />
         <div>
           <Nav />
-<<<<<<< HEAD
-          {children}
-=======
           <div className="container">{children}</div>
           <Timeline />
->>>>>>> stateless component and class component
         </div>
       </div>
     );
