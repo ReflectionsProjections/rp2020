@@ -8,9 +8,23 @@ class Timeline extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      blocks: []
+      events: undefined
     };
   }
+
+  componentDidMount() {
+    axios.get('/static/data/timeline.json').then(res => {
+      const events = res.data;
+      this.setState({ events });
+    });
+  }
+
+  render() {
+    // Utilize this.state.events here for your components
+    // console.log(this.state.events);
+    return <TimelineBlock title="In the Beginning" />;
+  }
+}
 
   componentDidMount() {
     axios.get('/static/Timeline_data.json').then(response => {
