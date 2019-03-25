@@ -57,25 +57,21 @@ class FAQ extends Component {
             </div>
           </div>
           <div className="container questions">
-            <div className="row">
-              {sections.map(section => (
-                <div
-                  className={section.name}
-                  style={
-                    currsection === section.name ? {} : { display: 'none' }
-                  }
-                >
-                  {section.questions.map(QA => (
-                    <div className="col-sm">
-                      <section className={QA.question}>
-                        <h2> {QA.question} </h2>
-                        <p> {QA.answer} </p>
-                      </section>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
+            {sections.map(section => (
+              <div
+                className="row"
+                style={currsection === section.name ? {} : { display: 'none' }}
+              >
+                {section.questions.map(QA => (
+                  <div className="col-sm">
+                    <section className={QA.question}>
+                      <h2> {QA.question} </h2>
+                      <p> {QA.answer} </p>
+                    </section>
+                  </div>
+                ))}
+              </div>
+            ))}
           </div>
         </section>
       </>

@@ -42,8 +42,7 @@
     "next": "^7.0.2",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
-    "react": "^16.8.4",
-    "react-axios": "^2.0.3",
+    "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-ga": "^2.5.7",
     "react-inlinesvg": "^0.8.4"
