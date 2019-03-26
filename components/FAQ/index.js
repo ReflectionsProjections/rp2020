@@ -7,7 +7,7 @@ import './FAQ.scss';
 class FAQ extends Component {
   state = {
     sections: [],
-    currsection: 'General'
+    currSection: 'General'
   };
 
   componentDidMount() {
@@ -17,15 +17,14 @@ class FAQ extends Component {
     });
   }
 
-  switchSection(sectionname) {
+  switchSection(sectionName) {
     return () => {
-      this.setState({ currsection: sectionname });
+      this.setState({ currSection: sectionName });
     };
   }
 
   render() {
-    const { sections } = this.state;
-    const { currsection } = this.state;
+    const { sections, currSection } = this.state;
     return (
       <>
         <link
@@ -60,7 +59,7 @@ class FAQ extends Component {
             {sections.map(section => (
               <div
                 className="row"
-                style={currsection === section.name ? {} : { display: 'none' }}
+                style={currSection === section.name ? {} : { display: 'none' }}
               >
                 {section.questions.map(QA => (
                   <div className="col-sm">
