@@ -28,7 +28,7 @@ class Timeline extends Component {
     return (
       <div>
         {events.map(event => (
-          <TimelineBlock key={event.content} title={event.content} />
+          <TimelineBlock key={event.content} event={event} />
         ))}
       </div>
     );
