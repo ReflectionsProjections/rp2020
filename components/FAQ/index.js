@@ -2,7 +2,24 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 import './FAQ.scss';
-// import FAQSection from './FAQSection';
+
+const questions = (section, currSection) => {
+  return (
+    <div
+      className={`${section.name} row`}
+      style={currSection === section.name ? {} : { display: 'none' }}
+    >
+      {section.questions.map(QA => (
+        <div className="col-sm">
+          <section className={QA.question}>
+            <h2> {QA.question} </h2>
+            <p> {QA.answer} </p>
+          </section>
+        </div>
+      ))}
+    </div>
+  );
+};
 
 class FAQ extends Component {
   state = {
@@ -56,21 +73,7 @@ class FAQ extends Component {
             </div>
           </div>
           <div className="container questions">
-            {sections.map(section => (
-              <div
-                className="row"
-                style={currSection === section.name ? {} : { display: 'none' }}
-              >
-                {section.questions.map(QA => (
-                  <div className="col-sm">
-                    <section className={QA.question}>
-                      <h2> {QA.question} </h2>
-                      <p> {QA.answer} </p>
-                    </section>
-                  </div>
-                ))}
-              </div>
-            ))}
+            {sections.map(section => questions(section, currSection))}
           </div>
         </section>
       </>

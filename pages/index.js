@@ -2,6 +2,7 @@ import React from 'react';
 import SVG from 'react-inlinesvg';
 import Layout from '../components/Util/Layout';
 import CountdownTimer from '../components/CountdownTimer';
+import FAQ from '../components/FAQ/index';
 
 import './index.scss';
 
@@ -20,6 +21,9 @@ const Index = () => (
         <CountdownTimer className="animated fadeIn" />
       </div>
       <br />
+      <div>
+        <FAQ />
+      </div>
       <div className="text-white text-center footer-text animated fadeIn">
         <p id="organized">
           Organized by <a href="https://acm.illinois.edu/">ACM@UIUC</a>
