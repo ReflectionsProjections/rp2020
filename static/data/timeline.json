@@ -1,18 +1,26 @@
 [
   {
+    "title": "First Milestone",
     "date": "January 01, 2019",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec condimentum ex. Vivamus arcu nibh, eleifend vitae diam non, tincidunt dictum felis. Morbi et sodales velit."
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec condimentum ex. Vivamus arcu nibh, eleifend vitae diam non, tincidunt dictum felis. Morbi et sodales velit.",
+    "background": "static/assets/timeline/bg_image_1.jpg"
   },
   {
+    "title": "Second Milestone",
     "date": "January 02, 2019",
-    "content": "Mauris venenatis vehicula nisl, eget volutpat risus. Vestibulum sit amet tristique sapien. Sed iaculis elementum suscipit. Integer nec mattis felis, sit amet pharetra arcu. Proin gravida posuere aliquet. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas maximus orci purus. Vestibulum accumsan metus non accumsan suscipit."
+    "content": "Mauris venenatis vehicula nisl, eget volutpat risus. Vestibulum sit amet tristique sapien. Sed iaculis elementum suscipit. Integer nec mattis felis, sit amet pharetra arcu. Proin gravida posuere aliquet. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas maximus orci purus. Vestibulum accumsan metus non accumsan suscipit.",
+    "background": "static/assets/timeline/bg_image_2.jpg"
   },
   {
+    "title": "Third Milestone",
     "date": "January 03, 2019",
-    "content": "Morbi fermentum iaculis justo elementum sodales. Duis tincidunt, diam quis lobortis placerat, lacus nisi venenatis est, et interdum eros nunc non ipsum. Praesent in pulvinar urna. In urna augue, condimentum in tristique a, vehicula et lorem. Ut semper, libero condimentum vulputate tempor, ex purus vulputate leo, a rutrum odio eros in ex. Sed dignissim lacinia mauris."
+    "content": "Morbi fermentum iaculis justo elementum sodales. Duis tincidunt, diam quis lobortis placerat, lacus nisi venenatis est, et interdum eros nunc non ipsum. Praesent in pulvinar urna. In urna augue, condimentum in tristique a, vehicula et lorem. Ut semper, libero condimentum vulputate tempor, ex purus vulputate leo, a rutrum odio eros in ex. Sed dignissim lacinia mauris.",
+    "background": "static/assets/timeline/bg_image_3.jpg"
   },
   {
+    "title": "Fourth Milestone",
     "date": "January 04, 2019",
-    "content": "Quisque nibh nisi, tincidunt vitae odio ut, bibendum vehicula neque. Sed at ante ac eros vulputate facilisis quis eget ipsum. Nulla commodo eget sem a euismod. Maecenas convallis dolor nec porta tincidunt. "
+    "content": "Quisque nibh nisi, tincidunt vitae odio ut, bibendum vehicula neque. Sed at ante ac eros vulputate facilisis quis eget ipsum. Nulla commodo eget sem a euismod. Maecenas convallis dolor nec porta tincidunt. ",
+    "background": "static/assets/timeline/bg_image_4.jpg"
   }
 ]

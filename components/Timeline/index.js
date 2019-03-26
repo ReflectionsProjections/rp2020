@@ -38,8 +38,8 @@ class Timeline extends Component {
     const { blocks } = this.state;
     return (
       <div>
-        {blocks.map(block => (
-          <TimelineBlock key={block} title={block} />
+        {events.map(event => (
+          <TimelineBlock key={event.content} event={event} />
         ))}
       </div>
     );
