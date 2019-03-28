@@ -1,3 +1,10 @@
+section {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 1em;
+}
+
 .wordmark {
   display: block;
   width: 20em;
@@ -22,10 +29,6 @@
 }
 
 .footer-text {
-  position: absolute;
-  bottom: 3.5vh;
-  left: 0;
-  right: 0;
   margin: 0 auto;
   font-weight: 200;
   font-size: 0.8em;
@@ -40,6 +43,10 @@
 }
 #contact {
   font-size: 0.7em;
+}
+
+.faq-container {
+  background-color: white;
 }
 
 @media (min-width: 576px) {

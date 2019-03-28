@@ -6,15 +6,17 @@ import './FAQ.scss';
 const questions = (section, currSection) => {
   return (
     <div
-      className={`${section.name} row`}
+      className="row"
       style={currSection === section.name ? {} : { display: 'none' }}
     >
       {section.questions.map(QA => (
-        <div className="col-sm">
-          <section className={QA.question}>
-            <h2> {QA.question} </h2>
-            <p> {QA.answer} </p>
-          </section>
+        <div className="col-md-4">
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title"> {QA.question} </h5>
+              <p> {QA.answer} </p>
+            </div>
+          </div>
         </div>
       ))}
     </div>
@@ -28,7 +30,7 @@ class FAQ extends Component {
   };
 
   componentDidMount() {
-    axios.get('/static/data/FAQ.json').then(res => {
+    axios.get('/static/data/faq.json').then(res => {
       const { sections } = res.data;
       this.setState({ sections });
     });
@@ -43,40 +45,27 @@ class FAQ extends Component {
   render() {
     const { sections, currSection } = this.state;
     return (
-      <>
-        <link
-          rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-          crossOrigin="anonymous"
-        />
-
-        <section className="faq">
-          <div className="container button">
-            <div className="row">
-              {sections.map(section => (
-                <div className="col-sm">
-                  <section className={section.name}>
-                    <button
-                      type="submit"
-                      name={section.name}
-                      id={section.name}
-                      autoComplete="off"
-                      onClick={this.switchSection(section.name)}
-                    >
-                      {' '}
-                      {section.name}{' '}
-                    </button>
-                  </section>
-                </div>
-              ))}
+      <div className="conainer">
+        <div className="row col-md-8 offset-md-2">
+          {sections.map(section => (
+            <div className="col-md-3">
+              <button
+                className="btn btn-outline-dark btn-lg"
+                type="submit"
+                name={section.name}
+                id={section.name}
+                autoComplete="off"
+                onClick={this.switchSection(section.name)}
+              >
+                {section.name}
+              </button>
             </div>
-          </div>
-          <div className="container questions">
-            {sections.map(section => questions(section, currSection))}
-          </div>
-        </section>
-      </>
+          ))}
+        </div>
+        <div className="container questions">
+          {sections.map(section => questions(section, currSection))}
+        </div>
+      </div>
     );
   }
 }
