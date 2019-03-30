@@ -26,7 +26,7 @@ class Timeline extends Component {
       return <div>Loading</div>;
     }
     return (
-      <div>
+      <div className="timeline-container">
         {events.map(event => (
           <TimelineBlock key={event.content} event={event} />
         ))}

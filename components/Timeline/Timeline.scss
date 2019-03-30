@@ -1,0 +1,19 @@
+$navy: #303f4a;
+$blue: #d8e5ee;
+$grey: #818d98;
+$green: #75cd65;
+$red: #bf3b44;
+$yellow: #f0cb47;
+
+.timeline-container {
+  position: relative;
+  &::before {
+    // this is the timeline vertical line
+    content: '';
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 4px;
+    background: $blue;
+  }
+}
