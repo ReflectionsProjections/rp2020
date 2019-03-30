@@ -26,7 +26,7 @@ class TimelineBlock extends Component {
   render() {
     const { title, date, content, background } = this.state;
     return (
-      <div>
+      <div className="timeline-block">
         <h1>{title}</h1>
         <h3>{date}</h3>
         <p>{content}</p>

@@ -37,7 +37,7 @@ class Timeline extends Component {
   render() {
     const { blocks } = this.state;
     return (
-      <div>
+      <div className="timeline-container">
         {events.map(event => (
           <TimelineBlock key={event.content} event={event} />
         ))}
