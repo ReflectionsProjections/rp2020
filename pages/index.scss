@@ -1,8 +1,15 @@
+section {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 1em;
+}
+
 .wordmark {
   display: block;
   width: 20em;
   height: 4.5em;
-  margin: .1em auto;
+  margin: 0.1em auto;
   margin-top: 13vh;
   fill: white;
 }
@@ -17,29 +24,29 @@
 #tagline {
   margin: 10px auto;
   font-weight: 100;
-  font-size: .8em;
-  font-family: "Roboto Slab";
+  font-size: 0.8em;
+  font-family: 'Roboto Slab';
 }
 
 .footer-text {
-  position: absolute;
-  bottom: 3.5vh;
-  left: 0;
-  right: 0;
   margin: 0 auto;
   font-weight: 200;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 .footer-text p {
   margin: 0 auto;
 }
 #organized {
-  font-size: .85em;
+  font-size: 0.85em;
   margin: 10px auto;
   font-weight: 400;
 }
 #contact {
-  font-size: .7em;
+  font-size: 0.7em;
+}
+
+.faq-container {
+  background-color: white;
 }
 
 @media (min-width: 576px) {
@@ -51,7 +58,7 @@
     font-size: 1.9em;
   }
   #tagline {
-    font-size: .8em;
+    font-size: 0.8em;
   }
   .footer-text {
     font-size: 1em;
@@ -80,7 +87,6 @@
     display: none;
   }
 }
-
 
 @media all and (max-height: 450px) {
   .event-date {
