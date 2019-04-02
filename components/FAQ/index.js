@@ -52,9 +52,36 @@ class FAQ extends Component {
       <section className="faq-section">
         <div className="container">
           <h2 className="text-center section-header">FAQs</h2>
-          <div className="row col-md-12" />
+          <div className="row mx-auto" />
+          <div className="col-md-6 offset-md-3">
+            <h3>What can we help you with?</h3>
+            <div className="mx-auto">
+              <Dropdown size="lg">
+                <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                  {currSection}
+                </Dropdown.Toggle>
 
-          <div className="container questions">
+                <Dropdown.Menu>
+                  <Dropdown.Item onClick={this.switchSection('General')}>
+                    General
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={this.switchSection('MechMania')}>
+                    MechMania
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    onClick={this.switchSection('Startup / Career Fair')}
+                  >
+                    Startup / Career Fair
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={this.switchSection('Symposium')}>
+                    Symposium
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </div>
+          </div>
+          <br />
+          <div className="row questions">
             {sections.map(section => questions(section, currSection))}
           </div>
         </div>
