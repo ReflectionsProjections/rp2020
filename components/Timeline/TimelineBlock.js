@@ -28,10 +28,16 @@ class TimelineBlock extends Component {
     const { title, date, content, background } = this.state;
     return (
       <div className="timeline-block">
-        <h1>{title}</h1>
-        <h3>{date}</h3>
-        <p>{content}</p>
-        <img src={background} alt="background" />
+        <div className="timeline-block-content">
+          <h1 className="timeline-block-title">{title}</h1>
+          <h3 className="timeline-block-date">{date}</h3>
+          <p className="timeline-block-content">{content}</p>
+          <img
+            className="timeline-block-img"
+            src={background}
+            alt="background"
+          />
+        </div>
       </div>
     );
   }
