@@ -8,23 +8,25 @@ import './index.scss';
 
 const Index = () => (
   <Layout>
-    <section className="text-white text-center">
-      <SVG
-        className="img-fluid wordmark animated fadeIn"
-        src="/static/assets/wordmarkblack.svg"
-      />
-      <h2 className="event-date animated fadeIn">Sept 16 - 21</h2>
-      <h6 className="animated fadeInUp" id="tagline">
-        Celebrating 25 Years
-      </h6>
-      <div>
-        <CountdownTimer className="animated fadeIn" />
+    <section className="landing">
+      <div className="container">
+        <div className="lead-content text-white text-center">
+          <SVG
+            className="img-fluid wordmark animated fadeIn"
+            src="/static/assets/wordmarkblack.svg"
+          />
+          <h2 className="event-date animated fadeIn">Sept 16 - 21</h2>
+          <h6 className="animated fadeInUp" id="tagline">
+            Celebrating 25 Years
+          </h6>
+          <div>
+            <CountdownTimer className="animated fadeIn" />
+          </div>
+        </div>
       </div>
     </section>
-    <section className="faq-container">
-      <FAQ />
-    </section>
-    <section>
+    <FAQ />
+    <footer>
       <div className="text-white text-center footer-text animated fadeIn">
         <p id="organized">
           Organized by <a href="https://acm.illinois.edu/">ACM@UIUC</a>
@@ -36,7 +38,7 @@ const Index = () => (
           </a>
         </p>
       </div>
-    </section>
+    </footer>
   </Layout>
 );
 export default Index;
