@@ -1,24 +1,28 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Masonry from 'react-masonry-component';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 import './FAQ.scss';
 
 const questions = (section, currSection) => {
   return (
     <div
-      className="row"
+      className="container"
       style={currSection === section.name ? {} : { display: 'none' }}
     >
-      {section.questions.map(QA => (
-        <div className="col-md-4">
-          <div className="card">
-            <div className="card-body">
-              <h5 className="card-title"> {QA.question} </h5>
-              <p> {QA.answer} </p>
+      <Masonry>
+        {section.questions.map(QA => (
+          <div className="col-md-4">
+            <div className="card animated fadeInUp">
+              <div className="card-body">
+                <h5 className="card-title"> {QA.question} </h5>
+                <p> {QA.answer} </p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </Masonry>
     </div>
   );
 };
@@ -45,27 +49,43 @@ class FAQ extends Component {
   render() {
     const { sections, currSection } = this.state;
     return (
-      <div className="conainer">
-        <div className="row col-md-8 offset-md-2">
-          {sections.map(section => (
-            <div className="col-md-3">
-              <button
-                className="btn btn-outline-dark btn-lg"
-                type="submit"
-                name={section.name}
-                id={section.name}
-                autoComplete="off"
-                onClick={this.switchSection(section.name)}
-              >
-                {section.name}
-              </button>
+      <section className="faq-section">
+        <div className="container">
+          <h2 className="text-center section-header">FAQs</h2>
+          <div className="row mx-auto" />
+          <div className="col-md-6 offset-md-3">
+            <h3>What can we help you with?</h3>
+            <div className="mx-auto">
+              <Dropdown size="lg">
+                <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                  {currSection}
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Dropdown.Item onClick={this.switchSection('General')}>
+                    General
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={this.switchSection('MechMania')}>
+                    MechMania
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    onClick={this.switchSection('Startup / Career Fair')}
+                  >
+                    Startup / Career Fair
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={this.switchSection('Symposium')}>
+                    Symposium
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
             </div>
-          ))}
+          </div>
+          <br />
+          <div className="row questions">
+            {sections.map(section => questions(section, currSection))}
+          </div>
         </div>
-        <div className="container questions">
-          {sections.map(section => questions(section, currSection))}
-        </div>
-      </div>
+      </section>
     );
   }
 }

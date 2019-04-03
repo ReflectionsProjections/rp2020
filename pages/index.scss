@@ -1,8 +1,6 @@
-section {
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
-  padding: 1em;
+/* Landing Styles */
+.lead-content {
+  padding-top: 15vh;
 }
 
 .wordmark {
@@ -10,7 +8,6 @@ section {
   width: 20em;
   height: 4.5em;
   margin: 0.1em auto;
-  margin-top: 13vh;
   fill: white;
 }
 .event-date {
@@ -28,6 +25,11 @@ section {
   font-family: 'Roboto Slab';
 }
 
+/* Footer Styles */
+footer {
+  padding: 2em;
+  padding-top: 5em;
+}
 .footer-text {
   margin: 0 auto;
   font-weight: 200;
@@ -43,10 +45,6 @@ section {
 }
 #contact {
   font-size: 0.7em;
-}
-
-.faq-container {
-  background-color: white;
 }
 
 @media (min-width: 576px) {
