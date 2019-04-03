@@ -2,49 +2,49 @@ import React, { Component } from 'react';
 // import './Registration.scss';
 
 class Registration extends Component {
-  // state = {
-  //   firstName: '',
-  //   lastName: '',
-  //   phoneNumber: '',
-  //   gender: '',
-  //   studentType: '',
-  //   major: '',
-  //   school: '',
-  //   transportation: '',
-  //   shirtSize: '',
-  //   diet: '',
-  //   graduationClass: '',
-  //   jobInterest: '',
-  //   professionalInterest: '',
-  //   heardFrom: '',
-  //   rpInterest: ''
-  // };
+  state = {
+    firstName: '',
+    lastName: '',
+    phoneNumber: '',
+    gender: '',
+    studentType: '',
+    major: '',
+    school: '',
+    transportation: '',
+    shirtSize: '',
+    diet: '',
+    graduationClass: '',
+    jobInterest: '',
+    professionalInterest: '',
+    heardFrom: '',
+    rpInterest: ''
+  };
 
   componentDidMount() {
     return () => {};
   }
 
   render() {
-    // const {
-    //   firstName,
-    //   lastName,
-    //   phoneNumber,
-    //   gender,
-    //   studentType,
-    //   major,
-    //   school,
-    //   transportation,
-    //   shirtSize,
-    //   diet,
-    //   graduationClass,
-    //   jobInterest,
-    //   professionalInterest,
-    //   heardFrom,
-    //   rpInterest
-    // } = this.state;
+    const {
+      firstName,
+      lastName,
+      phoneNumber,
+      gender,
+      studentType,
+      major,
+      school,
+      transportation,
+      shirtSize,
+      diet,
+      graduationClass,
+      jobInterest,
+      professionalInterest,
+      heardFrom,
+      rpInterest
+    } = this.state;
     return (
       <div>
-        {/* <form>
+        <form>
           <label>
             First Name:
             <input type="text" name="firstName" />
@@ -105,7 +105,7 @@ class Registration extends Component {
             R|P interest:
             <input type="text" name="rpInterest" />
           </label>
-        </form> */}
+        </form>
       </div>
     );
   }
