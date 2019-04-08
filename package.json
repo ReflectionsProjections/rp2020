@@ -37,15 +37,18 @@
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
     "express": "^4.16.4",
     "moment": "^2.24.0",
     "next": "^7.0.2",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react-bootstrap": "latest",
+    "react": "latest",
+    "react-dom": "latest",
     "react-ga": "^2.5.7",
-    "react-inlinesvg": "^0.8.4"
+    "react-inlinesvg": "^0.8.4",
+    "react-masonry-component": "^6.2.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

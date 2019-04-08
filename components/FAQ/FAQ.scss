@@ -1,0 +1,32 @@
+.faq-section::before,
+.faq-section::after {
+  left: 0;
+  height: 90px;
+  background: white;
+}
+
+.faq-section {
+  background-color: white;
+  border-radius: 6em;
+  padding: 2em;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.btn-question {
+  background-color: #7552cc;
+  color: white;
+  border-radius: 1em;
+  padding: 1em;
+}
+.btn-question- .questions {
+  margin-top: 2em;
+}
+.card {
+  padding: 0.5em;
+  border: none;
+  box-shadow: 0 0 0 2px hsla(0, 0%, 0%, 0.05);
+  margin-bottom: 0.5em;
+}
