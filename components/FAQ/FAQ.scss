@@ -1,3 +1,5 @@
+@import '../../static/stylesheets/_variables.scss';
+
 .faq-section::before,
 .faq-section::after {
   left: 0;
@@ -9,24 +11,62 @@
   background-color: white;
   border-radius: 6em;
   padding: 2em;
+  min-height: 90vh;
+  padding-bottom: 4em;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
+/* Prompt Styles */
+#faq-dropdown {
+  background-color: $medium-purple;
+  border: none;
+  font-size: 1.1em;
 }
-.btn-question {
-  background-color: #7552cc;
-  color: white;
-  border-radius: 1em;
-  padding: 1em;
+#faq-prompt {
+  margin: 0.75em auto;
 }
-.btn-question- .questions {
-  margin-top: 2em;
+#faq-prompt h3 {
+  margin-top: 1.6em;
+  margin-bottom: 0.75em;
+  font-size: 1.75em;
 }
+
+/* Question Card Styles */
+.arrow-right {
+  float: right;
+}
+
+.arrow-center {
+  float: none;
+}
+
 .card {
   padding: 0.5em;
   border: none;
   box-shadow: 0 0 0 2px hsla(0, 0%, 0%, 0.05);
   margin-bottom: 0.5em;
+}
+.card-title {
+  margin: 0;
+}
+.card-text {
+  margin-top: 0.75em;
+}
+
+.question-card-mobile p {
+  margin-bottom: 0.3em;
+}
+
+@media (max-width: 767.98px) {
+  #faq-prompt h3 {
+    font-size: 1.5em;
+  }
+  #faq-dropdown {
+    font-size: 1.1em;
+  }
+  .card-body {
+    padding: 0.5em;
+  }
+  .card-title {
+    margin-bottom: 0;
+  }
 }
