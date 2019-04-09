@@ -3,6 +3,7 @@ import SVG from 'react-inlinesvg';
 import Layout from '../components/Util/Layout';
 import CountdownTimer from '../components/CountdownTimer';
 import FAQ from '../components/FAQ/index';
+import Speaker from '../components/Speaker/index';
 
 import './index.scss';
 
@@ -26,6 +27,9 @@ const Index = () => (
       </div>
     </section>
     <FAQ />
+    <section>
+      <Speaker />
+    </section>
     <footer>
       <div className="text-white text-center footer-text animated fadeIn">
         <p id="organized">
