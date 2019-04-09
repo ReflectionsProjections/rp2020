@@ -6,12 +6,7 @@ import './TimelineBlock.scss';
 class TimelineBlock extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      title: 'Default Title',
-      date: 'January 01, 1970',
-      content: 'Default Content',
-      background: 'static/assets/2019logo.png'
-    };
+    this.state = {};
   }
 
   componentDidMount() {
@@ -43,8 +38,22 @@ class TimelineBlock extends Component {
   }
 }
 
+TimelineBlock.defaultProps = {
+  event: PropTypes.shape({
+    title: 'Default Title',
+    date: 'January 01, 1970',
+    content: 'Default Content',
+    background: 'static/assets/2019logo.png'
+  })
+};
+
 TimelineBlock.propTypes = {
-  event: PropTypes.element.isRequired
+  event: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+    background: PropTypes.string.isRequired
+  })
 };
 
 export default TimelineBlock;
