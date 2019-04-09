@@ -43,12 +43,13 @@
     "next": "^7.0.2",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
-    "react-bootstrap": "latest",
     "react": "latest",
+    "react-bootstrap": "latest",
     "react-dom": "latest",
     "react-ga": "^2.5.7",
     "react-inlinesvg": "^0.8.4",
-    "react-masonry-component": "^6.2.1"
+    "react-masonry-component": "^6.2.1",
+    "react-transition-group": "^2.9.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

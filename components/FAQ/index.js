@@ -1,29 +1,35 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Masonry from 'react-masonry-component';
+
 import Dropdown from 'react-bootstrap/Dropdown';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+import Question from './Question';
 
 import './FAQ.scss';
 
 const questions = (section, currSection) => {
+  const mid = Math.floor(section.questions.length / 2);
+  const left = section.questions.slice(0, mid);
+  const right = section.questions.slice(mid);
   return (
-    <div
-      className="container"
-      style={currSection === section.name ? {} : { display: 'none' }}
-    >
-      <Masonry>
-        {section.questions.map(QA => (
-          <div className="col-md-4">
-            <div className="card animated fadeInUp">
-              <div className="card-body">
-                <h5 className="card-title"> {QA.question} </h5>
-                <p> {QA.answer} </p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </Masonry>
-    </div>
+    <Row style={currSection === section.name ? {} : { display: 'none' }}>
+      <Col md={6}>
+        <Row>
+          {left.map(QA => (
+            <Question question={QA.question} answer={QA.answer} />
+          ))}
+        </Row>
+      </Col>
+      <Col md={6}>
+        <Row>
+          {right.map(QA => (
+            <Question question={QA.question} answer={QA.answer} />
+          ))}
+        </Row>
+      </Col>
+    </Row>
   );
 };
 
@@ -52,12 +58,15 @@ class FAQ extends Component {
       <section className="faq-section">
         <div className="container">
           <h2 className="text-center section-header">FAQs</h2>
-          <div className="row mx-auto" />
-          <div className="col-md-6 offset-md-3">
+          <div id="faq-prompt" className="col-md-6 offset-md-3 text-center">
             <h3>What can we help you with?</h3>
             <div className="mx-auto">
-              <Dropdown size="lg">
-                <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+              <Dropdown>
+                <Dropdown.Toggle
+                  size="lg"
+                  variant="secondary"
+                  id="faq-dropdown"
+                >
                   {currSection}
                 </Dropdown.Toggle>
 
@@ -74,7 +83,7 @@ class FAQ extends Component {
                     Startup / Career Fair
                   </Dropdown.Item>
                   <Dropdown.Item onClick={this.switchSection('Symposium')}>
-                    Symposium
+                    ACM Symposium
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
