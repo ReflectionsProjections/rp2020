@@ -1,4 +1,4 @@
-@import '../../static/stylesheets/_variables.scss';
+@import '../../static/stylesheets/variables';
 
 .faq-section::before,
 .faq-section::after {
@@ -17,7 +17,7 @@
 
 /* Prompt Styles */
 #faq-dropdown {
-  background-color: $medium-purple;
+  background-color: $slate-blue;
   border: none;
   font-size: 1.1em;
 }
@@ -57,6 +57,9 @@
 }
 
 @media (max-width: 767.98px) {
+  .faq-section {
+    border-radius: 3em;
+  }
   #faq-prompt h3 {
     font-size: 1.5em;
   }

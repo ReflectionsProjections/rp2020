@@ -10,7 +10,7 @@ import Question from './Question';
 import './FAQ.scss';
 
 const questions = (section, currSection) => {
-  const mid = Math.floor(section.questions.length / 2);
+  const mid = Math.ceil(section.questions.length / 2);
   const left = section.questions.slice(0, mid);
   const right = section.questions.slice(mid);
   return (

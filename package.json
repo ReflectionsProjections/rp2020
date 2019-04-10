@@ -23,6 +23,9 @@
       "pre-commit": "NODE_ENV=production lint-staged"
     }
   },
+  "eslintIgnore": [
+    "next.config.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ReflectionsProjections/rp2019.git"
