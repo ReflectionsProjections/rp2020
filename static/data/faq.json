@@ -103,6 +103,19 @@
           "answer": "The booths, charging outlets, food, and visibility!"
         }
       ]
+    },
+    {
+      "name": "Events",
+      "questions": [
+        {
+          "question": "What's the difference between Tech Talks and Speaker Talks?",
+          "answer": "Tech Talks are given by sponsor representatives who wish to spotlight their company and talk about new products/technologies. Speaker Talks are given by experts in the tech community and are about specific technical or personal topics."
+        },
+        {
+          "question": "What's the difference between the Startup Fair and the Career Fair?",
+          "answer": "The Startup Fair is for startup companies, and the Career Fair is for established companies. The difference between startup and established companies is determined by conference staff."
+        }
+      ]
     }
   ]
 }

@@ -74,6 +74,9 @@ class FAQ extends Component {
                   <Dropdown.Item onClick={this.switchSection('General')}>
                     General
                   </Dropdown.Item>
+                  <Dropdown.Item onClick={this.switchSection('Events')}>
+                    Events
+                  </Dropdown.Item>
                   <Dropdown.Item onClick={this.switchSection('MechMania')}>
                     MechMania
                   </Dropdown.Item>
