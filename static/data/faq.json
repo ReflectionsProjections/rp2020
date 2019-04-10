@@ -80,15 +80,15 @@
       ]
     },
     {
-      "name": "Symposium",
+      "name": "R|P Symposium",
       "questions": [
         {
-          "question": "What is the ACM Symposium?",
-          "answer": "The ACM Symposium is a platform for students to come together and share their research work (through research papers or poster presentations) or their individual/SIG projects (through live demos)."
+          "question": "What is the R|P Symposium?",
+          "answer": "The R|P Symposium is a platform for students to come together and share their research work (through research papers or poster presentations) or their individual/SIG projects (through live demos)."
         },
         {
-          "question": "What is the motivation behind the ACM Symposium?",
-          "answer": "The ACM Symposium is a way for us to return to our roots! R|P originated as the Midwestern ACM Chapter Conference back in 1995 and this year we are aiming to bring all our neighboring Midwestern chapters together to facilitate collaboration and conversation. All our chapters are doing incredible research and building really cool projects and we would be remiss if we couldn't shine a spotlight on it. Thus our tagline: Industry meets Academia!"
+          "question": "What is the motivation behind the R|P Symposium?",
+          "answer": "The R|P Symposium is a way for us to return to our roots! R|P originated as the Midwestern ACM Chapter Conference back in 1995 and this year we are aiming to bring all our neighboring Midwestern chapters together to facilitate collaboration and conversation. All our chapters are doing incredible research and building really cool projects and we would be remiss if we couldn't shine a spotlight on it. Thus our tagline: Industry meets Academia!"
         },
         {
           "question": "Why should I attend?",
