@@ -17,7 +17,7 @@ class Layout extends Component {
         <CustomHead />
         <div>
           <Nav />
-          <div className="container">{children}</div>
+          {children}
         </div>
       </div>
     );
