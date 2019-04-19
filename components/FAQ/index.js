@@ -9,34 +9,11 @@ import Question from './Question';
 
 import './FAQ.scss';
 
-const questions = (section, currSection) => {
-  const mid = Math.floor(section.questions.length / 2);
-  const left = section.questions.slice(0, mid);
-  const right = section.questions.slice(mid);
-  return (
-    <Row style={currSection === section.name ? {} : { display: 'none' }}>
-      <Col md={6}>
-        <Row>
-          {left.map(QA => (
-            <Question question={QA.question} answer={QA.answer} />
-          ))}
-        </Row>
-      </Col>
-      <Col md={6}>
-        <Row>
-          {right.map(QA => (
-            <Question question={QA.question} answer={QA.answer} />
-          ))}
-        </Row>
-      </Col>
-    </Row>
-  );
-};
-
 class FAQ extends Component {
   state = {
     sections: [],
-    currSection: 'General'
+    currSection: 'General',
+    currQuestion: ''
   };
 
   componentDidMount() {
@@ -46,17 +23,26 @@ class FAQ extends Component {
     });
   }
 
+  handleToggle = question => {
+    this.setState(state => ({
+      currQuestion: state.currQuestion === question ? '' : question
+    }));
+  };
+
   switchSection(sectionName) {
     return () => {
-      this.setState({ currSection: sectionName });
+      this.setState({
+        currSection: sectionName,
+        currQuestion: ''
+      });
     };
   }
 
   render() {
-    const { sections, currSection } = this.state;
+    const { sections, currSection, currQuestion } = this.state;
     return (
-      <section className="faq-section">
-        <div className="container">
+      <section className="container">
+        <div className="faq-section">
           <h2 className="text-center section-header">FAQs</h2>
           <div id="faq-prompt" className="col-md-6 offset-md-3 text-center">
             <h3>What can we help you with?</h3>
@@ -91,7 +77,46 @@ class FAQ extends Component {
           </div>
           <br />
           <div className="row questions">
-            {sections.map(section => questions(section, currSection))}
+            {sections.map(section => {
+              const mid = Math.floor(section.questions.length / 2);
+              const left = section.questions.slice(0, mid);
+              const right = section.questions.slice(mid);
+              return (
+                <Row
+                  key={section.name}
+                  style={
+                    currSection === section.name ? {} : { display: 'none' }
+                  }
+                >
+                  <Col md={6}>
+                    <Row>
+                      {left.map(QA => (
+                        <Question
+                          key={QA.question}
+                          question={QA.question}
+                          answer={QA.answer}
+                          show={QA.question === currQuestion}
+                          handleToggle={this.handleToggle}
+                        />
+                      ))}
+                    </Row>
+                  </Col>
+                  <Col md={6}>
+                    <Row>
+                      {right.map(QA => (
+                        <Question
+                          key={QA.question}
+                          question={QA.question}
+                          answer={QA.answer}
+                          show={QA.question === currQuestion}
+                          handleToggle={this.handleToggle}
+                        />
+                      ))}
+                    </Row>
+                  </Col>
+                </Row>
+              );
+            })}
           </div>
         </div>
       </section>

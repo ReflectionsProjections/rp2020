@@ -16,7 +16,6 @@ const CustomHead = () => (
       integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
       crossOrigin="anonymous"
     />
-    <link rel="stylesheet" href="/static/stylesheets/section-separators.css" />
     <link rel="stylesheet" href="/static/stylesheets/styles.css" />
 
     <link
