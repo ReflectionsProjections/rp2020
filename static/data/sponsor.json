@@ -3,17 +3,26 @@
     {
       "alt": "Fuclrum Logo",
       "name": "Fulcrum",
-      "image_url": "https://www.hackillinois.org/static/media/Fulcrum.303a6d78.png"
-    },
-    {
-      "alt": "Fuclrum Logo",
-      "name": "Fulcrum",
-      "image_url": "https://www.hackillinois.org/static/media/Optum.6ebc6fc0.png"
+      "image_url": "https://www.hackillinois.org/static/media/Fulcrum.303a6d78.png",
+      "tier": "Top"
     },
     {
       "alt": "IMC Logo",
       "name": "IMC",
-      "image_url": "https://www.hackillinois.org/static/media/IMC.4ab9a8e3.png"
+      "image_url": "https://www.hackillinois.org/static/media/IMC.4ab9a8e3.png",
+      "tier": "Top"
+    },
+    {
+      "alt": "Optum Logo",
+      "name": "Fulcrum",
+      "image_url": "https://www.hackillinois.org/static/media/Optum.6ebc6fc0.png",
+      "tier": "Middle"
+    },
+    {
+      "alt": "IMC Logo",
+      "name": "IMC",
+      "image_url": "https://www.hackillinois.org/static/media/IMC.4ab9a8e3.png",
+      "tier": "Bottom"
     }
   ]
 }

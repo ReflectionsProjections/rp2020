@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import axios from 'axios';
 
+import './SponsorSection.scss';
 // figure out how to loop through and display images
 
 // const SponsorSection = () => (
@@ -38,7 +39,7 @@ class SponsorSection extends Component {
 
   componentDidMount() {
     axios.get('/static/data/sponsor.json').then(res => {
-      const {sponsors} = res.data;
+      const { sponsors } = res.data;
       this.setState({ sponsors });
     });
   }
@@ -46,19 +47,36 @@ class SponsorSection extends Component {
   render() {
     const { sponsors } = this.state;
     return (
-      <div>
+      <Container className="sponsor-section">
         {sponsors.map(sponsor => {
+          // if ()
           return (
-            <Container>
-              <Row>
-                <Col xs={6} md={2}>
+            <div class="container">
+              <div class="row-2">
+                <div class="col-3">
                   <Image src={sponsor.image_url} fluid />
-                </Col>
-              </Row>
-            </Container>
+                </div>
+              </div>
+            </div>
+
+            // <Container>
+            //   <Row>
+            //     <Col xs={6} md={2}>
+            //       <Image src={sponsor.image_url} fluid />
+            //     </Col>
+            //   </Row>
+            // </Container>
           );
         })}
-      </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">One of three columns</div>
+            <div class="col-sm">One of three columns</div>
+            <div class="col-sm">One of three columns</div>
+          </div>
+        </div>
+      </Container>
     );
   }
 }
