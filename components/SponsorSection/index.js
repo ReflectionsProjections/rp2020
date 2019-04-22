@@ -51,9 +51,9 @@ class SponsorSection extends Component {
         {sponsors.map(sponsor => {
           // if ()
           return (
-            <div class="container">
-              <div class="row-2">
-                <div class="col-3">
+            <div className="container">
+              <div className="row-2">
+                <div className="col-3">
                   <Image src={sponsor.image_url} fluid />
                 </div>
               </div>
@@ -69,11 +69,11 @@ class SponsorSection extends Component {
           );
         })}
 
-        <div class="container">
-          <div class="row">
-            <div class="col-sm">One of three columns</div>
-            <div class="col-sm">One of three columns</div>
-            <div class="col-sm">One of three columns</div>
+        <div className="container">
+          <div className="row">
+            <div className="col-sm">One of three columns</div>
+            <div className="col-sm">One of three columns</div>
+            <div className="col-sm">One of three columns</div>
           </div>
         </div>
       </Container>
