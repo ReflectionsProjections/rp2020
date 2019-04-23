@@ -1,11 +1,13 @@
 import React from 'react';
 import SVG from 'react-inlinesvg';
+import { Link, Element } from 'react-scroll';
 import Layout from '../components/Util/Layout';
 import CountdownTimer from '../components/CountdownTimer';
 import FAQ from '../components/FAQ/index';
 import Speaker from '../components/Speaker/index';
 
 import './index.scss';
+import '../static/stylesheets/animations.scss';
 
 const Index = () => (
   <Layout>
@@ -24,9 +26,23 @@ const Index = () => (
             <CountdownTimer className="animated fadeIn" />
           </div>
         </div>
+        <Link
+          activeClass="active"
+          to="faq"
+          spy
+          smooth="easeInOutQuad"
+          duration={500}
+          offset={-80}
+        >
+          <span className="scroll-down">
+            <span className="scroll-down-text">See More</span>
+          </span>
+        </Link>
       </div>
     </section>
-    <FAQ />
+    <Element name="faq">
+      <FAQ id="faq" />
+    </Element>
     <section>
       <Speaker />
     </section>
