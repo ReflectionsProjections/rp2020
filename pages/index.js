@@ -11,7 +11,7 @@ import '../static/stylesheets/animations.scss';
 
 const Index = () => (
   <Layout>
-    <section className="landing">
+    <main className="landing">
       <div className="container">
         <div className="lead-content text-white text-center">
           <SVG
@@ -39,13 +39,11 @@ const Index = () => (
           </span>
         </Link>
       </div>
-    </section>
+    </main>
     <Element name="faq">
-      <FAQ id="faq" />
+      <FAQ />
     </Element>
-    <section>
-      <Speaker />
-    </section>
+    <Speaker />
     <footer>
       <div className="text-white text-center footer-text animated fadeIn">
         <p id="organized">

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+
+import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import CardColumns from 'react-bootstrap/CardColumns';
 
@@ -48,16 +50,16 @@ class Speaker extends Component {
     }
 
     return (
-      <section className="speaker-section">
-        <div className="container">
+      <Container>
+        <section className="speaker-section">
           <h2 className="text-center section-header">Speakers</h2>
           <div className="row mx-auto" />
           <div>
             <CardColumns>{cards}</CardColumns>
           </div>
           <br />
-        </div>
-      </section>
+        </section>
+      </Container>
     );
   }
 }
