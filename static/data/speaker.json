@@ -1,3 +1,24 @@
 {
-  "speakers": []
+  "speakers": [
+    {
+      "name": "Craig Mohan",
+      "biography": "VP Data @ CME Group",
+      "image": "/static/img/speakers/CraigMohan.jpeg"
+    },
+    {
+      "name": "Shashank BK",
+      "biography": "VP Global Data @ IBM",
+      "image": "/static/img/speakers/ShashankBK.jpeg"
+    },
+    {
+      "name": "Donald Kossman",
+      "biography": "Director of Microsoft Research in Redmond",
+      "image": "/static/img/speakers/DonaldKossman.jpeg"
+    },
+    {
+      "name": "Alfred Spector",
+      "biography": "CTO @ TwoSigma",
+      "image": "/static/img/speakers/AlfredSpector.jpeg"
+    }
+  ]
 }

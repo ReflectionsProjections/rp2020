@@ -13,7 +13,7 @@ class Speaker extends Component {
   };
 
   componentDidMount() {
-    axios.get('/static/data/speaker-test.json').then(res => {
+    axios.get('/static/data/speaker.json').then(res => {
       const { speakers } = res.data;
       this.setState({ speakers });
     });
@@ -30,7 +30,7 @@ class Speaker extends Component {
       cards.push(
         <Card>
           <Card.Img variant="top" src={image} />
-          <Card.Body>
+          <Card.Body className="text-center">
             <Card.Title>{name}</Card.Title>
             <Card.Text>{biography}</Card.Text>
           </Card.Body>
@@ -42,7 +42,7 @@ class Speaker extends Component {
       cards.push(
         <Card>
           <Card.Body>
-            <Card.Title>Speaker list coming soon!</Card.Title>
+            <Card.Title className="text-center">Loading speakers...</Card.Title>
           </Card.Body>
         </Card>
       );

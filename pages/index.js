@@ -28,7 +28,7 @@ const Index = () => (
         </div>
         <Link
           activeClass="active"
-          to="faq"
+          to="speakers"
           spy
           smooth="easeInOutQuad"
           duration={500}
@@ -40,10 +40,10 @@ const Index = () => (
         </Link>
       </div>
     </main>
-    <Element name="faq">
-      <FAQ />
+    <Element name="speakers">
+      <Speaker />
     </Element>
-    <Speaker />
+    <FAQ />
     <footer>
       <div className="text-white text-center footer-text animated fadeIn">
         <p id="organized">
