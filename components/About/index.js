@@ -44,7 +44,7 @@ const About = () => (
               <img
                 className="rounded"
                 width="100%"
-                src="/static/img/team.JPG"
+                src="/static/img/team.jpg"
                 alt="Reflections Projections 2019 Staff"
               />
             </div>
