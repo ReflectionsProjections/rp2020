@@ -9,8 +9,8 @@
 
 .faq-section {
   background-color: white;
-  border-radius: 6em;
-  padding: 2em;
+  border-radius: 1.5em;
+  padding: 3em;
   min-height: 90vh;
   padding-bottom: 4em;
 }
@@ -69,4 +69,24 @@
   .card-title {
     margin-bottom: 0;
   }
+}
+
+.slide-enter {
+  height: 0px;
+}
+
+.slide-enter.slide-enter-active {
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: height 0.5s ease, opacity 0.05s 0.45s;
+  -moz-transition: height 0.5s ease, opacity 0.05s 0.45s;
+  transition: height 0.5s ease, opacity 0.05s 0.45s;
+}
+
+.slide-leave.slide-leave-active {
+  height: 0px;
+  opacity: 0;
+  -webkit-transition: height 0.5s ease, opacity 0.05s 0.45s;
+  -moz-transition: height 0.5s ease, opacity 0.05s 0.45s;
+  transition: height 0.5s ease, opacity 0.05s 0.45s;
 }

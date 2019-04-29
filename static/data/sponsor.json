@@ -4,7 +4,7 @@
       "alt": "Fuclrum Logo",
       "name": "Fulcrum",
       "image_url": "https://www.hackillinois.org/static/media/Fulcrum.303a6d78.png",
-      "tier": "pb"
+      "tier": "tb"
     },
     {
       "alt": "IMC Logo",
@@ -19,10 +19,22 @@
       "tier": "mb"
     },
     {
-      "alt": "IMC Logo",
-      "name": "IMC",
-      "image_url": "https://www.hackillinois.org/static/media/IMC.4ab9a8e3.png",
+      "alt": "Checkbook.io Logo",
+      "name": "Checkbook.io",
+      "image_url": "https://www.hackillinois.org/static/media/Checkbook.14c67106.svg",
       "tier": "gb"
+    },
+    {
+      "alt": "Google Logo",
+      "name": "Google",
+      "image_url": "https://www.hackillinois.org/static/media/Google.354ec258.png",
+      "tier": "pb"
+    },
+    {
+      "alt": "Facebook Logo",
+      "name": "Facebook",
+      "image_url": "https://www.hackillinois.org/static/media/Facebook.30b21351.png",
+      "tier": "tb"
     }
   ]
 }

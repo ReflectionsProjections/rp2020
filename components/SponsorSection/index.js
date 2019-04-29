@@ -7,20 +7,17 @@ import axios from 'axios';
 
 import './SponsorSection.scss';
 
-
-const ImageViewer = (props) => {
+const ImageViewer = props => {
   const { size, images } = props;
   console.log(props);
   return (
     <Container>
       {images.map(image => {
-        return <Image src={image.image_url} width = {`${size}%`} fluid />
+        return <Image src={image.image_url} width={`${size}%`} fluid />;
       })}
-
     </Container>
-  )
-
-}
+  );
+};
 
 class SponsorSection extends Component {
   state = {
@@ -36,26 +33,35 @@ class SponsorSection extends Component {
 
   render() {
     const { sponsors } = this.state;
-    const tierMB = sponsors.filter(e => e.tier == "mb");
-    const tierGB = sponsors.filter(e => e.tier == "gb");
-    const tierTB = sponsors.filter(e => e.tier == "tb");
-    const tierPB = sponsors.filter(e => e.tier == "pb");
+    const tierMB = sponsors.filter(e => e.tier == 'mb');
+    const tierGB = sponsors.filter(e => e.tier == 'gb');
+    const tierTB = sponsors.filter(e => e.tier == 'tb');
+    const tierPB = sponsors.filter(e => e.tier == 'pb');
 
     return (
       <Container className="sponsor-section">
         <div className="container">
-          <ImageViewer images = {tierPB} size = {100}></ImageViewer>
-          <ImageViewer images = {tierTB} size = {80}></ImageViewer>
-          <ImageViewer images = {tierGB} size = {60}></ImageViewer>
-          <ImageViewer images = {tierMB} size = {40}></ImageViewer>
-        </div>
+          <h2 className="text-center section-header">Sponsors</h2>
+          <div id="sponsor-tier" className="col-md-6 offset-md-3 text-center">
+            <div id="peta-tier">
+              <h3>Petabyte</h3>
+              <ImageViewer id="petab" images={tierPB} size={65} />
+            </div>
 
+            <div id="tera-tier">
+              <h4>Terabyte</h4>
+              <ImageViewer images={tierTB} size={50} />
+            </div>
 
-        <div className="container">
-          <div className="row">
-            <div className="col-sm">One of three columns</div>
-            <div className="col-sm">One of three columns</div>
-            <div className="col-sm">One of three columns</div>
+            <div id="gig-tier">
+              <h4>Gigabyte</h4>
+              <ImageViewer images={tierGB} size={40} />
+            </div>
+
+            <div id="mega-tier">
+              <h4>Megabyte</h4>
+              <ImageViewer images={tierMB} size={30} />
+            </div>
           </div>
         </div>
       </Container>
@@ -64,34 +70,3 @@ class SponsorSection extends Component {
 }
 
 export default SponsorSection;
-
-
-
-
-
-// figure out how to loop through and display images
-
-// const SponsorSection = () => (
-//   <div>
-
-//     {<Container>
-//            <Row>
-//                 <Col xs={6} md={2}>
-//                     <Image src="https://www.hackillinois.org/static/media/Fulcrum.303a6d78.png" fluid />
-//                 </Col>
-//             </Row>
-//     </Container> }
-//   </div>
-// );
-
-/*
-res = {
-    data: {
-        sponsors: ___,
-        status: __,
-
-    },
-    ...
-}
-
-*/
