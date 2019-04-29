@@ -31,26 +31,27 @@ class Speaker extends Component {
             <h2 className="text-center section-header">Speakers</h2>
             <br />
             <Row>
-              <Col>
+              <Col md={5}>
                 <img
                   src="/static/img/speakers/AlfredSpector.jpeg"
-                  className="rounded float-left"
-                  width="400em"
+                  className="rounded float-left mb-5"
+                  width="100%"
                   alt="Two Sigma CTO Alfred Spector"
                 />
               </Col>
-              <Col>
+              <Col md={7}>
                 <h3>Keynote Speaker: Alfred Spector</h3>
-                <h4>CTO @ TwoSigma</h4>
+                <h4>CTO and Head of Engineering @ TwoSigma</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  Alfred Spector is the current Chief Technology Officer and
+                  Head of Engineering at TwoSigma, an investment management
+                  company that leverages Machine Learning and Distributed
+                  Computing. Previously, he was the Vice President of Research
+                  and Special Initiatives at Google and, before that, the Vice
+                  President of Strategy & Technology at IBM. Alfred recieved his
+                  PhD in Computer Science at Stanford University and attended
+                  Harvard University for his undergraduate studies. We are glad
+                  to welcome Alfred as our keynote speaker for RP 2019!
                 </p>
               </Col>
             </Row>

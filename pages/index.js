@@ -3,6 +3,8 @@ import SVG from 'react-inlinesvg';
 import { Link, Element } from 'react-scroll';
 import Layout from '../components/Util/Layout';
 import CountdownTimer from '../components/CountdownTimer';
+
+import About from '../components/About/index';
 import FAQ from '../components/FAQ/index';
 import Speaker from '../components/Speaker/index';
 
@@ -28,7 +30,7 @@ const Index = () => (
         </div>
         <Link
           activeClass="active"
-          to="speakers"
+          to="about"
           spy
           smooth="easeInOutQuad"
           duration={500}
@@ -40,10 +42,16 @@ const Index = () => (
         </Link>
       </div>
     </main>
+
+    <Element name="about">
+      <About />
+    </Element>
     <Element name="speakers">
       <Speaker />
     </Element>
-    <FAQ />
+    <Element name="faq">
+      <FAQ />
+    </Element>
     <footer>
       <div className="text-white text-center footer-text animated fadeIn">
         <p id="organized">

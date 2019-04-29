@@ -49,6 +49,22 @@ section {
   margin-bottom: 3em;
 }
 
+.btn-primary {
+  color: white;
+  border: none;
+  background-color: #7552cc;
+  border-color: #7552cc;
+  font-weight: 600;
+  padding: 1em 2em;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: #ecd7ff;
+  color: #7552cc;
+}
+
 .section-header {
   font-family: 'Roboto Slab';
   font-weight: 200;
