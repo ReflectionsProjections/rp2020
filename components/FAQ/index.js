@@ -61,16 +61,17 @@ class FAQ extends Component {
                   <Dropdown.Item onClick={this.switchSection('General')}>
                     General
                   </Dropdown.Item>
+                  <Dropdown.Item onClick={this.switchSection('Events')}>
+                    Events
+                  </Dropdown.Item>
                   <Dropdown.Item onClick={this.switchSection('MechMania')}>
                     MechMania
                   </Dropdown.Item>
-                  <Dropdown.Item
-                    onClick={this.switchSection('Startup / Career Fair')}
-                  >
-                    Startup / Career Fair
+                  <Dropdown.Item onClick={this.switchSection('PuzzleBang')}>
+                    PuzzleBang
                   </Dropdown.Item>
-                  <Dropdown.Item onClick={this.switchSection('Symposium')}>
-                    ACM Symposium
+                  <Dropdown.Item onClick={this.switchSection('R|P Symposium')}>
+                    R|P Symposium
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>

@@ -4,24 +4,24 @@
       "name": "General",
       "questions": [
         {
-          "question": "What is Reflections|Projections?",
-          "answer": "Reflections|Projections is an annual technology conference held at the University of Illinois at Urbana Champaign. Inviting premier speakers, influencers, and companies, it features a puzzle competition, speaker events, and a 24 hour AI hackathon. Reflections|Projections is coming on its 25th anniversary this year, upholding its standards of excellence."
+          "question": "What is Reflections | Projections?",
+          "answer": "Reflections | Projections is an annual technology conference held at the University of Illinois at Urbana-Champaign. It features two job fairs, a variety of speaker events, a puzzle competition, a 24-hour hackathon, and more! This is our 25th year running R|P, and we are excited to continue our tradition of connecting attendees with premier speakers, influencers, and companies!"
         },
         {
-          "question": "How do I Register?",
-          "answer": "Registrations open up during the summer/beginning of fall. Be sure to add yourself to the update list so you get notified when registrations rolls out later this year!"
+          "question": "How do I register?",
+          "answer": "Registrations will open late Summer/early Fall 2019. Be sure to use the \"Get Updates\" button at the top of the page to add yourself to the update list so you get notified when registration opens!"
         },
         {
           "question": "Who can attend?",
-          "answer": "Reflections|Projections is free and open to anyone regardless of age, major, or affiliation with the University of Illinois. Come join a discussion led by some of the brightest minds in the business about the bleeding edge of the tech industry!"
+          "answer": "Reflections | Projections is free and open to anyone regardless of age, major, or affiliation with the University of Illinois. Come join a discussion led by some of the brightest minds in the business about the bleeding edge of the tech industry!"
         },
         {
           "question": "Is the conference free to attend?",
-          "answer": "Yes! Reflections|Projections is completely free to attend! This includes MechMania and other events."
+          "answer": "Yes! Reflections | Projections is completely free to attend! This includes MechMania and all other events."
         },
         {
           "question": "Will food be provided?",
-          "answer": "A large variety of meals, snacks, and drinks will be provided throughout the week that will be free for registered attendees. If you have a dietary restriction, please mention it in the online registration that will be released in Fall 2019."
+          "answer": "A large variety of meals, snacks, and drinks will be provided for free throughout the week for registered attendees. If you have a dietary restriction, please mention it in the registration form when you register for the conference (registration will open late Summer/early Fall)."
         }
       ]
     },
@@ -30,7 +30,7 @@
       "questions": [
         {
           "question": "What is MechMania?",
-          "answer": "MechMania is a 24-hour programming contest in which teams of students from various schools compete to create an AI capable of playing (and winning) a strategy game we have developed for the event. The competition will begin with the opening ceremony and announcement of the game on Friday, September 21st after which the programming component will commence immediately. The competition will conclude with the closing ceremony and awards presentation on Saturday, September 22nd after running for 24 hours. Register for MechMania here! You must be registered for Reflections|Projections to compete in MechMania."
+          "answer": "MechMania is a 24-hour programming contest in which teams of students from various schools compete to create an AI capable of playing (and winning) a strategy game we have developed for the event. The competition will begin with the opening ceremony and announcement of the game on Friday, September 20th after which the programming component will commence immediately. The competition will conclude with the closing ceremony and awards presentation on Saturday, September 21st after running for 24 hours. Register for MechMania here! You must be registered for Reflections | Projections to compete in MechMania."
         },
         {
           "question": "Who's eligible?",
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "name": "Startup / Career Fair",
+      "name": "PuzzleBang",
       "questions": [
         {
           "question": "What is PuzzleBang?",
@@ -80,15 +80,15 @@
       ]
     },
     {
-      "name": "Symposium",
+      "name": "R|P Symposium",
       "questions": [
         {
-          "question": "What is the ACM Symposium?",
-          "answer": "The ACM Symposium is a platform for students to come together and share their research work (through research papers or poster presentations) or their individual/SIG projects (through live demos)."
+          "question": "What is the R|P Symposium?",
+          "answer": "The R|P Symposium is a platform for students to come together and share their research work (through research papers or poster presentations) or their individual/SIG projects (through live demos)."
         },
         {
-          "question": "What is the motivation behind the ACM Symposium?",
-          "answer": "The ACM Symposium is a way for us to return to our roots! R|P originated as the Midwestern ACM Chapter Conference back in 1995 and this year we are aiming to bring all our neighboring Midwestern chapters together to facilitate collaboration and conversation. All our chapters are doing incredible research and building really cool projects and we would be remiss if we couldn't shine a spotlight on it. Thus our tagline: Industry meets Academia!"
+          "question": "What is the motivation behind the R|P Symposium?",
+          "answer": "The R|P Symposium is a way for us to return to our roots! R|P originated as the Midwestern ACM Chapter Conference back in 1995 and this year we are aiming to bring all our neighboring Midwestern chapters together to facilitate collaboration and conversation. All our chapters are doing incredible research and building really cool projects and we would be remiss if we couldn't shine a spotlight on it. Thus our tagline: Industry meets Academia!"
         },
         {
           "question": "Why should I attend?",
@@ -101,6 +101,19 @@
         {
           "question": "What does R|P provide?",
           "answer": "The booths, charging outlets, food, and visibility!"
+        }
+      ]
+    },
+    {
+      "name": "Events",
+      "questions": [
+        {
+          "question": "What's the difference between Tech Talks and Speaker Talks?",
+          "answer": "Tech Talks are given by sponsor representatives who wish to spotlight their company and talk about new products/technologies. Speaker Talks are given by experts in the tech community and are about specific technical or personal topics."
+        },
+        {
+          "question": "What's the difference between the Startup Fair and the Career Fair?",
+          "answer": "The Startup Fair is for startup companies, and the Career Fair is for established companies. The difference between startup and established companies is determined by conference staff."
         }
       ]
     }
