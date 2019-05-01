@@ -33,8 +33,8 @@ const About = () => (
               <h3>Our Team</h3>
               <br />
               <p>
-                We are students passionate about technology who emobodies the
-                diversity and excellence inherit to the University of Illinois
+                We are students passionate about technology who embody the
+                diversity and excellence inherit at the University of Illinois
                 at a Urbana-Champaign. We bring industry and academia into one
                 conference to incite the spread of novel ideas. We connect
                 students with professional opportunities. We host a one of a
