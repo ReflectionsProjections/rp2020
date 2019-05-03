@@ -24,7 +24,7 @@ const About = () => (
                   held at the University of Illinois at Urbana-Champaign.
                   Inviting premier speakers, influencers, and companies, it
                   features a puzzle competition, speaker events, and a 24 hour
-                  AI hackathon. Reflections|Projections is coming on its 25th
+                  AI hackathon. Reflections | Projections is coming on its 25th
                   anniversary this year, upholding its standards of excellence.
                 </p>
               </div>
@@ -38,7 +38,7 @@ const About = () => (
                   conference to incite the spread of novel ideas. We connect
                   students with professional opportunities. We host a one of a
                   kind AI hackathon. And, we can&apos;t wait for you to come to
-                  RP 2019!
+                  R|P 2019!
                 </p>
                 <img
                   className="rounded"
