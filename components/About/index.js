@@ -33,12 +33,12 @@ const About = () => (
                 <h3>Our Team</h3>
                 <p>
                   We are students passionate about technology who embody the
-                  diversity and excellence inherit at the University of Illinois
-                  at a Urbana-Champaign. We bring industry and academia into one
-                  conference to incite the spread of novel ideas. We connect
-                  students with professional opportunities. We host a one of a
-                  kind AI hackathon. And, we can&apos;t wait for you to come to
-                  R|P 2019!
+                  diversity and excellence inherent at the University of
+                  Illinois at a Urbana-Champaign. We bring industry and academia
+                  into one conference to incite the spread of novel ideas. We
+                  connect students with professional opportunities. We host a
+                  one of a kind AI hackathon. And, we can&apos;t wait for you to
+                  come to R|P 2019!
                 </p>
                 <img
                   className="rounded"
