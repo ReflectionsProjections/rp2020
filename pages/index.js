@@ -6,7 +6,6 @@ import CountdownTimer from '../components/CountdownTimer';
 
 import About from '../components/About/index';
 import FAQ from '../components/FAQ/index';
-import Speaker from '../components/Speaker/index';
 
 import './index.scss';
 import '../static/stylesheets/animations.scss';
@@ -45,9 +44,6 @@ const Index = () => (
 
     <Element name="about">
       <About />
-    </Element>
-    <Element name="speakers">
-      <Speaker />
     </Element>
     <Element name="faq">
       <FAQ />

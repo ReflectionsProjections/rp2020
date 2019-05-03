@@ -52,23 +52,6 @@ const About = () => (
           <Col md={4} className="px-lg-3">
             <div>
               <h3>Learn More</h3>
-              <div>
-                <h4>Speakers</h4>
-                <p>
-                  We host speakers from both industry and academia. Check them
-                  out.
-                </p>
-                <Link
-                  activeClass="active"
-                  to="speakers"
-                  spy
-                  smooth="easeInOutQuad"
-                  duration={500}
-                  offset={-80}
-                >
-                  <span className="btn btn-primary">See Speakers</span>
-                </Link>
-              </div>
               <hr />
               <div>
                 <h4>FAQ</h4>
