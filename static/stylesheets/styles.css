@@ -28,6 +28,15 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Roboto', sans-serif;
+}
+
 main {
   height: 100%;
 }
@@ -82,5 +91,8 @@ section {
 @media (max-width: 767.98px) {
   .section-header {
     margin: 0.1em 0;
+  }
+  section {
+    padding: 1.5em;
   }
 }

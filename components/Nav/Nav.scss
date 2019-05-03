@@ -13,14 +13,14 @@
   right: 1em;
   font-size: 1.3em;
 }
-.social-media-icons {
+.nav-social-media-icons {
   display: none;
 }
-.social-media-icons i {
+.nav-social-media-icons i {
   margin-right: 2em;
   color: #7552cc;
 }
-.social-media-icons i:hover {
+.nav-social-media-icons i:hover {
   color: #ecd7ff;
 }
 
@@ -64,7 +64,7 @@
 }
 
 @media (min-width: 992px) {
-  .social-media-icons {
+  .nav-social-media-icons {
     display: inline-block;
   }
   .navbar-logo {

@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import CardColumns from 'react-bootstrap/CardColumns';
+import CardDeck from 'react-bootstrap/CardDeck';
 
 import './Speaker.scss';
 
@@ -62,13 +62,13 @@ class Speaker extends Component {
                 {speakers.length === 0 ? (
                   <h4>Loading...</h4>
                 ) : (
-                  <CardColumns>
+                  <CardDeck>
                     {speakers.map(speaker => {
                       const { name } = speaker;
                       const { image } = speaker;
                       const { tagline } = speaker;
                       return (
-                        <Card>
+                        <Card className="speaker-card">
                           <Card.Img
                             variant="top"
                             className="rounded"
@@ -81,7 +81,7 @@ class Speaker extends Component {
                         </Card>
                       );
                     })}
-                  </CardColumns>
+                  </CardDeck>
                 )}
               </div>
             </Row>

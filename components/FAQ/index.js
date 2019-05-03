@@ -78,7 +78,7 @@ class FAQ extends Component {
             </div>
           </div>
           <br />
-          <div className="row questions">
+          <Container className="questions">
             {sections.map(section => {
               const mid = Math.ceil(section.questions.length / 2);
               const left = section.questions.slice(0, mid);
@@ -91,35 +91,31 @@ class FAQ extends Component {
                   }
                 >
                   <Col md={6}>
-                    <Row>
-                      {left.map(QA => (
-                        <Question
-                          key={QA.question}
-                          question={QA.question}
-                          answer={QA.answer}
-                          show={QA.question === currQuestion}
-                          handleToggle={this.handleToggle}
-                        />
-                      ))}
-                    </Row>
+                    {left.map(QA => (
+                      <Question
+                        key={QA.question}
+                        question={QA.question}
+                        answer={QA.answer}
+                        show={QA.question === currQuestion}
+                        handleToggle={this.handleToggle}
+                      />
+                    ))}
                   </Col>
                   <Col md={6}>
-                    <Row>
-                      {right.map(QA => (
-                        <Question
-                          key={QA.question}
-                          question={QA.question}
-                          answer={QA.answer}
-                          show={QA.question === currQuestion}
-                          handleToggle={this.handleToggle}
-                        />
-                      ))}
-                    </Row>
+                    {right.map(QA => (
+                      <Question
+                        key={QA.question}
+                        question={QA.question}
+                        answer={QA.answer}
+                        show={QA.question === currQuestion}
+                        handleToggle={this.handleToggle}
+                      />
+                    ))}
                   </Col>
                 </Row>
               );
             })}
-          </div>
+          </Container>
         </section>
       </Container>
     );

@@ -13,7 +13,7 @@ const Nav = () => (
       </a>
     </div>
     <div className="right-nav">
-      <div className="social-media-icons">
+      <div className="nav-social-media-icons">
         <a href="https://www.facebook.com/acmrp/">
           <i className="fab fa-facebook-f" />
         </a>

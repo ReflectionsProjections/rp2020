@@ -1,14 +1,13 @@
 import React from 'react';
 
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import './FAQ.scss';
 
 const Question = props => {
   const { question, answer, show, handleToggle } = props;
   return (
-    <Col md={12} className="animated fadeInUp">
+    <div className="animated fadeInUp">
       <Card onClick={() => handleToggle(question)}>
         <Card.Body>
           <Card.Title className="faq-question">
@@ -32,7 +31,7 @@ const Question = props => {
           {show && <Card.Text>{answer}</Card.Text>}
         </Card.Body>
       </Card>
-    </Col>
+    </div>
   );
 };
 export default Question;
