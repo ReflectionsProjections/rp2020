@@ -21,3 +21,9 @@
 #mega-tier {
   padding-bottom: 3em;
 }
+
+.imageView {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

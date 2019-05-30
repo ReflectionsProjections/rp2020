@@ -33,10 +33,10 @@ class SponsorSection extends Component {
 
   render() {
     const { sponsors } = this.state;
-    const tierMB = sponsors.filter(e => e.tier == 'mb');
-    const tierGB = sponsors.filter(e => e.tier == 'gb');
-    const tierTB = sponsors.filter(e => e.tier == 'tb');
     const tierPB = sponsors.filter(e => e.tier == 'pb');
+    const tierTB = sponsors.filter(e => e.tier == 'tb');
+    const tierGB = sponsors.filter(e => e.tier == 'gb');
+    const tierMB = sponsors.filter(e => e.tier == 'mb');
 
     return (
       <Container className="sponsor-section">
@@ -45,21 +45,26 @@ class SponsorSection extends Component {
           <div id="sponsor-tier" className="col-md-6 offset-md-3 text-center">
             <div id="peta-tier">
               <h3>Petabyte</h3>
-              <ImageViewer id="petab" images={tierPB} size={65} />
+              <ImageViewer
+                className="imageView"
+                id="petab"
+                images={tierPB}
+                size={65}
+              />
             </div>
 
             <div id="tera-tier">
-              <h4>Terabyte</h4>
+              <h3>Terabyte</h3>
               <ImageViewer images={tierTB} size={50} />
             </div>
 
             <div id="gig-tier">
-              <h4>Gigabyte</h4>
+              <h3>Gigabyte</h3>
               <ImageViewer images={tierGB} size={40} />
             </div>
 
             <div id="mega-tier">
-              <h4>Megabyte</h4>
+              <h3>Megabyte</h3>
               <ImageViewer images={tierMB} size={30} />
             </div>
           </div>

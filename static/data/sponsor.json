@@ -35,6 +35,12 @@
       "name": "Facebook",
       "image_url": "https://www.hackillinois.org/static/media/Facebook.30b21351.png",
       "tier": "tb"
+    },
+    {
+      "alt": "Facebook Logo",
+      "name": "Facebook",
+      "image_url": "https://www.hackillinois.org/static/media/Facebook.30b21351.png",
+      "tier": "gb"
     }
   ]
 }
