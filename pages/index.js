@@ -11,7 +11,7 @@ import Speaker from '../components/Speaker/index';
 import './index.scss';
 import '../static/stylesheets/animations.scss';
 
-const MetaData = () => (
+const MetaData = (
   <>
     <title>Reflections | Projections 2019</title>
     <meta
