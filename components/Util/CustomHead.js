@@ -1,13 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 
-const CustomHead = () => (
+const CustomHead = ({ metadata }) => (
   <Head>
-    <title>Reflections | Projections 2019</title>
-    <meta
-      name="description"
-      content="Reflections | Projections is a tech conference organized and run by students at the University of Illinois at Urbana-Champaign."
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link
@@ -98,6 +93,7 @@ const CustomHead = () => (
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossOrigin="anonymous"
     />
+    {metadata}
   </Head>
 );
 export default CustomHead;

@@ -11,10 +11,10 @@ class Layout extends Component {
   }
 
   render() {
-    const { children } = this.props;
+    const { children, metadata } = this.props;
     return (
       <div>
-        <CustomHead />
+        <CustomHead metadata={metadata} />
         <div>
           <Nav />
           {children}
