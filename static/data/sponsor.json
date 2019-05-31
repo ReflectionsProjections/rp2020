@@ -1,46 +1,181 @@
 {
-  "sponsors": [
-    {
-      "alt": "Fuclrum Logo",
-      "name": "Fulcrum",
-      "image_url": "https://www.hackillinois.org/static/media/Fulcrum.303a6d78.png",
-      "tier": "tb"
-    },
-    {
-      "alt": "IMC Logo",
-      "name": "IMC",
-      "image_url": "https://www.hackillinois.org/static/media/IMC.4ab9a8e3.png",
-      "tier": "tb"
-    },
-    {
-      "alt": "Optum Logo",
-      "name": "Fulcrum",
-      "image_url": "https://www.hackillinois.org/static/media/Optum.6ebc6fc0.png",
-      "tier": "mb"
-    },
-    {
-      "alt": "Checkbook.io Logo",
-      "name": "Checkbook.io",
-      "image_url": "https://www.hackillinois.org/static/media/Checkbook.14c67106.svg",
-      "tier": "gb"
-    },
-    {
-      "alt": "Google Logo",
-      "name": "Google",
-      "image_url": "https://www.hackillinois.org/static/media/Google.354ec258.png",
-      "tier": "pb"
-    },
-    {
-      "alt": "Facebook Logo",
-      "name": "Facebook",
-      "image_url": "https://www.hackillinois.org/static/media/Facebook.30b21351.png",
-      "tier": "tb"
-    },
-    {
-      "alt": "Facebook Logo",
-      "name": "Facebook",
-      "image_url": "https://www.hackillinois.org/static/media/Facebook.30b21351.png",
-      "tier": "gb"
-    }
-  ]
+  "sponsors": {
+      "tier1": [
+          {
+              "name": "Microsoft",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/petabyte/microsoft_full.png",
+              "website": "https://microsoft.com/"
+          }
+      ],
+      "tier2": [
+          {
+              "name": "IMO Intelligent Medical Objects",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/terabyte/imo_full.png",
+              "website": "https://www.e-imo.com/"
+          }, {
+              "name": "Zillow Group",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/terabyte/zillow_group_full.png",
+              "website": "https://www.zillowgroup.com/"
+          },
+          {
+              "name": "Bayer",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/terabyte/bayer.png",
+              "website": "https://www.bayer.com/"
+          }
+      ],
+      "tier3": [
+          {
+              "name": "Cloudflare",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/gigabyte/cf_placeholder.png",
+              "website": "https://www.cloudflare.com/"
+          }, {
+              "name": "Northern Trust",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/gigabyte/northern_trust.jpg",
+              "website": "https://www.northerntrust.com/"
+          }, {
+              "name": "Salesforce",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/gigabyte/sf_placeholder.png",
+              "website": "https://www.salesforce.com/"
+          }, {
+              "name": "Braintree",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/gigabyte/braintree.png",
+              "website": "http://braintree.com/"
+          }, {
+              "name": "Qualtrics",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/gigabyte/qualtrics_full.png",
+              "website": "https://www.qualtrics.com/"
+          }, {
+              "name": "Quora",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/gigabyte/quora_full.png",
+              "website": "https://www.quora.com/"
+          }, {
+              "name": "Lyft",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/gigabyte/lyft_full.png",
+              "website": "https://www.lyft.com/"
+          }, {
+              "name": "Amazon",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/gigabyte/amazon_full.png",
+              "website": "https://www.amazon.com/"
+          }
+      ],
+      "tier4": [
+          {
+              "name": "Google",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/megabyte/google.png",
+              "website": "https://google.com"
+          }, {
+              "name": "Amobee",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/megabyte/amobee_full.jpeg",
+              "website": "https://www.amobee.com/"
+          }, {
+              "name": "Sandia National Laboratories",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/megabyte/sandia.png",
+              "website": "http://www.sandia.gov/"
+          }, {
+              "name": "PricewaterhouseCoopers",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/megabyte/pwc.jpg",
+              "website": "https://www.pwc.com/"
+          }, {
+              "name": "Granular",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/megabyte/granular.svg",
+              "website": "https://granular.ag/"
+          }, {
+              "name": "MongoDB",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/megabyte/mongodb_full.png",
+              "website": "https://www.mongodb.com/"
+          }, {
+              "name": "Uber",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/megabyte/uber_full.png",
+              "website": "https://www.uber.com/"
+          }, {
+              "name": "Rubrik",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/megabyte/rubrik.png",
+              "website": "https://rubrik.com/"
+          }, {
+              "name": "Riverbed",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/megabyte/riverbed_full.png",
+              "website": "https://www.riverbed.com/"
+          }, {
+              "name": "Facebook",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/megabyte/facebook_full.jpg",
+              "website": "https://www.facebook.com/"
+          }, {
+              "name": "Pinterest",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/megabyte/pinterest_full.jpg",
+              "website": "https://www.pinterest.com/"
+          }, {
+              "name": "Nav Talent",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/megabyte/nav_talent_full.png",
+              "website": "https://navtalent.com/"
+          }, {
+              "name": "Bank of America",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/megabyte/boa_full.jpg",
+              "website": "https://bankofamerica.com/"
+          }, {
+              "name": "Bungie",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/megabyte/bungie.png",
+              "website": "https://bungie.net/"
+          }, {
+              "name": "West Monroe Partners",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/megabyte/wmp.png",
+              "website": "https://westmonroepartners.com/"
+          }, {
+              "name": "Esri",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/megabyte/esri_full.PNG",
+              "website": "https://esri.com/"
+          }, {
+              "name": "Apple",
+              "img": "./assets/img/sponsors/sponsors2018/jobfair/gigabyte/apple.png",
+              "website": "https://www.apple.com/"
+          },
+
+
+          {
+              "name": "DeepScale",
+              "img": "./assets/img/sponsors/sponsors2018/startup/ds_placeholder.png",
+              "website": "http://deepscale.ai/"
+          }, {
+              "name": "Flexport",
+              "img": "./assets/img/sponsors/sponsors2018/startup/fp_placeholder.png",
+              "website": "https://www.flexport.com/"
+          }, {
+              "name": "Ocient",
+              "img": "./assets/img/sponsors/sponsors2018/startup/ocient_full.png",
+              "website": "http://www.ocient.com/"
+          }, {
+              "name": "Polsky Center",
+              "img": "./assets/img/sponsors/sponsors2018/startup/pc_placeholder.png",
+              "website": "https://polsky.uchicago.edu/"
+          }, {
+              "name": "Reconstruct",
+              "img": "./assets/img/sponsors/sponsors2018/startup/reconstruct_full.jpg",
+              "website": "https://www.reconstructinc.com/"
+          }, {
+              "name": "Sentry",
+              "img": "./assets/img/sponsors/sponsors2018/startup/sentry.png",
+              "website": "http://www.sentry.io"
+          }, {
+              "name": "Sift Science",
+              "img": "./assets/img/sponsors/sponsors2018/startup/sift_science_full.png",
+              "website": "https://siftscience.com/"
+          }, {
+              "name": "Samsara",
+              "img": "./assets/img/sponsors/sponsors2018/startup/samsara_full.png",
+              "website": "http://www.samsara.com"
+          }, {
+              "name": "Cruise Automation",
+              "img": "./assets/img/sponsors/sponsors2018/startup/cruise.png",
+              "website": "http://www.getcruise.com"
+          }, {
+              "name": "Confluent",
+              "img": "./assets/img/sponsors/sponsors2018/startup/confluent.png",
+              "website": "http://www.confluent.io"
+          },
+          {
+              "name": "Contrary Capital",
+              "img": "./assets/img/sponsors/sponsors2018/startup/contrary.png",
+              "website": "https://contrarycap.com/"
+          }
+      ]
+  }
 }
