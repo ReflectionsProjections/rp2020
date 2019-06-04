@@ -6,8 +6,8 @@ import Layout from '../components/Util/Layout';
 import CountdownTimer from '../components/CountdownTimer';
 
 import About from '../components/About/index';
+import Speaker from '../components/Speaker';
 import FAQ from '../components/FAQ/index';
-import Speaker from '../components/Speaker/index';
 
 import './index.scss';
 import '../static/stylesheets/animations.scss';

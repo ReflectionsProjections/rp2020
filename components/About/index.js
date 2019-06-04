@@ -24,7 +24,7 @@ const About = () => (
                   held at the University of Illinois at Urbana-Champaign.
                   Inviting premier speakers, influencers, and companies, it
                   features a puzzle competition, speaker events, and a 24 hour
-                  AI hackathon. Reflections|Projections is coming on its 25th
+                  AI hackathon. Reflections | Projections is coming on its 25th
                   anniversary this year, upholding its standards of excellence.
                 </p>
               </div>
@@ -33,12 +33,12 @@ const About = () => (
                 <h3>Our Team</h3>
                 <p>
                   We are students passionate about technology who embody the
-                  diversity and excellence inherit at the University of Illinois
-                  at a Urbana-Champaign. We bring industry and academia into one
-                  conference to incite the spread of novel ideas. We connect
-                  students with professional opportunities. We host a one of a
-                  kind AI hackathon. And, we can&apos;t wait for you to come to
-                  RP 2019!
+                  diversity and excellence inherent at the University of
+                  Illinois at a Urbana-Champaign. We bring industry and academia
+                  into one conference to incite the spread of novel ideas. We
+                  connect students with professional opportunities. We host a
+                  one of a kind AI hackathon. And, we can&apos;t wait for you to
+                  come to R|P 2019!
                 </p>
                 <img
                   className="rounded"
@@ -52,23 +52,6 @@ const About = () => (
           <Col md={4} className="px-lg-3">
             <div>
               <h3>Learn More</h3>
-              <div>
-                <h4>Speakers</h4>
-                <p>
-                  We host speakers from both industry and academia. Check them
-                  out.
-                </p>
-                <Link
-                  activeClass="active"
-                  to="speakers"
-                  spy
-                  smooth="easeInOutQuad"
-                  duration={500}
-                  offset={-80}
-                >
-                  <span className="btn btn-primary">See Speakers</span>
-                </Link>
-              </div>
               <hr />
               <div>
                 <h4>FAQ</h4>

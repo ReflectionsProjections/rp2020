@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+
 import TimelineBlock from './TimelineBlock';
 
 import './Timeline.scss';
