@@ -6,7 +6,6 @@ import Layout from '../components/Util/Layout';
 import CountdownTimer from '../components/CountdownTimer';
 
 import About from '../components/About/index';
-import Speaker from '../components/Speaker';
 import FAQ from '../components/FAQ/index';
 
 import './index.scss';
@@ -66,9 +65,6 @@ const Index = () => (
 
       <Element name="about">
         <About />
-      </Element>
-      <Element name="speakers">
-        <Speaker />
       </Element>
       <Element name="faq">
         <FAQ />
