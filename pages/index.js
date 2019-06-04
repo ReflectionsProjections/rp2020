@@ -22,13 +22,19 @@ const Index = () => (
       <meta property="og:title" content="Reflections | Projections 2019" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="http://reflectionsprojections.org/" />
-      <meta property="og:image" content="/static/assets/facebook2.png" />
+      <meta
+        property="og:image"
+        content="http://reflectionsprojections.org/static/assets/facebook2.png"
+      />
       <meta name="twitter:title" content="Reflections | Projections 2019" />
       <meta
         name="twitter:description"
         content="Reflections | Projections is a tech conference organized and run by students at the University of Illinois at Urbana-Champaign."
       />
-      <meta name="twitter:image" content="/static/assets/twitter1.png" />
+      <meta
+        name="twitter:image"
+        content="http://reflectionsprojections.org/static/assets/twitter1.png"
+      />
       <meta name="twitter:site" content="@uiuc_rp" />
       <meta name="twitter:creator" content="@uiuc_rp" />
     </Head>
