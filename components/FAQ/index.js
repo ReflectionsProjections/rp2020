@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 
 import Dropdown from 'react-bootstrap/Dropdown';
 import Container from 'react-bootstrap/Container';
@@ -8,20 +7,17 @@ import Col from 'react-bootstrap/Col';
 
 import Question from './Question';
 
-import './FAQ.scss';
+import styles from './FAQ.scss';
 
 class FAQ extends Component {
-  state = {
-    sections: [],
-    currSection: 'General',
-    currQuestion: ''
-  };
-
-  componentDidMount() {
-    axios.get('/static/data/faq.json').then(res => {
-      const { sections } = res.data;
-      this.setState({ sections });
-    });
+  constructor(props) {
+    super(props);
+    const { faqData } = this.props;
+    this.state = {
+      sections: faqData.sections,
+      currSection: 'General',
+      currQuestion: ''
+    };
   }
 
   handleToggle = question => {
@@ -43,9 +39,12 @@ class FAQ extends Component {
     const { sections, currSection, currQuestion } = this.state;
     return (
       <Container>
-        <section className="faq-section">
+        <section className={styles.faqSection}>
           <h2 className="text-center section-header">FAQs</h2>
-          <div id="faq-prompt" className="col-md-6 offset-md-3 text-center">
+          <Col
+            md={{ span: 6, offset: 3 }}
+            className={`text-center ${styles.faqPrompt}`}
+          >
             <h3>What can we help you with?</h3>
             <div className="mx-auto">
               <Dropdown>
@@ -53,6 +52,7 @@ class FAQ extends Component {
                   size="lg"
                   variant="secondary"
                   id="faq-dropdown"
+                  className={styles.faqDropdown}
                 >
                   {currSection}
                 </Dropdown.Toggle>
@@ -76,9 +76,9 @@ class FAQ extends Component {
                 </Dropdown.Menu>
               </Dropdown>
             </div>
-          </div>
+          </Col>
           <br />
-          <Container className="questions">
+          <Container>
             {sections.map(section => {
               const mid = Math.ceil(section.questions.length / 2);
               const left = section.questions.slice(0, mid);

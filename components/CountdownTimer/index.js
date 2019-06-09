@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 
-import './CountdownTimer.scss';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+import styles from './CountdownTimer.scss';
 
 const RP_STARTDATE = '16 SEP 2019';
 const FORMAT = 'DD MMM YYYY';
@@ -42,34 +46,39 @@ class CountdownTimer extends Component {
     return (
       <div>
         {duration !== undefined ? (
-          <div className="countdown-timer animated fadeInUp container-fluid text-white">
-            <div className="mx-auto row text-center col-md-7 col-lg-5 col-xl-4">
-              <div className="col">
-                <p>{duration.months()}</p>
-                <span>Months</span>
-              </div>
-              <div className="col">
-                <p>{duration.days()}</p>
-                <span>Days</span>
-              </div>
-              <div className="col">
-                <p>{duration.hours()}</p>
-                <span>Hours</span>
-              </div>
-              <div className="col">
-                <p>{duration.minutes()}</p>
-                <span>Minutes</span>
-              </div>
-              <div className="col">
-                <p>{duration.seconds()}</p>
-                <span>Seconds</span>
-              </div>
-            </div>
-          </div>
+          <Container
+            fluid
+            className={`animated fadeInUp text-white ${styles.countdownTimer}`}
+          >
+            <Col md={7} lg={5} xl={4} className="mx-auto text-center">
+              <Row>
+                <Col>
+                  <p>{duration.months()}</p>
+                  <span>Months</span>
+                </Col>
+                <Col>
+                  <p>{duration.days()}</p>
+                  <span>Days</span>
+                </Col>
+                <Col>
+                  <p>{duration.hours()}</p>
+                  <span>Hours</span>
+                </Col>
+                <Col>
+                  <p>{duration.minutes()}</p>
+                  <span>Minutes</span>
+                </Col>
+                <Col>
+                  <p>{duration.seconds()}</p>
+                  <span>Seconds</span>
+                </Col>
+              </Row>
+            </Col>
+          </Container>
         ) : (
-          <div className="col-md-6 offset-md-3 text-center">
+          <Col md={{ span: 6, offset: 3 }} className="text-center">
             <p />
-          </div>
+          </Col>
         )}
       </div>
     );

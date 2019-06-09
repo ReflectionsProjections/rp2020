@@ -4,67 +4,67 @@
   position: fixed;
   z-index: 10;
 }
-.left-nav {
+.leftNav {
   position: absolute;
   left: 1em;
 }
-.right-nav {
+.rightNav {
   position: absolute;
   right: 1em;
   font-size: 1.3em;
 }
-.nav-social-media-icons {
+.navSocialMediaIcons {
   display: none;
 }
-.nav-social-media-icons i {
+.navSocialMediaIcons i {
   margin-right: 2em;
   color: #7552cc;
 }
-.nav-social-media-icons i:hover {
+.navSocialMediaIcons i:hover {
   color: #ecd7ff;
 }
 
-#btn-register {
+.btnRegister {
   color: white;
   border: none;
   background-color: #7552cc;
   border-color: #7552cc;
   font-weight: 600;
 }
-#btn-register-text {
+.btnRegisterText {
   height: 1.8em;
   line-height: 1.8em;
   padding: 0 1em;
   font-size: 0.8em;
   text-align: center;
 }
-#btn-register:hover {
+.btnRegister:hover {
   background-color: #ecd7ff;
   color: #7552cc;
 }
 
-.bg-blue {
+.bgBlue {
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 6px 22px -9px rgba(0, 0, 0, 0.75);
 }
 
-.navbar-logo {
+.navbarLogo {
   display: inline-block;
   width: 3em;
   height: 3em;
 }
 
 @media (min-width: 576px) {
-  .left-nav {
+  .leftNav {
     left: 2em;
   }
-  .right-nav {
+  .rightNav {
     right: 2em;
   }
 }
 
 @media (min-width: 992px) {
-  .nav-social-media-icons {
+  .navSocialMediaIcons {
     display: inline-block;
   }
   .navbar-logo {
