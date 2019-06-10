@@ -2,17 +2,18 @@ import React from 'react';
 import Head from 'next/head';
 import SVG from 'react-inlinesvg';
 import { Link, Element } from 'react-scroll';
+import axios from 'axios';
+
 import Layout from '../components/Util/Layout';
 import CountdownTimer from '../components/CountdownTimer';
-
 import About from '../components/About/index';
 import Speaker from '../components/Speaker';
 import FAQ from '../components/FAQ/index';
 
-import './index.scss';
+import styles from './index.scss';
 import '../static/stylesheets/animations.scss';
 
-const Index = () => (
+const Index = ({ speakerSection, faqSection }) => (
   <>
     <Head>
       <title>Reflections | Projections 2019</title>
@@ -36,13 +37,15 @@ const Index = () => (
     <Layout>
       <main className="landing">
         <div className="container">
-          <div className="lead-content text-white text-center">
+          <div className={`text-white text-center ${styles.leadContent}`}>
             <SVG
-              className="img-fluid wordmark animated fadeIn"
+              className={`img-fluid animated fadeIn ${styles.wordmark}`}
               src="/static/assets/wordmarkblack.svg"
             />
-            <h2 className="event-date animated fadeIn">Sept 16 - 21</h2>
-            <h6 className="animated fadeInUp" id="tagline">
+            <h2 className={`animated fadeIn ${styles.eventDate}`}>
+              Sept 16 - 21
+            </h2>
+            <h6 className={`animated fadeInUp ${styles.tagline}`}>
               Celebrating 25 Years
             </h6>
             <div>
@@ -57,8 +60,8 @@ const Index = () => (
             duration={500}
             offset={-80}
           >
-            <span className="scroll-down">
-              <span className="scroll-down-text">See More</span>
+            <span className={styles.scrollDown}>
+              <span className={styles.scrollDownText}>See More</span>
             </span>
           </Link>
         </div>
@@ -68,17 +71,20 @@ const Index = () => (
         <About />
       </Element>
       <Element name="speakers">
-        <Speaker />
+        <Speaker speakers={speakerSection.list} />
       </Element>
       <Element name="faq">
-        <FAQ />
+        <FAQ faqData={faqSection} />
       </Element>
+
       <footer>
-        <div className="text-white text-center footer-text animated fadeIn">
-          <p id="organized">
+        <div
+          className={`text-white text-center animated fadeIn ${styles.footerText}`}
+        >
+          <p className={styles.organized}>
             Organized by <a href="https://acm.illinois.edu/">ACM@UIUC</a>
           </p>
-          <p id="contact">
+          <p className={styles.contact}>
             Questions? Interested in sponsoring? Email us at{' '}
             <a href="mailto:contact@reflectionsprojections.org">
               contact@reflectionsprojections.org
@@ -89,4 +95,17 @@ const Index = () => (
     </Layout>
   </>
 );
+
+Index.getInitialProps = async ({ req }) => {
+  if (req) {
+    const prefix =
+      process.env.NODE_ENV === 'production'
+        ? 'http://acmrp.org'
+        : 'http://localhost:3000';
+    const res = await axios.get(`${prefix}/static/rp2019.json`);
+    return res.data;
+  }
+  return {};
+};
+
 export default Index;

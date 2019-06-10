@@ -6,11 +6,11 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import './about.scss';
+import styles from './about.scss';
 
 const About = () => (
   <Container>
-    <section className="about-section">
+    <section className={styles.aboutSection}>
       <Container>
         <h2 className="text-center section-header">About</h2>
         <br />
@@ -71,7 +71,7 @@ const About = () => (
               <div>
                 <h4>Social Media</h4>
                 <p>Follow us to stay updated!</p>
-                <div className="social-media-icons">
+                <div className={styles.socialMediaIcons}>
                   <a href="https://www.facebook.com/acmrp/">
                     <i className="fab fa-facebook-f" />
                   </a>

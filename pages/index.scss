@@ -1,5 +1,5 @@
 /* Landing Styles */
-.lead-content {
+.leadContent {
   padding-top: 20vh;
 }
 
@@ -10,7 +10,7 @@
   margin: 0.1em auto;
   fill: white;
 }
-.event-date {
+.eventDate {
   margin: 10px auto;
   margin-top: 1.3em;
   font-family: 'Roboto Slab';
@@ -18,7 +18,7 @@
   font-size: 1.6em;
 }
 
-#tagline {
+.tagline {
   margin: 10px auto;
   font-weight: 100;
   font-size: 0.8em;
@@ -30,20 +30,20 @@ footer {
   padding: 2em;
   padding-top: 5em;
 }
-.footer-text {
+.footerText {
   margin: 0 auto;
   font-weight: 200;
   font-size: 0.8em;
 }
-.footer-text p {
+.footerText p {
   margin: 0 auto;
 }
-#organized {
+.organized {
   font-size: 0.85em;
   margin: 10px auto;
   font-weight: 400;
 }
-#contact {
+.contact {
   font-size: 0.7em;
 }
 
@@ -52,25 +52,57 @@ footer {
     width: 30em;
     height: 6em;
   }
-  .event-date {
+  .eventDate {
     font-size: 1.9em;
   }
-  #tagline {
+  .tagline {
     font-size: 0.8em;
   }
-  .footer-text {
+  .footerText {
     font-size: 1em;
   }
 }
 
+@media (min-width: 992px) {
+  .eventDate {
+    font-size: 2.1em;
+    margin-top: 2em;
+  }
+  .wordmark {
+    width: 35em;
+    height: 6em;
+  }
+  .tagline {
+    font-size: 1.1em;
+  }
+}
+
+@media all and (min-width: 992px) and (max-height: 550px) {
+  .eventDate {
+    display: none;
+  }
+  .tagline {
+    display: none;
+  }
+}
+
+@media all and (max-height: 450px) {
+  .eventDate {
+    display: none;
+  }
+  .tagline {
+    display: none;
+  }
+}
+
 /*  Scroll Down Button */
-.scroll-down {
+.scrollDown {
   opacity: 1;
   -webkit-transition: all 0.5s ease-in 3s;
   transition: all 0.5s ease-in 3s;
 }
 
-.scroll-down-text {
+.scrollDownText {
   position: absolute;
   bottom: 25px;
   text-align: center;
@@ -78,7 +110,7 @@ footer {
   color: white;
   left: -34px;
 }
-.scroll-down {
+.scrollDown {
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -96,7 +128,7 @@ footer {
   transition: all 0.2s ease-in;
 }
 
-.scroll-down:before {
+.scrollDown:before {
   position: absolute;
   top: calc(50% - 8px);
   left: calc(50% - 6px);
@@ -128,37 +160,5 @@ footer {
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
-  }
-}
-
-@media (min-width: 992px) {
-  .event-date {
-    font-size: 2.1em;
-    margin-top: 2em;
-  }
-  .wordmark {
-    width: 35em;
-    height: 6em;
-  }
-  #tagline {
-    font-size: 1.1em;
-  }
-}
-
-@media all and (min-width: 992px) and (max-height: 550px) {
-  .event-date {
-    display: none;
-  }
-  #tagline {
-    display: none;
-  }
-}
-
-@media all and (max-height: 450px) {
-  .event-date {
-    display: none;
-  }
-  #tagline {
-    display: none;
   }
 }

@@ -1,39 +1,46 @@
 import React from 'react';
-import './Nav.scss';
+import Link from 'next/link';
+import classNames from 'classnames';
+
+import Navbar from 'react-bootstrap/Navbar';
+
+import NavButton from './components/NavButton';
+import NavSocialMediaIcon from './components/NavSocialMediaIcon';
+
+import styles from './Nav.scss';
 
 const Nav = () => (
-  <nav className="navbar bg-blue" id="rp-nav">
-    <div className="left-nav">
-      <a href="/">
+  <Navbar className={classNames(styles.navbar, styles.bgBlue)}>
+    <Navbar.Brand className={styles.leftNav}>
+      <Link href="/">
         <img
           alt="Reflections Projections 2019 Logo"
-          className="navbar-logo"
+          className={styles.navbarLogo}
           src="/static/assets/2019logo.svg"
         />
-      </a>
-    </div>
-    <div className="right-nav">
-      <div className="nav-social-media-icons">
-        <a href="https://www.facebook.com/acmrp/">
-          <i className="fab fa-facebook-f" />
-        </a>
-        <a href="https://www.instagram.com/uiuc_rp/">
-          <i className="fab fa-instagram" />
-        </a>
-        <a href="https://twitter.com/uiuc_rp?lang=en">
-          <i className="fab fa-twitter" />
-        </a>
+      </Link>
+    </Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse>
+      <div className={styles.rightNav}>
+        <div className={styles.navSocialMediaIcons}>
+          <NavSocialMediaIcon
+            link="https://www.facebook.com/acmrp/"
+            icon="fa-facebook-f"
+          />
+          <NavSocialMediaIcon
+            link="https://www.instagram.com/uiuc_rp/"
+            icon="fa-instagram"
+          />
+          <NavSocialMediaIcon
+            link="https://twitter.com/uiuc_rp?lang=en"
+            icon="fa-twitter"
+          />
+        </div>
+        <NavButton />
       </div>
-
-      <a
-        className="btn nav-item"
-        id="btn-register"
-        href="https://acmrp.typeform.com/to/a05uAe"
-      >
-        <div id="btn-register-text">Get Updates</div>
-      </a>
-    </div>
-  </nav>
+    </Navbar.Collapse>
+  </Navbar>
 );
 
 export default Nav;
