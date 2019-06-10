@@ -1,38 +1,23 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React from 'react';
+
+import Container from 'react-bootstrap/Container';
 
 import TimelineBlock from './TimelineBlock';
 
-import './Timeline.scss';
+import styles from './Timeline.scss';
 
-class Timeline extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      events: undefined
-    };
-  }
-
-  componentDidMount() {
-    axios.get('/static/data/timeline.json').then(response => {
-      this.setState({
-        events: response.data
-      });
-    });
-  }
-
-  render() {
-    const { events } = this.state;
-    if (!events) {
-      return <div>Loading</div>;
-    }
-    return (
-      <div className="timeline-container">
-        {events.map(event => (
-          <TimelineBlock key={event.content} event={event} />
-        ))}
-      </div>
-    );
-  }
-}
+const Timeline = ({ events }) => (
+  <Container className={styles.section}>
+    <section>
+      <Container>
+        <h2 className="text-center section-header">Timeline</h2>
+        <div className={styles['timeline-container']}>
+          {events.map(event => (
+            <TimelineBlock key={event.content} event={event} />
+          ))}
+        </div>
+      </Container>
+    </section>
+  </Container>
+);
 export default Timeline;

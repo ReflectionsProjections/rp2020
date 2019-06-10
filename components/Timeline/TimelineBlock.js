@@ -1,42 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-import './TimelineBlock.scss';
+import styles from './TimelineBlock.scss';
 
-class TimelineBlock extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  componentDidMount() {
-    const { event } = this.props;
-    this.setState({
-      title: event.title,
-      date: event.date,
-      content: event.content,
-      background: event.background
-    });
-  }
-
-  render() {
-    const { title, date, content, background } = this.state;
-    return (
-      <div className="timeline-block">
-        <div className="timeline-block-content">
-          <h1 className="timeline-block-title">{title}</h1>
-          <h3 className="timeline-block-date">{date}</h3>
-          <p className="timeline-block-content">{content}</p>
-          <img
-            className="timeline-block-img"
-            src={background}
-            alt="background"
-          />
-        </div>
-      </div>
-    );
-  }
-}
+const TimelineBlock = ({ event: { date, title, content } }) => (
+  <div className={styles.timelineBlock}>
+    <h3 className={styles.date}>{date}</h3>
+    <div className={styles.content}>
+      <h1 className={styles.title}>{title}</h1>
+      <p className={styles.description}>{content}</p>
+    </div>
+  </div>
+);
 
 TimelineBlock.defaultProps = {
   event: PropTypes.shape({
