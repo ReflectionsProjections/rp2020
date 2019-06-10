@@ -22,9 +22,7 @@ const Question = props => {
               </div>
             </Row>
             <div
-              className={`d-block d-md-none text-center ${
-                styles.questionCardMobile
-              }`}
+              className={`d-block d-md-none text-center ${styles.questionCardMobile}`}
             >
               <p>{question}</p>
               <p>

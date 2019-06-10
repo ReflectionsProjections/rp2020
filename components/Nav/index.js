@@ -2,8 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 import classNames from 'classnames';
 
-import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
+
+import NavButton from './components/NavButton';
+import NavSocialMediaIcon from './components/NavSocialMediaIcon';
 
 import styles from './Nav.scss';
 
@@ -22,39 +24,20 @@ const Nav = () => (
     <Navbar.Collapse>
       <div className={styles.rightNav}>
         <div className={styles.navSocialMediaIcons}>
-          <a
-            href="https://www.facebook.com/acmrp/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-facebook-f" />
-          </a>
-          <a
-            href="https://www.instagram.com/uiuc_rp/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-instagram" />
-          </a>
-          <a
-            href="https://twitter.com/uiuc_rp?lang=en"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-twitter" />
-          </a>
+          <NavSocialMediaIcon
+            link="https://www.facebook.com/acmrp/"
+            icon="fa-facebook-f"
+          />
+          <NavSocialMediaIcon
+            link="https://www.instagram.com/uiuc_rp/"
+            icon="fa-instagram"
+          />
+          <NavSocialMediaIcon
+            link="https://twitter.com/uiuc_rp?lang=en"
+            icon="fa-twitter"
+          />
         </div>
-
-        <a
-          className={`nav-item ${styles.btnRegister}`}
-          href="https://acmrp.typeform.com/to/a05uAe"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button>
-            <div className={styles.btnRegisterText}>Get Updates</div>
-          </Button>
-        </a>
+        <NavButton />
       </div>
     </Navbar.Collapse>
   </Navbar>
