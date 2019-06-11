@@ -2,28 +2,97 @@
   "timelineSection": {
     "events": [
       {
-        "title": "First Milestone",
-        "date": "January 01, 2019",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec condimentum ex. Vivamus arcu nibh, eleifend vitae diam non, tincidunt dictum felis. Morbi et sodales velit.",
-        "background": "static/assets/timeline/bg_image_1.jpg"
+        "date": "1995",
+        "content": ["Steve Wozniak is the first keynote speaker"]
       },
       {
-        "title": "Second Milestone",
-        "date": "January 02, 2019",
-        "content": "Mauris venenatis vehicula nisl, eget volutpat risus. Vestibulum sit amet tristique sapien. Sed iaculis elementum suscipit. Integer nec mattis felis, sit amet pharetra arcu. Proin gravida posuere aliquet. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas maximus orci purus. Vestibulum accumsan metus non accumsan suscipit.",
-        "background": "static/assets/timeline/bg_image_2.jpg"
+        "date": "1996",
+        "content": [
+          "Adopted the “reflections, projections” theme",
+          "Sponsors included AMD, Boeing, Intel, Citrix Systems"
+        ]
       },
       {
-        "title": "Third Milestone",
-        "date": "January 03, 2019",
-        "content": "Morbi fermentum iaculis justo elementum sodales. Duis tincidunt, diam quis lobortis placerat, lacus nisi venenatis est, et interdum eros nunc non ipsum. Praesent in pulvinar urna. In urna augue, condimentum in tristique a, vehicula et lorem. Ut semper, libero condimentum vulputate tempor, ex purus vulputate leo, a rutrum odio eros in ex. Sed dignissim lacinia mauris.",
-        "background": "static/assets/timeline/bg_image_3.jpg"
+        "date": "1997",
+        "content": ["Had talks about OpenGL, web commerce, and Y2K"]
       },
       {
-        "title": "Fourth Milestone",
-        "date": "January 04, 2019",
-        "content": "Quisque nibh nisi, tincidunt vitae odio ut, bibendum vehicula neque. Sed at ante ac eros vulputate facilisis quis eget ipsum. Nulla commodo eget sem a euismod. Maecenas convallis dolor nec porta tincidunt. ",
-        "background": "static/assets/timeline/bg_image_4.jpg"
+        "date": "1998",
+        "content": ["Official adoption of the name “Reflections | Projections”"]
+      },
+      {
+        "date": "1999",
+        "content": [
+          "Took on the title of National Student ACM Conference, reaching 350 students from 12 universities, and over 45 corporate sponsors"
+        ]
+      },
+      {
+        "date": "2001",
+        "content": [
+          "Keynote talk by Fred Brooks",
+          "General talks by John Draper and Alexy Pajitnov",
+          "Included workshops on Windows and Perl"
+        ]
+      },
+      {
+        "date": "2002",
+        "content": [
+          "Included a PGP key signing party",
+          "Talks by Michael Hatt, Ian Murdock, Marcus Brinkmann, Hal Berghel",
+          "Additional sponsors included Microsoft, Abbott Laboratories, and Argonne National Laboratory"
+        ]
+      },
+      {
+        "date": "2003",
+        "content": [
+          "The year of cryptography, security, and multimedia",
+          "Talk by ACM national lecturer Barbara Simons on computerized and Internet voting",
+          "Had a creative portion, where undergraduates were invited to submit research projects or ideas to present as posters. The projects included open-source development, independent study, & semester group projects."
+        ]
+      },
+      {
+        "date": "2004",
+        "content": [
+          "Speakers included Jimmy Wales, Thomas Cormen, and Owen Astracham"
+        ]
+      },
+      {
+        "date": "2006",
+        "content": [
+          "Increased corporate sponsors; talks from Jawed Karim (co-founder of YouTube), Max Levchin (co-founder of PayPal)"
+        ]
+      },
+      {
+        "date": "2007",
+        "content": ["Theme change"]
+      },
+      {
+        "date": "2008",
+        "content": [
+          "Heavy corporate expansion, with sponsors including Bloomberg, Caterpillar Inc., Cerner, Citadel LLC, Facebook, Intel, Microsoft, Navteq, Northrop Grumman, the NSA, Nvidia, Raytheon, Sun Microsystems, SpaceX, VMware, Yahoo and others"
+        ]
+      },
+      {
+        "date": "2012",
+        "content": ["Beginning of the startup fair"]
+      },
+      {
+        "date": "2014",
+        "content": [
+          "Broke previous attendance records, bringing in nearly 2000 attendees"
+        ]
+      },
+      {
+        "date": "2015",
+        "content": ["A year of innovation, entrepreneurship, and brilliance"]
+      },
+      {
+        "date": "2016",
+        "content": ["Introduction of MechMania"]
+      },
+      {
+        "date": "2018",
+        "content": ["Reintroduction of the ACM Symposium"]
       }
     ]
   },

@@ -1,0 +1,30 @@
+@import 'static/stylesheets/variables.scss';
+
+.timelineBlock {
+  position: relative;
+  padding: 1em 0;
+  width: 100%;
+  &::after {
+    /* circle thing on line */
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: calc(20%);
+    background-color: white;
+    border: 3px solid $slate-blue;
+    top: 20px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
+
+.date {
+  font-family: 'Roboto Slab';
+}
+
+.content {
+}
+
+.list {
+}

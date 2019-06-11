@@ -1,23 +1,27 @@
 import React from 'react';
 
-import Container from 'react-bootstrap/Container';
+import Section from '../Util/Section';
 
-import TimelineBlock from './TimelineBlock';
+import TimelineBlock from './components/TimelineBlock';
 
 import styles from './Timeline.scss';
 
 const Timeline = ({ events }) => (
-  <Container className={styles.section}>
-    <section>
-      <Container>
-        <h2 className="text-center section-header">Timeline</h2>
-        <div className={styles['timeline-container']}>
+  <div className={styles.topPadding}>
+    <Section>
+      <Section.Title>Timeline</Section.Title>
+      <Section.Subtitle>
+        Celebrating 25 Years of <wbr />
+        Reflections | Projections
+      </Section.Subtitle>
+      <Section.Body>
+        <div className={styles.timelineContainer}>
           {events.map(event => (
             <TimelineBlock key={event.content} event={event} />
           ))}
         </div>
-      </Container>
-    </section>
-  </Container>
+      </Section.Body>
+    </Section>
+  </div>
 );
 export default Timeline;
