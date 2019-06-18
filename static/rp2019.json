@@ -99,19 +99,19 @@
   "speakerSection": {
     "list": [
       {
-        "name": "Craig Mohan",
-        "tagline": "VP Data @ CME Group",
-        "image": "/static/img/speakers/CraigMohan.jpeg"
+        "name": "Forrest Iandola",
+        "tagline": "CEO DeepScale",
+        "image": "/static/img/speakers-temp/ForrestIandola.png"
       },
       {
-        "name": "Shashank BK",
-        "tagline": "VP Global Data @ IBM",
-        "image": "/static/img/speakers/ShashankBK.jpeg"
+        "name": "Jennison Asuncion",
+        "tagline": "Acessibility Engineering Manager @ LinkedIn",
+        "image": "/static/img/speakers-temp/JennisonAsuncion.png"
       },
       {
         "name": "Donald Kossman",
         "tagline": "Director of Microsoft Research in Redmond",
-        "image": "/static/img/speakers/DonaldKossman.jpeg"
+        "image": "/static/img/speakers-temp/DonaldKossman.png"
       }
     ]
   },
