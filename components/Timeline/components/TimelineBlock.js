@@ -8,13 +8,25 @@ import styles from './TimelineBlock.scss';
 
 const TimelineBlock = ({ event: { date, content } }) => (
   <Row className={styles.timelineBlock}>
-    <Col md={2} className="text-md-right">
+    <Col
+      xs={{ span: 10, offset: 2 }}
+      sm={{ span: 10, offset: 2 }}
+      md={{ span: 10, offset: 2 }}
+      lg={{ span: 2, offset: 0 }}
+      className="text-lg-right"
+    >
       <h3 className={styles.date}>{date}</h3>
     </Col>
-    <Col md={{ md: 9, offset: 1 }} className={styles.content}>
+    <Col
+      xs={{ span: 10, offset: 2 }}
+      sm={{ span: 10, offset: 2 }}
+      md={{ span: 10, offset: 2 }}
+      lg={{ span: 9, offset: 1 }}
+      className={styles.content}
+    >
       <ul className={styles.list}>
         {content.map(item => (
-          <li>{item}</li>
+          <li className={styles.timelineItem}>{item}</li>
         ))}
       </ul>
     </Col>

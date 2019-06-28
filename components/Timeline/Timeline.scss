@@ -15,7 +15,8 @@
 .timelineContainer {
   position: relative;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0;
+  padding: none;
   &::after {
     // this is the timeline vertical line
     content: '';
@@ -24,7 +25,15 @@
     background-color: $slate-blue;
     top: 20px;
     bottom: 0;
-    left: 20%;
+    left: 5%;
     margin-left: -3px;
+
+    @media (min-width: 768px) {
+      left: 10%;
+    }
+
+    @media (min-width: 992px) {
+      left: 20%;
+    }
   }
 }

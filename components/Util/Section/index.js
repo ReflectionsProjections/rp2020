@@ -7,7 +7,7 @@ import styles from './Section.scss';
 
 const Section = ({ children }) => (
   <Container>
-    <section>
+    <section className={styles.section}>
       <Container>{children}</Container>
     </section>
   </Container>

@@ -3,42 +3,48 @@
     "events": [
       {
         "date": "1995",
-        "content": ["Steve Wozniak is the first keynote speaker"]
+        "content": [
+          "Featured Steve Wozniak, co-founder of Apple Inc., as the conference's first keynote speaker."
+        ]
       },
       {
         "date": "1996",
         "content": [
-          "Adopted the “reflections, projections” theme",
-          "Sponsors included AMD, Boeing, Intel, Citrix Systems"
+          "Adopted the “Reflections | Projections” theme.",
+          "Sponsors included AMD, Boeing, Intel, Citrix Systems."
         ]
       },
       {
         "date": "1997",
-        "content": ["Had talks about OpenGL, web commerce, and Y2K"]
+        "content": [
+          "Our conference included talks about OpenGL, web commerce, and Y2K. OpenGL, a cross-language, cross-platform API for 2D and 3D vector graphics rendering, continues to be the an industry standard for high performance graphics."
+        ]
       },
       {
         "date": "1998",
-        "content": ["Official adoption of the name “Reflections | Projections”"]
+        "content": [
+          "Official adoption of the name “Reflections | Projections”."
+        ]
       },
       {
         "date": "1999",
         "content": [
-          "Took on the title of National Student ACM Conference, reaching 350 students from 12 universities, and over 45 corporate sponsors"
+          "Took on the title of National Student ACM Conference, reaching 350 students from 12 universities, and over 45 corporate sponsors."
         ]
       },
       {
         "date": "2001",
         "content": [
-          "Keynote talk by Fred Brooks",
-          "General talks by John Draper and Alexy Pajitnov",
-          "Included workshops on Windows and Perl"
+          "Keynote talk by Fred Brooks, known for heading developing of IBM System/360 family of computers and OS/360 software support package. Two years prior to speaking at R|P 2001, Brooks received the Turing Award.",
+          "General talks by John Draper and Alexy Pajitnov. Draper was a widely known figure in the hacker community who, among other things, exposed a vulnerability in the AT&T network using a toy whistle packaged in boxes of Cap'n Crunch cereal. Pajitnov created Tetris.",
+          "Included workshops on Windows and Perl."
         ]
       },
       {
         "date": "2002",
         "content": [
-          "Included a PGP key signing party",
-          "Talks by Michael Hatt, Ian Murdock, Marcus Brinkmann, Hal Berghel",
+          "Included a PGP key signing party.",
+          "Talks by Michael Hatt, Ian Murdock, Marcus Brinkmann, and Hal Berghel",
           "Additional sponsors included Microsoft, Abbott Laboratories, and Argonne National Laboratory"
         ]
       },
@@ -59,40 +65,44 @@
       {
         "date": "2006",
         "content": [
-          "Increased corporate sponsors; talks from Jawed Karim (co-founder of YouTube), Max Levchin (co-founder of PayPal)"
+          "Featured talks from Jawed Karim, co-founder of YouTube, and Max Levchin, co-founder of PayPal."
         ]
       },
       {
         "date": "2007",
-        "content": ["Theme change"]
+        "content": ["Theme change."]
       },
       {
         "date": "2008",
         "content": [
-          "Heavy corporate expansion, with sponsors including Bloomberg, Caterpillar Inc., Cerner, Citadel LLC, Facebook, Intel, Microsoft, Navteq, Northrop Grumman, the NSA, Nvidia, Raytheon, Sun Microsystems, SpaceX, VMware, Yahoo and others"
+          "Heavily expanded corporate presence at the conference. Sponsors included Bloomberg, Caterpillar Inc., Cerner, Citadel LLC, Facebook, Intel, Microsoft, Navteq, Northrop Grumman, the NSA, Nvidia, Raytheon, Sun Microsystems, SpaceX, VMware, Yahoo and others"
         ]
       },
       {
         "date": "2012",
-        "content": ["Beginning of the startup fair"]
+        "content": ["Beginning of the Startup Fair."]
       },
       {
         "date": "2014",
         "content": [
-          "Broke previous attendance records, bringing in nearly 2000 attendees"
+          "Broke previous attendance records, hosting nearly 2000 attendees."
         ]
       },
       {
         "date": "2015",
-        "content": ["A year of innovation, entrepreneurship, and brilliance"]
+        "content": ["A year of innovation, entrepreneurship, and brilliance."]
       },
       {
         "date": "2016",
-        "content": ["Introduction of MechMania"]
+        "content": [
+          "Introduction of MechMania, a 24-hour Game AI hackathon competition. Students competed to create AI to play a modified version of Rock, Paper, and Scissors."
+        ]
       },
       {
         "date": "2018",
-        "content": ["Reintroduction of the ACM Symposium"]
+        "content": [
+          "Reintroduction of the ACM Symposium, a showcase of projects and research by the UIUC computer science community."
+        ]
       }
     ]
   },
