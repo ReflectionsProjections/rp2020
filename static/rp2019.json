@@ -109,19 +109,22 @@
   "speakerSection": {
     "list": [
       {
-        "name": "Craig Mohan",
-        "tagline": "VP Data @ CME Group",
-        "image": "/static/img/speakers/CraigMohan.jpeg"
+        "name": "Forrest Iandola",
+        "tagline": "CEO DeepScale",
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image": "/static/img/speakers-temp/ForrestIandola.png"
       },
       {
-        "name": "Shashank BK",
-        "tagline": "VP Global Data @ IBM",
-        "image": "/static/img/speakers/ShashankBK.jpeg"
+        "name": "Jennison Asuncion",
+        "tagline": "Acessibility Engineering Manager @ LinkedIn",
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image": "/static/img/speakers-temp/JennisonAsuncion.png"
       },
       {
         "name": "Donald Kossman",
         "tagline": "Director of Microsoft Research in Redmond",
-        "image": "/static/img/speakers/DonaldKossman.jpeg"
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image": "/static/img/speakers-temp/DonaldKossman.png"
       }
     ]
   },

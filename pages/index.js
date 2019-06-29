@@ -96,16 +96,13 @@ const Index = ({ speakerSection, faqSection }) => (
   </>
 );
 
-Index.getInitialProps = async ({ req }) => {
-  if (req) {
-    const prefix =
-      process.env.NODE_ENV === 'production'
-        ? 'http://acmrp.org'
-        : 'http://localhost:3000';
-    const res = await axios.get(`${prefix}/static/rp2019.json`);
-    return res.data;
-  }
-  return {};
+Index.getInitialProps = async () => {
+  const prefix =
+    process.env.NODE_ENV === 'production'
+      ? 'http://acmrp.org'
+      : 'http://localhost:3000';
+  const res = await axios.get(`${prefix}/static/rp2019.json`);
+  return res.data;
 };
 
 export default Index;
