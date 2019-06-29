@@ -5,15 +5,17 @@ import { Link } from 'react-scroll';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Section from '../Util/Section';
 
 import styles from './about.scss';
 
 const About = () => (
-  <Container>
-    <section className={styles.aboutSection}>
+  <Section className={styles.aboutSection}>
+    <Section.Header>
+      <Section.Title>About</Section.Title>
+    </Section.Header>
+    <Section.Body>
       <Container>
-        <h2 className="text-center section-header">About</h2>
-        <br />
         <Row>
           <Col md={8} className="mb-5 px-lg-3">
             <div>
@@ -87,8 +89,8 @@ const About = () => (
           </Col>
         </Row>
       </Container>
-    </section>
-  </Container>
+    </Section.Body>
+  </Section>
 );
 
 export default About;

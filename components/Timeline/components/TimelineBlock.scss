@@ -11,7 +11,7 @@
     position: absolute;
     width: 25px;
     height: 25px;
-    left: calc(5% - 13px);
+    left: calc(7% - 13px);
     background-color: white;
     border: 3px solid $slate-blue;
     top: 20px;
@@ -19,11 +19,11 @@
     z-index: 1;
 
     @media (min-width: 768px) {
-      left: calc(10% - 13px);
+      left: calc(12% - 13px);
     }
 
     @media (min-width: 992px) {
-      left: calc(20% - 13px);
+      left: calc(22% - 13px);
     }
   }
 }

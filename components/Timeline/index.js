@@ -9,11 +9,13 @@ import styles from './Timeline.scss';
 const Timeline = ({ events }) => (
   <div className={styles.topPadding}>
     <Section>
-      <Section.Title>Timeline</Section.Title>
-      <Section.Subtitle>
-        Celebrating 25 Years of <wbr />
-        Reflections | Projections
-      </Section.Subtitle>
+      <Section.Header>
+        <Section.Title>Timeline</Section.Title>
+        <Section.Subtitle>
+          Celebrating 25 Years of <wbr />
+          Reflections | Projections
+        </Section.Subtitle>
+      </Section.Header>
       <Section.Body>
         <div className={styles.timelineContainer}>
           {events.map(event => (

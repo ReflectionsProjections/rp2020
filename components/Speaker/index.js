@@ -5,15 +5,17 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
+import Section from '../Util/Section';
 
 import styles from './Speaker.scss';
 
 const Speaker = ({ speakers }) => (
-  <Container>
-    <section className="speaker-section">
+  <Section className="speaker-section">
+    <Section.Header>
+      <Section.Title>Speakers</Section.Title>
+    </Section.Header>
+    <Section.Body>
       <Container>
-        <h2 className="text-center section-header">Speakers</h2>
-        <br />
         <Row>
           <Col md={5}>
             <img
@@ -66,8 +68,8 @@ const Speaker = ({ speakers }) => (
           </div>
         </Row>
       </Container>
-    </section>
-  </Container>
+    </Section.Body>
+  </Section>
 );
 
 export default Speaker;

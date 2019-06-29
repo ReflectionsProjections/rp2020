@@ -21,6 +21,10 @@ Section.Subtitle = ({ children }) => (
 
 Section.Body = ({ children }) => <>{children}</>;
 
+Section.Header = ({ children }) => (
+  <div className={styles.header}>{children}</div>
+);
+
 Section.propTypes = {
   children: PropTypes.node.isRequired
 };
