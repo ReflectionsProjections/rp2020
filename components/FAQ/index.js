@@ -22,7 +22,7 @@ const FAQ = ({ faqData: { sections } }) => {
     section => section.name === currSection
   )[0].questions;
   return (
-    <Section className={styles.faqSection}>
+    <Section>
       <Section.Header>
         <Section.Title>FAQs</Section.Title>
       </Section.Header>

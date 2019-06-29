@@ -1,12 +1,5 @@
 @import '../../static/stylesheets/variables';
 
-.faqSection::before,
-.faqSection::after {
-  left: 0;
-  height: 90px;
-  background: white;
-}
-
 .faqDropdown {
   background-color: $slate-blue;
 }
@@ -16,15 +9,10 @@
   background-color: $medium-purple;
 }
 
-.faqSection {
-  border: none;
-  font-size: 1.1em;
-}
 .faqPrompt {
   margin: 0.75em auto;
 }
 .faqPrompt h3 {
-  margin-top: 1.6em;
   margin-bottom: 0.75em;
   font-size: 1.75em;
 }
