@@ -27,13 +27,13 @@ const ImageViewer = props => {
     lg = 4;
   } else if (id == 'gigab') {
     xs = 6;
-    sm = 4;
-    md = 3;
+    sm = 6;
+    md = 4;
     lg = 4;
   } else if (id == 'megab') {
     xs = 4;
-    sm = 3;
-    md = 3;
+    sm = 4;
+    md = 4;
     lg = 3;
   }
 
@@ -41,7 +41,7 @@ const ImageViewer = props => {
     <Row>
       {images.map(image => {
         return (
-          <Col xs={xs} sm={sm} md={md} lg={lg}>
+          <Col xs={xs} sm={sm} md={md} lg={lg} className="mb-3 col d-flex align-items-center justify-content-center">
             <Image src={image.img} fluid />
           </Col>
         );
@@ -68,13 +68,13 @@ class SponsorSection extends Component {
       <Container className="sponsor-section">
         <div className="container">
           <h2 className="text-center section-header">Sponsors</h2>
-          <div id="sponsor-tier" className="col-md-6 offset-md-3 text-center">
+          <div id="sponsor-tier" className="col-md-12 col-lg-10 offset-lg-1 col-xs-12 col-sm-12 text-center">
             {!this.state.loaded ? (
               <h1>Loading</h1>
             ) : (
               <div>
                 <div id="peta-tier">
-                  <h3>Petabyte</h3>
+                  <h3 className="mb-3">Petabyte</h3>
                   <ImageViewer
                     className="imageView"
                     id="petab"
@@ -84,17 +84,17 @@ class SponsorSection extends Component {
                 </div>
 
                 <div id="tera-tier">
-                  <h3>Terabyte</h3>
+                  <h3 className="mb-3">Terabyte</h3>
                   <ImageViewer images={sponsors.tier2} id="terab" size={50} />
                 </div>
 
                 <div id="gig-tier">
-                  <h3>Gigabyte</h3>
+                  <h3 className="mb-3">Gigabyte</h3>
                   <ImageViewer images={sponsors.tier3} id="gigab" size={40} />
                 </div>
 
                 <div id="mega-tier">
-                  <h3>Megabyte</h3>
+                  <h3 className="mb-3">Megabyte</h3>
                   <ImageViewer images={sponsors.tier4} id="megab" size={30} />
                 </div>
               </div>

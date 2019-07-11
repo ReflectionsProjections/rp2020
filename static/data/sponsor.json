@@ -17,13 +17,18 @@
         "name": "Mock",
         "img": "/static/assets/img/sponsors/sponsors2018/jobfair/petabyte/microsoft.jpeg",
         "website": "https://microsoft.com/"
+      },
+      {
+        "name": "Facebook",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/megabyte/facebook_full.jpg",
+        "website": "https://www.facebook.com/"
       }
     ],
     "tier3": [
       {
-        "name": "Mock",
-        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/petabyte/microsoft.jpeg",
-        "website": "https://microsoft.com/"
+        "name": "Ocient",
+        "img": "/static/assets/img/sponsors/sponsors2018/startup/ocient_full.png",
+        "website": "http://www.ocient.com/"
       },
       {
         "name": "Northern Trust",
@@ -41,14 +46,14 @@
         "website": "https://www.qualtrics.com/"
       },
       {
-        "name": "Mock",
-        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/petabyte/microsoft.jpeg",
-        "website": "https://microsoft.com/"
+        "name": "Granular",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/megabyte/granular.svg",
+        "website": "https://granular.ag/"
       },
       {
-        "name": "Mock",
-        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/petabyte/microsoft.jpeg",
-        "website": "https://microsoft.com/"
+        "name": "Amobee",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/megabyte/amobee_full.jpeg",
+        "website": "https://www.amobee.com/"
       },
       {
         "name": "Mock",
