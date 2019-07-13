@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SVG from 'react-inlinesvg';
 import { Form, Row, Col, Container } from 'react-bootstrap';
+import axios from 'axios';
 import Layout from '../components/Util/Layout';
 
 import './registration.scss';
@@ -26,9 +27,19 @@ class Registration extends Component {
   //   heardFrom: '',
   //   rpInterest: ''
   // };
+  constructor(props) {
+    super(props);
+    this.state = {
+      formOptions: undefined
+    };
+  }
 
   componentDidMount() {
-    return () => {};
+    axios.get('/static/data/registration.json').then(response => {
+      this.setState({
+        formOptions: response.data
+      });
+    });
   }
 
   render() {
@@ -50,6 +61,11 @@ class Registration extends Component {
     //   heardFrom,
     //   rpInterest
     // } = this.state;
+    const { formOptions } = this.state;
+    let genders; let years; let shirts; let diets;
+    if (formOptions) {
+      ({ genders, years, shirts, diets } = formOptions);
+    }
     return (
       <>
         <Layout>
@@ -70,7 +86,7 @@ class Registration extends Component {
           <Container>
             <section className="registration-section">
               <Form>
-                <Form.Row>
+                <Row>
                   <Col>
                     <Form.Label>First Name:</Form.Label>
                     <Form.Control type="text" placeholder="First name" />
@@ -79,10 +95,10 @@ class Registration extends Component {
                     <Form.Label>Last Name:</Form.Label>
                     <Form.Control type="text" placeholder="Last name" />
                   </Col>
-                </Form.Row>
+                </Row>
                 <Row>
                   <Form.Label>Phone Number:</Form.Label>
-                  <Form.Control type="number" placeholder="2173333426" />
+                  <Form.Control type="text" placeholder="2173333426" />
                 </Row>
                 <Row>
                   <Form.Label>Email address</Form.Label>
@@ -91,16 +107,24 @@ class Registration extends Component {
                 <Row>
                   <Form.Label>Gender:</Form.Label>
                   <Form.Control as="select">
-                    <option>Female</option>
-                    <option>Male</option>
-                    <option>Nonbinary</option>
-                    <option>Other</option>
-                    <option>Prefer not to disclose</option>
+                    {genders ? (
+                      genders.map(gender => (
+                        <option key={gender}>{gender}</option>
+                      ))
+                    ) : (
+                      <option>Genders</option>
+                    )}
                   </Form.Control>
                 </Row>
                 <Row>
-                  <Form.Label>Year in School:</Form.Label>
-                  <Form.Control type="text" placeholder="Freshman" />
+                  <Form.Label>School Year:</Form.Label>
+                  <Form.Control as="select">
+                    {years ? (
+                      years.map(year => <option key={year}>{year}</option>)
+                    ) : (
+                      <option>Years</option>
+                    )}
+                  </Form.Control>
                 </Row>
                 <Row>
                   <Form.Label>Major:</Form.Label>
@@ -117,30 +141,21 @@ class Registration extends Component {
                 <Row>
                   <Form.Label>Shirt Size:</Form.Label>
                   <Form.Control as="select">
-                    <option>S</option>
-                    <option>M</option>
-                    <option>L</option>
-                    <option>XL</option>
-                    <option>XXL</option>
+                    {shirts ? (
+                      shirts.map(shirt => <option key={shirt}>{shirt}</option>)
+                    ) : (
+                      <option>Shirts</option>
+                    )}
                   </Form.Control>
                 </Row>
                 <Row>
                   <Form.Label>Dietary Restriction:</Form.Label>
                   <Form.Control as="select">
-                    <option>None</option>
-                    <option>Vegetarian</option>
-                    <option>Vegan</option>
-                    <option>Other</option>
-                  </Form.Control>
-                </Row>
-                <Row>
-                  <Form.Label>School Year:</Form.Label>
-                  <Form.Control as="select">
-                    <option>Freshman</option>
-                    <option>Sophomore</option>
-                    <option>Junior</option>
-                    <option>Senior</option>
-                    <option>Graduate Student</option>
+                    {diets ? (
+                      diets.map(diet => <option key={diet}>{diet}</option>)
+                    ) : (
+                      <option>Dietary Restrictions</option>
+                    )}
                   </Form.Control>
                 </Row>
                 <Row>

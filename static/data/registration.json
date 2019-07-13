@@ -1,0 +1,43 @@
+{
+  "genders": ["Female", "Male", "Nonbinary", "Other", "Prefer not to disclose"],
+  "years": ["Freshman", "Sophomore", "Junior", "Senior", "Graduate Student"],
+  "shirts": ["S", "M", "L", "XL", "XXL"],
+  "diets": ["None", "Vegetarian", "Vegan", "Other"],
+  "majors": [
+    "Computer Science",
+    "Computer Engineering",
+    "Electrical Engineering",
+    "Aerospace Engineering",
+    "Agricultural & Biological Engineering",
+    "Bioengineering",
+    "Civil Engineering",
+    "Engineering Mechanics",
+    "Industrial Engineering",
+    "Materials Science & Engineering",
+    "Mechanical Engineering",
+    "Nuclear, Plasma & Radiological Engineering",
+    "Systems Engineering and Design",
+    "Information Sciences",
+    "Undeclared",
+    "Other"
+  ],
+  "schools": [
+    "University of Illinois at Urbana-Champaign",
+    "University of Illinois at Chicago",
+    "University of Illinois Springfield",
+    "University of Chicago",
+    "Northwestern University",
+    "Washington University in St. Louis",
+    "University of Wisconsin-Madison",
+    "Northern Illinois University",
+    "Illinois State University",
+    "North Dakota State University",
+    "Indiana Wesleyan University",
+    "Indiana Institute of Technology",
+    "Depaul University",
+    "Bradley University",
+    "Parkland College",
+    "Lincoln Land Community College",
+    "Other"
+  ]
+}
