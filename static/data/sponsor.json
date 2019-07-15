@@ -1,0 +1,122 @@
+{
+  "sponsors": {
+    "tier1": [
+      {
+        "name": "Microsoft",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/petabyte/microsoft.jpeg",
+        "website": "https://microsoft.com/"
+      }
+    ],
+    "tier2": [
+      {
+        "name": "Zillow Group",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/terabyte/zillow_group_full.png",
+        "website": "https://www.zillowgroup.com/"
+      },
+      {
+        "name": "Mock",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/petabyte/microsoft.jpeg",
+        "website": "https://microsoft.com/"
+      },
+      {
+        "name": "Facebook",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/megabyte/facebook_full.jpg",
+        "website": "https://www.facebook.com/"
+      }
+    ],
+    "tier3": [
+      {
+        "name": "Ocient",
+        "img": "/static/assets/img/sponsors/sponsors2018/startup/ocient_full.png",
+        "website": "http://www.ocient.com/"
+      },
+      {
+        "name": "Northern Trust",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/gigabyte/northern_trust.jpg",
+        "website": "https://www.northerntrust.com/"
+      },
+      {
+        "name": "Mock",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/petabyte/microsoft.jpeg",
+        "website": "https://microsoft.com/"
+      },
+      {
+        "name": "Qualtrics",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/gigabyte/qualtrics_full.png",
+        "website": "https://www.qualtrics.com/"
+      },
+      {
+        "name": "Granular",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/megabyte/granular.svg",
+        "website": "https://granular.ag/"
+      },
+      {
+        "name": "Amobee",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/megabyte/amobee_full.jpeg",
+        "website": "https://www.amobee.com/"
+      },
+      {
+        "name": "Mock",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/petabyte/microsoft.jpeg",
+        "website": "https://microsoft.com/"
+      }
+    ],
+    "tier4": [
+      {
+        "name": "Google",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/megabyte/google.png",
+        "website": "https://google.com"
+      },
+      {
+        "name": "Amobee",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/megabyte/amobee_full.jpeg",
+        "website": "https://www.amobee.com/"
+      },
+      {
+        "name": "Mock",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/petabyte/microsoft.jpeg",
+        "website": "https://microsoft.com/"
+      },
+      {
+        "name": "PricewaterhouseCoopers",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/megabyte/pwc.jpg",
+        "website": "https://www.pwc.com/"
+      },
+      {
+        "name": "Granular",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/megabyte/granular.svg",
+        "website": "https://granular.ag/"
+      },
+      {
+        "name": "Riverbed",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/megabyte/riverbed_full.png",
+        "website": "https://www.riverbed.com/"
+      },
+      {
+        "name": "Facebook",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/megabyte/facebook_full.jpg",
+        "website": "https://www.facebook.com/"
+      },
+      {
+        "name": "Pinterest",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/megabyte/pinterest_full.jpg",
+        "website": "https://www.pinterest.com/"
+      },
+      {
+        "name": "Ocient",
+        "img": "/static/assets/img/sponsors/sponsors2018/startup/ocient_full.png",
+        "website": "http://www.ocient.com/"
+      },
+      {
+        "name": "Reconstruct",
+        "img": "/static/assets/img/sponsors/sponsors2018/startup/reconstruct_full.jpg",
+        "website": "https://www.reconstructinc.com/"
+      },
+      {
+        "name": "Mock",
+        "img": "/static/assets/img/sponsors/sponsors2018/jobfair/petabyte/microsoft.jpeg",
+        "website": "https://microsoft.com/"
+      }
+    ]
+  }
+}

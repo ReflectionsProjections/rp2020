@@ -9,6 +9,7 @@ import CountdownTimer from '../components/CountdownTimer';
 import About from '../components/About/index';
 import Speaker from '../components/Speaker';
 import FAQ from '../components/FAQ/index';
+import SponsorSection from '../components/SponsorSection';
 
 import styles from './index.scss';
 import '../static/stylesheets/animations.scss';
@@ -76,7 +77,9 @@ const Index = ({ speakerSection, faqSection }) => (
       <Element name="faq">
         <FAQ faqData={faqSection} />
       </Element>
-
+      <Element name="sponsor-section">
+        <SponsorSection />
+      </Element>
       <footer>
         <div
           className={`text-white text-center animated fadeIn ${styles.footerText}`}

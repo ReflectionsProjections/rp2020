@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="1200px" viewBox="0 0 1200 1200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>logo_googleplay</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="logo_googleplay" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menubar" transform="translate(13.000000, 7.000000)">
+            <g id="Status-Bar-Green">
+                <g id="Signal-&amp;-Carrier"></g>
+                <g id="Battery" transform="translate(567.000000, 4.000000)"></g>
+            </g>
+        </g>
+        <g fill="#C03131" fill-rule="nonzero" id="Fill-18-Copy">
+            <path d="M642.283675,1198.92953 L1198.92953,1198.92953 L1198.92953,984.83497 L642.283675,984.83497 L642.283675,1198.92953 Z M942.016058,899.197145 L1198.92953,899.197145 L1198.92953,642.283675 L942.016058,642.283675 L942.016058,899.197145 Z M0,1198.92953 L556.645852,1198.92953 L556.645852,642.283675 L0,642.283675 L0,1198.92953 Z M0,556.645852 L1200,556.645852 L1200,0 L0,0 L0,556.645852 Z"></path>
+        </g>
+    </g>
+</svg>

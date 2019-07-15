@@ -1,0 +1,29 @@
+@import '../../static/stylesheets/_variables.scss';
+
+.sponsor-section {
+  background: white;
+  border-radius: 1.5em;
+  padding: 3em;
+  min-height: 90vh;
+  padding-bottom: 4em;
+}
+
+#peta-tier {
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+#tera-tier {
+  padding-bottom: 3em;
+}
+#gig-tier {
+  padding-bottom: 3em;
+}
+#mega-tier {
+  padding-bottom: 3em;
+}
+
+.imageView {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
