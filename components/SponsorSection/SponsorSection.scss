@@ -1,25 +1,20 @@
 @import '../../static/stylesheets/_variables.scss';
 
-.sponsor-section {
-  background: white;
-  border-radius: 1.5em;
-  padding: 3em;
-  min-height: 90vh;
+.sponsorTitle {
   padding-bottom: 4em;
 }
 
-#peta-tier {
+.petaTier {
   padding-top: 1em;
+}
+
+.tier {
   padding-bottom: 3em;
 }
-#tera-tier {
-  padding-bottom: 3em;
-}
-#gig-tier {
-  padding-bottom: 3em;
-}
-#mega-tier {
-  padding-bottom: 3em;
+
+.tier h3 {
+  font-family: 'Roboto';
+  font-weight: 100;
 }
 
 .imageView {

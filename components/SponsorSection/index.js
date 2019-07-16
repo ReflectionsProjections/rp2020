@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+import classNames from 'classnames';
+
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import axios from 'axios';
-import './SponsorSection.scss';
+
+import Section from '../Util/Section';
+import styles from './SponsorSection.scss';
 
 const ImageViewer = props => {
   const { id, images } = props;
@@ -23,16 +27,16 @@ const ImageViewer = props => {
     xs = 6;
     sm = 6;
     md = 6;
-    lg = 4;
+    lg = 6;
   } else if (id === 'gigab') {
-    xs = 6;
-    sm = 6;
+    xs = 4;
+    sm = 3;
     md = 4;
     lg = 4;
   } else if (id === 'megab') {
-    xs = 4;
-    sm = 4;
-    md = 4;
+    xs = 3;
+    sm = 2;
+    md = 3;
     lg = 3;
   }
 
@@ -70,46 +74,52 @@ class SponsorSection extends Component {
   render() {
     const { sponsors, loaded } = this.state;
     return (
-      <Container className="sponsor-section">
-        <div className="container">
-          <h2 className="text-center section-header">Sponsors</h2>
-          <div
-            id="sponsor-tier"
-            className="col-md-12 col-lg-10 offset-lg-1 col-xs-12 col-sm-12 text-center"
-          >
-            {!loaded ? (
-              <h1>Loading</h1>
-            ) : (
-              <div>
-                <div id="peta-tier">
-                  <h3 className="mb-3">Petabyte</h3>
-                  <ImageViewer
-                    className="imageView"
-                    id="petab"
-                    images={sponsors.tier1}
-                    size={65}
-                  />
-                </div>
+      <Section>
+        <Section.Title className={styles.sponsorTitle}>Sponsors</Section.Title>
+        <Section.Body>
+          <Container>
+            <Col
+              id="sponsor-tier"
+              lg={{ span: 10, offset: 1 }}
+              md={{ span: 12 }}
+              sm={{ span: 12 }}
+              xs={{ span: 12 }}
+              className="text-center"
+            >
+              {!loaded ? (
+                <h1>Loading</h1>
+              ) : (
+                <div>
+                  <div className={classNames(styles.tier, styles.petaTier)}>
+                    <h3 className="mb-3">Petabyte</h3>
+                    <ImageViewer
+                      className="imageView"
+                      id="petab"
+                      images={sponsors.tier1}
+                      size={65}
+                    />
+                  </div>
 
-                <div id="tera-tier">
-                  <h3 className="mb-3">Terabyte</h3>
-                  <ImageViewer images={sponsors.tier2} id="terab" size={50} />
-                </div>
+                  <div className={styles.tier}>
+                    <h3 className="mb-3">Terabyte</h3>
+                    <ImageViewer images={sponsors.tier2} id="terab" size={50} />
+                  </div>
 
-                <div id="gig-tier">
-                  <h3 className="mb-3">Gigabyte</h3>
-                  <ImageViewer images={sponsors.tier3} id="gigab" size={40} />
-                </div>
+                  <div className={styles.tier}>
+                    <h3 className="mb-3">Gigabyte</h3>
+                    <ImageViewer images={sponsors.tier3} id="gigab" size={40} />
+                  </div>
 
-                <div id="mega-tier">
-                  <h3 className="mb-3">Megabyte</h3>
-                  <ImageViewer images={sponsors.tier4} id="megab" size={30} />
+                  <div className={styles.tier}>
+                    <h3 className="mb-3">Megabyte</h3>
+                    <ImageViewer images={sponsors.tier4} id="megab" size={30} />
+                  </div>
                 </div>
-              </div>
-            )}
-          </div>
-        </div>
-      </Container>
+              )}
+            </Col>
+          </Container>
+        </Section.Body>
+      </Section>
     );
   }
 }
