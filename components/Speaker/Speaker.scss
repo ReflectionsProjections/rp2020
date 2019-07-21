@@ -5,6 +5,12 @@
   box-shadow: 0 0 0 2px hsla(0, 0%, 0%, 0.1);
   margin-bottom: 0.5em;
   transition: all 0.3s ease-in-out;
+  height: 100%;
+  margin-bottom: 1em;
+}
+
+.speakerCardContainer {
+  margin-bottom: 1em;
 }
 
 .speakerCard:hover {
