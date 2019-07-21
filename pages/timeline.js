@@ -3,10 +3,12 @@ import axios from 'axios';
 
 import Layout from '../components/Util/Layout';
 import Timeline from '../components/Timeline';
+import Footer from '../components/Footer';
 
 const TimelinePage = ({ timelineSection: { events } }) => (
   <Layout>
     <Timeline events={events} />
+    <Footer />
   </Layout>
 );
 

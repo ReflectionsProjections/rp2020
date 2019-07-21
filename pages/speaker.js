@@ -8,6 +8,7 @@ import Col from 'react-bootstrap/Col';
 
 import Layout from '../components/Util/Layout';
 import Section from '../components/Util/Section';
+import Footer from '../components/Footer';
 
 import styles from './speaker.scss';
 
@@ -62,6 +63,7 @@ const Speaker = ({ speakers, query }) => {
           </Section.Body>
         </Section>
       </div>
+      <Footer />
     </Layout>
   );
 };

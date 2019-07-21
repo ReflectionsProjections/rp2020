@@ -10,6 +10,7 @@ import About from '../components/About/index';
 import Speaker from '../components/Speaker';
 import FAQ from '../components/FAQ/index';
 import SponsorSection from '../components/SponsorSection';
+import Footer from '../components/Footer';
 
 import styles from './index.scss';
 import '../static/stylesheets/animations.scss';
@@ -80,21 +81,7 @@ const Index = ({ speakerSection, faqSection }) => (
       <Element name="sponsor-section">
         <SponsorSection />
       </Element>
-      <footer>
-        <div
-          className={`text-white text-center animated fadeIn ${styles.footerText}`}
-        >
-          <p className={styles.organized}>
-            Organized by <a href="https://acm.illinois.edu/">ACM@UIUC</a>
-          </p>
-          <p className={styles.contact}>
-            Questions? Interested in sponsoring? Email us at{' '}
-            <a href="mailto:contact@reflectionsprojections.org">
-              contact@reflectionsprojections.org
-            </a>
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </Layout>
   </>
 );
