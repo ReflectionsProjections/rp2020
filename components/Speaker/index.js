@@ -56,7 +56,7 @@ const Speaker = ({ speakers }) => {
                             }
                             className={styles.cardImage}
                             onMouseEnter={handleMouseHover(name)}
-                            onMouseLeave={handleMouseHover(name)}
+                            onMouseLeave={handleMouseHover('')}
                           />
                           <Card.Body>
                             <Card.Title className={styles.speakerName}>
