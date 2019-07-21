@@ -22,6 +22,7 @@ const Speaker = ({ speakers, query }) => {
     });
   }
   const { name, tagline, bio, image } = speaker;
+  const imageURL = `${image}.png`;
   return (
     <Layout>
       <div className={`animated fadeIn ${styles.topPadding}`}>
@@ -39,16 +40,14 @@ const Speaker = ({ speakers, query }) => {
           <Section.Body>
             <Container className={`animated fadeIn ${styles.delay}`}>
               <Row>
-                <Col md={{ span: 8, offset: 2 }} xl={{ span: 6, offset: 3 }}>
+                <Col md={{ span: 12 }} lg={{ span: 6 }}>
                   <img
                     className={`img-fluid ${styles.image}`}
                     alt={`Reflections Projections 2019 Speaker - ${name}`}
-                    src={image}
+                    src={imageURL}
                   />
                 </Col>
-              </Row>
-              <Row>
-                <Col md={{ span: 10, offset: 1 }} xl={{ span: 8, offset: 2 }}>
+                <Col md={{ span: 12 }} lg={{ span: 6 }}>
                   <p className={styles.bio}>{bio}</p>
                 </Col>
               </Row>
