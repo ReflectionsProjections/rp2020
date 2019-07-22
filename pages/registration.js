@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SVG from 'react-inlinesvg';
-import { Form, Row, Col, Container } from 'react-bootstrap';
+import { Form, Row, Col, Container, Button } from 'react-bootstrap';
 import axios from 'axios';
 import Layout from '../components/Util/Layout';
 
@@ -9,24 +9,6 @@ import './index.scss';
 import '../static/stylesheets/animations.scss';
 
 class Registration extends Component {
-  // state = {
-  //   firstName: '',
-  //   lastName: '',
-  //   phoneNumber: '',
-  //   email: '',
-  //   gender: '',
-  //   studentType: '',
-  //   major: '',
-  //   school: '',
-  //   transportation: '',
-  //   shirtSize: '',
-  //   diet: '',
-  //   graduationClass: '',
-  //   jobInterest: '',
-  //   professionalInterest: '',
-  //   heardFrom: '',
-  //   rpInterest: ''
-  // };
   constructor(props) {
     super(props);
     this.state = {
@@ -43,28 +25,28 @@ class Registration extends Component {
   }
 
   render() {
-    // const {
-    //   firstName,
-    //   lastName,
-    //   phoneNumber,
-    //   email,
-    //   gender,
-    //   studentType,
-    //   major,
-    //   school,
-    //   transportation,
-    //   shirtSize,
-    //   diet,
-    //   graduationClass,
-    //   jobInterest,
-    //   professionalInterest,
-    //   heardFrom,
-    //   rpInterest
-    // } = this.state;
     const { formOptions } = this.state;
-    let genders; let years; let shirts; let diets;
+    let genders;
+    let years;
+    let shirts;
+    let diets;
+    let jobtype;
+    let proftype;
+    let majors;
+    let schools;
+    let heardFrom;
     if (formOptions) {
-      ({ genders, years, shirts, diets } = formOptions);
+      ({
+        genders,
+        years,
+        shirts,
+        diets,
+        jobtype,
+        proftype,
+        majors,
+        schools,
+        heardFrom
+      } = formOptions);
     }
     return (
       <>
@@ -87,10 +69,21 @@ class Registration extends Component {
             <section className="registration-section">
               <Form>
                 <Row>
-                  <Col>
+                  <Form.Group
+                    as={Col}
+                    md="4"
+                    controlId="validationCustomUsername"
+                  >
                     <Form.Label>First Name:</Form.Label>
-                    <Form.Control type="text" placeholder="First name" />
-                  </Col>
+                    <Form.Control
+                      required
+                      type="text"
+                      placeholder="First name"
+                    />
+                    <Form.Control.Feedback type="invalid">
+                      Please enter your name.
+                    </Form.Control.Feedback>
+                  </Form.Group>
                   <Col>
                     <Form.Label>Last Name:</Form.Label>
                     <Form.Control type="text" placeholder="Last name" />
@@ -128,11 +121,25 @@ class Registration extends Component {
                 </Row>
                 <Row>
                   <Form.Label>Major:</Form.Label>
-                  <Form.Control type="text" placeholder="Computer Science" />
+                  <Form.Control as="select">
+                    {majors ? (
+                      majors.map(major => <option key={major}>{major}</option>)
+                    ) : (
+                      <option>Major</option>
+                    )}
+                  </Form.Control>
                 </Row>
                 <Row>
                   <Form.Label>School:</Form.Label>
-                  <Form.Control type="text" placeholder="UIUC" />
+                  <Form.Control as="select">
+                    {schools ? (
+                      schools.map(school => (
+                        <option key={school}>{school}</option>
+                      ))
+                    ) : (
+                      <option>School</option>
+                    )}
+                  </Form.Control>
                 </Row>
                 <Row>
                   <Form.Label>Transportation:</Form.Label>
@@ -160,26 +167,41 @@ class Registration extends Component {
                 </Row>
                 <Row>
                   <Form.Label>Job Interest:</Form.Label>
-                  <Form.Control
-                    type="text"
-                    placeholder="Looking for Summer Internship"
-                  />
+                  <Form.Control as="select">
+                    {jobtype ? (
+                      jobtype.map(jobInterest => (
+                        <option key={jobInterest}>{jobInterest}</option>
+                      ))
+                    ) : (
+                      <option>Job Interest</option>
+                    )}
+                  </Form.Control>
                 </Row>
                 <Row>
-                  <Form.Label>Proffesional Interest:</Form.Label>
-                  <Form.Control type="text" placeholder="ML, AI and Big Data" />
+                  <Form.Label>Professional Interest:</Form.Label>
+                  <Form.Control as="select">
+                    {proftype ? (
+                      proftype.map(professionalInterest => (
+                        <option key={professionalInterest}>
+                          {professionalInterest}
+                        </option>
+                      ))
+                    ) : (
+                      <option>Professional Interest</option>
+                    )}
+                  </Form.Control>
                 </Row>
                 <Row>
                   <Form.Label>Heard From:</Form.Label>
-                  <Form.Control
-                    type="text"
-                    placeholder="R|P reached out to me"
-                  />
+                  <Form.Control as="select">
+                    {heardFrom ? (
+                      heardFrom.map(from => <option key={from}>{from}</option>)
+                    ) : (
+                      <option>Heard From</option>
+                    )}
+                  </Form.Control>
                 </Row>
-                <Row>
-                  <Form.Label>R|P Interest:</Form.Label>
-                  <Form.Control type="text" placeholder="Very(????)" />
-                </Row>
+                <Button type="submit">Submit form</Button>
               </Form>
             </section>
           </Container>
