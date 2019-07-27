@@ -22,18 +22,18 @@
     content: '';
     position: absolute;
     width: 3px;
-    background-color: $slate-blue;
+    background-color: $medium-purple;
     top: 20px;
     bottom: 0;
-    left: 7%;
+    left: calc(12% + 1px);
     margin-left: -3px;
 
     @media (min-width: 768px) {
-      left: 12%;
+      left: calc(12% + 1px);
     }
 
     @media (min-width: 992px) {
-      left: 22%;
+      left: calc(30% + 1px);
     }
   }
 }

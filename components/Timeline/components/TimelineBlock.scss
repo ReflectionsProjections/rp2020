@@ -11,9 +11,9 @@
     position: absolute;
     width: 25px;
     height: 25px;
-    left: calc(7% - 13px);
+    left: calc(12% - 13px);
     background-color: white;
-    border: 3px solid $slate-blue;
+    border: 3px solid $medium-purple;
     top: 20px;
     border-radius: 50%;
     z-index: 1;
@@ -23,7 +23,7 @@
     }
 
     @media (min-width: 992px) {
-      left: calc(22% - 13px);
+      left: calc(30% - 13px);
     }
   }
 }
@@ -32,8 +32,6 @@
   font-family: 'Roboto Slab';
   margin-bottom: 0.5em;
 }
-
-
 
 .timelineItem {
   text-decoration: none;

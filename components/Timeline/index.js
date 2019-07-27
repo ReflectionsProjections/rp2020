@@ -13,7 +13,9 @@ const Timeline = ({ events }) => (
         <Section.Title>Timeline</Section.Title>
         <Section.Subtitle>
           Celebrating 25 Years of <wbr />
-          Reflections | Projections
+          <span style={{ display: 'inline-block' }}>
+            Reflections | Projections
+          </span>
         </Section.Subtitle>
       </Section.Header>
       <Section.Body>

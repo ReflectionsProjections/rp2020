@@ -12,7 +12,7 @@ const TimelineBlock = ({ event: { date, content } }) => (
       xs={{ span: 10, offset: 2 }}
       sm={{ span: 10, offset: 2 }}
       md={{ span: 10, offset: 2 }}
-      lg={{ span: 2, offset: 0 }}
+      lg={{ span: 2, offset: 1 }}
       className="text-lg-right"
     >
       <h3 className={styles.date}>{date}</h3>
@@ -20,8 +20,8 @@ const TimelineBlock = ({ event: { date, content } }) => (
     <Col
       xs={{ span: 10, offset: 2 }}
       sm={{ span: 10, offset: 2 }}
-      md={{ span: 10, offset: 2 }}
-      lg={{ span: 9, offset: 1 }}
+      md={{ span: 8, offset: 2 }}
+      lg={{ span: 6, offset: 1 }}
       className={styles.content}
     >
       <ul className={styles.list}>
