@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 import Container from 'react-bootstrap/Container';
 
 import styles from './Section.scss';
 
-const Section = ({ children }) => (
+const Section = ({ children, minHeight = true }) => (
   <Container>
-    <section className={styles.section}>
+    <section
+      className={classNames(styles.section, { [styles.minHeight]: minHeight })}
+    >
       <Container>{children}</Container>
     </section>
   </Container>

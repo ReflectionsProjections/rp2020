@@ -10,6 +10,8 @@ import Layout from '../components/Util/Layout';
 import Section from '../components/Util/Section';
 import Footer from '../components/Footer';
 
+import OtherSpeakers from '../components/Speaker/OtherSpeakers';
+
 import styles from './speaker.scss';
 
 const Speaker = ({ speakers, query }) => {
@@ -51,7 +53,7 @@ const Speaker = ({ speakers, query }) => {
                   <p className={styles.bio}>{bio}</p>
                 </Col>
               </Row>
-              <Row>
+              <Row className="mt-4">
                 <Col className="text-center">
                   <Link scroll href="/">
                     <span className="btn btn-primary">Back Home</span>
@@ -61,6 +63,9 @@ const Speaker = ({ speakers, query }) => {
             </Container>
           </Section.Body>
         </Section>
+        <OtherSpeakers
+          speakers={speakers.filter(s => s.name !== query.name).slice(0, 4)}
+        />
       </div>
       <Footer />
     </Layout>

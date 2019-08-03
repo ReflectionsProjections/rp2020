@@ -11,9 +11,9 @@ import styles from './Speaker.scss';
 
 const Speaker = ({ speakers }) => {
   return (
-    <Section className="speaker-section">
+    <Section className="speaker-section" minHeight={false}>
       <Section.Header>
-        <Section.Title>Speakers</Section.Title>
+        <Section.Title>Other Speakers</Section.Title>
       </Section.Header>
       <Section.Body>
         <Container>
@@ -28,8 +28,8 @@ const Speaker = ({ speakers }) => {
                   return (
                     <Col
                       className={styles.speakerCardContainer}
-                      xs={6}
-                      md={4}
+                      xs={3}
+                      md={3}
                       lg={3}
                     >
                       <SpeakerCard

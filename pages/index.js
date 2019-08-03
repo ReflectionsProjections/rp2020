@@ -89,7 +89,7 @@ const Index = ({ speakerSection, faqSection }) => (
 Index.getInitialProps = async () => {
   const prefix =
     process.env.NODE_ENV === 'production'
-      ? 'http://acmrp.org'
+      ? 'http://reflectionsprojections.org'
       : 'http://localhost:3000';
   const res = await axios.get(`${prefix}/static/rp2019.json`);
   return res.data;
