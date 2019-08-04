@@ -266,5 +266,20 @@
         ]
       }
     ]
+  },
+  "events": {
+    "list": ["puzzlebang", "mechmania", "startupfair", "careerfair"],
+    "puzzlebang": {
+      "title": "Puzzle Bang"
+    },
+    "mechmania": {
+      "title": "Mechmania"
+    },
+    "startupfair": {
+      "title": "Startup Fair"
+    },
+    "careerfair": {
+      "title": "Career Fair"
+    }
   }
 }
