@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Head from 'next/head';
 
 import ReactGA from 'react-ga';
-import Nav from '../Nav';
+import Navbar from '../Navbar';
 
 class Layout extends Component {
   componentDidMount() {
@@ -105,8 +105,8 @@ class Layout extends Component {
             crossOrigin="anonymous"
           />
         </Head>
-        <div>
-          <Nav />
+        <div style={{ zIndex: 0 }}>
+          <Navbar />
           {children}
         </div>
       </div>

@@ -5,6 +5,7 @@ import { Link, Element } from 'react-scroll';
 import axios from 'axios';
 
 import Layout from '../components/Util/Layout';
+import Nav from '../components/Nav';
 import CountdownTimer from '../components/CountdownTimer';
 import About from '../components/About/index';
 import Speaker from '../components/Speaker';
@@ -69,7 +70,7 @@ const Index = ({ speakerSection, faqSection }) => (
           </Link>
         </div>
       </main>
-
+      <Nav />
       <Element name="about">
         <About />
       </Element>

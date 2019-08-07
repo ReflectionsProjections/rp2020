@@ -1,46 +1,58 @@
-import React from 'react';
-import Link from 'next/link';
-import classNames from 'classnames';
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 
-import Navbar from 'react-bootstrap/Navbar';
+import NavButton from './NavButton';
 
-import NavButton from './components/NavButton';
-import NavSocialMediaIcon from './components/NavSocialMediaIcon';
+import styles from './styles.scss';
 
-import styles from './Nav.scss';
+const Nav = () => {
+  const [menuVisible, setMenuVisible] = useState(false);
 
-const Nav = () => (
-  <Navbar className={classNames(styles.navbar, styles.bgBlue)}>
-    <Navbar.Brand className={styles.leftNav}>
-      <Link href="/">
-        <img
-          alt="Reflections Projections 2019 Logo"
-          className={styles.navbarLogo}
-          src="/static/assets/2019logo.svg"
-        />
+  const handleClick = () => {
+    setMenuVisible(!menuVisible);
+  };
+
+  const MenuLink = ({ label, name }) => (
+    <li>
+      <Link
+        onClick={handleClick}
+        activeClass="active"
+        to={name}
+        spy
+        smooth="easeInOutQuad"
+        duration={500}
+        offset={-80}
+      >
+        <span>{label}</span>
       </Link>
-    </Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse>
-      <div className={styles.rightNav}>
-        <div className={styles.navSocialMediaIcons}>
-          <NavSocialMediaIcon
-            link="https://www.facebook.com/acmrp/"
-            icon="fa-facebook-f"
-          />
-          <NavSocialMediaIcon
-            link="https://www.instagram.com/uiuc_rp/"
-            icon="fa-instagram"
-          />
-          <NavSocialMediaIcon
-            link="https://twitter.com/uiuc_rp?lang=en"
-            icon="fa-twitter"
-          />
+    </li>
+  );
+
+  const renderMenu = () => {
+    if (!menuVisible) {
+      return null;
+    }
+
+    return (
+      <div className={styles.menuContainer}>
+        <div className={styles.menu}>
+          <ul>
+            <MenuLink label="About" name="about" />
+            <MenuLink label="Speakers" name="speakers" />
+            <MenuLink label="Events" name="events" />
+            <MenuLink label="FAQs" name="faq" />
+          </ul>
         </div>
-        <NavButton />
       </div>
-    </Navbar.Collapse>
-  </Navbar>
-);
+    );
+  };
+
+  return (
+    <>
+      {renderMenu()}
+      <NavButton onClick={handleClick} menuVisible={menuVisible} />
+    </>
+  );
+};
 
 export default Nav;
