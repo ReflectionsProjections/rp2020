@@ -8,6 +8,7 @@ import Layout from '../components/Util/Layout';
 import CountdownTimer from '../components/CountdownTimer';
 import About from '../components/About/index';
 import Speaker from '../components/Speaker';
+import Events from '../components/Events';
 import FAQ from '../components/FAQ/index';
 import SponsorSection from '../components/SponsorSection';
 import Footer from '../components/Footer';
@@ -74,6 +75,9 @@ const Index = ({ speakerSection, faqSection }) => (
       </Element>
       <Element name="speakers">
         <Speaker speakers={speakerSection.list} />
+      </Element>
+      <Element name="events">
+        <Events />
       </Element>
       <Element name="faq">
         <FAQ faqData={faqSection} />
