@@ -4,6 +4,7 @@ import SVG from 'react-inlinesvg';
 import { Link, Element } from 'react-scroll';
 import axios from 'axios';
 
+import Gate from '../components/Util/Gate';
 import Layout from '../components/Util/Layout';
 import Nav from '../components/Nav';
 import CountdownTimer from '../components/CountdownTimer';
@@ -17,7 +18,7 @@ import Footer from '../components/Footer';
 import styles from './index.scss';
 import '../static/stylesheets/animations.scss';
 
-const Index = ({ speakerSection, faqSection }) => (
+const Index = ({ speakerSection, faqSection, gates, debugMode }) => (
   <>
     <Head>
       <title>Reflections | Projections 2019</title>
@@ -70,34 +71,45 @@ const Index = ({ speakerSection, faqSection }) => (
           </Link>
         </div>
       </main>
-      <Nav />
+      <Gate gatename="NAV" gates={gates} debugMode={debugMode}>
+        <Nav />
+      </Gate>
       <Element name="about">
         <About />
       </Element>
-      <Element name="speakers">
-        <Speaker speakers={speakerSection.list} />
-      </Element>
-      <Element name="events">
-        <Events />
-      </Element>
+      <Gate gatename="SPEAKER_SECTION" gates={gates} debugMode={debugMode}>
+        <Element name="speakers">
+          <Speaker speakers={speakerSection.list} />
+        </Element>
+      </Gate>
+      <Gate gatename="EVENT_SECTION" gates={gates} debugMode={debugMode}>
+        <Element name="events">
+          <Events />
+        </Element>
+      </Gate>
       <Element name="faq">
         <FAQ faqData={faqSection} />
       </Element>
-      <Element name="sponsor-section">
-        <SponsorSection />
-      </Element>
+      <Gate gatename="SPONSOR_SECTION" gates={gates} debugMode={debugMode}>
+        <Element name="sponsor-section">
+          <SponsorSection />
+        </Element>
+      </Gate>
       <Footer />
     </Layout>
   </>
 );
 
-Index.getInitialProps = async () => {
+Index.getInitialProps = async ({ query }) => {
   const prefix =
     process.env.NODE_ENV === 'production'
       ? 'http://reflectionsprojections.org'
       : 'http://localhost:3000';
   const res = await axios.get(`${prefix}/static/rp2019.json`);
-  return res.data;
+  return {
+    ...res.data,
+    debugMode: query.debugMode
+  };
 };
 
 export default Index;
