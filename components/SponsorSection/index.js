@@ -38,6 +38,11 @@ const ImageViewer = props => {
     sm = 2;
     md = 3;
     lg = 3;
+  } else if (id === 'allTiers') {
+    xs = 3;
+    sm = 3;
+    md = 3;
+    lg = 3;
   }
 
   return (
@@ -73,6 +78,10 @@ class SponsorSection extends Component {
 
   render() {
     const { sponsors, loaded } = this.state;
+    if (!loaded) {
+      return null;
+    }
+    const hasAllTiersSection = (sponsors.allTiers || []).length > 0;
     return (
       <Section>
         <Section.Title className={styles.sponsorTitle}>Sponsors</Section.Title>
@@ -90,30 +99,60 @@ class SponsorSection extends Component {
                 <h1>Loading</h1>
               ) : (
                 <div>
-                  <div className={classNames(styles.tier, styles.petaTier)}>
-                    <h3 className="mb-3">Petabyte</h3>
-                    <ImageViewer
-                      className="imageView"
-                      id="petab"
-                      images={sponsors.tier1}
-                      size={65}
-                    />
-                  </div>
+                  {sponsors.tier1 && sponsors.tier2.length > 0 && (
+                    <div
+                      className={classNames(styles.tier, {
+                        [styles.firstTierSection]: !hasAllTiersSection
+                      })}
+                    >
+                      <ImageViewer
+                        className="imageView"
+                        id="petab"
+                        images={sponsors.tier1}
+                        size={65}
+                      />
+                    </div>
+                  )}
 
-                  <div className={styles.tier}>
-                    <h3 className="mb-3">Terabyte</h3>
-                    <ImageViewer images={sponsors.tier2} id="terab" size={50} />
-                  </div>
+                  {hasAllTiersSection && (
+                    <div className={styles.tier}>
+                      <ImageViewer
+                        images={sponsors.allTiers}
+                        id="allTiers"
+                        size={50}
+                      />
+                    </div>
+                  )}
 
-                  <div className={styles.tier}>
-                    <h3 className="mb-3">Gigabyte</h3>
-                    <ImageViewer images={sponsors.tier3} id="gigab" size={40} />
-                  </div>
+                  {sponsors.tier2 && sponsors.tier2.length > 0 && (
+                    <div className={styles.tier}>
+                      <ImageViewer
+                        images={sponsors.tier2}
+                        id="terab"
+                        size={50}
+                      />
+                    </div>
+                  )}
 
-                  <div className={styles.tier}>
-                    <h3 className="mb-3">Megabyte</h3>
-                    <ImageViewer images={sponsors.tier4} id="megab" size={30} />
-                  </div>
+                  {sponsors.tier3 && sponsors.tier3.length > 0 && (
+                    <div className={styles.tier}>
+                      <ImageViewer
+                        images={sponsors.tier3}
+                        id="gigab"
+                        size={40}
+                      />
+                    </div>
+                  )}
+
+                  {sponsors.tier4 && sponsors.tier4.length > 0 && (
+                    <div className={styles.tier}>
+                      <ImageViewer
+                        images={sponsors.tier4}
+                        id="megab"
+                        size={30}
+                      />
+                    </div>
+                  )}
                 </div>
               )}
             </Col>
