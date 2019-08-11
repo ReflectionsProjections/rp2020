@@ -54,7 +54,10 @@ const ImageViewer = props => {
             sm={sm}
             md={md}
             lg={lg}
-            className="mb-3 col d-flex align-items-center justify-content-center"
+            className={classNames(
+              'mb-3 col d-flex align-items-center justify-content-center',
+              styles.image
+            )}
           >
             <Image src={image.img} fluid />
           </Col>
@@ -106,7 +109,6 @@ class SponsorSection extends Component {
                       })}
                     >
                       <ImageViewer
-                        className="imageView"
                         id="petab"
                         images={sponsors.tier1}
                         size={65}

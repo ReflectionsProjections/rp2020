@@ -17,8 +17,9 @@
   font-weight: 100;
 }
 
-.imageView {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.image {
+  transition: transform 0.33s ease-in-out;
+}
+.image:hover {
+  transform: scale(1.05);
 }
