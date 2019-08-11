@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React from 'react';
 import classNames from 'classnames';
 
 import Image from 'react-bootstrap/Image';
@@ -67,102 +66,63 @@ const ImageViewer = props => {
   );
 };
 
-class SponsorSection extends Component {
-  state = {
-    sponsors: undefined,
-    loaded: false
-  };
+const SponsorSection = ({ sponsors }) => {
+  const hasAllTiersSection = (sponsors.allTiers || []).length > 0;
+  return (
+    <Section>
+      <Section.Title className={styles.sponsorTitle}>Sponsors</Section.Title>
+      <Section.Body>
+        <Container>
+          <Col
+            id="sponsor-tier"
+            lg={{ span: 10, offset: 1 }}
+            md={{ span: 12 }}
+            sm={{ span: 12 }}
+            xs={{ span: 12 }}
+            className="text-center"
+          >
+            {sponsors.tier1 && sponsors.tier1.length > 0 && (
+              <div
+                className={classNames(styles.tier, {
+                  [styles.firstTierSection]: !hasAllTiersSection
+                })}
+              >
+                <ImageViewer id="petab" images={sponsors.tier1} size={65} />
+              </div>
+            )}
 
-  componentDidMount() {
-    axios.get('/static/data/sponsor.json').then(res => {
-      this.setState({ sponsors: res.data.sponsors, loaded: true });
-    });
-  }
+            {sponsors.tier2 && sponsors.tier2.length > 0 && (
+              <div className={styles.tier}>
+                <ImageViewer images={sponsors.tier2} id="terab" size={50} />
+              </div>
+            )}
 
-  render() {
-    const { sponsors, loaded } = this.state;
-    if (!loaded) {
-      return null;
-    }
-    const hasAllTiersSection = (sponsors.allTiers || []).length > 0;
-    return (
-      <Section>
-        <Section.Title className={styles.sponsorTitle}>Sponsors</Section.Title>
-        <Section.Body>
-          <Container>
-            <Col
-              id="sponsor-tier"
-              lg={{ span: 10, offset: 1 }}
-              md={{ span: 12 }}
-              sm={{ span: 12 }}
-              xs={{ span: 12 }}
-              className="text-center"
-            >
-              {!loaded ? (
-                <h1>Loading</h1>
-              ) : (
-                <div>
-                  {sponsors.tier1 && sponsors.tier2.length > 0 && (
-                    <div
-                      className={classNames(styles.tier, {
-                        [styles.firstTierSection]: !hasAllTiersSection
-                      })}
-                    >
-                      <ImageViewer
-                        id="petab"
-                        images={sponsors.tier1}
-                        size={65}
-                      />
-                    </div>
-                  )}
+            {sponsors.tier3 && sponsors.tier3.length > 0 && (
+              <div className={styles.tier}>
+                <ImageViewer images={sponsors.tier3} id="gigab" size={40} />
+              </div>
+            )}
 
-                  {hasAllTiersSection && (
-                    <div className={styles.tier}>
-                      <ImageViewer
-                        images={sponsors.allTiers}
-                        id="allTiers"
-                        size={50}
-                      />
-                    </div>
-                  )}
+            {sponsors.tier4 && sponsors.tier4.length > 0 && (
+              <div className={styles.tier}>
+                <ImageViewer images={sponsors.tier4} id="megab" size={30} />
+              </div>
+            )}
 
-                  {sponsors.tier2 && sponsors.tier2.length > 0 && (
-                    <div className={styles.tier}>
-                      <ImageViewer
-                        images={sponsors.tier2}
-                        id="terab"
-                        size={50}
-                      />
-                    </div>
-                  )}
-
-                  {sponsors.tier3 && sponsors.tier3.length > 0 && (
-                    <div className={styles.tier}>
-                      <ImageViewer
-                        images={sponsors.tier3}
-                        id="gigab"
-                        size={40}
-                      />
-                    </div>
-                  )}
-
-                  {sponsors.tier4 && sponsors.tier4.length > 0 && (
-                    <div className={styles.tier}>
-                      <ImageViewer
-                        images={sponsors.tier4}
-                        id="megab"
-                        size={30}
-                      />
-                    </div>
-                  )}
-                </div>
-              )}
-            </Col>
-          </Container>
-        </Section.Body>
-      </Section>
-    );
-  }
-}
+            {hasAllTiersSection && (
+              <div className={styles.tier}>
+                <ImageViewer
+                  images={sponsors.allTiers}
+                  id="allTiers"
+                  size={50}
+                />
+              </div>
+            )}
+          </Col>
+        </Container>
+      </Section.Body>
+    </Section>
+  );
+};
 
 export default SponsorSection;
