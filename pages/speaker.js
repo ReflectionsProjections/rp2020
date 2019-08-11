@@ -6,6 +6,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import Gate from '../components/Util/Gate';
+import Nav from '../components/Nav';
 import Layout from '../components/Util/Layout';
 import Section from '../components/Util/Section';
 import Footer from '../components/Footer';
@@ -14,7 +16,7 @@ import OtherSpeakers from '../components/Speaker/OtherSpeakers';
 
 import styles from './speaker.scss';
 
-const Speaker = ({ speakers, query }) => {
+const Speaker = ({ speakers, query, gates, nav }) => {
   let speaker = {};
   if (speakers !== undefined) {
     speakers.forEach(s => {
@@ -27,6 +29,9 @@ const Speaker = ({ speakers, query }) => {
   const imageURL = `${image}.png`;
   return (
     <Layout>
+      <Gate gatename="NAV" gates={gates} query={query}>
+        <Nav format={nav.speaker} />
+      </Gate>
       <div className={`animated fadeIn ${styles.topPadding}`}>
         <Section>
           <Section.Title>
@@ -77,9 +82,13 @@ Speaker.getInitialProps = async ({ query }) => {
     process.env.NODE_ENV === 'production'
       ? 'http://acmrp.org'
       : 'http://localhost:3000';
-  const res = await axios.get(`${prefix}/static/rp2019.json`);
+  const res = await axios.get(`${prefix}/static/data/rp2019.json`);
+  const gatesRes = await axios.get(`${prefix}/static/data/gates.json`);
+  const navRes = await axios.get(`${prefix}/static/data/nav.json`);
   return {
     speakers: res.data.speakerSection.list,
+    gates: gatesRes.data.gates,
+    nav: navRes.data.pages,
     query
   };
 };

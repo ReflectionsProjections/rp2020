@@ -5,11 +5,21 @@ import NavButton from './NavButton';
 
 import styles from './styles.scss';
 
-const Nav = () => {
+const Nav = ({ format: { type, items } }) => {
   const [menuVisible, setMenuVisible] = useState(false);
 
   const handleClick = () => {
-    setMenuVisible(!menuVisible);
+    switch (type) {
+      case 'BACK_HOME': {
+        window.location = '/';
+        break;
+      }
+      case 'BASIC_NAV':
+      default: {
+        setMenuVisible(!menuVisible);
+        break;
+      }
+    }
   };
 
   const MenuLink = ({ label, name }) => (
@@ -37,10 +47,9 @@ const Nav = () => {
       <div className={styles.menuContainer}>
         <div className={styles.menu}>
           <ul>
-            <MenuLink label="About" name="about" />
-            <MenuLink label="Speakers" name="speakers" />
-            <MenuLink label="Events" name="events" />
-            <MenuLink label="FAQs" name="faq" />
+            {(items || []).map(item => (
+              <MenuLink label={item.label} name={item.name} />
+            ))}
           </ul>
         </div>
       </div>
@@ -49,8 +58,8 @@ const Nav = () => {
 
   return (
     <>
-      {renderMenu()}
-      <NavButton onClick={handleClick} menuVisible={menuVisible} />
+      {type === 'BASIC_NAV' && renderMenu()}
+      <NavButton type={type} onClick={handleClick} menuVisible={menuVisible} />
     </>
   );
 };

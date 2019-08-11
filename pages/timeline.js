@@ -18,7 +18,7 @@ TimelinePage.getInitialProps = async ({ req }) => {
       process.env.NODE_ENV === 'production'
         ? 'http://acmrp.org'
         : 'http://localhost:3000';
-    const res = await axios.get(`${prefix}/static/rp2019.json`);
+    const res = await axios.get(`${prefix}/static/data/rp2019.json`);
     return res.data;
   }
   return {};

@@ -19,11 +19,12 @@ import styles from './index.scss';
 import '../static/stylesheets/animations.scss';
 
 const Index = ({
-  speakerSection,
-  faqSection,
   events,
-  sponsors,
+  faqSection,
   gates,
+  nav,
+  speakerSection,
+  sponsors,
   query
 }) => (
   <>
@@ -79,7 +80,7 @@ const Index = ({
         </div>
       </main>
       <Gate gatename="NAV" gates={gates} query={query}>
-        <Nav />
+        <Nav format={nav.index} />
       </Gate>
       <Element name="about">
         <About />
@@ -112,11 +113,13 @@ Index.getInitialProps = async ({ query }) => {
     process.env.NODE_ENV === 'production'
       ? 'http://reflectionsprojections.org'
       : 'http://localhost:3000';
-  const res = await axios.get(`${prefix}/static/rp2019.json`);
-  const gatesRes = await axios.get(`${prefix}/static/gates.json`);
+  const res = await axios.get(`${prefix}/static/data/rp2019.json`);
+  const gatesRes = await axios.get(`${prefix}/static/data/gates.json`);
+  const navRes = await axios.get(`${prefix}/static/data/nav.json`);
   return {
     ...res.data,
     gates: gatesRes.data.gates,
+    nav: navRes.data.pages,
     query
   };
 };
