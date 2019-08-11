@@ -18,7 +18,14 @@ import Footer from '../components/Footer';
 import styles from './index.scss';
 import '../static/stylesheets/animations.scss';
 
-const Index = ({ speakerSection, faqSection, sponsors, gates, query }) => (
+const Index = ({
+  speakerSection,
+  faqSection,
+  events,
+  sponsors,
+  gates,
+  query
+}) => (
   <>
     <Head>
       <title>Reflections | Projections 2019</title>
@@ -84,7 +91,7 @@ const Index = ({ speakerSection, faqSection, sponsors, gates, query }) => (
       </Gate>
       <Gate gatename="EVENT_SECTION" gates={gates} query={query}>
         <Element name="events">
-          <Events />
+          <Events events={events} />
         </Element>
       </Gate>
       <Element name="faq">
