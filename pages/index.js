@@ -18,7 +18,7 @@ import Footer from '../components/Footer';
 import styles from './index.scss';
 import '../static/stylesheets/animations.scss';
 
-const Index = ({ speakerSection, faqSection, sponsors, gates, debugMode }) => (
+const Index = ({ speakerSection, faqSection, sponsors, gates, query }) => (
   <>
     <Head>
       <title>Reflections | Projections 2019</title>
@@ -71,18 +71,18 @@ const Index = ({ speakerSection, faqSection, sponsors, gates, debugMode }) => (
           </Link>
         </div>
       </main>
-      <Gate gatename="NAV" gates={gates} debugMode={debugMode}>
+      <Gate gatename="NAV" gates={gates} query={query}>
         <Nav />
       </Gate>
       <Element name="about">
         <About />
       </Element>
-      <Gate gatename="SPEAKER_SECTION" gates={gates} debugMode={debugMode}>
+      <Gate gatename="SPEAKER_SECTION" gates={gates} query={query}>
         <Element name="speakers">
           <Speaker speakers={speakerSection.list} />
         </Element>
       </Gate>
-      <Gate gatename="EVENT_SECTION" gates={gates} debugMode={debugMode}>
+      <Gate gatename="EVENT_SECTION" gates={gates} query={query}>
         <Element name="events">
           <Events />
         </Element>
@@ -90,7 +90,7 @@ const Index = ({ speakerSection, faqSection, sponsors, gates, debugMode }) => (
       <Element name="faq">
         <FAQ faqData={faqSection} />
       </Element>
-      <Gate gatename="SPONSOR_SECTION" gates={gates} debugMode={debugMode}>
+      <Gate gatename="SPONSOR_SECTION" gates={gates} query={query}>
         <Element name="sponsor-section">
           <SponsorSection sponsors={sponsors} />
         </Element>
@@ -106,9 +106,11 @@ Index.getInitialProps = async ({ query }) => {
       ? 'http://reflectionsprojections.org'
       : 'http://localhost:3000';
   const res = await axios.get(`${prefix}/static/rp2019.json`);
+  const gatesRes = await axios.get(`${prefix}/static/gates.json`);
   return {
     ...res.data,
-    debugMode: query.debugMode
+    gates: gatesRes.data.gates,
+    query
   };
 };
 

@@ -1,5 +1,5 @@
-const Gate = ({ children, gatename, gates, debugMode }) => {
-  if (debugMode) {
+const Gate = ({ children, gatename, gates, query }) => {
+  if (query.debugMode) {
     return children;
   }
   const gate = gates[gatename];
