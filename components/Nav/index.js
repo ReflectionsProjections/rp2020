@@ -11,7 +11,7 @@ const Nav = ({ format: { type, items } }) => {
   const handleClick = () => {
     switch (type) {
       case 'BACK_HOME': {
-        window.location = '/';
+        window.location = `/${window.location.search}`;
         break;
       }
       case 'BASIC_NAV':
@@ -57,10 +57,10 @@ const Nav = ({ format: { type, items } }) => {
   };
 
   return (
-    <>
+    <div className={styles.nav}>
       {type === 'BASIC_NAV' && renderMenu()}
       <NavButton type={type} onClick={handleClick} menuVisible={menuVisible} />
-    </>
+    </div>
   );
 };
 

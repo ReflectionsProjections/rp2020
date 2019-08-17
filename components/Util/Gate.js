@@ -2,7 +2,6 @@ const Gate = ({ children, gatename, gates, query }) => {
   if (query[gatename] === 'true') {
     return children;
   }
-
   const gate = gates[gatename];
   if (gate === undefined) {
     return null;
