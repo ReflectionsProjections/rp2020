@@ -35,7 +35,7 @@ const ImageViewer = props => {
     currRow.push(
       <Col
         md={columnSize}
-        key={id}
+        key={image.name}
         className={classNames(
           'mb-3 col d-flex align-items-center justify-content-center',
           styles.image

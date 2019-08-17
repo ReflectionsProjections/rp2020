@@ -67,7 +67,7 @@ const Speaker = ({ query }) => {
                 </Row>
                 <Row className="mt-4">
                   <Col className="text-center">
-                    <Link scroll href="/">
+                    <Link scroll href={{ pathname: '/', query }}>
                       <span className="btn btn-primary">Back Home</span>
                     </Link>
                   </Col>
@@ -85,10 +85,6 @@ const Speaker = ({ query }) => {
   );
 };
 
-Speaker.getInitialProps = async ({ query }) => {
-  return {
-    query
-  };
-};
+Speaker.getInitialProps = async ({ query }) => ({ query });
 
 export default Speaker;
