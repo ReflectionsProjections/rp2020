@@ -12,58 +12,57 @@ import styles from './SponsorSection.scss';
 const ImageViewer = props => {
   const { id, images } = props;
 
-  let xs = 12;
-  let sm = 12;
-  let md = 12;
-  let lg = 12;
-
+  let rowMax = 0;
   if (id === 'petab') {
-    xs = 12;
-    sm = 12;
-    md = 12;
-    lg = 12;
+    rowMax = 1;
   } else if (id === 'terab') {
-    xs = 6;
-    sm = 6;
-    md = 6;
-    lg = 6;
+    rowMax = 2;
   } else if (id === 'gigab') {
-    xs = 4;
-    sm = 3;
-    md = 4;
-    lg = 4;
+    rowMax = 3;
   } else if (id === 'megab') {
-    xs = 3;
-    sm = 2;
-    md = 3;
-    lg = 3;
+    rowMax = 4;
   } else if (id === 'allTiers') {
-    xs = 3;
-    sm = 3;
-    md = 3;
-    lg = 3;
+    rowMax = 5;
   }
 
-  return (
-    <Row>
-      {images.map(image => {
-        return (
-          <Col
-            xs={xs}
-            sm={sm}
-            md={md}
-            lg={lg}
-            className={classNames(
-              'mb-3 col d-flex align-items-center justify-content-center',
-              styles.image
-            )}
-          >
-            <Image src={image.img} fluid />
-          </Col>
-        );
-      })}
-    </Row>
-  );
+  //  Bootstrap Has a 12 Column Grid Layout
+  const GRID_NUM_COLUMNS = 12;
+  const columnSize = GRID_NUM_COLUMNS / rowMax;
+
+  const imageRows = [];
+  let currRow = [];
+  images.forEach(image => {
+    currRow.push(
+      <Col
+        md={columnSize}
+        key={id}
+        className={classNames(
+          'mb-3 col d-flex align-items-center justify-content-center',
+          styles.image
+        )}
+      >
+        <Image src={image.img} fluid />
+      </Col>
+    );
+    if (currRow.length === rowMax) {
+      imageRows.push(<Row>{currRow}</Row>);
+      currRow = [];
+    }
+  });
+
+  //  Need to calculate offset for last row if length !== rowMax to properly center
+  if (currRow.length !== 0) {
+    //  Figures out how many empty columns there are and divides it by two to center
+    const offset = (GRID_NUM_COLUMNS - currRow.length * columnSize) / 2;
+    const offsetCol = <Col md={offset} />;
+    imageRows.push(
+      <Row>
+        {// Prepend empty offsetting column
+        [offsetCol, ...currRow]}
+      </Row>
+    );
+  }
+  return imageRows;
 };
 
 const SponsorSection = ({ sponsors }) => {
@@ -87,35 +86,31 @@ const SponsorSection = ({ sponsors }) => {
                   [styles.firstTierSection]: !hasAllTiersSection
                 })}
               >
-                <ImageViewer id="petab" images={sponsors.tier1} size={65} />
+                <ImageViewer id="petab" images={sponsors.tier1} />
               </div>
             )}
 
             {sponsors.tier2 && sponsors.tier2.length > 0 && (
               <div className={styles.tier}>
-                <ImageViewer images={sponsors.tier2} id="terab" size={50} />
+                <ImageViewer images={sponsors.tier2} id="terab" />
               </div>
             )}
 
             {sponsors.tier3 && sponsors.tier3.length > 0 && (
               <div className={styles.tier}>
-                <ImageViewer images={sponsors.tier3} id="gigab" size={40} />
+                <ImageViewer images={sponsors.tier3} id="gigab" />
               </div>
             )}
 
             {sponsors.tier4 && sponsors.tier4.length > 0 && (
               <div className={styles.tier}>
-                <ImageViewer images={sponsors.tier4} id="megab" size={30} />
+                <ImageViewer images={sponsors.tier4} id="megab" />
               </div>
             )}
 
             {hasAllTiersSection && (
               <div className={styles.tier}>
-                <ImageViewer
-                  images={sponsors.allTiers}
-                  id="allTiers"
-                  size={50}
-                />
+                <ImageViewer images={sponsors.allTiers} id="allTiers" />
               </div>
             )}
           </Col>
