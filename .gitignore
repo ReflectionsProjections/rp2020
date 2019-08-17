@@ -79,3 +79,6 @@ out
 
 # DynamoDB Local files
 .dynamodb/
+
+.DS_Store
+*/.DS_Store

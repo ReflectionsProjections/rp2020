@@ -1,0 +1,74 @@
+@import 'static/stylesheets/variables.scss';
+
+.navButton,
+.menu {
+  z-index: 10;
+  box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navButton {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  display: flex;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: $medium-purple;
+  background-color: white;
+  border: none;
+}
+
+.navButtonToggled {
+  color: white !important;
+  background-color: $medium-purple !important;
+}
+
+.navButton:focus {
+  outline: 0;
+}
+
+.navIcon {
+  font-size: 1.5em;
+}
+
+.menuContainer {
+  position: fixed;
+  bottom: 2em;
+  right: 6em;
+  padding-right: 1em;
+}
+.menu {
+  height: 100%;
+  padding: 1em;
+  border-radius: 1.5em;
+  background-color: white;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0.5em;
+  margin: 0;
+  text-align: center;
+}
+
+.menu ul li {
+  font-size: 1.5em;
+  font-family: 'Roboto Slab';
+  padding-top: 0.25em;
+  opacity: 1;
+  transition: transform 0.25 ease-in-out, opacity 0.25s;
+}
+.menu ul li:first-child {
+  padding-top: 0;
+}
+
+.menu ul li:hover {
+  transform: scale(1.05);
+  color: $mauve;
+}
+.menu ul li:active {
+  color: $medium-purple;
+}

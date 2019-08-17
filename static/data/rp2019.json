@@ -1,0 +1,423 @@
+{
+  "timelineSection": {
+    "events": [
+      {
+        "date": "1995",
+        "content": [
+          "Featured Steve Wozniak, co-founder of Apple Inc., as the conference's first keynote speaker."
+        ]
+      },
+      {
+        "date": "1996",
+        "content": [
+          "Adopted the “Reflections | Projections” theme.",
+          "Sponsors included AMD, Boeing, Intel, Citrix Systems."
+        ]
+      },
+      {
+        "date": "1997",
+        "content": [
+          "Our conference included talks about OpenGL, web commerce, and Y2K. OpenGL, a cross-language, cross-platform API for 2D and 3D vector graphics rendering, continues to be the an industry standard for high performance graphics."
+        ]
+      },
+      {
+        "date": "1998",
+        "content": [
+          "Official adoption of the name “Reflections | Projections”."
+        ]
+      },
+      {
+        "date": "1999",
+        "content": [
+          "Took on the title of National Student ACM Conference, reaching 350 students from 12 universities, and over 45 corporate sponsors."
+        ]
+      },
+      {
+        "date": "2001",
+        "content": [
+          "Keynote talk by Fred Brooks, known for heading developing of IBM System/360 family of computers and OS/360 software support package. Two years prior to speaking at R|P 2001, Brooks received the Turing Award.",
+          "General talks by John Draper and Alexy Pajitnov. Draper was a widely known figure in the hacker community who, among other things, exposed a vulnerability in the AT&T network using a toy whistle packaged in boxes of Cap'n Crunch cereal. Pajitnov created Tetris.",
+          "Included workshops on Windows and Perl."
+        ]
+      },
+      {
+        "date": "2002",
+        "content": [
+          "Included a PGP key signing party.",
+          "Talks by Michael Hatt, Ian Murdock, Marcus Brinkmann, and Hal Berghel",
+          "Additional sponsors included Microsoft, Abbott Laboratories, and Argonne National Laboratory"
+        ]
+      },
+      {
+        "date": "2003",
+        "content": [
+          "The year of cryptography, security, and multimedia",
+          "Talk by ACM national lecturer Barbara Simons on computerized and Internet voting",
+          "Had a creative portion, where undergraduates were invited to submit research projects or ideas to present as posters. The projects included open-source development, independent study, & semester group projects."
+        ]
+      },
+      {
+        "date": "2004",
+        "content": [
+          "Speakers included Jimmy Wales, Thomas Cormen, and Owen Astracham"
+        ]
+      },
+      {
+        "date": "2006",
+        "content": [
+          "Featured talks from Jawed Karim, co-founder of YouTube, and Max Levchin, co-founder of PayPal."
+        ]
+      },
+      {
+        "date": "2007",
+        "content": ["Theme change."]
+      },
+      {
+        "date": "2008",
+        "content": [
+          "Heavily expanded corporate presence at the conference. Sponsors included Bloomberg, Caterpillar Inc., Cerner, Citadel LLC, Facebook, Intel, Microsoft, Navteq, Northrop Grumman, the NSA, Nvidia, Raytheon, Sun Microsystems, SpaceX, VMware, Yahoo and others"
+        ]
+      },
+      {
+        "date": "2012",
+        "content": ["Beginning of the Startup Fair."]
+      },
+      {
+        "date": "2014",
+        "content": [
+          "Broke previous attendance records, hosting nearly 2000 attendees."
+        ]
+      },
+      {
+        "date": "2015",
+        "content": ["A year of innovation, entrepreneurship, and brilliance."]
+      },
+      {
+        "date": "2016",
+        "content": [
+          "Introduction of MechMania, a 24-hour Game AI hackathon competition. Students competed to create AI to play a modified version of Rock, Paper, and Scissors."
+        ]
+      },
+      {
+        "date": "2018",
+        "content": [
+          "Reintroduction of the ACM Symposium, a showcase of projects and research by the UIUC computer science community."
+        ]
+      }
+    ]
+  },
+  "speakerSection": {
+    "list": [
+      {
+        "name": "Alfred Spector",
+        "tagline": "CTO & Head of Engineering @ Two Sigma",
+        "bio": "Alfred Spector is Chief Technology Officer and Head of Engineering at Two Sigma, a firm dedicated to using information to optimize diverse economic challenges.  Prior to joining Two Sigma, Dr. Spector spent nearly eight years as Vice President of Research and Special Initiatives, at Google, where his teams delivered a range of successful technologies including machine learning, speech recognition, and translation. Prior to Google, Dr. Spector held various senior-level positions at IBM, including Vice President of Strategy and Technology (or CTO) for IBM Software and Vice President of Services and Software research across the company.  He previously founded and served as CEO of Transarc Corporation, a pioneer in distributed transaction processing and wide-area file systems, and he was on the computer science faculty at Carnegie Mellon University. Dr. Spector received a bachelor’s degree in Applied Mathematics from Harvard University and a Ph.D. in computer science from Stanford University, where he was a Hertz Fellow.   He is a Fellow of both the Association for Computing Machinery and the IEEE.  He is an active member of the National Academy of Engineering and the American Academy of Arts and Sciences, where he serves on the Council.  Dr. Spector won the 2001 IEEE Kanai Award for Distributed Computing and the 2016 ACM Software Systems Award, the latter for his work on the Andrew File System (AFS).",
+        "image": "/static/img/speakers/AlfredSpector"
+      },
+      {
+        "name": "Christine Bakan",
+        "tagline": "Global Head and Vice President of Software and Bioinformatics @ Roche Sequencing Solutions",
+        "bio": "As Global Head and Vice President of Software and Bioinformatics for Roche Sequencing Solutions, Christine Bakan leads research and development of genomic sequencing data analysis and clinical interpretation software for end-to-end, next generation sequencing solutions being developed at Roche. Prior to Roche Sequencing Solutions, Christine held senior positions at Cisco Systems where she was responsible for core software technologies, digital network solutions and software defined networking across Cisco’s market leading enterprise switching, routing and mobile/ wireless product lines. Christine previously led software research and development organizations for cloud IT service management products at BMC Software (top rated in Gartner Magic Quadrant), and software development teams in the advanced technology group at Oracle Corporation. She holds four patents related to virtualization, security and performance optimization in Oracle applications and database technologies. Christine holds degrees in Molecular Biology and Neuroscience from UC Berkeley and in business from Stanford University Graduate School of Business.",
+        "image": "/static/img/speakers/ChristineBakan"
+      },
+      {
+        "name": "Derrick Higgins",
+        "tagline": "Senior Director of Data Science @ Blue Cross and Blue Shield",
+        "bio": "Dr. Derrick Higgins is senior director of data science at Blue Cross and Blue Shield of Illinois.  His team serves as a center of excellence, facilitating collaboration, providing governance, and assembling data science best practices for the enterprise.  He has built and led data science teams at American Family Insurance, Civis Analytics, and the Educational Testing Service.  His work has been published in leading conferences and journals in the fields of computational linguistics, speech processing, and language testing, and has resulted in ten patents.",
+        "image": "/static/img/speakers/DerrickHiggins"
+      },
+      {
+        "name": "Donald Kossmann",
+        "tagline": "Director of the Microsoft Research Lab in Redmond",
+        "bio": "Donald Kossmann is the director of the Microsoft Research Lab in Redmond. Before joining Microsoft, Donald was a professor in the Systems Group of the Department of Computer Science at ETH Zurich for 13 years, doing research and teaching all flavors of data management systems. He was chair of ACM SIGMOD from 2013 to 2017 and served on the Board of Trustees of the VLDB Endowment from 2005 to 2011. He is a co-founder of four companies: i-TV-T AG (1998), XQRL Inc. (2002), 28msec Inc. (2006), and Teralytics AG (2010). Dr. Derrick Higgins is senior director of data science at Blue Cross and Blue Shield of Illinois.  His team serves as a center of excellence, facilitating collaboration, providing governance, and assembling data science best practices for the enterprise.  He has built and led data science teams at American Family Insurance, Civis Analytics, and the Educational Testing Service.  His work has been published in leading conferences and journals in the fields of computational linguistics, speech processing, and language testing, and has resulted in ten patents.",
+        "image": "/static/img/speakers/DonaldKossmann"
+      },
+      {
+        "name": "Forrest Iandola",
+        "tagline": "CEO of DeepScale",
+        "bio": "Forrest Iandola (UIUC BS CS '12 and UC Berkeley PhD EECS '16) is a deep learning researcher and a startup founder. His best-known research work includes deep learning infrastructure such as FireCaffe and deep models such as SqueezeNet and SqueezeDet. His advances in deep learning led to the founding of DeepScale, where he has been CEO since 2015. DeepScale builds vision/perception systems for automated vehicles.",
+        "image": "/static/img/speakers/ForrestIandola"
+      },
+      {
+        "name": "Jennison Asuncion",
+        "tagline": "Accessibility @ LinkedIn",
+        "bio": "Jennison Asuncion works in LinkedIn Engineering, where he leads efforts to assure their web and mobile products are built to be accessible and usable to the more than one billion people with disabilities/impairments worldwide. In 2012, Jennison co-founded Global Accessibility Awareness Day (GAAD), an annual, grassroots effort intended to raise the visibility of how technology can both include and exclude people with disabilities/impairments. Jennison believes strongly that students of Computer Science/Engineering and related disciplines should possess fundamental knowledge about accessibility by the time they graduate.",
+        "image": "/static/img/speakers/JennisonAsuncion"
+      }
+    ]
+  },
+  "faqSection": {
+    "sections": [
+      {
+        "name": "General",
+        "questions": [
+          {
+            "question": "What is Reflections | Projections?",
+            "answer": "Reflections | Projections is an annual technology conference held at the University of Illinois at Urbana-Champaign. It features two job fairs, a variety of speaker events, a puzzle competition, a 24-hour hackathon, and more! This is our 25th year running R|P, and we are excited to continue our tradition of connecting attendees with premier speakers, influencers, and companies!"
+          },
+          {
+            "question": "How do I register?",
+            "answer": "Registrations will open late Summer/early Fall 2019. Be sure to use the \"Get Updates\" button at the top of the page to add yourself to the update list so you get notified when registration opens!"
+          },
+          {
+            "question": "Who can attend?",
+            "answer": "Reflections | Projections is free and open to anyone regardless of age, major, or affiliation with the University of Illinois. Come join a discussion led by some of the brightest minds in the business about the bleeding edge of the tech industry!"
+          },
+          {
+            "question": "Is the conference free to attend?",
+            "answer": "Yes! Reflections | Projections is completely free to attend! This includes MechMania and all other events."
+          },
+          {
+            "question": "Will food be provided?",
+            "answer": "A large variety of meals, snacks, and drinks will be provided for free throughout the week for registered attendees. If you have a dietary restriction, please mention it in the registration form when you register for the conference (registration will open late Summer/early Fall)."
+          }
+        ]
+      },
+      {
+        "name": "MechMania",
+        "questions": [
+          {
+            "question": "What is MechMania?",
+            "answer": "MechMania is a 24-hour programming contest in which teams of students from various schools compete to create an AI capable of playing (and winning) a strategy game we have developed for the event. The competition will begin with the opening ceremony and announcement of the game on Friday, September 20th after which the programming component will commence immediately. The competition will conclude with the closing ceremony and awards presentation on Saturday, September 21st after running for 24 hours. Register for MechMania here! You must be registered for Reflections | Projections to compete in MechMania."
+          },
+          {
+            "question": "Who's eligible?",
+            "answer": "We accept teams of up to four students. Our student competition accepts up to forty teams and pits them against each other in one final battle. Teams do not need to be comprised of all students from the same school, but all participants must be actively enrolled in a college or university."
+          },
+          {
+            "question": "What do you need to know?",
+            "answer": "All members should be proficient in the programming language their team intends to use. The API will use JSON messages passed over HTTP, so we recommend having knowledge of a JSON library in your chosen language."
+          },
+          {
+            "question": "What do you not need to know?",
+            "answer": "No prior knowledge of any specific languages are required. You won't need a background in artificial intelligence—in previous years, many teams without an AI background have competed and done well, or even won. You also shouldn't need knowledge of network programming beyond HTTP requests."
+          },
+          {
+            "question": "What can you bring?",
+            "answer": "You can bring any reference manual(s) you wish, whether it be the Art of Computer Programming or the Art of War. But absolutely no outside code. You may, however, bring non-code items like rc files, build scripts, notes, etc. Competitors are required to bring their own laptops, though the code you write must be capable of running on our systems."
+          },
+          {
+            "question": "What will you do?",
+            "answer": "By either starting from scratch or using our provided sample clients, you will build an artificial intelligence client to play a strategy game of our design. Our API will provide you information about the current state of the game, as well as allow you to send commands to play it. You may find previous competition sites useful to get an idea of how MechMania operates."
+          }
+        ]
+      },
+      {
+        "name": "PuzzleBang",
+        "questions": [
+          {
+            "question": "What is PuzzleBang?",
+            "answer": "PuzzleBang is a puzzle contest that takes place over the course of a week. Puzzles are released online at puzzlebang.com roughly one per day until Saturday when we release several hard puzzles and a physical, on-campus metapuzzle that pulls everything together.  In the last two years, PuzzleBang also included a real-life escape room (themed to, but otherwise unrelated to the puzzlebang.com puzzles)."
+          },
+          {
+            "question": "Who's eligible?",
+            "answer": "Anyone can play! We recommend teams of no more than four human beings. If you haven't met any other friends that are interested in playing, drop us a line at GameControl@puzzlebang.com and we'll see about pairing you up with a new friend or two."
+          },
+          {
+            "question": "What you will need to have?",
+            "answer": "Access to a functional human brain, an internet connection (ideally at or better than 28.8kb), and a computer with a good web browser. A mobile device (smartphone, laptop, tablet, dumbphone with a friend at a computer on the other end, etc) with internet capabilities might be useful for Friday and Saturday."
+          },
+          {
+            "question": "What do you need to know?",
+            "answer": "Everything! No, just kidding. Wikipedia's classical cipher's page might be useful. A number of letters in the alphabet, number of cards in a deck, all the US state abbreviations, and silly other things that you've probably run across in your daily life. Some awareness of the recent memes and popular culture will probably be helpful. Knowledge of current events at UIUC and the campus layout will be really helpful."
+          },
+          {
+            "question": "What do you not need to know?",
+            "answer": "How to code. It might be useful to be able to write a script to print out all the ways you can rearrange a set of letters, or apply different ciphers to them, but in general, you should be able to do everything by hand or ask Google and find a tool online to do it for you"
+          }
+        ]
+      },
+      {
+        "name": "R|P Symposium",
+        "questions": [
+          {
+            "question": "What is the R|P Symposium?",
+            "answer": "The R|P Symposium is a platform for students to come together and share their research work (through research papers or poster presentations) or their individual/SIG projects (through live demos)."
+          },
+          {
+            "question": "What is the motivation behind the R|P Symposium?",
+            "answer": "The R|P Symposium is a way for us to return to our roots! R|P originated as the Midwestern ACM Chapter Conference back in 1995 and this year we are aiming to bring all our neighboring Midwestern chapters together to facilitate collaboration and conversation. All our chapters are doing incredible research and building really cool projects and we would be remiss if we couldn't shine a spotlight on it. Thus our tagline: Industry meets Academia!"
+          },
+          {
+            "question": "Why should I attend?",
+            "answer": "Well, for one, this is a great opportunity for our chapters to network, exchange ideas, learn and support one another! Second, your work gets more visibility. With an audience consisting of fellow ACM chapter members, students attending from 10+ midwestern universities, professors and researchers of UIUC themselves and other conference attendees and speakers, who know what opportunities might present themselves?"
+          },
+          {
+            "question": "What am I allowed to showcase?",
+            "answer": "SIG/ACM projects, individual/group projects or research, open source projects or contributions and anything in-between would be awesome to have at our project fair."
+          },
+          {
+            "question": "What does R|P provide?",
+            "answer": "The booths, charging outlets, food, and visibility!"
+          }
+        ]
+      },
+      {
+        "name": "Events",
+        "questions": [
+          {
+            "question": "What's the difference between Tech Talks and Speaker Talks?",
+            "answer": "Tech Talks are given by sponsor representatives who wish to spotlight their company and talk about new products/technologies. Speaker Talks are given by experts in the tech community and are about specific technical or personal topics."
+          },
+          {
+            "question": "What's the difference between the Startup Fair and the Career Fair?",
+            "answer": "The Startup Fair is for startup companies, and the Career Fair is for established companies. The difference between startup and established companies is determined by conference staff."
+          }
+        ]
+      }
+    ]
+  },
+  "events": [
+    {
+      "title": "Puzzlebang",
+      "slug": "Puzzlebang",
+      "image": "https://images.unsplash.com/photo-1495615080073-6b89c9839ce0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1644&q=80",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "title": "Puzzlebang",
+      "slug": "Puzzlebang",
+      "image": "https://images.unsplash.com/photo-1495615080073-6b89c9839ce0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1644&q=80",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "title": "Puzzlebang",
+      "slug": "Puzzlebang",
+      "image": "https://images.unsplash.com/photo-1495615080073-6b89c9839ce0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1644&q=80",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "title": "Puzzlebang",
+      "slug": "Puzzlebang",
+      "image": "https://images.unsplash.com/photo-1495615080073-6b89c9839ce0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1644&q=80",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "title": "Puzzlebang",
+      "slug": "Puzzlebang",
+      "image": "https://images.unsplash.com/photo-1495615080073-6b89c9839ce0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1644&q=80",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+  ],
+  "sponsors": {
+    "allTiers": [
+      {
+        "name": "Checkbook",
+        "img": "/static/assets/img/sponsors/Checkbook.svg",
+        "website": "#"
+      },
+      {
+        "name": "Cruise",
+        "img": "/static/assets/img/sponsors/Cruise.png",
+        "website": "#"
+      },
+      {
+        "name": "Flexport",
+        "img": "/static/assets/img/sponsors/Flexport.svg",
+        "website": "#"
+      },
+      {
+        "name": "Samsara",
+        "img": "/static/assets/img/sponsors/Samsara.png",
+        "website": "#"
+      },
+      {
+        "name": "Two Sigma",
+        "img": "/static/assets/img/sponsors/TwoSigma.jpg",
+        "website": "#"
+      }
+    ],
+    "tier1": [],
+    "tier2": [
+      {
+        "name": "Salesforce",
+        "img": "/static/assets/img/sponsors/Salesforce.png",
+        "website": "#"
+      },
+      {
+        "name": "Zillow",
+        "img": "/static/assets/img/sponsors/Zillow.png",
+        "website": "#"
+      }
+    ],
+    "tier3": [
+      {
+        "name": "Capital One",
+        "img": "/static/assets/img/sponsors/CapitalOne.png",
+        "website": "#"
+      },
+      {
+        "name": "Qualtrics",
+        "img": "/static/assets/img/sponsors/Qualtrics.png",
+        "website": "#"
+      },
+      {
+        "name": "Robinhood",
+        "img": "/static/assets/img/sponsors/Robinhood.png",
+        "website": "#"
+      },
+      {
+        "name": "Quora",
+        "img": "/static/assets/img/sponsors/Quora.png",
+        "website": "#"
+      },
+      {
+        "name": "Tasty Trade",
+        "img": "/static/assets/img/sponsors/TastyTrade.jpg",
+        "website": "#"
+      }
+    ],
+    "tier4": [
+      {
+        "name": "Aechelon Technology",
+        "img": "/static/assets/img/sponsors/AechelonTechnology.png",
+        "website": "#"
+      },
+      {
+        "name": "Affirm",
+        "img": "/static/assets/img/sponsors/Affirm.png",
+        "website": "#"
+      },
+      {
+        "name": "Amazon",
+        "img": "/static/assets/img/sponsors/Amazon.png",
+        "website": "#"
+      },
+      {
+        "name": "Asana",
+        "img": "/static/assets/img/sponsors/Asana.png",
+        "website": "#"
+      },
+      {
+        "name": "Cloudflare",
+        "img": "/static/assets/img/sponsors/Cloudflare.png",
+        "website": "#"
+      },
+      {
+        "name": "Confluent",
+        "img": "/static/assets/img/sponsors/Confluent.png",
+        "website": "#"
+      },
+      {
+        "name": "Lyft",
+        "img": "/static/assets/img/sponsors/Lyft.png",
+        "website": "#"
+      },
+      {
+        "name": "PWC",
+        "img": "/static/assets/img/sponsors/PWC.png",
+        "website": "#"
+      },
+      {
+        "name": "Relativity",
+        "img": "/static/assets/img/sponsors/Relativity.jpg",
+        "website": "#"
+      },
+      {
+        "name": "Sandia",
+        "img": "/static/assets/img/sponsors/Sandia.jpg",
+        "website": "#"
+      }
+    ]
+  }
+}

@@ -2,16 +2,31 @@ import React from 'react';
 import Head from 'next/head';
 import SVG from 'react-inlinesvg';
 import { Link, Element } from 'react-scroll';
+import axios from 'axios';
+
+import Gate from '../components/Util/Gate';
 import Layout from '../components/Util/Layout';
+import Nav from '../components/Nav';
 import CountdownTimer from '../components/CountdownTimer';
-
 import About from '../components/About/index';
+import Speaker from '../components/Speaker';
+import Events from '../components/Events';
 import FAQ from '../components/FAQ/index';
+import SponsorSection from '../components/SponsorSection';
+import Footer from '../components/Footer';
 
-import './index.scss';
+import styles from './index.scss';
 import '../static/stylesheets/animations.scss';
 
-const Index = () => (
+const Index = ({
+  events,
+  faqSection,
+  gates,
+  nav,
+  speakerSection,
+  sponsors,
+  query
+}) => (
   <>
     <Head>
       <title>Reflections | Projections 2019</title>
@@ -41,13 +56,15 @@ const Index = () => (
     <Layout>
       <main className="landing">
         <div className="container">
-          <div className="lead-content text-white text-center">
+          <div className={`text-white text-center ${styles.leadContent}`}>
             <SVG
-              className="img-fluid wordmark animated fadeIn"
+              className={`img-fluid animated fadeIn ${styles.wordmark}`}
               src="/static/assets/wordmarkblack.svg"
             />
-            <h2 className="event-date animated fadeIn">Sept 16 - 21</h2>
-            <h6 className="animated fadeInUp" id="tagline">
+            <h2 className={`animated fadeIn ${styles.eventDate}`}>
+              Sept 16 - 21
+            </h2>
+            <h6 className={`animated fadeInUp ${styles.tagline}`}>
               Celebrating 25 Years
             </h6>
             <div>
@@ -62,33 +79,55 @@ const Index = () => (
             duration={500}
             offset={-80}
           >
-            <span className="scroll-down">
-              <span className="scroll-down-text">See More</span>
+            <span className={styles.scrollDown}>
+              <span className={styles.scrollDownText}>See More</span>
             </span>
           </Link>
         </div>
       </main>
-
+      <Gate gatename="NAV" gates={gates} query={query}>
+        <Nav format={nav.index} />
+      </Gate>
       <Element name="about">
         <About />
       </Element>
+      <Gate gatename="SPEAKER_SECTION" gates={gates} query={query}>
+        <Element name="speakers">
+          <Speaker speakers={speakerSection.list} />
+        </Element>
+      </Gate>
+      <Gate gatename="EVENT_SECTION" gates={gates} query={query}>
+        <Element name="events">
+          <Events events={events} />
+        </Element>
+      </Gate>
       <Element name="faq">
-        <FAQ />
+        <FAQ faqData={faqSection} />
       </Element>
-      <footer>
-        <div className="text-white text-center footer-text animated fadeIn">
-          <p id="organized">
-            Organized by <a href="https://acm.illinois.edu/">ACM@UIUC</a>
-          </p>
-          <p id="contact">
-            Questions? Interested in sponsoring? Email us at{' '}
-            <a href="mailto:contact@reflectionsprojections.org">
-              contact@reflectionsprojections.org
-            </a>
-          </p>
-        </div>
-      </footer>
+      <Gate gatename="SPONSOR_SECTION" gates={gates} query={query}>
+        <Element name="sponsor-section">
+          <SponsorSection sponsors={sponsors} />
+        </Element>
+      </Gate>
+      <Footer />
     </Layout>
   </>
 );
+
+Index.getInitialProps = async ({ query }) => {
+  const prefix =
+    process.env.NODE_ENV === 'production'
+      ? 'http://reflectionsprojections.org'
+      : 'http://localhost:3000';
+  const res = await axios.get(`${prefix}/static/data/rp2019.json`);
+  const gatesRes = await axios.get(`${prefix}/static/data/gates.json`);
+  const navRes = await axios.get(`${prefix}/static/data/nav.json`);
+  return {
+    ...res.data,
+    gates: gatesRes.data.gates,
+    nav: navRes.data.pages,
+    query
+  };
+};
+
 export default Index;
