@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import SVG from 'react-inlinesvg';
 import { Link, Element } from 'react-scroll';
-import axios from 'axios';
 
 import Gate from '../components/Util/Gate';
 import Layout from '../components/Util/Layout';
@@ -18,15 +17,13 @@ import Footer from '../components/Footer';
 import styles from './index.scss';
 import '../static/stylesheets/animations.scss';
 
-const Index = ({
-  events,
-  faqSection,
-  gates,
-  nav,
-  speakerSection,
-  sponsors,
-  query
-}) => (
+import rpData from '../static/data/rp2019.json';
+import gates from '../static/data/gates.json';
+import nav from '../static/data/nav.json';
+
+const { events, faqSection, speakerSection, sponsors } = rpData;
+
+const Index = ({ query }) => (
   <>
     <Head>
       <title>Reflections | Projections 2019</title>
@@ -109,17 +106,7 @@ const Index = ({
 );
 
 Index.getInitialProps = async ({ query }) => {
-  const prefix =
-    process.env.NODE_ENV === 'production'
-      ? 'http://reflectionsprojections.org'
-      : 'http://localhost:3000';
-  const res = await axios.get(`${prefix}/static/data/rp2019.json`);
-  const gatesRes = await axios.get(`${prefix}/static/data/gates.json`);
-  const navRes = await axios.get(`${prefix}/static/data/nav.json`);
   return {
-    ...res.data,
-    gates: gatesRes.data.gates,
-    nav: navRes.data.pages,
     query
   };
 };

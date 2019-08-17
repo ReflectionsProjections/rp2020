@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 import Link from 'next/link';
 
 import Container from 'react-bootstrap/Container';
@@ -16,7 +15,14 @@ import OtherSpeakers from '../components/Speaker/OtherSpeakers';
 
 import styles from './speaker.scss';
 
-const Speaker = ({ speakers, query, gates, nav }) => {
+import rpData from '../static/data/rp2019.json';
+import gates from '../static/data/gates.json';
+import nav from '../static/data/nav.json';
+
+const { speakerSection } = rpData;
+const speakers = speakerSection.list; // TODO: rename everything to speakerSection._
+
+const Speaker = ({ query }) => {
   let speaker = {};
   if (speakers !== undefined) {
     speakers.forEach(s => {
@@ -80,17 +86,7 @@ const Speaker = ({ speakers, query, gates, nav }) => {
 };
 
 Speaker.getInitialProps = async ({ query }) => {
-  const prefix =
-    process.env.NODE_ENV === 'production'
-      ? 'http://acmrp.org'
-      : 'http://localhost:3000';
-  const res = await axios.get(`${prefix}/static/data/rp2019.json`);
-  const gatesRes = await axios.get(`${prefix}/static/data/gates.json`);
-  const navRes = await axios.get(`${prefix}/static/data/nav.json`);
   return {
-    speakers: res.data.speakerSection.list,
-    gates: gatesRes.data.gates,
-    nav: navRes.data.pages,
     query
   };
 };
