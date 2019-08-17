@@ -32,46 +32,48 @@ const Speaker = ({ speakers, query, gates, nav }) => {
       <Gate gatename="NAV" gates={gates} query={query}>
         <Nav format={nav.speaker} />
       </Gate>
-      <div className={`animated fadeIn ${styles.topPadding}`}>
-        <Section>
-          <Section.Title>
-            <span className={`animated fadeIn ${styles.delayHalf}`}>
-              {name}
-            </span>
-          </Section.Title>
-          <Section.Subtitle>
-            <span className={`animated fadeIn ${styles.delayHalf}`}>
-              {tagline}
-            </span>
-          </Section.Subtitle>
-          <Section.Body>
-            <Container className={`animated fadeIn ${styles.delay}`}>
-              <Row>
-                <Col md={{ span: 12 }} lg={{ span: 6 }}>
-                  <img
-                    className={`img-fluid ${styles.image}`}
-                    alt={`Reflections Projections 2019 Speaker - ${name}`}
-                    src={imageURL}
-                  />
-                </Col>
-                <Col md={{ span: 12 }} lg={{ span: 6 }}>
-                  <p className={styles.bio}>{bio}</p>
-                </Col>
-              </Row>
-              <Row className="mt-4">
-                <Col className="text-center">
-                  <Link scroll href="/">
-                    <span className="btn btn-primary">Back Home</span>
-                  </Link>
-                </Col>
-              </Row>
-            </Container>
-          </Section.Body>
-        </Section>
-        <OtherSpeakers
-          speakers={speakers.filter(s => s.name !== query.name).slice(0, 4)}
-        />
-      </div>
+      <Gate gatename="SPEAKER_SECTION" gates={gates} query={query}>
+        <div className={`animated fadeIn ${styles.topPadding}`}>
+          <Section>
+            <Section.Title>
+              <span className={`animated fadeIn ${styles.delayHalf}`}>
+                {name}
+              </span>
+            </Section.Title>
+            <Section.Subtitle>
+              <span className={`animated fadeIn ${styles.delayHalf}`}>
+                {tagline}
+              </span>
+            </Section.Subtitle>
+            <Section.Body>
+              <Container className={`animated fadeIn ${styles.delay}`}>
+                <Row>
+                  <Col md={{ span: 12 }} lg={{ span: 6 }}>
+                    <img
+                      className={`img-fluid ${styles.image}`}
+                      alt={`Reflections Projections 2019 Speaker - ${name}`}
+                      src={imageURL}
+                    />
+                  </Col>
+                  <Col md={{ span: 12 }} lg={{ span: 6 }}>
+                    <p className={styles.bio}>{bio}</p>
+                  </Col>
+                </Row>
+                <Row className="mt-4">
+                  <Col className="text-center">
+                    <Link scroll href="/">
+                      <span className="btn btn-primary">Back Home</span>
+                    </Link>
+                  </Col>
+                </Row>
+              </Container>
+            </Section.Body>
+          </Section>
+          <OtherSpeakers
+            speakers={speakers.filter(s => s.name !== query.name).slice(0, 4)}
+          />
+        </div>
+      </Gate>
       <Footer />
     </Layout>
   );
