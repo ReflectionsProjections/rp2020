@@ -15,14 +15,9 @@ import OtherSpeakers from '../components/Speaker/OtherSpeakers';
 
 import styles from './speaker.scss';
 
-import rpData from '../static/data/rp2019.json';
-import gates from '../static/data/gates.json';
-import nav from '../static/data/nav.json';
+import { fetchConferenceData, fetchNavData, fetchGates } from '../api/client';
 
-const { speakerSection } = rpData;
-const speakers = speakerSection.list; // TODO: rename everything to speakerSection._
-
-const Speaker = ({ query }) => {
+const Speaker = ({ query, nav, speakers, gates }) => {
   let speaker = {};
   if (speakers !== undefined) {
     speakers.forEach(s => {
@@ -85,6 +80,17 @@ const Speaker = ({ query }) => {
   );
 };
 
-Speaker.getInitialProps = async ({ query }) => ({ query });
+Speaker.getInitialProps = async ({ query }) => {
+  const rpData = await fetchConferenceData();
+  const nav = await fetchNavData();
+  const gates = await fetchGates();
+
+  return {
+    speakers: rpData.speakerSection.list,
+    nav,
+    gates,
+    query
+  };
+};
 
 export default Speaker;

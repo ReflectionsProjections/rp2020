@@ -4,15 +4,21 @@ import Layout from '../components/Util/Layout';
 import Timeline from '../components/Timeline';
 import Footer from '../components/Footer';
 
-import rpData from '../static/data/rp2019.json';
+import { fetchConferenceData } from '../api/client';
 
-const { events } = rpData.timelineSection;
-
-const TimelinePage = () => (
+const TimelinePage = ({ events }) => (
   <Layout>
     <Timeline events={events} />
     <Footer />
   </Layout>
 );
+
+TimelinePage.getInitialProps = async () => {
+  const rpData = await fetchConferenceData();
+
+  return {
+    events: rpData.timelineSection.events
+  };
+};
 
 export default TimelinePage;
