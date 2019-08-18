@@ -19,3 +19,8 @@ export const fetchGates = async () => {
   const res = await axios.get(`${prefix}/static/data/gates.json`);
   return res.data;
 };
+
+export const fetchRegistrationConfig = async () => {
+  const res = await axios.get(`${prefix}/static/data/registration.json`);
+  return res.data;
+};

@@ -1,228 +1,213 @@
-import React, { Component } from 'react';
-import SVG from 'react-inlinesvg';
-import { Form, Row, Col, Container, Button } from 'react-bootstrap';
-import axios from 'axios';
+import React from 'react';
+
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+
 import Layout from '../components/Util/Layout';
+import Footer from '../components/Footer';
+import Section from '../components/Util/Section';
 
-import './registration.scss';
-import './index.scss';
-import '../static/stylesheets/animations.scss';
+import { fetchRegistrationConfig } from '../api/client';
 
-class Registration extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      formOptions: undefined
-    };
-  }
+import styles from './registration.scss';
 
-  componentDidMount() {
-    axios.get('/static/data/registration.json').then(response => {
-      this.setState({
-        formOptions: response.data
-      });
-    });
-  }
+const FormSection = ({ title, children }) => {
+  return (
+    <div className={styles.formSection}>
+      <Row>
+        <Col md={12}>
+          <h3>{title}</h3>
+        </Col>
+      </Row>
+      {children}
+    </div>
+  );
+};
 
-  render() {
-    const { formOptions } = this.state;
-    let genders;
-    let years;
-    let shirts;
-    let diets;
-    let jobtype;
-    let proftype;
-    let majors;
-    let schools;
-    let heardFrom;
-    if (formOptions) {
-      ({
-        genders,
-        years,
-        shirts,
-        diets,
-        jobtype,
-        proftype,
-        majors,
-        schools,
-        heardFrom
-      } = formOptions);
-    }
-    return (
-      <>
-        <Layout>
-          <div className="registration-landing">
-            <div className="container">
-              <div className="lead-content text-white text-center">
-                <SVG
-                  className="img-fluid wordmark animated fadeIn"
-                  src="/static/assets/wordmarkblack.svg"
-                />
-                <h2 className="event-date animated fadeIn">
-                  Event Registration
-                </h2>
-              </div>
-            </div>
-          </div>
+const Registration = ({ formOptions }) => {
+  const {
+    genders,
+    years,
+    shirts,
+    diets,
+    jobtype,
+    proftype,
+    majors,
+    schools,
+    heardFrom
+  } = formOptions;
+  return (
+    <>
+      <Layout>
+        <div className={styles.topPadding}>
+          <Section>
+            <Section.Title>Conference Registration</Section.Title>
+            <Section.Body>
+              <Container>
+                <Form>
+                  <FormSection title="basic information">
+                    <Form.Group>
+                      <Form.Label>first name</Form.Label>
+                      <Form.Control
+                        required
+                        type="text"
+                        placeholder="first name"
+                      />
+                      <Form.Control.Feedback type="invalid">
+                        Please enter your name.
+                      </Form.Control.Feedback>
+                    </Form.Group>
+                    <Form.Group>
+                      <Form.Label>last name</Form.Label>
+                      <Form.Control type="text" placeholder="Last name" />
+                    </Form.Group>
+                    <Form.Group>
+                      <Form.Label>phone number</Form.Label>
+                      <Form.Control type="text" placeholder="xxx-xxx-xxxx" />
+                    </Form.Group>
+                    <Form.Group>
+                      <Form.Label>email</Form.Label>
+                      <Form.Control type="email" placeholder="Enter email" />
+                    </Form.Group>
+                    <Form.Group>
+                      <Form.Label>gender</Form.Label>
+                      <Form.Control as="select">
+                        {genders ? (
+                          genders.map(gender => (
+                            <option key={gender}>{gender}</option>
+                          ))
+                        ) : (
+                          <option>Genders</option>
+                        )}
+                      </Form.Control>
+                    </Form.Group>
+                  </FormSection>
+                  <FormSection title="school">
+                    <Form.Group>
+                      <Form.Label>academic year</Form.Label>
+                      <Form.Control as="select">
+                        {years ? (
+                          years.map(year => <option key={year}>{year}</option>)
+                        ) : (
+                          <option>Years</option>
+                        )}
+                      </Form.Control>
+                    </Form.Group>
+                    <Form.Group>
+                      <Form.Label>major</Form.Label>
+                      <Form.Control as="select">
+                        {majors ? (
+                          majors.map(major => (
+                            <option key={major}>{major}</option>
+                          ))
+                        ) : (
+                          <option>major</option>
+                        )}
+                      </Form.Control>
+                    </Form.Group>
+                    <Form.Group>
+                      <Form.Label>school</Form.Label>
+                      <Form.Control as="select">
+                        {schools ? (
+                          schools.map(school => (
+                            <option key={school}>{school}</option>
+                          ))
+                        ) : (
+                          <option>School</option>
+                        )}
+                      </Form.Control>
+                    </Form.Group>
+                  </FormSection>
+                  <FormSection title="logistics">
+                    <Form.Group>
+                      <Form.Label>transportation</Form.Label>
+                      <Form.Control type="text" placeholder="Transportation" />
+                    </Form.Group>
+                    <Form.Group>
+                      <Form.Label>shirt size</Form.Label>
+                      <Form.Control as="select">
+                        {shirts ? (
+                          shirts.map(shirt => (
+                            <option key={shirt}>{shirt}</option>
+                          ))
+                        ) : (
+                          <option>Shirts</option>
+                        )}
+                      </Form.Control>
+                    </Form.Group>
+                    <Form.Group>
+                      <Form.Label>dietary restrictions</Form.Label>
+                      <Form.Control as="select">
+                        {diets ? (
+                          diets.map(diet => <option key={diet}>{diet}</option>)
+                        ) : (
+                          <option>Dietary Restrictions</option>
+                        )}
+                      </Form.Control>
+                    </Form.Group>
+                  </FormSection>
+                  <FormSection title="interests">
+                    <Form.Group>
+                      <Form.Label>job interests</Form.Label>
+                      <Form.Control as="select">
+                        {jobtype ? (
+                          jobtype.map(jobInterest => (
+                            <option key={jobInterest}>{jobInterest}</option>
+                          ))
+                        ) : (
+                          <option>Job Interest</option>
+                        )}
+                      </Form.Control>
+                    </Form.Group>
+                    <Form.Group>
+                      <Form.Label>professional interests</Form.Label>
+                      <Form.Control as="select">
+                        {proftype ? (
+                          proftype.map(professionalInterest => (
+                            <option key={professionalInterest}>
+                              {professionalInterest}
+                            </option>
+                          ))
+                        ) : (
+                          <option>Professional Interest</option>
+                        )}
+                      </Form.Control>
+                    </Form.Group>
+                  </FormSection>
+                  <FormSection title="feedback">
+                    <Form.Group>
+                      <Form.Label>where did you hear about us?</Form.Label>
+                      <Form.Control as="select">
+                        {heardFrom ? (
+                          heardFrom.map(from => (
+                            <option key={from}>{from}</option>
+                          ))
+                        ) : (
+                          <option>Heard From</option>
+                        )}
+                      </Form.Control>
+                    </Form.Group>
+                  </FormSection>
+                  <Button type="submit">Submit form</Button>
+                </Form>
+              </Container>
+            </Section.Body>
+          </Section>
+          <Footer />
+        </div>
+      </Layout>
+    </>
+  );
+};
 
-          <Container>
-            <section className="registration-section">
-              <Form>
-                <Row>
-                  <Form.Group
-                    as={Col}
-                    md="4"
-                    controlId="validationCustomUsername"
-                  >
-                    <Form.Label>First Name:</Form.Label>
-                    <Form.Control
-                      required
-                      type="text"
-                      placeholder="First name"
-                    />
-                    <Form.Control.Feedback type="invalid">
-                      Please enter your name.
-                    </Form.Control.Feedback>
-                  </Form.Group>
-                  <Col>
-                    <Form.Label>Last Name:</Form.Label>
-                    <Form.Control type="text" placeholder="Last name" />
-                  </Col>
-                </Row>
-                <Row>
-                  <Form.Label>Phone Number:</Form.Label>
-                  <Form.Control type="text" placeholder="2173333426" />
-                </Row>
-                <Row>
-                  <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" />
-                </Row>
-                <Row>
-                  <Form.Label>Gender:</Form.Label>
-                  <Form.Control as="select">
-                    {genders ? (
-                      genders.map(gender => (
-                        <option key={gender}>{gender}</option>
-                      ))
-                    ) : (
-                      <option>Genders</option>
-                    )}
-                  </Form.Control>
-                </Row>
-                <Row>
-                  <Form.Label>School Year:</Form.Label>
-                  <Form.Control as="select">
-                    {years ? (
-                      years.map(year => <option key={year}>{year}</option>)
-                    ) : (
-                      <option>Years</option>
-                    )}
-                  </Form.Control>
-                </Row>
-                <Row>
-                  <Form.Label>Major:</Form.Label>
-                  <Form.Control as="select">
-                    {majors ? (
-                      majors.map(major => <option key={major}>{major}</option>)
-                    ) : (
-                      <option>Major</option>
-                    )}
-                  </Form.Control>
-                </Row>
-                <Row>
-                  <Form.Label>School:</Form.Label>
-                  <Form.Control as="select">
-                    {schools ? (
-                      schools.map(school => (
-                        <option key={school}>{school}</option>
-                      ))
-                    ) : (
-                      <option>School</option>
-                    )}
-                  </Form.Control>
-                </Row>
-                <Row>
-                  <Form.Label>Transportation:</Form.Label>
-                  <Form.Control type="text" placeholder="Transportation" />
-                </Row>
-                <Row>
-                  <Form.Label>Shirt Size:</Form.Label>
-                  <Form.Control as="select">
-                    {shirts ? (
-                      shirts.map(shirt => <option key={shirt}>{shirt}</option>)
-                    ) : (
-                      <option>Shirts</option>
-                    )}
-                  </Form.Control>
-                </Row>
-                <Row>
-                  <Form.Label>Dietary Restriction:</Form.Label>
-                  <Form.Control as="select">
-                    {diets ? (
-                      diets.map(diet => <option key={diet}>{diet}</option>)
-                    ) : (
-                      <option>Dietary Restrictions</option>
-                    )}
-                  </Form.Control>
-                </Row>
-                <Row>
-                  <Form.Label>Job Interest:</Form.Label>
-                  <Form.Control as="select">
-                    {jobtype ? (
-                      jobtype.map(jobInterest => (
-                        <option key={jobInterest}>{jobInterest}</option>
-                      ))
-                    ) : (
-                      <option>Job Interest</option>
-                    )}
-                  </Form.Control>
-                </Row>
-                <Row>
-                  <Form.Label>Professional Interest:</Form.Label>
-                  <Form.Control as="select">
-                    {proftype ? (
-                      proftype.map(professionalInterest => (
-                        <option key={professionalInterest}>
-                          {professionalInterest}
-                        </option>
-                      ))
-                    ) : (
-                      <option>Professional Interest</option>
-                    )}
-                  </Form.Control>
-                </Row>
-                <Row>
-                  <Form.Label>Heard From:</Form.Label>
-                  <Form.Control as="select">
-                    {heardFrom ? (
-                      heardFrom.map(from => <option key={from}>{from}</option>)
-                    ) : (
-                      <option>Heard From</option>
-                    )}
-                  </Form.Control>
-                </Row>
-                <Button type="submit">Submit form</Button>
-              </Form>
-            </section>
-          </Container>
-
-          <footer>
-            <div className="text-white text-center footer-text animated fadeIn">
-              <p id="organized">
-                Organized by <a href="https://acm.illinois.edu/">ACM@UIUC</a>
-              </p>
-              <p id="contact">
-                Questions? Interested in sponsoring? Email us at{' '}
-                <a href="mailto:contact@reflectionsprojections.org">
-                  contact@reflectionsprojections.org
-                </a>
-              </p>
-            </div>
-          </footer>
-        </Layout>
-      </>
-    );
-  }
-}
+Registration.getInitialProps = async () => {
+  const registration = await fetchRegistrationConfig();
+  return {
+    formOptions: registration.config
+  };
+};
 
 export default Registration;
