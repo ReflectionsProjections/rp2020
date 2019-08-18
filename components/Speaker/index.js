@@ -3,7 +3,7 @@ import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Section from '../Util/Section';
+import Section from '../../UIComponents/Section';
 
 import SpeakerCard from './components/SpeakerCard';
 

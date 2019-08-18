@@ -6,9 +6,10 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 
-import Layout from '../components/Util/Layout';
+// import UISelect from '../UIComponents/'
+import Layout from '../UIComponents/Layout';
 import Footer from '../components/Footer';
-import Section from '../components/Util/Section';
+import Section from '../UIComponents/Section';
 
 import { fetchRegistrationConfig } from '../api/client';
 

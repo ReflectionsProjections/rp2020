@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Section from '../Util/Section';
+import Section from '../../UIComponents/Section';
 
 import styles from './about.scss';
 

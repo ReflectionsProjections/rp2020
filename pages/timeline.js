@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Layout from '../components/Util/Layout';
+import Layout from '../UIComponents/Layout';
 import Timeline from '../components/Timeline';
 import Footer from '../components/Footer';
 

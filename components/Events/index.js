@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 
-import Section from '../Util/Section';
+import Section from '../../UIComponents/Section';
 
 import { getQueryObject } from '../../lib/path';
 

@@ -5,10 +5,10 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import Gate from '../components/Util/Gate';
+import Gate from '../UIComponents/Gate';
 import Nav from '../components/Nav';
-import Layout from '../components/Util/Layout';
-import Section from '../components/Util/Section';
+import Layout from '../UIComponents/Layout';
+import Section from '../UIComponents/Section';
 import Footer from '../components/Footer';
 
 import OtherSpeakers from '../components/Speaker/OtherSpeakers';
