@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
@@ -39,42 +39,70 @@ const Registration = ({ formOptions }) => {
     schools,
     heardFrom
   } = formOptions;
+
+  const [validated, setValidated] = useState(false);
+
+  const handleSubmit = event => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    setValidated(true);
+  };
+
   return (
     <>
       <Layout>
-        <div className={styles.topPadding}>
+        <div className={styles.topPadding} onSubmit={handleSubmit}>
           <Section>
             <Section.Title>Conference Registration</Section.Title>
             <Section.Body>
               <Container>
-                <Form>
+                <Form noValidate validated={validated} onSubmit={handleSubmit}>
                   <FormSection title="basic information">
                     <Form.Group>
                       <Form.Label>first name</Form.Label>
                       <Form.Control
+                        placeholder="first name"
                         required
                         type="text"
-                        placeholder="first name"
                       />
                       <Form.Control.Feedback type="invalid">
-                        Please enter your name.
+                        Please provide your first name.
                       </Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group>
                       <Form.Label>last name</Form.Label>
-                      <Form.Control type="text" placeholder="Last name" />
+                      <Form.Control
+                        placeholder="Last name"
+                        required
+                        type="text"
+                      />
+                      <Form.Control.Feedback type="invalid">
+                        Please provide your last name.
+                      </Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group>
                       <Form.Label>phone number</Form.Label>
-                      <Form.Control type="text" placeholder="xxx-xxx-xxxx" />
+                      <Form.Control
+                        placeholder="xxx-xxx-xxxx"
+                        required
+                        type="text"
+                      />
                     </Form.Group>
                     <Form.Group>
                       <Form.Label>email</Form.Label>
-                      <Form.Control type="email" placeholder="Enter email" />
+                      <Form.Control
+                        placeholder="Enter email"
+                        required
+                        type="email"
+                      />
                     </Form.Group>
                     <Form.Group>
                       <Form.Label>gender</Form.Label>
-                      <Form.Control as="select">
+                      <Form.Control as="select" required>
                         {genders ? (
                           genders.map(gender => (
                             <option key={gender}>{gender}</option>
@@ -88,7 +116,7 @@ const Registration = ({ formOptions }) => {
                   <FormSection title="school">
                     <Form.Group>
                       <Form.Label>academic year</Form.Label>
-                      <Form.Control as="select">
+                      <Form.Control as="select" required>
                         {years ? (
                           years.map(year => <option key={year}>{year}</option>)
                         ) : (
@@ -98,7 +126,7 @@ const Registration = ({ formOptions }) => {
                     </Form.Group>
                     <Form.Group>
                       <Form.Label>major</Form.Label>
-                      <Form.Control as="select">
+                      <Form.Control as="select" required>
                         {majors ? (
                           majors.map(major => (
                             <option key={major}>{major}</option>
@@ -110,7 +138,7 @@ const Registration = ({ formOptions }) => {
                     </Form.Group>
                     <Form.Group>
                       <Form.Label>school</Form.Label>
-                      <Form.Control as="select">
+                      <Form.Control as="select" required>
                         {schools ? (
                           schools.map(school => (
                             <option key={school}>{school}</option>
@@ -128,7 +156,7 @@ const Registration = ({ formOptions }) => {
                     </Form.Group>
                     <Form.Group>
                       <Form.Label>shirt size</Form.Label>
-                      <Form.Control as="select">
+                      <Form.Control as="select" required>
                         {shirts ? (
                           shirts.map(shirt => (
                             <option key={shirt}>{shirt}</option>
@@ -140,7 +168,7 @@ const Registration = ({ formOptions }) => {
                     </Form.Group>
                     <Form.Group>
                       <Form.Label>dietary restrictions</Form.Label>
-                      <Form.Control as="select">
+                      <Form.Control as="select" required>
                         {diets ? (
                           diets.map(diet => <option key={diet}>{diet}</option>)
                         ) : (
@@ -152,7 +180,7 @@ const Registration = ({ formOptions }) => {
                   <FormSection title="interests">
                     <Form.Group>
                       <Form.Label>job interests</Form.Label>
-                      <Form.Control as="select">
+                      <Form.Control as="select" required>
                         {jobtype ? (
                           jobtype.map(jobInterest => (
                             <option key={jobInterest}>{jobInterest}</option>
@@ -164,7 +192,7 @@ const Registration = ({ formOptions }) => {
                     </Form.Group>
                     <Form.Group>
                       <Form.Label>professional interests</Form.Label>
-                      <Form.Control as="select">
+                      <Form.Control as="select" required>
                         {proftype ? (
                           proftype.map(professionalInterest => (
                             <option key={professionalInterest}>
@@ -180,7 +208,7 @@ const Registration = ({ formOptions }) => {
                   <FormSection title="feedback">
                     <Form.Group>
                       <Form.Label>where did you hear about us?</Form.Label>
-                      <Form.Control as="select">
+                      <Form.Control as="select" required>
                         {heardFrom ? (
                           heardFrom.map(from => (
                             <option key={from}>{from}</option>
