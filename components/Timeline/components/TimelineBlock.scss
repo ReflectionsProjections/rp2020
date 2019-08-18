@@ -1,0 +1,46 @@
+@import 'static/stylesheets/variables.scss';
+
+.timelineBlock {
+  position: relative;
+  margin: 0;
+  padding: 1em 0;
+  width: 100%;
+  &::after {
+    /* circle thing on line */
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: calc(12% - 13px);
+    background-color: white;
+    border: 3px solid $medium-purple;
+    top: 20px;
+    border-radius: 50%;
+    z-index: 1;
+
+    @media (min-width: 768px) {
+      left: calc(12% - 13px);
+    }
+
+    @media (min-width: 992px) {
+      left: calc(30% - 13px);
+    }
+  }
+}
+
+.date {
+  font-family: 'Roboto Slab';
+  margin-bottom: 0.5em;
+}
+
+.timelineItem {
+  text-decoration: none;
+  list-style-type: none;
+  padding-bottom: 1.4em;
+  padding-top: 0;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+}

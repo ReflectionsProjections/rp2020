@@ -1,38 +1,31 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React from 'react';
 
-import TimelineBlock from './TimelineBlock';
+import Section from '../Util/Section';
 
-import './Timeline.scss';
+import TimelineBlock from './components/TimelineBlock';
 
-class Timeline extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      events: undefined
-    };
-  }
+import styles from './Timeline.scss';
 
-  componentDidMount() {
-    axios.get('/static/data/timeline.json').then(response => {
-      this.setState({
-        events: response.data
-      });
-    });
-  }
-
-  render() {
-    const { events } = this.state;
-    if (!events) {
-      return <div>Loading</div>;
-    }
-    return (
-      <div className="timeline-container">
-        {events.map(event => (
-          <TimelineBlock key={event.content} event={event} />
-        ))}
-      </div>
-    );
-  }
-}
+const Timeline = ({ events }) => (
+  <div className={styles.topPadding}>
+    <Section>
+      <Section.Header>
+        <Section.Title>Timeline</Section.Title>
+        <Section.Subtitle>
+          Celebrating 25 Years of <wbr />
+          <span style={{ display: 'inline-block' }}>
+            Reflections | Projections
+          </span>
+        </Section.Subtitle>
+      </Section.Header>
+      <Section.Body>
+        <div className={styles.timelineContainer}>
+          {events.map(event => (
+            <TimelineBlock key={event.content} event={event} />
+          ))}
+        </div>
+      </Section.Body>
+    </Section>
+  </div>
+);
 export default Timeline;

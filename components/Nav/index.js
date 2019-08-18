@@ -1,39 +1,67 @@
-import React from 'react';
-import './Nav.scss';
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 
-const Nav = () => (
-  <nav className="navbar bg-blue" id="rp-nav">
-    <div className="left-nav">
-      <a href="/">
-        <img
-          alt="Reflections Projections 2019 Logo"
-          className="navbar-logo"
-          src="/static/assets/2019logo.svg"
-        />
-      </a>
-    </div>
-    <div className="right-nav">
-      <div className="nav-social-media-icons">
-        <a href="https://www.facebook.com/acmrp/">
-          <i className="fab fa-facebook-f" />
-        </a>
-        <a href="https://www.instagram.com/uiuc_rp/">
-          <i className="fab fa-instagram" />
-        </a>
-        <a href="https://twitter.com/uiuc_rp?lang=en">
-          <i className="fab fa-twitter" />
-        </a>
-      </div>
+import NavButton from './NavButton';
 
-      <a
-        className="btn nav-item"
-        id="btn-register"
-        href="https://acmrp.typeform.com/to/a05uAe"
+import styles from './styles.scss';
+
+const Nav = ({ format: { type, items } }) => {
+  const [menuVisible, setMenuVisible] = useState(false);
+
+  const handleClick = () => {
+    switch (type) {
+      case 'BACK_HOME': {
+        window.location = `/${window.location.search}`;
+        break;
+      }
+      case 'BASIC_NAV':
+      default: {
+        setMenuVisible(!menuVisible);
+        break;
+      }
+    }
+  };
+
+  const MenuLink = ({ label, name }) => (
+    <li>
+      <Link
+        onClick={handleClick}
+        activeClass="active"
+        to={name}
+        spy
+        smooth="easeInOutQuad"
+        duration={500}
+        offset={-80}
       >
-        <div id="btn-register-text">Get Updates</div>
-      </a>
+        <span>{label}</span>
+      </Link>
+    </li>
+  );
+
+  const renderMenu = () => {
+    if (!menuVisible) {
+      return null;
+    }
+
+    return (
+      <div className={styles.menuContainer}>
+        <div className={styles.menu}>
+          <ul>
+            {(items || []).map(item => (
+              <MenuLink label={item.label} name={item.name} />
+            ))}
+          </ul>
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <div className={styles.nav}>
+      {type === 'BASIC_NAV' && renderMenu()}
+      <NavButton type={type} onClick={handleClick} menuVisible={menuVisible} />
     </div>
-  </nav>
-);
+  );
+};
 
 export default Nav;

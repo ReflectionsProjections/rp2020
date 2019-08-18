@@ -1,51 +1,37 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React, { useState } from 'react';
 
 import Dropdown from 'react-bootstrap/Dropdown';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Section from '../Util/Section';
 
-import Question from './Question';
+import QuestionContainer from './components/QuestionContainer';
 
-import './FAQ.scss';
+import styles from './FAQ.scss';
 
-class FAQ extends Component {
-  state = {
-    sections: [],
-    currSection: 'General',
-    currQuestion: ''
+const FAQ = ({ faqData: { sections } }) => {
+  const [currSection, setCurrSection] = useState('General');
+  const [currQuestion, setCurrQuestion] = useState('');
+
+  const handleToggle = question => {
+    const newCurrQuestion = question === currQuestion ? '' : question;
+    setCurrQuestion(newCurrQuestion);
   };
 
-  componentDidMount() {
-    axios.get('/static/data/faq.json').then(res => {
-      const { sections } = res.data;
-      this.setState({ sections });
-    });
-  }
-
-  handleToggle = question => {
-    this.setState(state => ({
-      currQuestion: state.currQuestion === question ? '' : question
-    }));
-  };
-
-  switchSection(sectionName) {
-    return () => {
-      this.setState({
-        currSection: sectionName,
-        currQuestion: ''
-      });
-    };
-  }
-
-  render() {
-    const { sections, currSection, currQuestion } = this.state;
-    return (
-      <Container>
-        <section className="faq-section">
-          <h2 className="text-center section-header">FAQs</h2>
-          <div id="faq-prompt" className="col-md-6 offset-md-3 text-center">
+  const currQuestions = sections.filter(
+    section => section.name === currSection
+  )[0].questions;
+  return (
+    <Section>
+      <Section.Header>
+        <Section.Title>FAQs</Section.Title>
+      </Section.Header>
+      <Section.Body>
+        <Container>
+          <Col
+            md={{ span: 6, offset: 3 }}
+            className={`text-center ${styles.faqPrompt}`}
+          >
             <h3>What can we help you with?</h3>
             <div className="mx-auto">
               <Dropdown>
@@ -53,73 +39,42 @@ class FAQ extends Component {
                   size="lg"
                   variant="secondary"
                   id="faq-dropdown"
+                  className={styles.faqDropdown}
                 >
                   {currSection}
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item onClick={this.switchSection('General')}>
+                  <Dropdown.Item onClick={() => setCurrSection('General')}>
                     General
                   </Dropdown.Item>
-                  <Dropdown.Item onClick={this.switchSection('Events')}>
+                  <Dropdown.Item onClick={() => setCurrSection('Events')}>
                     Events
                   </Dropdown.Item>
-                  <Dropdown.Item onClick={this.switchSection('MechMania')}>
+                  <Dropdown.Item onClick={() => setCurrSection('MechMania')}>
                     MechMania
                   </Dropdown.Item>
-                  <Dropdown.Item onClick={this.switchSection('PuzzleBang')}>
+                  <Dropdown.Item onClick={() => setCurrSection('PuzzleBang')}>
                     PuzzleBang
                   </Dropdown.Item>
-                  <Dropdown.Item onClick={this.switchSection('R|P Symposium')}>
+                  <Dropdown.Item
+                    onClick={() => setCurrSection('R|P Symposium')}
+                  >
                     R|P Symposium
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>
-          </div>
-          <br />
-          <Container className="questions">
-            {sections.map(section => {
-              const mid = Math.ceil(section.questions.length / 2);
-              const left = section.questions.slice(0, mid);
-              const right = section.questions.slice(mid);
-              return (
-                <Row
-                  key={section.name}
-                  style={
-                    currSection === section.name ? {} : { display: 'none' }
-                  }
-                >
-                  <Col md={6}>
-                    {left.map(QA => (
-                      <Question
-                        key={QA.question}
-                        question={QA.question}
-                        answer={QA.answer}
-                        show={QA.question === currQuestion}
-                        handleToggle={this.handleToggle}
-                      />
-                    ))}
-                  </Col>
-                  <Col md={6}>
-                    {right.map(QA => (
-                      <Question
-                        key={QA.question}
-                        question={QA.question}
-                        answer={QA.answer}
-                        show={QA.question === currQuestion}
-                        handleToggle={this.handleToggle}
-                      />
-                    ))}
-                  </Col>
-                </Row>
-              );
-            })}
-          </Container>
-        </section>
-      </Container>
-    );
-  }
-}
+          </Col>
+          <QuestionContainer
+            questions={currQuestions}
+            currQuestion={currQuestion}
+            handleToggle={handleToggle}
+          />
+        </Container>
+      </Section.Body>
+    </Section>
+  );
+};
 
 export default FAQ;

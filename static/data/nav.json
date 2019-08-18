@@ -1,0 +1,32 @@
+{
+  "index": {
+    "type": "BASIC_NAV",
+    "items": [
+      {
+        "name": "about",
+        "label": "About"
+      },
+      {
+        "name": "speakers",
+        "label": "Speakers"
+      },
+      {
+        "name": "faq",
+        "label": "FAQs"
+      },
+      {
+        "name": "sponsor-section",
+        "label": "Sponsors"
+      }
+    ]
+  },
+  "speaker": {
+    "type": "BACK_HOME"
+  },
+  "timeline": {
+    "type": "BACK_HOME"
+  },
+  "events": {
+    "type": "BACK_HOME"
+  }
+}
