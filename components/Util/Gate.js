@@ -1,6 +1,8 @@
+import React from 'react';
+
 const Gate = ({ children, gatename, gates, query }) => {
   if (query[gatename] === 'true') {
-    return children;
+    return <>{children}</>;
   }
   const gate = gates[gatename];
   if (gate === undefined) {
@@ -10,7 +12,7 @@ const Gate = ({ children, gatename, gates, query }) => {
     case 'TOGGLE': {
       //  TODO
       if (gate.status === 'UNLOCKED') {
-        return children;
+        return <>{children}</>;
       }
       break;
     }

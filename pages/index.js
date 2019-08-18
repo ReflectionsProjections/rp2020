@@ -18,10 +18,14 @@ import styles from './index.scss';
 import '../static/stylesheets/animations.scss';
 
 import { fetchConferenceData, fetchNavData, fetchGates } from '../api/client';
+import { getQueryObject } from '../lib/path';
 
-const Index = ({ query, rpData, gates, nav }) => {
+const Index = ({ rpData, gates, nav }) => {
   const { events, faqSection, speakerSection, sponsors } = rpData;
-
+  let query = {};
+  if (process.browser) {
+    query = getQueryObject(window);
+  }
   return (
     <>
       <Head>
@@ -75,45 +79,47 @@ const Index = ({ query, rpData, gates, nav }) => {
             </Link>
           </div>
         </main>
-        <Gate gatename="NAV" gates={gates} query={query}>
-          <Nav format={nav.index} />
-        </Gate>
+        <Element>
+          <Gate gatename="NAV" gates={gates} query={query}>
+            <Nav format={nav.index} />
+          </Gate>
+        </Element>
         <Element name="about">
           <About />
         </Element>
-        <Gate gatename="SPEAKER_SECTION" gates={gates} query={query}>
-          <Element name="speakers">
+        <Element name="speakers">
+          <Gate gatename="SPEAKER_SECTION" gates={gates} query={query}>
             <Speaker speakers={speakerSection.list} />
-          </Element>
-        </Gate>
-        <Gate gatename="EVENT_SECTION" gates={gates} query={query}>
-          <Element name="events">
+          </Gate>
+        </Element>
+
+        <Element name="events">
+          <Gate gatename="EVENT_SECTION" gates={gates} query={query}>
             <Events events={events} />
-          </Element>
-        </Gate>
+          </Gate>
+        </Element>
         <Element name="faq">
           <FAQ faqData={faqSection} />
         </Element>
-        <Gate gatename="SPONSOR_SECTION" gates={gates} query={query}>
-          <Element name="sponsor-section">
+        <Element name="sponsor-section">
+          <Gate gatename="SPONSOR_SECTION" gates={gates} query={query}>
             <SponsorSection sponsors={sponsors} />
-          </Element>
-        </Gate>
+          </Gate>
+        </Element>
         <Footer />
       </Layout>
     </>
   );
 };
 
-Index.getInitialProps = async ({ query }) => {
+Index.getInitialProps = async () => {
   const conferenceData = await fetchConferenceData();
   const nav = await fetchNavData();
   const gates = await fetchGates();
   return {
     rpData: conferenceData,
     nav,
-    gates,
-    query
+    gates
   };
 };
 
