@@ -22,7 +22,7 @@ const ImageViewer = props => {
   } else if (id === 'megab') {
     rowMax = 4;
   } else if (id === 'allTiers') {
-    rowMax = 5;
+    rowMax = 4;
   }
 
   //  Bootstrap Has a 12 Column Grid Layout
