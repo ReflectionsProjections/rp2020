@@ -27,6 +27,7 @@ const Index = () => {
   }
 
   const { isLoaded, rpData, nav, gates } = useGetStaticData();
+  console.log(gates);
   const { events, faqSection, speakerSection, sponsors } = rpData;
 
   return (
