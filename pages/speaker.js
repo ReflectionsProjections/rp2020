@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -69,13 +68,6 @@ const Speaker = () => {
                   </Col>
                   <Col md={{ span: 12 }} lg={{ span: 6 }}>
                     <p className={styles.bio}>{bio}</p>
-                  </Col>
-                </Row>
-                <Row className="mt-4">
-                  <Col className="text-center">
-                    <Link scroll href={{ pathname: '/', query }}>
-                      <span className="btn btn-primary">Back Home</span>
-                    </Link>
                   </Col>
                 </Row>
               </Container>
