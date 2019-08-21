@@ -10,14 +10,25 @@ import Nav from '../components/Nav';
 import Layout from '../components/Util/Layout';
 import Section from '../components/Util/Section';
 import Footer from '../components/Footer';
-
 import OtherSpeakers from '../components/Speaker/OtherSpeakers';
+
+import { getQueryObject } from '../lib/path';
+import useGetStaticData from '../services/useGetStaticData';
 
 import styles from './speaker.scss';
 
-import { fetchConferenceData, fetchNavData, fetchGates } from '../api/client';
+const Speaker = () => {
+  let query = {};
+  if (process.browser) {
+    query = getQueryObject(window);
+  }
 
-const Speaker = ({ query, nav, speakers, gates }) => {
+  const { isLoaded, nav, rpData, gates } = useGetStaticData();
+  if (!isLoaded) {
+    return <></>;
+  }
+  const speakers = rpData.speakerSection.list;
+
   let speaker = {};
   if (speakers !== undefined) {
     speakers.forEach(s => {
@@ -78,19 +89,6 @@ const Speaker = ({ query, nav, speakers, gates }) => {
       <Footer />
     </Layout>
   );
-};
-
-Speaker.getInitialProps = async ({ query }) => {
-  const rpData = await fetchConferenceData();
-  const nav = await fetchNavData();
-  const gates = await fetchGates();
-
-  return {
-    speakers: rpData.speakerSection.list,
-    nav,
-    gates,
-    query
-  };
 };
 
 export default Speaker;
