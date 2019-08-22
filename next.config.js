@@ -19,6 +19,7 @@ module.exports = (phase, { defaultConfig }) => {
         '/': { page: '/' },
         '/speaker': { page: '/speaker' },
         '/events': { page: '/events' },
+        '/timeline': { page: '/timeline' },
         '/sponsor': { page: '/sponsor' },
         '/startup': { page: '/startup' }
       };
