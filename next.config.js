@@ -13,6 +13,15 @@ module.exports = (phase, { defaultConfig }) => {
   const withSass = require('@zeit/next-sass');
 
   return withSass({
-    cssModules: true
+    cssModules: true,
+    exportPathMap: function() {
+      return {
+        '/': { page: '/' },
+        '/speaker': { page: '/speaker' },
+        '/events': { page: '/events' },
+        '/sponsor': { page: '/sponsor' },
+        '/startup': { page: '/startup' }
+      };
+    }
   });
 };
