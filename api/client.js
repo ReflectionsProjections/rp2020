@@ -1,9 +1,7 @@
 import axios from 'axios';
 
 const prefix =
-  process.env.NODE_ENV === 'production'
-    ? 'https://reflectionsprojections.org'
-    : 'http://localhost:3000';
+  process.env.NODE_ENV === 'production' ? '' : 'http://localhost:3000';
 
 export const fetchConferenceData = async () => {
   const res = await axios.get(`${prefix}/static/data/rp2019.json`);
