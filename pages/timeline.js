@@ -1,24 +1,27 @@
 import React from 'react';
 
-import Layout from '../components/Util/Layout';
-import Timeline from '../components/Timeline';
 import Footer from '../components/Footer';
+import Layout from '../components/Util/Layout';
+import Nav from '../components/Nav';
+import Timeline from '../components/Timeline';
 
-import { fetchConferenceData } from '../api/client';
+import useGetStaticData from '../services/useGetStaticData';
 
-const TimelinePage = ({ events }) => (
-  <Layout>
-    <Timeline events={events} />
-    <Footer />
-  </Layout>
-);
+const TimelinePage = () => {
+  const { isLoaded, rpData, nav } = useGetStaticData();
+  const events = rpData.timelineSection ? rpData.timelineSection.events : [];
 
-TimelinePage.getInitialProps = async () => {
-  const rpData = await fetchConferenceData();
-
-  return {
-    events: rpData.timelineSection.events
-  };
+  return (
+    <Layout>
+      {isLoaded && (
+        <>
+          <Nav format={nav.timeline} />
+          <Timeline events={events} />
+        </>
+      )}
+      <Footer />
+    </Layout>
+  );
 };
 
 export default TimelinePage;
