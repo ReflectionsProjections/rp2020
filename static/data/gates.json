@@ -13,11 +13,11 @@
   },
   "NAV": {
     "type": "TOGGLE",
-    "status": "LOCKED"
+    "status": "UNLOCKED"
   },
   "SPEAKER_SECTION": {
     "type": "TOGGLE",
-    "status": "LOCKED"
+    "status": "UNLOCKED"
   },
   "EVENT_SECTION": {
     "type": "TOGGLE",
@@ -25,6 +25,6 @@
   },
   "SPONSOR_SECTION": {
     "type": "TOGGLE",
-    "status": "LOCKED"
+    "status": "UNLOCKED"
   }
 }

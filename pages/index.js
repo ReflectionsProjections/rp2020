@@ -17,15 +17,18 @@ import Footer from '../components/Footer';
 import styles from './index.scss';
 import '../static/stylesheets/animations.scss';
 
-import { fetchConferenceData, fetchNavData, fetchGates } from '../api/client';
 import { getQueryObject } from '../lib/path';
+import useGetStaticData from '../services/useGetStaticData';
 
-const Index = ({ rpData, gates, nav }) => {
-  const { events, faqSection, speakerSection, sponsors } = rpData;
+const Index = () => {
   let query = {};
   if (process.browser) {
     query = getQueryObject(window);
   }
+
+  const { isLoaded, rpData, nav, gates } = useGetStaticData();
+  const { events, faqSection, speakerSection, sponsors } = rpData;
+
   return (
     <>
       <Head>
@@ -79,48 +82,42 @@ const Index = ({ rpData, gates, nav }) => {
             </Link>
           </div>
         </main>
-        <Element>
-          <Gate gatename="NAV" gates={gates} query={query}>
-            <Nav format={nav.index} />
-          </Gate>
-        </Element>
-        <Element name="about">
-          <About />
-        </Element>
-        <Element name="speakers">
-          <Gate gatename="SPEAKER_SECTION" gates={gates} query={query}>
-            <Speaker speakers={speakerSection.list} />
-          </Gate>
-        </Element>
+        {isLoaded && (
+          <>
+            <Element>
+              <Gate gatename="NAV" gates={gates} query={query}>
+                <Nav format={nav.index} />
+              </Gate>
+            </Element>
+            <Element name="about">
+              <About />
+            </Element>
+            <Element name="speakers">
+              <Gate gatename="SPEAKER_SECTION" gates={gates} query={query}>
+                <Speaker speakers={speakerSection.list} />
+              </Gate>
+            </Element>
 
-        <Element name="events">
-          <Gate gatename="EVENT_SECTION" gates={gates} query={query}>
-            <Events events={events} />
-          </Gate>
-        </Element>
-        <Element name="faq">
-          <FAQ faqData={faqSection} />
-        </Element>
-        <Element name="sponsor-section">
-          <Gate gatename="SPONSOR_SECTION" gates={gates} query={query}>
-            <SponsorSection sponsors={sponsors} />
-          </Gate>
-        </Element>
+            <Element name="events">
+              <Gate gatename="EVENT_SECTION" gates={gates} query={query}>
+                <Events events={events} />
+              </Gate>
+            </Element>
+            <Element name="faq">
+              <FAQ faqData={faqSection} />
+            </Element>
+            <Element name="sponsor-section">
+              <Gate gatename="SPONSOR_SECTION" gates={gates} query={query}>
+                <SponsorSection sponsors={sponsors} />
+              </Gate>
+            </Element>
+          </>
+        )}
+
         <Footer />
       </Layout>
     </>
   );
-};
-
-Index.getInitialProps = async () => {
-  const conferenceData = await fetchConferenceData();
-  const nav = await fetchNavData();
-  const gates = await fetchGates();
-  return {
-    rpData: conferenceData,
-    nav,
-    gates
-  };
 };
 
 export default Index;

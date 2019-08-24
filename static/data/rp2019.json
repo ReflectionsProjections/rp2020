@@ -110,7 +110,7 @@
     "list": [
       {
         "name": "Alfred Spector",
-        "tagline": "CTO & Head of Engineering @ Two Sigma",
+        "tagline": "CTO and Head of Engineering @ Two Sigma",
         "bio": "Alfred Spector is Chief Technology Officer and Head of Engineering at Two Sigma, a firm dedicated to using information to optimize diverse economic challenges.  Prior to joining Two Sigma, Dr. Spector spent nearly eight years as Vice President of Research and Special Initiatives, at Google, where his teams delivered a range of successful technologies including machine learning, speech recognition, and translation. Prior to Google, Dr. Spector held various senior-level positions at IBM, including Vice President of Strategy and Technology (or CTO) for IBM Software and Vice President of Services and Software research across the company.  He previously founded and served as CEO of Transarc Corporation, a pioneer in distributed transaction processing and wide-area file systems, and he was on the computer science faculty at Carnegie Mellon University. Dr. Spector received a bachelor’s degree in Applied Mathematics from Harvard University and a Ph.D. in computer science from Stanford University, where he was a Hertz Fellow.   He is a Fellow of both the Association for Computing Machinery and the IEEE.  He is an active member of the National Academy of Engineering and the American Academy of Arts and Sciences, where he serves on the Council.  Dr. Spector won the 2001 IEEE Kanai Award for Distributed Computing and the 2016 ACM Software Systems Award, the latter for his work on the Andrew File System (AFS).",
         "image": "/static/img/speakers/AlfredSpector"
       },
@@ -122,7 +122,7 @@
       },
       {
         "name": "Derrick Higgins",
-        "tagline": "Senior Director of Data Science @ Blue Cross and Blue Shield",
+        "tagline": "Senior Director of Data Science @ Blue Cross and Blue Shield of Illinois",
         "bio": "Dr. Derrick Higgins is senior director of data science at Blue Cross and Blue Shield of Illinois.  His team serves as a center of excellence, facilitating collaboration, providing governance, and assembling data science best practices for the enterprise.  He has built and led data science teams at American Family Insurance, Civis Analytics, and the Educational Testing Service.  His work has been published in leading conferences and journals in the fields of computational linguistics, speech processing, and language testing, and has resulted in ten patents.",
         "image": "/static/img/speakers/DerrickHiggins"
       },
@@ -141,8 +141,26 @@
       {
         "name": "Jennison Asuncion",
         "tagline": "Accessibility @ LinkedIn",
-        "bio": "Jennison Asuncion works in LinkedIn Engineering, where he leads efforts to assure their web and mobile products are built to be accessible and usable to the more than one billion people with disabilities/impairments worldwide. In 2012, Jennison co-founded Global Accessibility Awareness Day (GAAD), an annual, grassroots effort intended to raise the visibility of how technology can both include and exclude people with disabilities/impairments. Jennison believes strongly that students of Computer Science/Engineering and related disciplines should possess fundamental knowledge about accessibility by the time they graduate.",
+        "bio": "Jennison Asuncion works in LinkedIn Engineering, where he leads efforts to assure their web and mobile products are built to be accessible and usable to the more than one billion people with disabilities/impairments worldwide. He is active in the accessibility industry, lending his valuable thought and leadership to activities such as: co-founding the annual Global Accessibility Awareness Day, now in its eighth year; chairing the 34th CSUN Assistive Technology Conference (2019), the largest event on technology and persons with disabilities; and founding the Bay Area Accessibility and inclusive Design Meetup in 2014, along with an annual “un”conference, Accessibility Camp Bay Area in the same year. Jennison believes strongly that students of Engineering and related disciplines should possess fundamental knowledge about accessibility by the time they graduate.",
         "image": "/static/img/speakers/JennisonAsuncion"
+      },
+      {
+        "name": "Jason Yosinski",
+        "tagline": "Co-founder and Research Scientist @ Uber AI Labs",
+        "bio": "Jason Yosinski is a machine learning researcher, founding member of Uber AI Labs, and scientific adviser to Recursion Pharmaceuticals. His work focuses on building more capable and more understandable AI. As scientists and engineers build increasingly powerful AI systems, the abilities of these systems increase faster than does our understanding of them, motivating much of his work on AI Neuroscience -- an emerging field of study that investigates fundamental properties and behaviors of AI systems. Dr. Yosinski completed his PhD as a NASA Space Technology Research Fellow working at the Cornell Creative Machines Lab, the University of Montreal, Caltech/NASA Jet Propulsion Laboratory, and Google DeepMind. His work on AI has been featured on NPR, Fast Company, the Economist, TEDx, and on the BBC. Prior to his academic career, Jason cofounded two web technology companies and started a program in the Los Angeles school district that teaches students algebra via hands-on robotics. In his free time, Jason enjoys cooking, sailing, reading, paragliding, and sometimes pretending he's an artist. ",
+        "image": "/static/img/speakers/JasonYosinski"
+      },
+      {
+        "name": "Joe Jablonski",
+        "tagline": "Co-Founder and Chief Product Officer @ Ocient",
+        "bio": "Joe Jablonski is a serial entrepreneur and technologist that has founded several software-based companies.   He is currently the Chief Product Officer at Ocient, a company inventing a database to perform high speed analytics on petabyte scale datasets.  Joe co-founded Ocient and was the CTO for the first three years.   Prior to Ocient, he was the founding CTO at Falcon Insurance.  Falcon is a non-standard insurance carrier that uses unique technology to compute optimal pricing strategies.   Joe was also the founding CEO of WeGather, a financial fundraising and private community platform for not-for-profits and schools which was acquired by LPI.  The initial company Joe founded was Acumence, a company providing predictive analytics monitoring package for high speed discrete manufacturing.  Acumence software is used to produce 60% of the world’s beverage cans in 17 countries.  It was acquired by Flexware in 2017. In addition to being a technology entrepreneur, Joe is an angel investor and advisor in companies engaging in challenging software development.   Joe Jablonski holds an MBA from the Kellogg School of Management and a Bachelor of Science in Electrical Engineering from the University of Illinois.",
+        "image": "/static/img/speakers/JoeJablonski"
+      },
+      {
+        "name": "Joydeep Ganguly",
+        "tagline": "Business Technology Analyst @ Deloitte Consulting",
+        "bio": "Joydeep Ganguly (JD) is a technology consultant for Deloitte Consulting, where he advises clients on technology strategy issues. His projects focus on helping CIOs across industries understand what their priorities should be, in the face of a changing business landscape. A graduate of the College of Engineering (ECE 2017!), JD was always drawn to the intersection of business and technology, believing that technology needs to be a key component of any business strategy. His past projects have included cost reductions for a rural hospital, supply chain improvements for consumer products companies, and broader technology strategy for various financial institutions.",
+        "image": "/static/img/speakers/JoydeepGanguly"
       }
     ]
   },
