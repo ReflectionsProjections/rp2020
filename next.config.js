@@ -21,7 +21,8 @@ module.exports = (phase, { defaultConfig }) => {
         '/events': { page: '/events' },
         '/timeline': { page: '/timeline' },
         '/sponsor': { page: '/sponsor' },
-        '/startup': { page: '/startup' }
+        '/startup': { page: '/startup' },
+        '/register': { page: '/register' }
       };
     }
   });
