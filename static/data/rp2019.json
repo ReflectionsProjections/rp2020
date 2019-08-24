@@ -282,6 +282,27 @@
             "answer": "The Startup Fair is for startup companies, and the Career Fair is for established companies. The difference between startup and established companies is determined by conference staff."
           }
         ]
+      },
+      {
+        "name": "Gas Reimbursement",
+        "questions": [
+          {
+            "question": "How do I ask for a reimbursement?",
+            "answer": "The registration form has a transportation question that asks how you intend on getting to campus — respond indicating that you are driving and will need gas reimbursement. Please note that we are only offering reimbursements to the first 200 attendees that ask for one."
+          },
+          {
+            "question": "How much will I be reimbursed?",
+            "answer": "The amount varies depending on where you are driving from: $15 per attendee if location is beyond 160 miles from campus, $10 per attendee if location is between 60 and 160 miles, and $5 per attendee if location is within 60 miles. All distances are as the crow flies and R|P staff has the final say on which radius level your departure location falls in. Note that these numbers are per attendee to incentivize attendees to carpool."
+          },
+          {
+            "question": "How will I know if I'm within the first 200 people to sign up for a reimbursement?",
+            "answer": "Assuming you have registered, we will send you an email by September 16th notifying you of your status. If you register after that date, we will do our best to notify you as soon as possible but cannot guarantee immediate confirmation."
+          },
+          {
+            "question": "How do I collect my reimbursement?",
+            "answer": "We will hold a gas reimbursement booth on both Friday and Saturday. You must have explicitly requested reimbursements on your registration to be given money. You MUST also have your School ID as proof that you are from the school you claim to be from. We will be reimbursing via Venmo and cash."
+          }
+        ]
       }
     ]
   },
