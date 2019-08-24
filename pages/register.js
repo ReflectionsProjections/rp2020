@@ -13,11 +13,11 @@ import Section from '../UIComponents/Section';
 
 import { fetchRegistrationConfig } from '../api/client';
 
-import styles from './registration.scss';
+import styles from './register.scss';
 
 const FormSection = ({ title, children }) => {
   return (
-    <div className={styles.formSection}>
+    <div className="pb-4">
       <Row>
         <Col md={12}>
           <h3>{title}</h3>
@@ -67,7 +67,8 @@ const Registration = () => {
     majors,
     schools,
     heardFrom
-  } = formOptions;
+  } = formOptions.config || {};
+
   return (
     <>
       <Layout>
