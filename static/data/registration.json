@@ -1,8 +1,8 @@
 {
   "config": {
     "genders": [
-      "Female",
       "Male",
+      "Female",
       "Nonbinary",
       "Other",
       "Prefer not to disclose"
@@ -47,8 +47,7 @@
       "Nuclear, Plasma & Radiological Engineering",
       "Systems Engineering and Design",
       "Information Sciences",
-      "Undeclared",
-      "Other"
+      "Undeclared"
     ],
     "schools": [
       "University of Illinois at Urbana-Champaign",
@@ -66,8 +65,7 @@
       "Northwestern University",
       "Parkland College",
       "University of Wisconsin-Madison",
-      "Washington University in St. Louis",
-      "Other"
+      "Washington University in St. Louis"
     ],
     "heardFrom": [
       "ACM",
