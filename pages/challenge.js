@@ -20,6 +20,9 @@ const ChallengePage = () => {
           <div style={{ paddingTop: '6em' }}>
             <Section>
               <Section.Title>Social Media Challenge</Section.Title>
+              <Section.Subtitle>
+                Reflections | Projections Giveaway
+              </Section.Subtitle>
               <Section.Body>
                 <Container>
                   <h2>Overview</h2>

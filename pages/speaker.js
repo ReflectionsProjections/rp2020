@@ -17,8 +17,8 @@ import useGetStaticData from '../services/useGetStaticData';
 import styles from './speaker.scss';
 
 const Speaker = () => {
-  let query = {};
-  if (process.browser) {
+  let query;
+  if (query === undefined && process.browser) {
     query = getQueryObject(window);
   }
 
