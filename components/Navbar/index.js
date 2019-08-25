@@ -15,10 +15,12 @@ const Nav = () => {
   const [hrefObj, setHrefObj] = useState({});
 
   useEffect(() => {
-    setHrefObj({
-      pathname: '/',
-      query: getQueryObject(window)
-    });
+    if (hrefObj.pathname === undefined) {
+      setHrefObj({
+        pathname: '/',
+        query: getQueryObject(window)
+      });
+    }
   });
 
   return (
