@@ -23,19 +23,20 @@ const Speaker = ({ speakers }) => {
             ) : (
               <>
                 {speakers.map(speaker => {
-                  const { name, image, tagline } = speaker;
+                  const { name, image, tagline, badge } = speaker;
                   const imageURL = `${image}.png`;
                   return (
                     <Col
                       className={styles.speakerCardContainer}
                       sm={12}
-                      md={4}
-                      lg={3}
+                      md={6}
+                      lg={4}
                     >
                       <SpeakerCard
                         name={name}
                         cardImage={imageURL}
                         tagline={tagline}
+                        badge={badge}
                       />
                     </Col>
                   );

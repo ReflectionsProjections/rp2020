@@ -74,3 +74,8 @@ a:hover {
     padding: 1.5em;
   }
 }
+
+.badge-primary {
+  background-color: #7552cc;
+  border-radius: 1em;
+}

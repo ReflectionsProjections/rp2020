@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Badge from 'react-bootstrap/Badge';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -36,11 +37,13 @@ const Speaker = () => {
       }
     });
   }
-  const { name, tagline, bio, image } = speaker;
+  const { name, tagline, bio, image, badge } = speaker;
 
   const createMarkup = () => ({
     __html: bio
   });
+
+  const badgeJSX = badge ? <Badge variant="primary">{badge}</Badge> : null;
 
   const imageURL = `${image}.png`;
   return (
@@ -54,6 +57,8 @@ const Speaker = () => {
             <Section.Title>
               <span className={`animated fadeIn ${styles.delayHalf}`}>
                 {name}
+                <br />
+                {badgeJSX}
               </span>
             </Section.Title>
             <Section.Subtitle>
@@ -74,6 +79,7 @@ const Speaker = () => {
                   <Col md={{ span: 12 }} lg={{ span: 6 }}>
                     <p
                       className={styles.bio}
+                      // eslint-disable-next-line react/no-danger
                       dangerouslySetInnerHTML={createMarkup()}
                     ></p>
                   </Col>
