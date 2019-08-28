@@ -28,7 +28,7 @@ const Speaker = ({ speakers }) => {
                   return (
                     <Col
                       className={styles.speakerCardContainer}
-                      xs={6}
+                      sm={12}
                       md={4}
                       lg={3}
                     >
