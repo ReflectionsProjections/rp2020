@@ -37,6 +37,11 @@ const Speaker = () => {
     });
   }
   const { name, tagline, bio, image } = speaker;
+
+  const createMarkup = () => ({
+    __html: bio
+  });
+
   const imageURL = `${image}.png`;
   return (
     <Layout>
@@ -67,7 +72,10 @@ const Speaker = () => {
                     />
                   </Col>
                   <Col md={{ span: 12 }} lg={{ span: 6 }}>
-                    <p className={styles.bio}>{bio}</p>
+                    <p
+                      className={styles.bio}
+                      dangerouslySetInnerHTML={createMarkup()}
+                    ></p>
                   </Col>
                 </Row>
               </Container>

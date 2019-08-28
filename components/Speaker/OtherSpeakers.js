@@ -30,8 +30,8 @@ const Speaker = ({ speakers }) => {
                       className={styles.speakerCardContainer}
                       xs={12}
                       sm={12}
-                      md={4}
-                      lg={3}
+                      md={6}
+                      lg={4}
                     >
                       <SpeakerCard
                         name={name}

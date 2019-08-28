@@ -28,7 +28,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-p, h1, h2, h3, h4, h5 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Roboto', sans-serif;
   color: #333333;
 }
@@ -38,7 +43,7 @@ main {
 }
 
 a {
-  color: #c7fffb;
+  color: #4b39b2;
 }
 a:hover {
   color: #70d0e0;
