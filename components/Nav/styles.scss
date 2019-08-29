@@ -22,6 +22,11 @@
   color: $medium-purple;
   background-color: white;
   border: none;
+  transition: background-color 0.5s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.navButton:hover {
+  transform: scale(1.05);
 }
 
 .navButtonToggled {
@@ -43,11 +48,16 @@
   right: 6em;
   padding-right: 1em;
 }
+
 .menu {
   height: 100%;
   padding: 1em;
   border-radius: 1.5em;
   background-color: white;
+  transition: transform.2s ease-in-out;
+}
+.menu:hover {
+  transform: scale(1.03);
 }
 
 .menu ul {
