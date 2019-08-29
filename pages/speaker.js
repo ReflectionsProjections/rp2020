@@ -88,7 +88,7 @@ const Speaker = () => {
             </Section.Body>
           </Section>
           <OtherSpeakers
-            speakers={speakers.filter(s => s.name !== query.name).slice(0, 4)}
+            speakers={speakers.filter(s => s.name !== query.name).slice(0, 3)}
           />
         </div>
       </Gate>
