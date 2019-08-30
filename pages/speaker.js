@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Badge from 'react-bootstrap/Badge';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -43,7 +42,14 @@ const Speaker = () => {
     __html: bio
   });
 
-  const badgeJSX = badge ? <Badge variant="primary">{badge}</Badge> : null;
+  const badgeStyles = {
+    textAlign: 'center'
+  };
+  const badgeJSX = badge ? (
+    <span className="badge badge-primary" style={badgeStyles}>
+      {badge}
+    </span>
+  ) : null;
 
   const imageURL = `${image}.png`;
   return (
@@ -56,9 +62,10 @@ const Speaker = () => {
           <Section>
             <Section.Title>
               <span className={`animated fadeIn ${styles.delayHalf}`}>
-                {name}
-                <br />
-                {badgeJSX}
+                <Row>
+                  <Col md={12}>{name}</Col>
+                  <Col md={12}>{badgeJSX}</Col>
+                </Row>
               </span>
             </Section.Title>
             <Section.Subtitle>
