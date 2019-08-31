@@ -4,14 +4,24 @@ import Layout from '../components/Util/Layout';
 import Footer from '../components/Footer';
 import Dashboard from '../components/Dashboard';
 
-const DashboardPage = ({ events }) => <Dashboard />;
+import { fetchConferenceData } from '../api/client';
 
-// DashboardPage.getInitialProps = async () => {
-//   const rpData = await fetchConferenceData();
+const DashboardPage = ({ sponsorImages }) => (
+  <Dashboard sponsorImages={sponsorImages} />
+);
 
-//   return {
-//     events: rpData.timelineSection.events
-//   };
-// };
+DashboardPage.getInitialProps = async () => {
+  const rpData = await fetchConferenceData();
+  let sponsorImages = [];
+  const sponsors = rpData.sponsors;
+  Object.keys(sponsors).map(tier => {
+    sponsors[tier].map(sponsor => sponsorImages.push(sponsor.img));
+  });
+  console.log(sponsorImages);
+
+  return {
+    sponsorImages
+  };
+};
 
 export default DashboardPage;

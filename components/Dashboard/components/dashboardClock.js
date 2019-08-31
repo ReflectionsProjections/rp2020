@@ -56,7 +56,7 @@ export default class DashboardClock extends Component {
         currentTimer: {
           h: NOWh,
           m: NOWm,
-          type: type
+          type
         }
       });
     }, 1000);
@@ -69,7 +69,7 @@ export default class DashboardClock extends Component {
     const currentTimer_H = currentTimer.h;
     const currentTimer_M =
       currentTimer.m.toString().length == 1
-        ? '0' + currentTimer.m
+        ? `0${currentTimer.m}`
         : currentTimer.m;
 
     return (
@@ -79,7 +79,7 @@ export default class DashboardClock extends Component {
           <Segment basic className={styles.currentTimer}>
             <div>
               <h1 className={styles.currentTimer__number}>
-                {currentTimer_H + ':' + currentTimer_M}
+                {`${currentTimer_H}:${currentTimer_M}`}
               </h1>
             </div>
             <div>
@@ -93,7 +93,7 @@ export default class DashboardClock extends Component {
             <div>
               <h1 className={styles.countdownTimer__number}>
                 {countdownTime.d.length == 1
-                  ? '0' + countdownTime.d
+                  ? `0${countdownTime.d}`
                   : countdownTime.d}
               </h1>
             </div>
@@ -104,7 +104,7 @@ export default class DashboardClock extends Component {
             <div>
               <h1 className={styles.countdownTimer__number}>
                 {countdownTime.h.length == 1
-                  ? '0' + countdownTime.h
+                  ? `0${countdownTime.h}`
                   : countdownTime.h}
               </h1>
             </div>
@@ -115,7 +115,7 @@ export default class DashboardClock extends Component {
             <div>
               <h1 className={styles.countdownTimer__number}>
                 {countdownTime.m.length == 1
-                  ? '0' + countdownTime.m
+                  ? `0${countdownTime.m}`
                   : countdownTime.m}
               </h1>
             </div>
@@ -126,7 +126,7 @@ export default class DashboardClock extends Component {
             <div>
               <h1 className={styles.countdownTimer__number}>
                 {countdownTime.s.length == 1
-                  ? '0' + countdownTime.s
+                  ? `0${countdownTime.s}`
                   : countdownTime.s}
               </h1>
             </div>
