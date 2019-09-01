@@ -115,12 +115,13 @@ const SponsorSection = ({ sponsors }) => {
               </div>
             )}
 
-            {sponsors.diversity && sponsors.diversity.length > 0 && (
+            {sponsors.diversity && (
               <div className={styles.tier}>
                 <span className="badge badge-primary badge-header">
                   <Badge variant="primary">Diversity x Tech Sponsors</Badge>
                 </span>
-                <ImageViewer images={sponsors.diversity} id="terab" />
+                <ImageViewer images={sponsors.diversity.divTier1} id="terab" />
+                <ImageViewer images={sponsors.diversity.divTier2} id="gigab" />
               </div>
             )}
           </Col>

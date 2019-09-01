@@ -541,17 +541,21 @@
         "website": "#"
       }
     ],
-    "diversity": [
-      {
-        "name": "Synchrony",
-        "img": "/static/assets/img/sponsors/synchrony.jpg",
-        "website": "#"
-      },
-      {
-        "name": "Two Sigma",
-        "img": "/static/assets/img/sponsors/TwoSigma.jpg",
-        "website": "#"
-      }
-    ]
+    "diversity": {
+      "divTier1": [
+        {
+          "name": "Synchrony",
+          "img": "/static/assets/img/sponsors/synchrony.jpg",
+          "website": "#"
+        }
+      ],
+      "divTier2": [
+        {
+          "name": "Two Sigma",
+          "img": "/static/assets/img/sponsors/TwoSigma.jpg",
+          "website": "#"
+        }
+      ]
+    }
   }
 }
