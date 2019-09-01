@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
+import Badge from 'react-bootstrap/Badge';
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -111,6 +112,15 @@ const SponsorSection = ({ sponsors }) => {
             {hasAllTiersSection && (
               <div className={styles.tier}>
                 <ImageViewer images={sponsors.allTiers} id="allTiers" />
+              </div>
+            )}
+
+            {sponsors.diversity && sponsors.diversity.length > 0 && (
+              <div className={styles.tier}>
+                <span className="badge badge-primary badge-header">
+                  <Badge variant="primary">Diversity x Tech Sponsors</Badge>
+                </span>
+                <ImageViewer images={sponsors.diversity} id="terab" />
               </div>
             )}
           </Col>
