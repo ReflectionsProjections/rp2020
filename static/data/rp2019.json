@@ -371,8 +371,18 @@
         "website": "#"
       },
       {
+        "name": "Google",
+        "img": "/static/assets/img/sponsors/Google.png",
+        "website": "#"
+      },
+      {
         "name": "Samsara",
         "img": "/static/assets/img/sponsors/Samsara.png",
+        "website": "#"
+      },
+      {
+        "name": "Sentry",
+        "img": "/static/assets/img/sponsors/Sentry.png",
         "website": "#"
       },
       {
