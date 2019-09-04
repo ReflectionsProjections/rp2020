@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Head from 'next/head';
 
 import ReactGA from 'react-ga';
-import Navbar from '../Navbar';
+import Navbar from '../components/Navbar';
 
 class Layout extends Component {
   componentDidMount() {

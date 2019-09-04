@@ -110,57 +110,72 @@
     "list": [
       {
         "name": "Alfred Spector",
+        "badge": "Keynote Speaker",
         "tagline": "CTO and Head of Engineering @ Two Sigma",
-        "bio": "Alfred Spector is Chief Technology Officer and Head of Engineering at Two Sigma, a firm dedicated to using information to optimize diverse economic challenges.  Prior to joining Two Sigma, Dr. Spector spent nearly eight years as Vice President of Research and Special Initiatives, at Google, where his teams delivered a range of successful technologies including machine learning, speech recognition, and translation. Prior to Google, Dr. Spector held various senior-level positions at IBM, including Vice President of Strategy and Technology (or CTO) for IBM Software and Vice President of Services and Software research across the company.  He previously founded and served as CEO of Transarc Corporation, a pioneer in distributed transaction processing and wide-area file systems, and he was on the computer science faculty at Carnegie Mellon University. Dr. Spector received a bachelor’s degree in Applied Mathematics from Harvard University and a Ph.D. in computer science from Stanford University, where he was a Hertz Fellow.   He is a Fellow of both the Association for Computing Machinery and the IEEE.  He is an active member of the National Academy of Engineering and the American Academy of Arts and Sciences, where he serves on the Council.  Dr. Spector won the 2001 IEEE Kanai Award for Distributed Computing and the 2016 ACM Software Systems Award, the latter for his work on the Andrew File System (AFS).",
+        "bio": "<p>Alfred Spector is Chief Technology Officer and Head of Engineering at <a target='_blank' href='https://urldefense.proofpoint.com/v2/url?u=https-3A__www.twosigma.com_&d=DwMGaQ&c=OCIEmEwdEq_aNlsP4fF3gFqSN-E3mlr2t9JcDdfOZag&r=ew50Y8KPpHcoI-N9Tkts2C-D2IjjXmEbO3Qp7F7JTD8&m=j0fFJyIp0qyx-psFJuU85OxTfvD0KlQKOg6iPehOSy4&s=k_MpmrYMVDj6avk0BMLNhz4RZzjNZ3Obw7AZMx0O9_A&'>Two Sigma</a>, a firm dedicated to using information to optimize diverse economic challenges.  Prior to joining Two Sigma, Dr. Spector spent nearly eight years as Vice President of Research and Special Initiatives, at <a target='_blank' href='https://urldefense.proofpoint.com/v2/url?u=https-3A__www.google.com_intl_en_about_&d=DwMGaQ&c=OCIEmEwdEq_aNlsP4fF3gFqSN-E3mlr2t9JcDdfOZag&r=ew50Y8KPpHcoI-N9Tkts2C-D2IjjXmEbO3Qp7F7JTD8&m=j0fFJyIp0qyx-psFJuU85OxTfvD0KlQKOg6iPehOSy4&s=E3E1A0U9w8l1tJFh66vjoWtxaJkCp1GrBh-dCfrh-z8&e='>Google</a>, where his teams delivered a range of successful technologies including machine learning, speech recognition, and translation. Prior to Google, Dr. Spector held various senior-level positions at <a target='_blank' href='https://urldefense.proofpoint.com/v2/url?u=http-3A__www.ibm.com_us-2Den_&d=DwMGaQ&c=OCIEmEwdEq_aNlsP4fF3gFqSN-E3mlr2t9JcDdfOZag&r=ew50Y8KPpHcoI-N9Tkts2C-D2IjjXmEbO3Qp7F7JTD8&m=j0fFJyIp0qyx-psFJuU85OxTfvD0KlQKOg6iPehOSy4&s=gAjnQNQ3no470jX3SApxBn7cOR2rCgNj3uvclvYiUwI&e='>IBM</a>, including Vice President of Strategy and Technology (or CTO) for IBM Software and Vice President of Services and Software research across the company.  He previously founded and served as CEO of <a target='_blank' href='https://urldefense.proofpoint.com/v2/url?u=https-3A__en.wikipedia.org_wiki_Transarc&d=DwMGaQ&c=OCIEmEwdEq_aNlsP4fF3gFqSN-E3mlr2t9JcDdfOZag&r=ew50Y8KPpHcoI-N9Tkts2C-D2IjjXmEbO3Qp7F7JTD8&m=j0fFJyIp0qyx-psFJuU85OxTfvD0KlQKOg6iPehOSy4&s=fKhyOZbro8_S9A9LB2grWebzfiVCkc2RNCwuqXKNq3M&e='>Transarc Corporation</a>, a pioneer in distributed transaction processing and wide-area file systems, and he was on the computer science faculty at <a target='_blank' href='https://urldefense.proofpoint.com/v2/url?u=http-3A__www.cs.cmu.edu_&d=DwMGaQ&c=OCIEmEwdEq_aNlsP4fF3gFqSN-E3mlr2t9JcDdfOZag&r=ew50Y8KPpHcoI-N9Tkts2C-D2IjjXmEbO3Qp7F7JTD8&m=j0fFJyIp0qyx-psFJuU85OxTfvD0KlQKOg6iPehOSy4&s=JHnUjgBDT8W5NtjJxmkBTGR_PFizK9nQdSQD4p5CgzM&e='>Carnegie Mellon University</a>. Dr. Spector received a bachelor’s degree in Applied Mathematics from <a target='_blank' href='https://urldefense.proofpoint.com/v2/url?u=http-3A__www.harvard.edu_&d=DwMGaQ&c=OCIEmEwdEq_aNlsP4fF3gFqSN-E3mlr2t9JcDdfOZag&r=ew50Y8KPpHcoI-N9Tkts2C-D2IjjXmEbO3Qp7F7JTD8&m=j0fFJyIp0qyx-psFJuU85OxTfvD0KlQKOg6iPehOSy4&s=m4hVlSSjAaShhh1E48MLVaVL30rQY3AP6HGAQ6GqbJA&e='>Harvard University</a> and a Ph.D. in computer science from <a target='_blank' href='https://urldefense.proofpoint.com/v2/url?u=https-3A__www.stanford.edu_&d=DwMGaQ&c=OCIEmEwdEq_aNlsP4fF3gFqSN-E3mlr2t9JcDdfOZag&r=ew50Y8KPpHcoI-N9Tkts2C-D2IjjXmEbO3Qp7F7JTD8&m=j0fFJyIp0qyx-psFJuU85OxTfvD0KlQKOg6iPehOSy4&s=91FKyQ8ltMHHjZzC79_N7v3TjbTwvi6i7zseKF-cIWA&e='>Stanford University</a>, where he was a Hertz Fellow.   He is a Fellow of both the Association for Computing Machinery and the IEEE.  He is an active member of the <a target='_blank' href='https://urldefense.proofpoint.com/v2/url?u=https-3A__www.nae.edu_&d=DwMGaQ&c=OCIEmEwdEq_aNlsP4fF3gFqSN-E3mlr2t9JcDdfOZag&r=ew50Y8KPpHcoI-N9Tkts2C-D2IjjXmEbO3Qp7F7JTD8&m=j0fFJyIp0qyx-psFJuU85OxTfvD0KlQKOg6iPehOSy4&s=JJpmJZSQdqRVir4KGBIu3OQcTWFUR_FjQKru9ic1Pzw&e='>National Academy of Engineering</a> and the <a target='_blank' href='https://urldefense.proofpoint.com/v2/url?u=https-3A__www.amacad.org_default.aspx&d=DwMGaQ&c=OCIEmEwdEq_aNlsP4fF3gFqSN-E3mlr2t9JcDdfOZag&r=ew50Y8KPpHcoI-N9Tkts2C-D2IjjXmEbO3Qp7F7JTD8&m=j0fFJyIp0qyx-psFJuU85OxTfvD0KlQKOg6iPehOSy4&s=ql7AerXm7SHFWgriRFrD5DL-xpbPVJQ8EECK0u3AWuc&e='>American Academy of Arts and Sciences</a>, where he serves on the <a target='_blank' href='https://urldefense.proofpoint.com/v2/url?u=https-3A__www.amacad.org_content.aspx-3Fd-3D270&d=DwMGaQ&c=OCIEmEwdEq_aNlsP4fF3gFqSN-E3mlr2t9JcDdfOZag&r=ew50Y8KPpHcoI-N9Tkts2C-D2IjjXmEbO3Qp7F7JTD8&m=j0fFJyIp0qyx-psFJuU85OxTfvD0KlQKOg6iPehOSy4&s=m26O_L4x-fPsJLPZxIx0e5YMip_9IZ1kLDWbfDLYHkE&e='>Council</a>.  Dr. Spector won the <a target='_blank' href='https://urldefense.proofpoint.com/v2/url?u=https-3A__www.computer.org_web_awards_kanai&d=DwMGaQ&c=OCIEmEwdEq_aNlsP4fF3gFqSN-E3mlr2t9JcDdfOZag&r=ew50Y8KPpHcoI-N9Tkts2C-D2IjjXmEbO3Qp7F7JTD8&m=j0fFJyIp0qyx-psFJuU85OxTfvD0KlQKOg6iPehOSy4&s=jONIHhySx4u65HQA-KH04QvhBF5Bzi8Fm-jCxMGzpLY&e='>2001 IEEE Kanai Award for Distributed Computing</a> and the <a target='_blank' href='https://urldefense.proofpoint.com/v2/url?u=https-3A__awards.acm.org_award-5Fwinners_spector-5FCR79707&d=DwMGaQ&c=OCIEmEwdEq_aNlsP4fF3gFqSN-E3mlr2t9JcDdfOZag&r=ew50Y8KPpHcoI-N9Tkts2C-D2IjjXmEbO3Qp7F7JTD8&m=j0fFJyIp0qyx-psFJuU85OxTfvD0KlQKOg6iPehOSy4&s=qjywiU9ywAJRtsuOVqRUKDyd9e4Chr9YS9tOOuF_zkA&e='>2016 ACM Software Systems Award</a>, the latter for his work on the Andrew File System (AFS).</p>",
         "image": "/static/img/speakers/AlfredSpector"
+      },
+      {
+        "name": "Lexi B",
+        "tagline": "Project Manager @ Facebook",
+        "badge": "Diversity x Tech Spotlight Speaker",
+        "bio": "<p>Alexandria Noel Butler, affectionately known as Lexi B, wears many hats including entrepreneur, speaker, editor, and writer. Raised in St.Louis, MO and living in the Silicon Valley, she graduated from Stanford University in 2011 with majors in Communication and Spanish. After informally documenting her escapades as a young professional, Lexi B founded Grown Up Truth to discuss the professional and personal experiences of millennials.With statistics that include 10,000 + subscribers and 12,000 + monthly hits, Grown Up Truth has become a destination for candid conversations and opinions about navigating adulthood. Lexi’s writing audience spans multiple platforms such as Levo League, For Women to Women, and Business Insider.In April 2017, Lexi B founded Sista Circle: Black Women in Tech, an online community that supports Black women in tech companies and tech related professions.This 3,300 + international community spans over 72 countries and has partnered with organizations such as Phenomenally, Instagram and Slack to produce experiences for Sista Circle members that elevate the voices of Black women and showcase the beauty and depth of the Diaspora.</p><p>When Lexi B is not project managing, she spends her time speaking in panels, leading workshops and participating in keynote speaking engagements about a variety of topics including diversity in tech, Blackness in America, career growth and development.Her newest venture was launched in February 2018. Unfiltered By Lexi B is a weekly video series that gives candid tips and tricks to 20 somethings about career development and personal growth. These tips encourage viewers to make small adjustments to their career strategy to prepare them for their next promotion. </p>",
+        "image": "/static/img/speakers/LexiB"
+      },
+      {
+        "name": "Mindy Ferguson",
+        "tagline": "Managing Vice President, Commercial Digital Channels @ Capital One",
+        "badge": "Diversity x Tech Speaker",
+        "bio": "<p>Mindy Ferguson leads Capital One’s Commercial Digital Channels, creating digital experiences within the Capital One Commercial Bank. Her vision is to provide a cohesive, integrated commercial banking experience that allows clients the ability to handle all of their banking seamlessly through a modern interface that leverages technology. Her passion is around the experience and the development of an architecture that allows banking to adjust to the needs of its customers, always staying in the forefront with technology.</p><p>Mindy has more than 20 years of engineering experience with several global companies in diverse industries, including radio and television, digital marketing and comparison shopping. She spent more than 10 years of her career in the financial services industry, most recently as the Vice President of Mobile and Emerging Technologies for Northwestern Mutual Life Insurance. Prior to that she was Vice President of Global Software Product Development and Planning at Experian in Costa Mesa, California, where she was awarded the Experian Elite Award for her work in the consumer mobile space. Mindy was recognized for creating Experian’s first consumer-facing mobile app, which led to unanticipated sales in the consumer shopping vertical and was one of the first 500 apps in the App Store.</p><p>Mindy attended Ohio University in Athens, Ohio, majoring in broadcast journalism. She enjoys community service, and has volunteered at the Second Harvest Food Bank in Orange County, California, and at both the Los Angeles Mission and God’s Love We Deliver in Manhattan which help to provide needs for the homeless.</p><p>She resides in Manhattan, New York, with her wife, two chihuahuas and a cat.</p>",
+        "image": "/static/img/speakers/MindyFerguson"
       },
       {
         "name": "Christine Bakan",
         "tagline": "Global Head and Vice President of Software and Bioinformatics @ Roche Sequencing Solutions",
-        "bio": "As Global Head and Vice President of Software and Bioinformatics for Roche Sequencing Solutions, Christine Bakan leads research and development of genomic sequencing data analysis and clinical interpretation software for end-to-end, next generation sequencing solutions being developed at Roche. Prior to Roche Sequencing Solutions, Christine held senior positions at Cisco Systems where she was responsible for core software technologies, digital network solutions and software defined networking across Cisco’s market leading enterprise switching, routing and mobile/ wireless product lines. Christine previously led software research and development organizations for cloud IT service management products at BMC Software (top rated in Gartner Magic Quadrant), and software development teams in the advanced technology group at Oracle Corporation. She holds four patents related to virtualization, security and performance optimization in Oracle applications and database technologies. Christine holds degrees in Molecular Biology and Neuroscience from UC Berkeley and in business from Stanford University Graduate School of Business.",
+        "bio": "<p>As Global Head and Vice President of Software and Bioinformatics for Roche Sequencing Solutions, Christine Bakan leads research and development of genomic sequencing data analysis and clinical interpretation software for end-to-end, next generation sequencing solutions being developed at Roche.</p> <p>Prior to Roche Sequencing Solutions, Christine held senior positions at Cisco Systems where she was responsible for core software technologies, digital network solutions and software defined networking across Cisco’s market leading enterprise switching, routing and mobile/ wireless product lines. Christine previously led software research and development organizations for cloud IT service management products at BMC Software (top rated in Gartner Magic Quadrant), and software development teams in the advanced technology group at Oracle Corporation. She holds four patents related to virtualization, security and performance optimization in Oracle applications and database technologies. </p><p>Christine holds degrees in Molecular Biology and Neuroscience from UC Berkeley and in business from Stanford University Graduate School of Business.</p>",
         "image": "/static/img/speakers/ChristineBakan"
       },
       {
         "name": "Derrick Higgins",
         "tagline": "Senior Director of Data Science @ Blue Cross and Blue Shield of Illinois",
-        "bio": "Dr. Derrick Higgins is senior director of data science at Blue Cross and Blue Shield of Illinois.  His team serves as a center of excellence, facilitating collaboration, providing governance, and assembling data science best practices for the enterprise.  He has built and led data science teams at American Family Insurance, Civis Analytics, and the Educational Testing Service.  His work has been published in leading conferences and journals in the fields of computational linguistics, speech processing, and language testing, and has resulted in ten patents.",
+        "bio": "<p>Dr. Derrick Higgins is senior director of data science at Blue Cross and Blue Shield of Illinois.  His team serves as a center of excellence, facilitating collaboration, providing governance, and assembling data science best practices for the enterprise.  He has built and led data science teams at American Family Insurance, Civis Analytics, and the Educational Testing Service.  His work has been published in leading conferences and journals in the fields of computational linguistics, speech processing, and language testing, and has resulted in ten patents.</p>",
         "image": "/static/img/speakers/DerrickHiggins"
       },
       {
         "name": "Donald Kossmann",
         "tagline": "Director of the Microsoft Research Lab in Redmond",
-        "bio": "Donald Kossmann is the director of the Microsoft Research Lab in Redmond. Before joining Microsoft, Donald was a professor in the Systems Group of the Department of Computer Science at ETH Zurich for 13 years, doing research and teaching all flavors of data management systems. He was chair of ACM SIGMOD from 2013 to 2017 and served on the Board of Trustees of the VLDB Endowment from 2005 to 2011. He is a co-founder of four companies: i-TV-T AG (1998), XQRL Inc. (2002), 28msec Inc. (2006), and Teralytics AG (2010). Dr. Derrick Higgins is senior director of data science at Blue Cross and Blue Shield of Illinois.  His team serves as a center of excellence, facilitating collaboration, providing governance, and assembling data science best practices for the enterprise.  He has built and led data science teams at American Family Insurance, Civis Analytics, and the Educational Testing Service.  His work has been published in leading conferences and journals in the fields of computational linguistics, speech processing, and language testing, and has resulted in ten patents.",
+        "bio": "<p>Donald Kossmann is the director of the Microsoft Research Lab in Redmond. Before joining Microsoft, Donald was a professor in the Systems Group of the Department of Computer Science at ETH Zurich for 13 years, doing research and teaching all flavors of data management systems. He was chair of ACM SIGMOD from 2013 to 2017 and served on the Board of Trustees of the VLDB Endowment from 2005 to 2011. He is a co-founder of four companies: i-TV-T AG (1998), XQRL Inc. (2002), 28msec Inc. (2006), and Teralytics AG (2010).</p>",
         "image": "/static/img/speakers/DonaldKossmann"
       },
       {
         "name": "Forrest Iandola",
         "tagline": "CEO of DeepScale",
-        "bio": "Forrest Iandola (UIUC BS CS '12 and UC Berkeley PhD EECS '16) is a deep learning researcher and a startup founder. His best-known research work includes deep learning infrastructure such as FireCaffe and deep models such as SqueezeNet and SqueezeDet. His advances in deep learning led to the founding of DeepScale, where he has been CEO since 2015. DeepScale builds vision/perception systems for automated vehicles.",
+        "bio": "<p>Forrest Iandola (UIUC BS CS '12 and UC Berkeley PhD EECS '16) is a deep learning researcher and a startup founder. His best-known research work includes deep learning infrastructure such as FireCaffe and deep models such as SqueezeNet and SqueezeDet. His advances in deep learning led to the founding of DeepScale, where he has been CEO since 2015. DeepScale builds vision/perception systems for automated vehicles.</p>",
         "image": "/static/img/speakers/ForrestIandola"
       },
       {
         "name": "Jennison Asuncion",
-        "tagline": "Accessibility @ LinkedIn",
-        "bio": "Jennison Asuncion works in LinkedIn Engineering, where he leads efforts to assure their web and mobile products are built to be accessible and usable to the more than one billion people with disabilities/impairments worldwide. He is active in the accessibility industry, lending his valuable thought and leadership to activities such as: co-founding the annual Global Accessibility Awareness Day, now in its eighth year; chairing the 34th CSUN Assistive Technology Conference (2019), the largest event on technology and persons with disabilities; and founding the Bay Area Accessibility and inclusive Design Meetup in 2014, along with an annual “un”conference, Accessibility Camp Bay Area in the same year. Jennison believes strongly that students of Engineering and related disciplines should possess fundamental knowledge about accessibility by the time they graduate.",
+        "tagline": "Head of Accessibility Engineering Evangelism @ LinkedIn",
+        "bio": "<p>Jennison Asuncion works in LinkedIn Engineering, where he leads efforts to assure their web and mobile products are built to be accessible and usable to the more than one billion people with disabilities/impairments worldwide. He is active in the accessibility industry, lending his valuable thought and leadership to activities such as: co-founding the annual Global Accessibility Awareness Day, now in its eighth year; chairing the 34th CSUN Assistive Technology Conference (2019), the largest event on technology and persons with disabilities; and founding the Bay Area Accessibility and inclusive Design Meetup in 2014, along with an annual “un”conference, Accessibility Camp Bay Area in the same year. Jennison believes strongly that students of Engineering and related disciplines should possess fundamental knowledge about accessibility by the time they graduate.</p>",
         "image": "/static/img/speakers/JennisonAsuncion"
       },
       {
-        "name":"Jason Yosinski",
-        "tagline":"Co-founder and Research Scientist @ Uber AI Labs",
-        "bio":"Jason Yosinski is a machine learning researcher, founding member of Uber AI Labs, and scientific adviser to Recursion Pharmaceuticals. His work focuses on building more capable and more understandable AI. As scientists and engineers build increasingly powerful AI systems, the abilities of these systems increase faster than does our understanding of them, motivating much of his work on AI Neuroscience -- an emerging field of study that investigates fundamental properties and behaviors of AI systems. Dr. Yosinski completed his PhD as a NASA Space Technology Research Fellow working at the Cornell Creative Machines Lab, the University of Montreal, Caltech/NASA Jet Propulsion Laboratory, and Google DeepMind. His work on AI has been featured on NPR, Fast Company, the Economist, TEDx, and on the BBC. Prior to his academic career, Jason cofounded two web technology companies and started a program in the Los Angeles school district that teaches students algebra via hands-on robotics. In his free time, Jason enjoys cooking, sailing, reading, paragliding, and sometimes pretending he's an artist. ",
-        "image":"/static/img/speakers/JasonYosinski"
+        "name": "Jason Yosinski",
+        "tagline": "Co-founder and Research Scientist @ Uber AI Labs",
+        "bio": "<p>Jason Yosinski is a machine learning researcher, founding member of Uber AI Labs, and scientific adviser to Recursion Pharmaceuticals. His work focuses on building more capable and more understandable AI. As scientists and engineers build increasingly powerful AI systems, the abilities of these systems increase faster than does our understanding of them, motivating much of his work on AI Neuroscience -- an emerging field of study that investigates fundamental properties and behaviors of AI systems. Dr. Yosinski completed his PhD as a NASA Space Technology Research Fellow working at the Cornell Creative Machines Lab, the University of Montreal, Caltech/NASA Jet Propulsion Laboratory, and Google DeepMind. His work on AI has been featured on NPR, Fast Company, the Economist, TEDx, and on the BBC. Prior to his academic career, Jason cofounded two web technology companies and started a program in the Los Angeles school district that teaches students algebra via hands-on robotics. In his free time, Jason enjoys cooking, sailing, reading, paragliding, and sometimes pretending he's an artist.</p>",
+        "image": "/static/img/speakers/JasonYosinski"
       },
       {
-        "name":"Joe Jablonski",
-        "tagline":"Co-Founder and Chief Product Officer @ Ocient",
-        "bio":"Joe Jablonski is a serial entrepreneur and technologist that has founded several software-based companies.   He is currently the Chief Product Officer at Ocient, a company inventing a database to perform high speed analytics on petabyte scale datasets.  Joe co-founded Ocient and was the CTO for the first three years.   Prior to Ocient, he was the founding CTO at Falcon Insurance.  Falcon is a non-standard insurance carrier that uses unique technology to compute optimal pricing strategies.   Joe was also the founding CEO of WeGather, a financial fundraising and private community platform for not-for-profits and schools which was acquired by LPI.  The initial company Joe founded was Acumence, a company providing predictive analytics monitoring package for high speed discrete manufacturing.  Acumence software is used to produce 60% of the world’s beverage cans in 17 countries.  It was acquired by Flexware in 2017. In addition to being a technology entrepreneur, Joe is an angel investor and advisor in companies engaging in challenging software development.   Joe Jablonski holds an MBA from the Kellogg School of Management and a Bachelor of Science in Electrical Engineering from the University of Illinois.",
-        "image":"/static/img/speakers/JoeJablonski"
+        "name": "Joe Jablonski",
+        "tagline": "Co-Founder and Chief Product Officer @ Ocient",
+        "bio": "<p>Joe Jablonski is a serial entrepreneur and technologist that has founded several software-based companies.   He is currently the Chief Product Officer at Ocient, a company inventing a database to perform high speed analytics on petabyte scale datasets.  Joe co-founded Ocient and was the CTO for the first three years.   Prior to Ocient, he was the founding CTO at Falcon Insurance.  Falcon is a non-standard insurance carrier that uses unique technology to compute optimal pricing strategies.   Joe was also the founding CEO of WeGather, a financial fundraising and private community platform for not-for-profits and schools which was acquired by LPI.  The initial company Joe founded was Acumence, a company providing predictive analytics monitoring package for high speed discrete manufacturing.  Acumence software is used to produce 60% of the world’s beverage cans in 17 countries.  It was acquired by Flexware in 2017.</p><p>In addition to being a technology entrepreneur, Joe is an angel investor and advisor in companies engaging in challenging software development.   Joe Jablonski holds an MBA from the Kellogg School of Management and a Bachelor of Science in Electrical Engineering from the University of Illinois.</p>",
+        "image": "/static/img/speakers/JoeJablonski"
       },
       {
-        "name":"Joydeep Ganguly",
-        "tagline":"Business Technology Analyst @ Deloitte Consulting",
-        "bio":"Joydeep Ganguly (JD) is a technology consultant for Deloitte Consulting, where he advises clients on technology strategy issues. His projects focus on helping CIOs across industries understand what their priorities should be, in the face of a changing business landscape. A graduate of the College of Engineering (ECE 2017!), JD was always drawn to the intersection of business and technology, believing that technology needs to be a key component of any business strategy. His past projects have included cost reductions for a rural hospital, supply chain improvements for consumer products companies, and broader technology strategy for various financial institutions.",
-        "image":"/static/img/speakers/JoydeepGanguly"
+        "name": "Joydeep Ganguly",
+        "tagline": "Business Technology Analyst @ Deloitte Consulting",
+        "bio": "<p>Joydeep Ganguly (JD) is a technology consultant for Deloitte Consulting, where he advises clients on technology strategy issues. His projects focus on helping CIOs across industries understand what their priorities should be, in the face of a changing business landscape. A graduate of the College of Engineering (ECE 2017!), JD was always drawn to the intersection of business and technology, believing that technology needs to be a key component of any business strategy. His past projects have included cost reductions for a rural hospital, supply chain improvements for consumer products companies, and broader technology strategy for various financial institutions.</p>",
+        "image": "/static/img/speakers/JoydeepGanguly"
       }
     ]
   },
@@ -282,6 +297,27 @@
             "answer": "The Startup Fair is for startup companies, and the Career Fair is for established companies. The difference between startup and established companies is determined by conference staff."
           }
         ]
+      },
+      {
+        "name": "Gas Reimbursement",
+        "questions": [
+          {
+            "question": "How do I ask for a reimbursement?",
+            "answer": "The registration form has a transportation question that asks how you intend on getting to campus — respond indicating that you are driving and will need gas reimbursement. Please note that we are only offering reimbursements to the first 200 attendees that ask for one."
+          },
+          {
+            "question": "How much will I be reimbursed?",
+            "answer": "The amount varies depending on where you are driving from: $15 per attendee if location is beyond 160 miles from campus, $10 per attendee if location is between 60 and 160 miles, and $5 per attendee if location is within 60 miles. All distances are as the crow flies and R|P staff has the final say on which radius level your departure location falls in. Note that these numbers are per attendee to incentivize attendees to carpool."
+          },
+          {
+            "question": "How will I know if I'm within the first 200 people to sign up for a reimbursement?",
+            "answer": "Assuming you have registered, we will send you an email by September 16th notifying you of your status. If you register after that date, we will do our best to notify you as soon as possible but cannot guarantee immediate confirmation."
+          },
+          {
+            "question": "How do I collect my reimbursement?",
+            "answer": "We will hold a gas reimbursement booth on both Friday and Saturday. You must have explicitly requested reimbursements on your registration to be given money. You MUST also have your School ID as proof that you are from the school you claim to be from. We will be reimbursing via Venmo and cash."
+          }
+        ]
       }
     ]
   },
@@ -335,8 +371,23 @@
         "website": "#"
       },
       {
+        "name": "Google",
+        "img": "/static/assets/img/sponsors/Google.png",
+        "website": "#"
+      },
+      {
         "name": "Samsara",
         "img": "/static/assets/img/sponsors/Samsara.png",
+        "website": "#"
+      },
+      {
+        "name": "Sentry",
+        "img": "/static/assets/img/sponsors/Sentry.png",
+        "website": "#"
+      },
+      {
+        "name": "Synchrony",
+        "img": "/static/assets/img/sponsors/synchrony.jpg",
         "website": "#"
       },
       {
@@ -347,6 +398,11 @@
     ],
     "tier1": [],
     "tier2": [
+      {
+        "name": "Bayer",
+        "img": "/static/assets/img/sponsors/Bayer.jpg",
+        "website": "#"
+      },
       {
         "name": "Salesforce",
         "img": "/static/assets/img/sponsors/Salesforce.png",
@@ -365,13 +421,32 @@
         "website": "#"
       },
       {
-        "name": "Qualtrics",
-        "img": "/static/assets/img/sponsors/Qualtrics.png",
+        "name": "Caterpillar",
+        "img": "/static/assets/img/sponsors/Caterpillar.jpg"
+      },
+      {
+        "name": "Goldman Sachs",
+        "img": "/static/assets/img/sponsors/Goldmansachs.jpg",
+        "website": "#"
+      },
+      {
+        "name": "IMO",
+        "img": "/static/assets/img/sponsors/IMO.png",
+        "website": "#"
+      },
+      {
+        "name": "Microsoft",
+        "img": "/static/assets/img/sponsors/Microsoft.png",
         "website": "#"
       },
       {
         "name": "Robinhood",
         "img": "/static/assets/img/sponsors/Robinhood.png",
+        "website": "#"
+      },
+      {
+        "name": "Qualtrics",
+        "img": "/static/assets/img/sponsors/Qualtrics.png",
         "website": "#"
       },
       {
@@ -382,6 +457,11 @@
       {
         "name": "Tasty Trade",
         "img": "/static/assets/img/sponsors/TastyTrade.jpg",
+        "website": "#"
+      },
+      {
+        "name": "West Monroe Partners",
+        "img": "/static/assets/img/sponsors/westmonroe.png",
         "website": "#"
       }
     ],
@@ -407,6 +487,10 @@
         "website": "#"
       },
       {
+        "name": "Businessolver",
+        "img": "/static/assets/img/sponsors/Businessolver.jpg"
+      },
+      {
         "name": "Cloudflare",
         "img": "/static/assets/img/sponsors/Cloudflare.png",
         "website": "#"
@@ -414,6 +498,26 @@
       {
         "name": "Confluent",
         "img": "/static/assets/img/sponsors/Confluent.png",
+        "website": "#"
+      },
+      {
+        "name": "Facebook",
+        "img": "/static/assets/img/sponsors/facebook.png",
+        "website": "#"
+      },
+      {
+        "name": "Forcepoint",
+        "img": "/static/assets/img/sponsors/Forcepoint.png",
+        "website": "#"
+      },
+      {
+        "name": "Ford",
+        "img": "/static/assets/img/sponsors/Ford.jpeg",
+        "website": "#"
+      },
+      {
+        "name": "JP Morgan",
+        "img": "/static/assets/img/sponsors/jpmorgan.jpg",
         "website": "#"
       },
       {
@@ -434,6 +538,11 @@
       {
         "name": "Sandia",
         "img": "/static/assets/img/sponsors/Sandia.jpg",
+        "website": "#"
+      },
+      {
+        "name": "Uber",
+        "img": "/static/assets/img/sponsors/uber.jpg",
         "website": "#"
       }
     ]

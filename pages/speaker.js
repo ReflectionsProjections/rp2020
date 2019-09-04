@@ -4,10 +4,10 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import Gate from '../components/Util/Gate';
+import Gate from '../UIComponents/Gate';
 import Nav from '../components/Nav';
-import Layout from '../components/Util/Layout';
-import Section from '../components/Util/Section';
+import Layout from '../UIComponents/Layout';
+import Section from '../UIComponents/Section';
 import Footer from '../components/Footer';
 import OtherSpeakers from '../components/Speaker/OtherSpeakers';
 
@@ -17,8 +17,8 @@ import useGetStaticData from '../services/useGetStaticData';
 import styles from './speaker.scss';
 
 const Speaker = () => {
-  let query = {};
-  if (process.browser) {
+  let query;
+  if (query === undefined && process.browser) {
     query = getQueryObject(window);
   }
 
@@ -36,7 +36,21 @@ const Speaker = () => {
       }
     });
   }
-  const { name, tagline, bio, image } = speaker;
+  const { name, tagline, bio, image, badge } = speaker;
+
+  const createMarkup = () => ({
+    __html: bio
+  });
+
+  const badgeStyles = {
+    textAlign: 'center'
+  };
+  const badgeJSX = badge ? (
+    <span className="badge badge-primary" style={badgeStyles}>
+      {badge}
+    </span>
+  ) : null;
+
   const imageURL = `${image}.png`;
   return (
     <Layout>
@@ -48,7 +62,10 @@ const Speaker = () => {
           <Section>
             <Section.Title>
               <span className={`animated fadeIn ${styles.delayHalf}`}>
-                {name}
+                <Row>
+                  <Col md={12}>{name}</Col>
+                  <Col md={12}>{badgeJSX}</Col>
+                </Row>
               </span>
             </Section.Title>
             <Section.Subtitle>
@@ -67,14 +84,18 @@ const Speaker = () => {
                     />
                   </Col>
                   <Col md={{ span: 12 }} lg={{ span: 6 }}>
-                    <p className={styles.bio}>{bio}</p>
+                    <p
+                      className={styles.bio}
+                      // eslint-disable-next-line react/no-danger
+                      dangerouslySetInnerHTML={createMarkup()}
+                    ></p>
                   </Col>
                 </Row>
               </Container>
             </Section.Body>
           </Section>
           <OtherSpeakers
-            speakers={speakers.filter(s => s.name !== query.name).slice(0, 4)}
+            speakers={speakers.filter(s => s.name !== query.name).slice(0, 3)}
           />
         </div>
       </Gate>

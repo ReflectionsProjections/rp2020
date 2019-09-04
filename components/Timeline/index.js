@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Section from '../Util/Section';
+import Section from '../../UIComponents/Section';
 
 import TimelineBlock from './components/TimelineBlock';
 

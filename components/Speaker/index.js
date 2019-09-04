@@ -3,7 +3,7 @@ import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Section from '../Util/Section';
+import Section from '../../UIComponents/Section';
 
 import SpeakerCard from './components/SpeakerCard';
 
@@ -23,19 +23,20 @@ const Speaker = ({ speakers }) => {
             ) : (
               <>
                 {speakers.map(speaker => {
-                  const { name, image, tagline } = speaker;
+                  const { name, image, tagline, badge } = speaker;
                   const imageURL = `${image}.png`;
                   return (
                     <Col
                       className={styles.speakerCardContainer}
-                      xs={6}
-                      md={4}
-                      lg={3}
+                      sm={12}
+                      md={6}
+                      lg={4}
                     >
                       <SpeakerCard
                         name={name}
                         cardImage={imageURL}
                         tagline={tagline}
+                        badge={badge}
                       />
                     </Col>
                   );

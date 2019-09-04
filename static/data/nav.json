@@ -28,5 +28,8 @@
   },
   "events": {
     "type": "BACK_HOME"
+  },
+  "challenge": {
+    "type": "BACK_HOME"
   }
 }

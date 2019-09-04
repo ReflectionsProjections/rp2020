@@ -3,8 +3,8 @@ import Head from 'next/head';
 import SVG from 'react-inlinesvg';
 import { Link, Element } from 'react-scroll';
 
-import Gate from '../components/Util/Gate';
-import Layout from '../components/Util/Layout';
+import Gate from '../UIComponents/Gate';
+import Layout from '../UIComponents/Layout';
 import Nav from '../components/Nav';
 import CountdownTimer from '../components/CountdownTimer';
 import About from '../components/About/index';

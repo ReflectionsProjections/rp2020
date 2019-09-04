@@ -22,7 +22,7 @@ Section.Subtitle = ({ children }) => (
   <h2 className={styles.subtitle}>{children}</h2>
 );
 
-Section.Body = ({ children }) => <>{children}</>;
+Section.Body = ({ children }) => <div className={styles.body}>{children}</div>;
 
 Section.Header = ({ children }) => (
   <div className={styles.header}>{children}</div>

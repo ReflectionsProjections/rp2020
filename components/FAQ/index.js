@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
-import Section from '../Util/Section';
+import Section from '../../UIComponents/Section';
 
 import QuestionContainer from './components/QuestionContainer';
 
@@ -61,6 +61,11 @@ const FAQ = ({ faqData: { sections } }) => {
                     onClick={() => setCurrSection('R|P Symposium')}
                   >
                     R|P Symposium
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    onClick={() => setCurrSection('Gas Reimbursement')}
+                  >
+                    Gas Reimbursement
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>

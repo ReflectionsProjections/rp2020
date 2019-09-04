@@ -7,13 +7,13 @@ import styles from './NavButton.scss';
 const NavButton = () => (
   <a
     className={styles.a}
-    href="https://acmrp.typeform.com/to/a05uAe"
+    href="https://acmrp.typeform.com/to/Ujm2Vf"
     target="_blank"
     rel="noopener noreferrer"
   >
     <Button className={styles.btn}>
       <div className={`align-self-middle ${styles.btnRegisterText}`}>
-        Get Updates
+        Register
       </div>
     </Button>
   </a>
