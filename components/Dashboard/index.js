@@ -77,7 +77,7 @@ export default class Dashboard extends Component {
         </Row>
         <Row>
           <Col>
-            <Row className={styles.logoRow}>
+            <Row className={`justify-content-center ${styles.logoRow}`}>
               <Transition timeout={ {enter, exit} } onExit={() => this.randomLogos(0)} in={visibles[0]}>
                 <Image className={styles.logo} src={logos[0]} fluid />
               </Transition>
