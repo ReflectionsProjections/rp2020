@@ -1,31 +1,29 @@
 import React, { Component } from 'react';
-import {
-  Grid,
-  Container,
-  Segment,
-  Responsive,
-  Image,
-  Transition
-} from 'semantic-ui-react';
+//  import {
+//    Image, 
+//    Transition
+//  } from 'semantic-ui-react';
+import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Transition } from 'react-transition-group';
+import Section from '../../UIComponents/Section';
 import { Timeline } from 'react-twitter-widgets';
 
 import classNames from 'classnames';
 import styles from './Dashboard.scss';
 import DashboardClock from './components/dashboardClock';
-// import DashboardEvents from './dashboardEvents'
+import DashboardEvents from './components/dashboardEvents';
 // import DashboardAnnouncements from './dashboardAnnouncements'
 // import Clock from 'react-live-clock';
 
-export default class DashboardLarge extends Component {
+export default class Dashboard extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       logos: props.sponsorImages.slice(0, 9),
       visibles: [true, true, true, true, true, true, true, true, true],
-      visible: true,
-      hide: 750,
-      show: 750
+      enter: 750,
+      exit: 750
     };
   }
 
@@ -36,7 +34,7 @@ export default class DashboardLarge extends Component {
       visibles[index] = false;
 
       this.setState({ visibles });
-    }, 5000);
+    }, 1000);
   }
 
   randomLogos = index => {
@@ -60,72 +58,79 @@ export default class DashboardLarge extends Component {
   };
 
   render() {
-    const { logos, visible, visibles, hide, show } = this.state;
+    const { logos, visibles, enter, exit } = this.state;
 
     return (
-      <Grid className={styles.largeDashboardContainer} columns="equal">
-        <Grid.Row>
-          <Grid.Column className={styles.largeLeftSideContainer}>
-            <div
-              className={classNames(
-                styles.largeBlockContainer,
-                styles.rpLogoContainer
-              )}
-            >
-              <Image
-                src={'/static/assets/2019logo.svg'}
-                size="large"
-                centered
-              />
-            </div>
-            {/* <div className={styles.largeBlockContainer}>
-              <Segment basic className={styles.posterContainer}>
-                <Image className={styles.posterImg} src={logos[0]} size='large' centered />
-              </Segment>
-            </div> */}
-          </Grid.Column>
-          <Grid.Column>
-            <div className={styles.largeBlockContainer}>
-              <DashboardClock clock title="CURRENT TIME" />
-            </div>
-            {/* <div className="largeBlockContainer">
-              <DashboardEvents key="dashboardLarge" className="bottomContainer"/>
-            </div> */}
-          </Grid.Column>
-          <Grid.Column className={styles.largeRightSideContainer}>
-            <div className={styles.largeLogoContainer}>
-              <Grid>
-                <Grid.Row columns={1} className="logoRow">
-                  <Grid.Column className="logoCol">
-                    <Segment basic className="logoContainer">
-                      <div className="eventsTitle">Powered by:</div>
-                      <Image
-                        className={styles.sponsorLogo}
-                        src={logos[1]}
-                        size="medium"
-                        centered
-                      />
-                    </Segment>
-                  </Grid.Column>
-                </Grid.Row>
-              </Grid>
-            </div>
-            <div className={styles.largeBlockContainer}>
-              <Segment basic className={styles.twitterContainer}>
-                <Timeline
-                  dataSource={{ sourceTypr: 'profile', screenName: 'uiuc_rp' }}
-                  options={{
-                    chrome: 'transparent nofooter noheader noscrollbar',
-                    tweetLimit: 3,
-                    ariaPolite: 'rude',
-                    username: 'uiuc_rp'
-                  }}
-                />
-              </Segment>
-            </div>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
+      <Container className={classNames(styles.dashboardContainer, styles.x)}>
+        <Row>
+          <Col>
+            <Image className={styles.rpLogo} src={"../../static/assets/2019logo.svg"} />
+          </Col>
+          <Col md={{ span: 4, offset: 4 }}>
+            <Image className={styles.rpWordmark} src={"../../static/assets/wordmarkblack.svg"} />
+          </Col>
+        </Row>
+        <Row>
+          <Col md={{ span: 6, offset: 3}}>
+            <DashboardClock clock title="CURRENT TIME" />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Row className={styles.logoRow}>
+              <Transition timeout={ {enter, exit} } onExit={() => this.randomLogos(0)} in={visibles[0]}>
+                <Image className={styles.logo} src={logos[0]} fluid />
+              </Transition>
+            </Row>
+            <Row className={`justify-content-center ${styles.logoRow}`}>
+              <Transition timeout={ {enter, exit} } onExit={() => this.randomLogos(1)} in={visibles[1]}>
+                <Image className={styles.logo} src={logos[1]} fluid />
+              </Transition>
+            </Row>
+            <Row className={`justify-content-center ${styles.logoRow}`}>
+              <Transition timeout={ {enter, exit} } onExit={() => this.randomLogos(2)} in={visibles[2]}>
+                <Image className={styles.logo} src={logos[2]} fluid />
+              </Transition>
+            </Row>
+            <Row className={`justify-content-center ${styles.logoRow}`}>
+              <Transition timeout={ {enter, exit} } onExit={() => this.randomLogos(3)} in={visibles[3]}>
+                <Image className={styles.logo} src={logos[3]} fluid />
+              </Transition>
+            </Row>
+          </Col>
+          <Col>
+            <DashboardEvents events={this.props.events} />
+          </Col>
+          <Col>
+            <Timeline
+              dataSource={{sourceTypr:'profile', screenName:'uiuc_rp'}}
+              options={{chrome: 'transparent nofooter noheader noscrollbar', tweetLimit: 3, ariaPolite: 'rude', username:'uiuc_rp'}}
+            />
+          </Col>
+          <Col>
+          <Row className={`justify-content-center ${styles.logoRow}`}>
+              <Transition timeout={ {enter, exit} } onExit={() => this.randomLogos(4)} in={visibles[4]}>
+                <Image className={styles.logo} src={logos[4]} fluid />
+              </Transition>
+            </Row>
+            <Row className={`justify-content-center ${styles.logoRow}`}>
+              <Transition timeout={ {enter, exit} } onExit={() => this.randomLogos(5)} in={visibles[5]}>
+                <Image className={styles.logo} src={logos[5]} fluid />
+              </Transition>
+            </Row>
+            <Row className={`justify-content-center ${styles.logoRow}`}>
+              <Transition timeout={ {enter, exit} } onExit={() => this.randomLogos(6)} in={visibles[6]}>
+                <Image className={styles.logo} src={logos[6]} fluid />
+              </Transition>
+            </Row>
+            <Row className={`justify-content-center ${styles.logoRow}`}>
+              <Transition timeout={ {enter, exit} } onExit={() => this.randomLogos(7)} in={visibles[7]}>
+                <Image className={styles.logo} src={logos[7]} fluid />
+              </Transition>
+            </Row>
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }

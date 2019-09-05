@@ -1,0 +1,124 @@
+{
+    "events": [
+        {
+            "name": "Goldman Sachs Corporate Table",
+            "location": "TBD",
+            "start_time": "10:00 19 September 2019 CST",
+            "end_time": "16:00 19 September 2019 CST"
+        },
+        {
+            "name": "Two Sigma Tech Talk",
+            "location": "TBD",
+            "start_time": "14:00 19 September 2019 CST",
+            "end_time": "15:00 19 September 2019 CST"
+        },
+        {
+            "name": "Two Sigma Social",
+            "location": "TBD",
+            "start_time": "15:00 19 September 2019 CST",
+            "end_time": "16:00 19 September 2019 CST"
+        },
+        {
+            "name": "Diversity in Tech Speaker - Mindy",
+            "location": "TBD",
+            "start_time": "16:00 19 September 2019 CST",
+            "end_time": "17:00 19 September 2019 CST"
+        },
+        {
+            "name": "Goldman Sachs Corporate Table",
+            "location": "TBD",
+            "start_time": "10:00 19 September 2019 CST",
+            "end_time": "16:00 19 September 2019 CST"
+        },
+        {
+            "name": "Diversity in Tech Spotlight Speaker - Lexi",
+            "location": "TBD",
+            "start_time": "19:00 19 September 2019 CST",
+            "end_time": "20:00 19 September 2019 CST"
+        },
+        {
+            "name": "Diversity in Tech Synchrony Dinner",
+            "location": "TBD",
+            "start_time": "20:00 19 September 2019 CST",
+            "end_time": "21:00 19 September 2019 CST"
+        },
+        {
+            "name": "ITA Coding Challenge",
+            "location": "TBD",
+            "start_time": "10:00 20 September 2019 CST",
+            "end_time": "13:00 20 September 2019 CST"
+        },
+        {
+            "name": "Speaker - Forrest Iandola",
+            "location": "TBD",
+            "start_time": "14:00 20 September 2019 CST",
+            "end_time": "15:00 20 September 2019 CST"
+        },
+        {
+            "name": "Speaker - Derrick Higgins",
+            "location": "TBD",
+            "start_time": "15:00 20 September 2019 CST",
+            "end_time": "16:00 20 September 2019 CST"
+        },
+        {
+            "name": "Speaker - Christine Bakan",
+            "location": "TBD",
+            "start_time": "16:00 20 September 2019 CST",
+            "end_time": "17:00 20 September 2019 CST"
+        },
+        {
+            "name": "Speaker - Donald Kossman",
+            "location": "TBD",
+            "start_time": "17:00 20 September 2019 CST",
+            "end_time": "18:00 20 September 2019 CST"
+        },
+        {
+            "name": "Speaker - Alfred Spector",
+            "location": "TBD",
+            "start_time": "18:00 20 September 2019 CST",
+            "end_time": "19:00 20 September 2019 CST"
+        },
+        {
+            "name": "Zillow Dinner",
+            "location": "TBD",
+            "start_time": "19:00 20 September 2019 CST",
+            "end_time": "20:00 20 September 2019 CST"
+        },
+        {
+            "name": "Bayer Breakfast",
+            "location": "TBD",
+            "start_time": "09:00 21 September 2019 CST",
+            "end_time": "10:00 21 September 2019 CST"
+        },
+        {
+            "name": "Speaker - Jennison Asucion",
+            "location": "TBD",
+            "start_time": "10:00 21 September 2019 CST",
+            "end_time": "11:00 21 September 2019 CST"
+        },
+        {
+            "name": "Speaker - Jason Yosinski",
+            "location": "TBD",
+            "start_time": "11:00 21 September 2019 CST",
+            "end_time": "12:00 21 September 2019 CST"
+        },
+        {
+            "name": "Salesforce Lunch",
+            "location": "TBD",
+            "start_time": "12:00 21 September 2019 CST",
+            "end_time": "13:00 21 September 2019 CST"
+        },
+        {
+            "name": "Speaker - Joydeep Ganguly",
+            "location": "TBD",
+            "start_time": "13:00 21 September 2019 CST",
+            "end_time": "14:00 21 September 2019 CST"
+        },
+        {
+            "name": "Speaker - Joe Jablonski",
+            "location": "TBD",
+            "start_time": "14:00 21 September 2019 CST",
+            "end_time": "15:00 21 September 2019 CST"
+        }
+    ]
+}  
