@@ -366,23 +366,8 @@
         "website": "#"
       },
       {
-        "name": "Flexport",
-        "img": "/static/assets/img/sponsors/Flexport.svg",
-        "website": "#"
-      },
-      {
-        "name": "Google",
-        "img": "/static/assets/img/sponsors/Google.png",
-        "website": "#"
-      },
-      {
         "name": "Ocient",
         "img": "/static/assets/img/sponsors/Ocient.png",
-        "website": "#"
-      },
-      {
-        "name": "Roche",
-        "img": "/static/assets/img/sponsors/Roche.png",
         "website": "#"
       },
       {
@@ -516,6 +501,11 @@
         "website": "#"
       },
       {
+        "name": "Google",
+        "img": "/static/assets/img/sponsors/Google.png",
+        "website": "#"
+      },
+      {
         "name": "JP Morgan",
         "img": "/static/assets/img/sponsors/jpmorgan.jpg",
         "website": "#"
@@ -533,6 +523,11 @@
       {
         "name": "Relativity",
         "img": "/static/assets/img/sponsors/Relativity.jpg",
+        "website": "#"
+      },
+      {
+        "name": "Roche",
+        "img": "/static/assets/img/sponsors/Roche.png",
         "website": "#"
       },
       {
