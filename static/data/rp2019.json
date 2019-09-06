@@ -381,6 +381,11 @@
         "website": "#"
       },
       {
+        "name": "Roche",
+        "img": "/static/assets/img/sponsors/Roche.png",
+        "website": "#"
+      },
+      {
         "name": "Samsara",
         "img": "/static/assets/img/sponsors/Samsara.png",
         "website": "#"
