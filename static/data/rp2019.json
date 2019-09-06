@@ -366,13 +366,8 @@
         "website": "#"
       },
       {
-        "name": "Flexport",
-        "img": "/static/assets/img/sponsors/Flexport.svg",
-        "website": "#"
-      },
-      {
-        "name": "Google",
-        "img": "/static/assets/img/sponsors/Google.png",
+        "name": "Ocient",
+        "img": "/static/assets/img/sponsors/Ocient.png",
         "website": "#"
       },
       {
@@ -383,16 +378,6 @@
       {
         "name": "Sentry",
         "img": "/static/assets/img/sponsors/Sentry.png",
-        "website": "#"
-      },
-      {
-        "name": "Synchrony",
-        "img": "/static/assets/img/sponsors/synchrony.jpg",
-        "website": "#"
-      },
-      {
-        "name": "Two Sigma",
-        "img": "/static/assets/img/sponsors/TwoSigma.jpg",
         "website": "#"
       }
     ],
@@ -516,6 +501,11 @@
         "website": "#"
       },
       {
+        "name": "Google",
+        "img": "/static/assets/img/sponsors/Google.png",
+        "website": "#"
+      },
+      {
         "name": "JP Morgan",
         "img": "/static/assets/img/sponsors/jpmorgan.jpg",
         "website": "#"
@@ -536,6 +526,11 @@
         "website": "#"
       },
       {
+        "name": "Roche",
+        "img": "/static/assets/img/sponsors/Roche.png",
+        "website": "#"
+      },
+      {
         "name": "Sandia",
         "img": "/static/assets/img/sponsors/Sandia.jpg",
         "website": "#"
@@ -545,6 +540,22 @@
         "img": "/static/assets/img/sponsors/uber.jpg",
         "website": "#"
       }
-    ]
+    ],
+    "diversity": {
+      "divTier1": [
+        {
+          "name": "Synchrony",
+          "img": "/static/assets/img/sponsors/synchrony.jpg",
+          "website": "#"
+        }
+      ],
+      "divTier2": [
+        {
+          "name": "Two Sigma",
+          "img": "/static/assets/img/sponsors/TwoSigma.jpg",
+          "website": "#"
+        }
+      ]
+    }
   }
 }
