@@ -55,11 +55,7 @@ const DayAgenda = ({ label, events }) => {
     return null;
   }
   return (
-    <Col
-      xs={{ span: 10, offset: 1 }}
-      sm={{ span: 8, offset: 2 }}
-      md={{ span: 6, offset: 0 }}
-    >
+    <Col xs={{ span: 10, offset: 1 }} sm={{ span: 8, offset: 2 }}>
       <UITimeline>
         <UITimeline.Title>{label}</UITimeline.Title>
         <UITimeline.Body>
