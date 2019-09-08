@@ -321,7 +321,6 @@
       }
     ]
   },
-  "agenda": {},
   "events": {
     "byId": {
       "5ad72c8753": {
@@ -332,8 +331,8 @@
         "type": "CONFERENCE",
         "tags": [],
         "time": {
-          "start": "09-16-2019 14:00",
-          "end": "09-16-2019 15:59"
+          "start": "09-16-2019 20:00",
+          "end": "09-16-2019 22:59"
         },
         "location": "Siebel Center"
       },
@@ -349,6 +348,19 @@
           "end": "09-16-2019 18:59"
         },
         "location": "Siebel Center"
+      },
+      "6756df0cc5": {
+        "title": "Coding with Alpri",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": false,
+        "type": "CORPORATE",
+        "tags": [],
+        "time": {
+          "start": "09-16-2019 18:00",
+          "end": "09-16-2019 18:59"
+        },
+        "location": "9 Fairfield St Cambridge, MA"
       },
       "18b875f72e": {
         "title": "RP Symposium 2",
@@ -384,8 +396,8 @@
         "type": "CONFERENCE",
         "tags": [],
         "time": {
-          "start": "09-17-2019 14:00",
-          "end": "09-17-2019 15:59"
+          "start": "09-18-2019 14:00",
+          "end": "09-18-2019 15:59"
         },
         "location": "Siebel Center"
       },
@@ -397,19 +409,20 @@
         "type": "CORPORATE",
         "tags": [],
         "time": {
-          "start": "09-17-2019 18:00",
-          "end": "09-17-2019 18:59"
+          "start": "09-18-2019 18:00",
+          "end": "09-18-2019 18:59"
         },
         "location": "Siebel Center"
       }
     },
-    "order": [
+    "allIds": [
       "5ad72c8753",
       "e79e85be3d",
       "18b875f72e",
       "35ca09b68f",
       "4f46f935c5",
-      "2363b1fbd8"
+      "2363b1fbd8",
+      "6756df0cc5"
     ]
   },
   "sponsors": {

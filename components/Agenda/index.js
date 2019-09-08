@@ -9,8 +9,18 @@ import { TIME_FORMAT } from '../../constants/events';
 import Section from '../../UIComponents/Section';
 import { UITimeline, UITimelineEvent } from '../../UIComponents/UITimeline';
 
-const getEvents = events => {
-  return events.order.map(id => events.byId[id]);
+const getEvents = (events, day) => {
+  return events.allIds
+    .map(id => events.byId[id])
+    .filter(
+      ({ displayInAgenda, time: { start } }) =>
+        moment(start, TIME_FORMAT).isSame(day, 'day') && displayInAgenda
+    )
+    .sort((a, b) =>
+      moment(a.time.start, TIME_FORMAT).isBefore(b.time.start, 'minute')
+        ? -1
+        : 1
+    );
 };
 
 const formatTime = time => {
@@ -28,8 +38,8 @@ const DayAgenda = ({ label, events }) => (
     <UITimeline>
       <UITimeline.Title>{label}</UITimeline.Title>
       <UITimeline.Body>
-        {getEvents(events).map(event => (
-          <UITimelineEvent>
+        {events.map(event => (
+          <UITimelineEvent key={event.title}>
             <UITimelineEvent.Time>
               {formatTime(event.time)}
             </UITimelineEvent.Time>
@@ -53,12 +63,27 @@ const Agenda = ({ events }) => (
     <Section.Body>
       <Container>
         <Row>
-          <DayAgenda label="Monday" events={events} />
-          <DayAgenda label="Tuesday" events={events} />
-          <DayAgenda label="Wednesday" events={events} />
-          <DayAgenda label="Thursday" events={events} />
-          <DayAgenda label="Friday" events={events} />
-          <DayAgenda label="Saturday" events={events} />
+          <DayAgenda
+            label="Monday Sep 16th"
+            events={getEvents(events, '09-16-2019')}
+          />
+          <DayAgenda
+            label="Tuesday Sep 17th"
+            events={getEvents(events, '09-17-2019')}
+          />
+          <DayAgenda
+            label="Wednesday Sep 18th"
+            events={getEvents(events, '09-18-2019')}
+          />
+          <DayAgenda
+            label="Thursday Sep 19th"
+            events={getEvents(events, '09-19-2019')}
+          />
+          <DayAgenda label="Friday" events={getEvents(events, '09-20-2019')} />
+          <DayAgenda
+            label="Saturday Sep 20th"
+            events={getEvents(events, '09-21-2019')}
+          />
         </Row>
       </Container>
     </Section.Body>
