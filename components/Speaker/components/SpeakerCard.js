@@ -8,15 +8,17 @@ import styles from './SpeakerCard.scss';
 import { getQueryObject } from '../../../lib/path';
 
 const SpeakerCard = ({ name, cardImage, tagline, badge }) => {
-  const [hrefObj, setHrefObj] = useState({});
+  const [hrefObj, setHrefObj] = useState(undefined);
   useEffect(() => {
-    setHrefObj({
-      pathname: '/speaker',
-      query: {
-        ...getQueryObject(window),
-        name
-      }
-    });
+    if (hrefObj === undefined) {
+      setHrefObj({
+        pathname: '/speaker',
+        query: {
+          ...getQueryObject(window),
+          name
+        }
+      });
+    }
   });
 
   const badgeJSX = badge ? <Badge variant="primary">{badge}</Badge> : null;
