@@ -86,9 +86,7 @@ const Index = () => {
         {isLoaded && (
           <>
             <Element>
-              <Gate gatename="NAV" gates={gates} query={query}>
-                <Nav format={nav.index} />
-              </Gate>
+              <Nav format={nav.index} />
             </Element>
             <Element name="about">
               <About />
@@ -99,9 +97,7 @@ const Index = () => {
               </Gate>
             </Element>
             <Element name="speakers">
-              <Gate gatename="SPEAKER_SECTION" gates={gates} query={query}>
-                <Speaker speakers={speakerSection.list} />
-              </Gate>
+              <Speaker speakers={speakerSection.list} />
             </Element>
 
             <Element name="events">
@@ -113,9 +109,7 @@ const Index = () => {
               <FAQ faqData={faqSection} />
             </Element>
             <Element name="sponsor-section">
-              <Gate gatename="SPONSOR_SECTION" gates={gates} query={query}>
-                <SponsorSection sponsors={sponsors} />
-              </Gate>
+              <SponsorSection sponsors={sponsors} />
             </Element>
           </>
         )}

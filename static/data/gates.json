@@ -11,21 +11,9 @@
     "type": "TOGGLE",
     "status": "LOCKED"
   },
-  "NAV": {
-    "type": "TOGGLE",
-    "status": "UNLOCKED"
-  },
-  "SPEAKER_SECTION": {
-    "type": "TOGGLE",
-    "status": "UNLOCKED"
-  },
   "EVENT_SECTION": {
     "type": "TOGGLE",
     "status": "LOCKED"
-  },
-  "SPONSOR_SECTION": {
-    "type": "TOGGLE",
-    "status": "UNLOCKED"
   },
   "AGENDA_SECTION": {
     "type": "TOGGLE",
