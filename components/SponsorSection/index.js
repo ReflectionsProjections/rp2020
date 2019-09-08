@@ -15,7 +15,7 @@ const SponsorGroup = ({ children }) => <div className="mb-5">{children}</div>;
 
 SponsorGroup.Title = ({ children }) => (
   <Row>
-    <Col xs={12} className="text-center">
+    <Col xs={12} className="text-center pb-3">
       <h4 style={{ fontFamily: 'Roboto Slab' }}>{children}</h4>
     </Col>
   </Row>
@@ -28,7 +28,6 @@ const ImageViewer = props => {
 
   //  Default
   //  Petabyte Tier (Tier 1) Sizes
-  const sm = 12;
   let md = 12;
   let lg = 12;
 
@@ -68,7 +67,6 @@ const ImageViewer = props => {
             mdOffset = Math.max(leftoverSpace / 2, 0);
             if (mdOffset !== Math.floor(mdOffset)) {
               mdOffset = Math.floor(mdOffset);
-              // mdHalfColumn = true;
             }
           }
 
@@ -80,13 +78,13 @@ const ImageViewer = props => {
             lgOffset = Math.floor(Math.max(leftoverSpace / 2, 0));
             if (lgOffset !== Math.floor(lgOffset)) {
               lgOffset = Math.floor(lgOffset);
-              // lgHalfColumn = true;
             }
           }
 
           return (
             <Col
-              sm={sm}
+              xs={{ span: md, offset: mdOffset }}
+              sm={{ span: md, offset: mdOffset }}
               md={{ span: md, offset: mdOffset }}
               lg={{ span: lg, offset: lgOffset }}
               key={image.name}
