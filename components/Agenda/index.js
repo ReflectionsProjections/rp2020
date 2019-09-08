@@ -50,31 +50,36 @@ const formatTime = time => {
   return `${start} - ${end}`;
 };
 
-const DayAgenda = ({ label, events }) => (
-  <Col
-    xs={{ span: 10, offset: 1 }}
-    sm={{ span: 8, offset: 2 }}
-    md={{ span: 6, offset: 0 }}
-  >
-    <UITimeline>
-      <UITimeline.Title>{label}</UITimeline.Title>
-      <UITimeline.Body>
-        {events.map(event => (
-          <UITimelineEvent key={event.title}>
-            <UITimelineEvent.Time>
-              {formatTime(event.time)}
-            </UITimelineEvent.Time>
-            <UITimelineEvent.Body>
-              {event.title}
-              <br />
-              <span style={{ fontWeight: 200 }}>{event.location}</span>
-            </UITimelineEvent.Body>
-          </UITimelineEvent>
-        ))}
-      </UITimeline.Body>
-    </UITimeline>
-  </Col>
-);
+const DayAgenda = ({ label, events }) => {
+  if (!events || events.length === 0) {
+    return null;
+  }
+  return (
+    <Col
+      xs={{ span: 10, offset: 1 }}
+      sm={{ span: 8, offset: 2 }}
+      md={{ span: 6, offset: 0 }}
+    >
+      <UITimeline>
+        <UITimeline.Title>{label}</UITimeline.Title>
+        <UITimeline.Body>
+          {events.map(event => (
+            <UITimelineEvent key={event.title}>
+              <UITimelineEvent.Time>
+                {formatTime(event.time)}
+              </UITimelineEvent.Time>
+              <UITimelineEvent.Body>
+                {event.title}
+                <br />
+                <span style={{ fontWeight: 200 }}>{event.location}</span>
+              </UITimelineEvent.Body>
+            </UITimelineEvent>
+          ))}
+        </UITimeline.Body>
+      </UITimeline>
+    </Col>
+  );
+};
 
 const Agenda = ({ events }) => {
   const allEvents = getEventsList(events);
