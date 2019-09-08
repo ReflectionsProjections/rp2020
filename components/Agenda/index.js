@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row';
 import { TIME_FORMAT, EVENT_TYPE } from '../../constants/events';
 
 import Section from '../../UIComponents/Section';
-import UIButtonGroupSelect from '../../UIComponents/input/UIButtonGroupSelect';
+import UIButtonGroupSelect from '../../UIComponents/Input/UIButtonGroupSelect';
 import { UITimeline, UITimelineEvent } from '../../UIComponents/UITimeline';
 
 /* Grabs all events */
