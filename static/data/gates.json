@@ -26,5 +26,9 @@
   "SPONSOR_SECTION": {
     "type": "TOGGLE",
     "status": "UNLOCKED"
+  },
+  "AGENDA_SECTION": {
+    "type": "TOGGLE",
+    "status": "LOCKED"
   }
 }

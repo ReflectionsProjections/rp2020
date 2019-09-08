@@ -8,6 +8,7 @@ import Layout from '../UIComponents/Layout';
 import Nav from '../components/Nav';
 import CountdownTimer from '../components/CountdownTimer';
 import About from '../components/About/index';
+import Agenda from '../components/Agenda';
 import Speaker from '../components/Speaker';
 import Events from '../components/Events';
 import FAQ from '../components/FAQ/index';
@@ -91,6 +92,11 @@ const Index = () => {
             </Element>
             <Element name="about">
               <About />
+            </Element>
+            <Element name="agenda">
+              <Gate gatename="AGENDA_SECTION" gates={gates} query={query}>
+                <Agenda events={events} />
+              </Gate>
             </Element>
             <Element name="speakers">
               <Gate gatename="SPEAKER_SECTION" gates={gates} query={query}>

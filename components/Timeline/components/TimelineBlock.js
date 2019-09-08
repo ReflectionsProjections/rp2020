@@ -22,7 +22,6 @@ const TimelineBlock = ({ event: { date, content } }) => (
       sm={{ span: 10, offset: 2 }}
       md={{ span: 8, offset: 2 }}
       lg={{ span: 6, offset: 1 }}
-      className={styles.content}
     >
       <ul className={styles.list}>
         {content.map(item => (
