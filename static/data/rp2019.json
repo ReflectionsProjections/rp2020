@@ -323,21 +323,21 @@
   },
   "events": {
     "byId": {
-      "4506088fecc7": {
-        "title": "Checkbook IO",
+      "12nj3j55j31": {
+        "title": "PuzzleBang (all week)",
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "displayInAgenda": true,
         "displayInEvents": true,
-        "type": "CORPORATE",
+        "type": "CONFERENCE",
         "tags": [],
         "time": {
-          "start": "09-16-2019 12:00",
-          "end": "09-16-2019 13:00"
+          "start": "09-16-2019 00:00",
+          "end": "09-21-2019 24:00"
         },
-        "location": "Siebel Center"
+        "location": "PuzzleBang.com"
       },
       "5ad72c8753": {
-        "title": "RP Symposium",
+        "title": "R|P Symposium",
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "displayInAgenda": true,
         "displayInEvents": true,
@@ -360,7 +360,7 @@
           "start": "09-16-2019 18:00",
           "end": "09-16-2019 19:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "6756df0cc5": {
         "title": "Salesforce Social",
@@ -373,7 +373,7 @@
           "start": "09-16-2019 19:00",
           "end": "09-16-2019 20:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "483dc703ecdb": {
         "title": "Google Tech Talk",
@@ -386,7 +386,7 @@
           "start": "09-16-2019 20:00",
           "end": "09-16-2019 21:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "f15cd2f2600e": {
         "title": "Startup Fair",
@@ -412,7 +412,7 @@
           "start": "09-17-2019 18:00",
           "end": "09-17-2019 19:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "c53bf561a806": {
         "title": "Aechelon Social",
@@ -425,7 +425,7 @@
           "start": "09-17-2019 19:00",
           "end": "09-17-2019 20:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "3d1512ee196d": {
         "title": "Microsoft Tech Talk",
@@ -438,7 +438,7 @@
           "start": "09-17-2019 20:00",
           "end": "09-17-2019 21:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "ff80e113164a": {
         "title": "Career Fair",
@@ -464,7 +464,7 @@
           "start": "09-18-2019 18:00",
           "end": "09-18-2019 19:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "5cb22e88c744": {
         "title": "Amazon Social",
@@ -477,7 +477,7 @@
           "start": "09-18-2019 19:00",
           "end": "09-18-2019 20:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "18b875f72e": {
         "title": "Goldman Sachs Corporate Table",
@@ -493,7 +493,7 @@
         "location": "Siebel Center Atrium"
       },
       "35ca09b68f": {
-        "title": "Diversity in Tech Networking Lunch",
+        "title": "Diversity × Tech Networking Lunch",
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "displayInAgenda": true,
         "displayInEvents": false,
@@ -503,7 +503,7 @@
           "start": "09-19-2019 11:00",
           "end": "09-19-2019 13:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center Atrium"
       },
       "4f46f935c5": {
         "title": "Two Sigma Tech Talk",
@@ -516,23 +516,23 @@
           "start": "09-19-2019 14:00",
           "end": "09-19-2019 15:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "2363b1fbd8": {
-        "title": "Two Sigma Social",
+        "title": "Diversity × Tech Social, sponsored by Two Sigma",
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "displayInAgenda": true,
         "displayInEvents": false,
-        "type": "CORPORATE",
+        "type": "CONFERENCE",
         "tags": [],
         "time": {
           "start": "09-19-2019 15:00",
           "end": "09-19-2019 16:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "6003a53d6f11": {
-        "title": "Diversity in Tech Keynote Speaker",
+        "title": "Diversity × Tech Speaker: Mindy Ferguson",
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "displayInAgenda": true,
         "displayInEvents": false,
@@ -542,10 +542,10 @@
           "start": "09-19-2019 16:00",
           "end": "09-19-2019 17:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "640457a2e663": {
-        "title": "Diversity in Tech Lean In",
+        "title": "Diversity × Tech Lean In, sponsored by Synchrony",
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "displayInAgenda": true,
         "displayInEvents": false,
@@ -555,36 +555,36 @@
           "start": "09-19-2019 17:00",
           "end": "09-19-2019 18:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "0549cc3dbd4e": {
-        "title": "Diversity in Tech Spotlight: Alexandria Butler",
+        "title": "Diversity × Tech Spotlight Speaker: Alexandria Butler",
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "displayInAgenda": true,
         "displayInEvents": false,
         "type": "CONFERENCE",
         "tags": [],
         "time": {
-          "start": "09-19-2019 19:00",
-          "end": "09-19-2019 20:00"
+          "start": "09-19-2019 19:30",
+          "end": "09-19-2019 20:30"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 1404"
       },
       "2f1f43278d35": {
-        "title": "Diversity in Tech Dinner sponsored by Synchrony",
+        "title": "Diversity × Tech Dinner, sponsored by Synchrony",
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "displayInAgenda": true,
         "displayInEvents": true,
         "type": "CONFERENCE",
         "tags": [],
         "time": {
-          "start": "09-19-2019 20:00",
-          "end": "09-19-2019 21:00"
+          "start": "09-19-2019 20:30",
+          "end": "09-19-2019 21:30"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center Atrium"
       },
       "2abbd8f0a2ed": {
-        "title": "ITA Coding Competition",
+        "title": "ITA Women-Only Coding Competition",
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "displayInAgenda": true,
         "displayInEvents": true,
@@ -594,7 +594,7 @@
           "start": "09-20-2019 10:00",
           "end": "09-20-2019 13:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "422ce8697224": {
         "title": "Speaker: Forrest Iandola",
@@ -607,7 +607,7 @@
           "start": "09-20-2019 14:00",
           "end": "09-20-2019 15:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "d154bc49d7ce": {
         "title": "Speaker: Derrick Higgins",
@@ -620,7 +620,7 @@
           "start": "09-20-2019 15:00",
           "end": "09-20-2019 16:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "7fd13f15eb37": {
         "title": "Speaker: Christine Bakan",
@@ -633,20 +633,7 @@
           "start": "09-20-2019 16:00",
           "end": "09-20-2019 17:00"
         },
-        "location": "Siebel Center"
-      },
-      "a0c589060f03": {
-        "title": "MechMania: An AI Hackathon",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-20-2019 17:00",
-          "end": "09-21-2019 17:00"
-        },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "d3d12ed819af": {
         "title": "Speaker: Donald Kossman",
@@ -659,10 +646,10 @@
           "start": "09-20-2019 17:00",
           "end": "09-20-2019 18:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "7b7e3976caf1": {
-        "title": "Speaker: Alfred Spector",
+        "title": "Keynote Speaker: Alfred Spector",
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "displayInAgenda": true,
         "displayInEvents": true,
@@ -672,10 +659,10 @@
           "start": "09-20-2019 18:00",
           "end": "09-20-2019 19:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "e89b92f4c0cd": {
-        "title": "Dinner sponsored by Zillow",
+        "title": "Dinner, sponsored by Zillow",
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "displayInAgenda": true,
         "displayInEvents": true,
@@ -685,10 +672,36 @@
           "start": "09-20-2019 19:00",
           "end": "09-20-2019 20:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center Atrium"
       },
-      "c41112d3ea62": {
-        "title": "Breakfast sponsored by Bayer",
+      "j3d5j564jltx": {
+        "title": "MechMania Opening Ceremony",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-20-2019 19:30",
+          "end": "09-20-2019 20:00"
+        },
+        "location": "Siebel Center 1404"
+      },
+      "a0c589060f03": {
+        "title": "MechMania: A 24 Hour AI Hackathon",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-20-2019 20:00",
+          "end": "09-21-2019 20:00"
+        },
+        "location": "Siebel Center 1404"
+      },
+      "234i290j2i34": {
+        "title": "Breakfast, sponsored by Bayer",
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "displayInAgenda": true,
         "displayInEvents": true,
@@ -698,10 +711,23 @@
           "start": "09-21-2019 09:00",
           "end": "09-21-2019 10:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center Atrium"
+      },
+      "c41112d3ea62": {
+        "title": "Escape Room",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-21-2019 10:00",
+          "end": "09-21-2019 19:00"
+        },
+        "location": "Siebel Center 1302"
       },
       "5c5672ca4f6d": {
-        "title": "Jennison Asuncion",
+        "title": "Speaker: Jennison Asuncion",
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "displayInAgenda": true,
         "displayInEvents": true,
@@ -711,10 +737,10 @@
           "start": "09-21-2019 10:00",
           "end": "09-21-2019 11:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "f1f22e577a86": {
-        "title": "Jason Yosinski",
+        "title": "Speaker: Jason Yosinski",
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "displayInAgenda": true,
         "displayInEvents": true,
@@ -724,10 +750,10 @@
           "start": "09-21-2019 11:00",
           "end": "09-21-2019 12:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "4e501602e922": {
-        "title": "Lunch sponsored by Salesforce",
+        "title": "Lunch, sponsored by Salesforce",
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "displayInAgenda": true,
         "displayInEvents": true,
@@ -737,7 +763,7 @@
           "start": "09-21-2019 12:00",
           "end": "09-21-2019 13:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center Atrium"
       },
       "c4a7a9cc7f24": {
         "title": "Speaker: Joydeep Ganguly",
@@ -750,7 +776,7 @@
           "start": "09-21-2019 13:00",
           "end": "09-21-2019 14:00"
         },
-        "location": "Siebel Center"
+        "location": "Siebel Center 2405"
       },
       "47be8fde4a03": {
         "title": "Speaker: Joe Jablonski",
@@ -763,11 +789,37 @@
           "start": "09-21-2019 14:00",
           "end": "09-21-2019 15:00"
         },
-        "location": "Siebel Center"
-      }
+        "location": "Siebel Center 2405"
+     },
+     "h20cb7m8s8js": {
+      "title": "Dinner",
+      "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "displayInAgenda": true,
+      "displayInEvents": true,
+      "type": "CONFERENCE",
+      "tags": [],
+      "time": {
+         "start": "09-21-2019 19:00",
+         "end": "09-21-2019 20:00"
+      },
+      "location": "Siebel Center Atrium"
+     },
+     "9u3232bh324s": {
+      "title": "Closing Ceremony",
+      "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "displayInAgenda": true,
+      "displayInEvents": true,
+      "type": "CONFERENCE",
+      "tags": [],
+      "time": {
+         "start": "09-21-2019 20:30",
+         "end": "09-21-2019 21:00"
+      },
+      "location": "Siebel Center 1404"
+     }
     },
     "allIds": [
-      "4506088fecc7",
+      "12nj3j55j31",
       "5ad72c8753",
       "e79e85be3d",
       "6756df0cc5",
@@ -793,14 +845,18 @@
       "422ce8697224",
       "d154bc49d7ce",
       "7fd13f15eb37",
-      "a0c589060f03",
       "f1f22e577a86",
       "d3d12ed819af",
       "7b7e3976caf1",
       "e89b92f4c0cd",
+      "j3d5j564jltx",
+      "a0c589060f03",
       "4e501602e922",
       "c4a7a9cc7f24",
-      "47be8fde4a03"
+      "47be8fde4a03",
+      "234i290j2i34",
+      "h20cb7m8s8js",
+      "9u3232bh324s"
     ]
   },
   "sponsors": {

@@ -17,6 +17,6 @@
   },
   "AGENDA_SECTION": {
     "type": "TOGGLE",
-    "status": "LOCKED"
+    "status": "UNLOCKED"
   }
 }
