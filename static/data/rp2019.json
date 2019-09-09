@@ -349,6 +349,19 @@
         },
         "location": "Siebel Center Atrium"
       },
+      "y12n2189329": {
+        "title": "Checkbook.io Tech Talk",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": false,
+        "type": "CORPORATE",
+        "tags": [],
+        "time": {
+          "start": "09-16-2019 17:00",
+          "end": "09-16-2019 18:00"
+        },
+        "location": "Siebel Center 2405"
+      },
       "e79e85be3d": {
         "title": "Asana Tech Talk",
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
@@ -821,6 +834,7 @@
     "allIds": [
       "12nj3j55j31",
       "5ad72c8753",
+      "y12n2189329",
       "e79e85be3d",
       "6756df0cc5",
       "483dc703ecdb",
