@@ -4,7 +4,7 @@ import moment from 'moment';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import { TIME_FORMAT, EVENT_TYPE } from '../../constants/events';
+import { DAY_FORMAT, TIME_FORMAT, EVENT_TYPE } from '../../constants/events';
 
 import Section from '../../UIComponents/Section';
 import UIButtonGroupSelect from '../../UIComponents/Input/UIButtonGroupSelect';
@@ -33,7 +33,10 @@ const filterEvents = (events, day, type) => {
   return events
     .filter(({ displayInAgenda, time }) =>
       day
-        ? moment(time.start, TIME_FORMAT).isSame(day, 'day') && displayInAgenda
+        ? moment(time.start, TIME_FORMAT).isSame(
+            moment(day, DAY_FORMAT),
+            'day'
+          ) && displayInAgenda
         : true
     )
     .filter(event => (type !== '' ? event.type === type : true))
