@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Head from 'next/head';
 
 import Dashboard from '../components/Dashboard';
 import styles from './dashboard.scss';
 
-import { fetchConferenceData, fetchEventsData } from '../api/client';
+import { fetchConferenceData } from '../api/client';
 
 const DashboardPage = ({ events, sponsorImages }) => (
   <div>
@@ -18,7 +18,10 @@ const DashboardPage = ({ events, sponsorImages }) => (
     </Head>
     <div className={styles.videoContainer}>
       <video autoPlay muted loop id="video-background">
-        <source src="../static/assets/dashboard_background.mp4" type="video/mp4" />
+        <source
+          src="../static/assets/dashboard_background.mp4"
+          type="video/mp4"
+        />
       </video>
       <Dashboard events={events} sponsorImages={sponsorImages} />
     </div>
@@ -27,15 +30,19 @@ const DashboardPage = ({ events, sponsorImages }) => (
 
 DashboardPage.getInitialProps = async () => {
   const rpData = await fetchConferenceData();
-  const events = await fetchEventsData();
-  let sponsorImages = [];
-  const sponsors = rpData.sponsors;
-  Object.keys(sponsors).map(tier => {
-    sponsors[tier].map(sponsor => sponsorImages.push(sponsor.img));
+  const sponsorImages = [];
+  const { events, sponsors } = rpData;
+  Object.keys(sponsors).forEach(tier => {
+    if (Array.isArray(sponsors[tier])) {
+      sponsors[tier].map(sponsor => sponsorImages.push(sponsor.img));
+    } else {
+      sponsors[tier].divTier1.map(sponsor => sponsorImages.push(sponsor.img));
+      sponsors[tier].divTier2.map(sponsor => sponsorImages.push(sponsor.img));
+    }
   });
 
   return {
-    events: events.events,
+    events: Object.values(events.byId),
     sponsorImages
   };
 };

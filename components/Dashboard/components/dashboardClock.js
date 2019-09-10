@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Segment } from 'semantic-ui-react';
+import { Segment } from 'semantic-ui-react';
 
 import styles from './dashboardClock.scss';
 
@@ -66,9 +66,9 @@ export default class DashboardClock extends Component {
     const { clock, title } = this.props;
     const { countdownTime, currentTimer } = this.state;
 
-    const currentTimer_H = currentTimer.h;
-    const currentTimer_M =
-      currentTimer.m.toString().length == 1
+    const currentTimerH = currentTimer.h;
+    const currentTimerM =
+      currentTimer.m.toString().length === 1
         ? `0${currentTimer.m}`
         : currentTimer.m;
 
@@ -79,7 +79,7 @@ export default class DashboardClock extends Component {
           <Segment basic className={styles.currentTimer}>
             <div>
               <h1 className={styles.currentTimer__number}>
-                {`${currentTimer_H}:${currentTimer_M}`}
+                {`${currentTimerH}:${currentTimerM}`}
               </h1>
             </div>
             <div>
@@ -92,7 +92,7 @@ export default class DashboardClock extends Component {
           <Segment basic className={styles.countdownTimer}>
             <div>
               <h1 className={styles.countdownTimer__number}>
-                {countdownTime.d.length == 1
+                {countdownTime.d.length === 1
                   ? `0${countdownTime.d}`
                   : countdownTime.d}
               </h1>
@@ -103,7 +103,7 @@ export default class DashboardClock extends Component {
 
             <div>
               <h1 className={styles.countdownTimer__number}>
-                {countdownTime.h.length == 1
+                {countdownTime.h.length === 1
                   ? `0${countdownTime.h}`
                   : countdownTime.h}
               </h1>
@@ -114,7 +114,7 @@ export default class DashboardClock extends Component {
 
             <div>
               <h1 className={styles.countdownTimer__number}>
-                {countdownTime.m.length == 1
+                {countdownTime.m.length === 1
                   ? `0${countdownTime.m}`
                   : countdownTime.m}
               </h1>
@@ -125,7 +125,7 @@ export default class DashboardClock extends Component {
 
             <div>
               <h1 className={styles.countdownTimer__number}>
-                {countdownTime.s.length == 1
+                {countdownTime.s.length === 1
                   ? `0${countdownTime.s}`
                   : countdownTime.s}
               </h1>

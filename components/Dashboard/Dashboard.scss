@@ -3,58 +3,24 @@
 }
 .x {
   position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
-.dashboardAnimationPlaceholder {
-  height: 25vh !important;
-  padding: 3vh 2vw 3vh 2vw !important;
-}
-
-.largeBlockContainer {
-  margin: 6vh 1.5vw 7vh 1.5vw;
-}
-
-// .largeLogoContainer {
-//   margin: 6vh 1.5vw 3.5vh 1.5vw;
-//   color: white;
-
-//   .sponsorLogo {
-//     padding: 0.5vw;
-//     //background: rgba(255, 255, 255, 0.95) !important;
-//   }
-
-//   .logoCol {
-//     padding-left: 0.5vw !important;
-//     padding-right: 0.5vw !important;
-//   }
-
-//   .logoRow {
-//     padding-top: 1.7vh !important;
-//     padding-bottom: 0 !important;
-//   }
-// }
 
 .logo {
   height: 100%;
 }
 
 .logoRow {
-  // width: 20em;
   height: 12em;
-  background-color: #ffffff; 
-  // border-radius: 5em;
+  background-color: #ffffff;
 }
-
-// .rpLogoContainer {
-//   margin-top: 12vh;
-// }
 
 .rpLogo {
   width: 5em;
-  height: 5Sem;
+  height: 5sem;
   margin-bottom: 2em;
   margin-top: 5em;
 }
@@ -67,17 +33,21 @@
 
 .dashboardContainer {
   height: 100%;
-  max-width: 2000px !important;
-  // background-color: #C7FFFB;
+  max-width: 2000px;
   background-size: auto 100%;
-  // background: rgba(112, 208, 224, .5);
-  margin-left: 0px !important;
-  margin-right: 0px !important;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .twitterContainer {
-  background-color: #f2f5fe !important;
-  border-radius: 5px !important;
+  background-color: #f2f5fe;
+  border-radius: 5px;
   height: 60vh;
   overflow: hidden;
+}
+
+.twitterTitle {
+  color: #1d1554;
+  font-family: 'Roboto Slab', sans-serif;
+  text-align: center;
 }

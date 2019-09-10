@@ -1,17 +1,22 @@
-.containerTitle {
-  font-family: 'Roboto Slab', sans-serif !important;
-  padding: 1vh 1vw 1vh 1vw;
-  font-size: 1.5vw !important;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #075c60 !important;
-}
-
 .eventsContainer {
   font-family: 'Roboto Slab', sans-serif;
   background-color: #f2f5fe;
   border-radius: 5px;
+  text-align: center;
+}
+
+.containerTitle {
+  color: #1d1554;
+}
+
+.dashboardEvent {
+  padding: 1em;
+}
+
+.eventTitle {
+  color: #7552cc;
+}
+
+.eventDescription {
+  color: #4b39b2;
 }

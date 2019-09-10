@@ -65,6 +65,7 @@
     "react-scroll": "^1.7.11",
     "react-transition-group": "^2.0.0",
     "react-twitter-widgets": "^1.7.1",
+    "semantic-ui-react": "^0.77.2",
     "webpack": "4.20.2"
   },
   "devDependencies": {
@@ -85,7 +86,6 @@
     "husky": "^1.3.1",
     "lint-staged": "^8.1.5",
     "prettier": "^1.17.0",
-    "pretty-quick": "^1.10.0",
-    "semantic-ui-react": "^0.77.2"
+    "pretty-quick": "^1.10.0"
   }
 }
