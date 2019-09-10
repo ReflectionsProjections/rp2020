@@ -63,7 +63,7 @@
     "react-inlinesvg": "^0.8.4",
     "react-masonry-component": "^6.2.1",
     "react-scroll": "^1.7.11",
-    "react-transition-group": "^1.0.0",
+    "react-transition-group": "^2.0.0",
     "react-twitter-widgets": "^1.7.1"
   },
   "devDependencies": {
