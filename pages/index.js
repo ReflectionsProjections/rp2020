@@ -8,6 +8,7 @@ import Layout from '../UIComponents/Layout';
 import Nav from '../components/Nav';
 import CountdownTimer from '../components/CountdownTimer';
 import About from '../components/About/index';
+import Agenda from '../components/Agenda';
 import Speaker from '../components/Speaker';
 import Events from '../components/Events';
 import FAQ from '../components/FAQ/index';
@@ -85,17 +86,18 @@ const Index = () => {
         {isLoaded && (
           <>
             <Element>
-              <Gate gatename="NAV" gates={gates} query={query}>
-                <Nav format={nav.index} />
-              </Gate>
+              <Nav format={nav.index} />
             </Element>
             <Element name="about">
               <About />
             </Element>
-            <Element name="speakers">
-              <Gate gatename="SPEAKER_SECTION" gates={gates} query={query}>
-                <Speaker speakers={speakerSection.list} />
+            <Element name="agenda">
+              <Gate gatename="AGENDA_SECTION" gates={gates} query={query}>
+                <Agenda events={events} />
               </Gate>
+            </Element>
+            <Element name="speakers">
+              <Speaker speakers={speakerSection.list} />
             </Element>
 
             <Element name="events">
@@ -107,9 +109,7 @@ const Index = () => {
               <FAQ faqData={faqSection} />
             </Element>
             <Element name="sponsor-section">
-              <Gate gatename="SPONSOR_SECTION" gates={gates} query={query}>
-                <SponsorSection sponsors={sponsors} />
-              </Gate>
+              <SponsorSection sponsors={sponsors} />
             </Element>
           </>
         )}
