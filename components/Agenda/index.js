@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import moment from 'moment';
 
+import { isMobile } from 'react-device-detect';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
@@ -89,6 +90,13 @@ const Agenda = ({ events }) => {
     setSelectedType(value);
   };
 
+  const startupFairMapLink = isMobile
+    ? '/static/startup-fair-map.jpg'
+    : '/static/startup-fair-map.pdf';
+  const careerFairMapLink = isMobile
+    ? '/static/career-fair-map.jpg'
+    : '/static/career-fair-map.pdf';
+
   return (
     <Section>
       <Section.Header>
@@ -98,19 +106,11 @@ const Agenda = ({ events }) => {
         <Container>
           <Row className="pb-4">
             <Col className="text-center">
-              <Button
-                style={{ margin: '10px' }}
-                href="/static/startup-fair-map.pdf"
-              >
-                {' '}
-                Startup Fair Map{' '}
+              <Button style={{ margin: '10px' }} href={startupFairMapLink}>
+                Startup Fair Map
               </Button>
-              <Button
-                style={{ margin: '10px' }}
-                href="/static/career-fair-map.pdf"
-              >
-                {' '}
-                Career Fair Map{' '}
+              <Button style={{ margin: '10px' }} href={careerFairMapLink}>
+                Career Fair Map
               </Button>
             </Col>
           </Row>
