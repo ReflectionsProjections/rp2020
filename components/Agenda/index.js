@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import moment from 'moment';
 
+import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -95,6 +96,24 @@ const Agenda = ({ events }) => {
       </Section.Header>
       <Section.Body>
         <Container>
+          <Row className="pb-4">
+            <Col className="text-center">
+              <Button
+                style={{ margin: '10px' }}
+                href="/static/startup-fair-map.pdf"
+              >
+                {' '}
+                Startup Fair Map{' '}
+              </Button>
+              <Button
+                style={{ margin: '10px' }}
+                href="/static/career-fair-map.pdf"
+              >
+                {' '}
+                Career Fair Map{' '}
+              </Button>
+            </Col>
+          </Row>
           <Row className="pb-4">
             <Col className="text-center">
               <UIButtonGroupSelect
