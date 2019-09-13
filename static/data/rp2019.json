@@ -881,6 +881,11 @@
         "website": "#"
       },
       {
+        "name": "CityScholars",
+        "img": "/static/assets/img/sponsors/CityScholars.png",
+        "website": "#"
+      },
+      {
         "name": "Cruise",
         "img": "/static/assets/img/sponsors/Cruise.png",
         "website": "#"
