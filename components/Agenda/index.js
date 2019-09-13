@@ -148,7 +148,7 @@ const Agenda = ({ events }) => {
               events={filterEvents(allEvents, '09-20-2019', selectedType)}
             />
             <DayAgenda
-              label="Saturday Sep 20th"
+              label="Saturday Sep 21st"
               events={filterEvents(allEvents, '09-21-2019', selectedType)}
             />
           </Row>
