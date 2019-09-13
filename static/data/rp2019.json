@@ -148,12 +148,6 @@
         "image": "/static/img/speakers/DonaldKossmann"
       },
       {
-        "name": "Forrest Iandola",
-        "tagline": "CEO of DeepScale",
-        "bio": "<p>Forrest Iandola (UIUC BS CS '12 and UC Berkeley PhD EECS '16) is a deep learning researcher and a startup founder. His best-known research work includes deep learning infrastructure such as FireCaffe and deep models such as SqueezeNet and SqueezeDet. His advances in deep learning led to the founding of DeepScale, where he has been CEO since 2015. DeepScale builds vision/perception systems for automated vehicles.</p>",
-        "image": "/static/img/speakers/ForrestIandola"
-      },
-      {
         "name": "Jennison Asuncion",
         "tagline": "Head of Accessibility Engineering Evangelism @ LinkedIn",
         "bio": "<p>Jennison Asuncion works in LinkedIn Engineering, where he leads efforts to assure their web and mobile products are built to be accessible and usable to the more than one billion people with disabilities/impairments worldwide. He is active in the accessibility industry, lending his valuable thought and leadership to activities such as: co-founding the annual Global Accessibility Awareness Day, now in its eighth year; chairing the 34th CSUN Assistive Technology Conference (2019), the largest event on technology and persons with disabilities; and founding the Bay Area Accessibility and inclusive Design Meetup in 2014, along with an annual “un”conference, Accessibility Camp Bay Area in the same year. Jennison believes strongly that students of Engineering and related disciplines should possess fundamental knowledge about accessibility by the time they graduate.</p>",
@@ -609,19 +603,6 @@
         },
         "location": "Siebel Center 2405"
       },
-      "422ce8697224": {
-        "title": "Speaker: Forrest Iandola",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-20-2019 14:00",
-          "end": "09-20-2019 15:00"
-        },
-        "location": "Siebel Center 2405"
-      },
       "d154bc49d7ce": {
         "title": "Speaker: Derrick Higgins",
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
@@ -854,7 +835,6 @@
       "0549cc3dbd4e",
       "2f1f43278d35",
       "2abbd8f0a2ed",
-      "422ce8697224",
       "d154bc49d7ce",
       "7fd13f15eb37",
       "d3d12ed819af",
