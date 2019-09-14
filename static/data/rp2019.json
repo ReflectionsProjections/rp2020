@@ -857,33 +857,33 @@
     "allTiers": [
       {
         "name": "Checkbook",
-        "img": "/static/assets/img/sponsors/Checkbook.svg",
-        "website": "#"
+        "img": "/static/assets/img/sponsors/Checkbook.png",
+        "website": "https://angel.co/company/checkbook-io/jobs"
       },
       {
         "name": "CityScholars",
         "img": "/static/assets/img/sponsors/CityScholars.png",
-        "website": "#"
+        "website": "https://cityscholars.engineering.illinois.edu/"
       },
       {
         "name": "Cruise",
         "img": "/static/assets/img/sponsors/Cruise.png",
-        "website": "#"
+        "website": "https://getcruise.com/careers"
       },
       {
         "name": "Ocient",
         "img": "/static/assets/img/sponsors/Ocient.png",
-        "website": "#"
+        "website": "http://www.ocient.com/careers"
       },
       {
         "name": "Samsara",
         "img": "/static/assets/img/sponsors/Samsara.png",
-        "website": "#"
+        "website": "https://www.samsara.com/careers"
       },
       {
         "name": "Sentry",
         "img": "/static/assets/img/sponsors/Sentry.png",
-        "website": "#"
+        "website": "https://sentry.io/careers/"
       }
     ],
     "tier1": [],
@@ -891,159 +891,161 @@
       {
         "name": "Bayer",
         "img": "/static/assets/img/sponsors/Bayer.jpg",
-        "website": "#"
+        "website": "https://career.bayer.com/en/career/"
       },
       {
         "name": "Salesforce",
         "img": "/static/assets/img/sponsors/Salesforce.png",
-        "website": "#"
+        "website": "https://www.salesforce.com/company/careers/"
       },
       {
         "name": "Zillow",
         "img": "/static/assets/img/sponsors/Zillow.png",
-        "website": "#"
+        "website": "https://www.zillow.com/careers/"
       }
     ],
     "tier3": [
       {
         "name": "Capital One",
         "img": "/static/assets/img/sponsors/CapitalOne.png",
-        "website": "#"
+        "website": "https://www.capitalonecareers.com/"
       },
       {
         "name": "Caterpillar",
-        "img": "/static/assets/img/sponsors/Caterpillar.jpg"
+        "img": "/static/assets/img/sponsors/Caterpillar.jpg",
+        "website": "https://www.caterpillar.com/en/careers.html"
       },
       {
         "name": "Goldman Sachs",
         "img": "/static/assets/img/sponsors/Goldmansachs.jpg",
-        "website": "#"
+        "website": "https://www.goldmansachs.com/careers/"
       },
       {
         "name": "IMO",
         "img": "/static/assets/img/sponsors/IMO.png",
-        "website": "#"
+        "website": "https://www.imohealth.com/careers/"
       },
       {
         "name": "Microsoft",
         "img": "/static/assets/img/sponsors/Microsoft.png",
-        "website": "#"
+        "website": "https://careers.microsoft.com/us/en"
       },
       {
         "name": "Robinhood",
         "img": "/static/assets/img/sponsors/Robinhood.png",
-        "website": "#"
+        "website": "https://careers.robinhood.com/"
       },
       {
         "name": "Qualtrics",
         "img": "/static/assets/img/sponsors/Qualtrics.png",
-        "website": "#"
+        "website": "https://www.qualtrics.com/careers/"
       },
       {
         "name": "Quora",
         "img": "/static/assets/img/sponsors/Quora.png",
-        "website": "#"
+        "website": "https://www.quora.com/careers"
       },
       {
         "name": "tastytrade",
         "img": "/static/assets/img/sponsors/TastyTrade.jpg",
-        "website": "#"
+        "website": "https://recruiting.tastytrade.com/recruit/Portal.na"
       },
       {
         "name": "West Monroe Partners",
         "img": "/static/assets/img/sponsors/westmonroe.png",
-        "website": "#"
+        "website": "https://www.acceptthechallenge.com/"
       }
     ],
     "tier4": [
       {
         "name": "Aechelon Technology",
         "img": "/static/assets/img/sponsors/AechelonTechnology.png",
-        "website": "#"
+        "website": "http://aechelon.com/"
       },
       {
         "name": "Affirm",
         "img": "/static/assets/img/sponsors/Affirm.png",
-        "website": "#"
+        "website": "https://www.affirm.com/careers"
       },
       {
         "name": "Amazon",
         "img": "/static/assets/img/sponsors/Amazon.png",
-        "website": "#"
+        "website": "https://www.amazon.jobs/en-gb"
       },
       {
         "name": "Asana",
         "img": "/static/assets/img/sponsors/Asana.png",
-        "website": "#"
+        "website": "https://asana.com/jobs"
       },
       {
         "name": "Businessolver",
-        "img": "/static/assets/img/sponsors/Businessolver.jpg"
+        "img": "/static/assets/img/sponsors/Businessolver.jpg",
+        "website": "https://www.businessolver.com/who-we-are/careers"
       },
       {
         "name": "Cloudflare",
         "img": "/static/assets/img/sponsors/Cloudflare.png",
-        "website": "#"
+        "website": "https://www.cloudflare.com/careers/"
       },
       {
         "name": "Confluent",
         "img": "/static/assets/img/sponsors/Confluent.png",
-        "website": "#"
+        "website": "https://www.confluent.io/careers"
       },
       {
         "name": "Facebook",
         "img": "/static/assets/img/sponsors/facebook.png",
-        "website": "#"
+        "website": "https://www.facebook.com/careers/jobs"
       },
       {
         "name": "Forcepoint",
         "img": "/static/assets/img/sponsors/Forcepoint.png",
-        "website": "#"
+        "website": "https://www.forcepoint.com/company/careers"
       },
       {
         "name": "Ford",
         "img": "/static/assets/img/sponsors/Ford.jpeg",
-        "website": "#"
+        "website": "https://corporate.ford.com/careers.html"
       },
       {
         "name": "Google",
         "img": "/static/assets/img/sponsors/Google.png",
-        "website": "#"
+        "website": "https://careers.google.com/"
       },
       {
         "name": "JPMorgan Chase",
         "img": "/static/assets/img/sponsors/jpmorgan.jpg",
-        "website": "#"
+        "website": "https://careers.jpmorgan.com/us/en/professionals"
       },
       {
         "name": "Lyft",
         "img": "/static/assets/img/sponsors/Lyft.png",
-        "website": "#"
+        "website": "https://www.lyft.com/careers"
       },
       {
         "name": "PwC",
         "img": "/static/assets/img/sponsors/PWC.png",
-        "website": "#"
+        "website": "https://www.pwc.com/us/en/careers.html"
       },
       {
         "name": "Relativity",
         "img": "/static/assets/img/sponsors/Relativity.jpg",
-        "website": "#"
+        "website": "https://www.relativity.com/careers/available-positions/"
       },
       {
         "name": "Roche",
         "img": "/static/assets/img/sponsors/Roche.png",
-        "website": "#"
+        "website": "https://www.roche.com/careers.htm"
       },
       {
         "name": "Sandia",
         "img": "/static/assets/img/sponsors/Sandia.jpg",
-        "website": "#"
+        "website": "https://www.sandia.gov/careers/"
       },
       {
         "name": "Uber",
         "img": "/static/assets/img/sponsors/uber.jpg",
-        "website": "#"
+        "website": "https://www.uber.com/us/en/careers/"
       }
     ],
     "diversity": {
@@ -1051,14 +1053,14 @@
         {
           "name": "Synchrony",
           "img": "/static/assets/img/sponsors/synchrony.jpg",
-          "website": "#"
+          "website": "https://synchronycareers.com/jobs/"
         }
       ],
       "divTier2": [
         {
           "name": "Two Sigma",
           "img": "/static/assets/img/sponsors/TwoSigma.jpg",
-          "website": "#"
+          "website": "https://careers.twosigma.com/"
         }
       ]
     }
