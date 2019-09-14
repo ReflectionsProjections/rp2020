@@ -63,16 +63,14 @@ export default class Dashboard extends Component {
               src="../../static/assets/2019logo.svg"
             />
           </Col>
-          <Col md={{ span: 4, offset: 4 }}>
+          <Col>
+            <DashboardClock clock title="CURRENT TIME" />
+          </Col>
+          <Col>
             <Image
               className={styles.rpWordmark}
               src="../../static/assets/wordmarkblack.svg"
             />
-          </Col>
-        </Row>
-        <Row>
-          <Col md={{ span: 6, offset: 3 }}>
-            <DashboardClock clock title="CURRENT TIME" />
           </Col>
         </Row>
         <Row>

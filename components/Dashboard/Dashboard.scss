@@ -10,25 +10,31 @@
 }
 
 .logo {
-  height: 100%;
+  max-height: 65%;
+  margin-top: 1.75em;
+  padding-right: 1em;
+  padding-left: 1em;
+  width: auto;
 }
 
 .logoRow {
-  height: 12em;
+  height: 10em;
+  border-radius: 30%;
   background-color: #ffffff;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .rpLogo {
   width: 5em;
-  height: 5sem;
-  margin-bottom: 2em;
-  margin-top: 5em;
+  height: auto;
 }
 
 .rpWordmark {
   width: 15em;
-  height: 15em;
-  margin-bottom: 2em;
+  height: auto;
 }
 
 .dashboardContainer {
