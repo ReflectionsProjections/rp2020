@@ -93,7 +93,9 @@ const ImageViewer = props => {
                 styles.image
               )}
             >
-              <Image src={image.img} fluid />
+              <a href={image.website}>
+                <Image src={image.img} fluid />
+              </a>
             </Col>
           );
         })}
