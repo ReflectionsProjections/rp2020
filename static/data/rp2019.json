@@ -380,7 +380,7 @@
           "start": "09-16-2019 19:00",
           "end": "09-16-2019 20:00"
         },
-        "location": "Siebel Center 2405"
+        "location": "Joe's Brewery - 706 S 5th St, Champaign"
       },
       "483dc703ecdb": {
         "title": "Google Tech Talk",
@@ -672,19 +672,6 @@
         },
         "location": "Siebel Center Atrium"
       },
-      "j3d5j564jltx": {
-        "title": "MechMania Opening Ceremony",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-20-2019 19:30",
-          "end": "09-20-2019 20:00"
-        },
-        "location": "Siebel Center 1404"
-      },
       "a0c589060f03": {
         "title": "MechMania: A 24 Hour AI Hackathon",
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
@@ -693,8 +680,8 @@
         "type": "CONFERENCE",
         "tags": [],
         "time": {
-          "start": "09-20-2019 20:00",
-          "end": "09-21-2019 20:00"
+          "start": "09-20-2019 19:30",
+          "end": "09-21-2019 19:30"
         },
         "location": "Siebel Center 1404"
       },
@@ -844,7 +831,6 @@
       "d3d12ed819af",
       "7b7e3976caf1",
       "e89b92f4c0cd",
-      "j3d5j564jltx",
       "a0c589060f03",
       "234i290j2i34",
       "c41112d3ea62",
