@@ -9,11 +9,11 @@ const DashboardEvent = ({ event }) => {
     <Row className={styles.dashboardEvent}>
       <Col>
         <h3 className={styles.eventTitle}>{event.title}</h3>
-        <p className={styles.eventDescription}>{event.location}</p>
-        <p className={styles.eventDescription}>
+        <h4 className={styles.eventDescription}>{event.location}</h4>
+        <h4 className={styles.eventDescription}>
           {moment(event.time.start).format('hh:mm a')} -{' '}
           {moment(event.time.end).format('hh:mm a')}
-        </p>
+        </h4>
       </Col>
     </Row>
   );
@@ -40,19 +40,20 @@ export default class DashboardEvents extends Component {
 
   updateUpcomingEvents = () => {
     const { events } = this.props;
-    const currentTime = moment();
+    // const currentTime = moment();
+    const currentTime = moment('09-19-2019 17:00');
     const filteredEvents = events.filter(event => {
       const time = moment(event.time.end);
       return time.isAfter(currentTime);
     });
-    this.setState({ upcomingEvents: filteredEvents.slice(0, 3) });
+    this.setState({ upcomingEvents: filteredEvents.slice(0, 4) });
   };
 
   render() {
     const { upcomingEvents } = this.state;
     return (
       <Container className={styles.eventsContainer}>
-        <h2 className={styles.containerTitle}>Upcoming Events</h2>
+        <h2 className={styles.containerTitle}>UPCOMING EVENTS</h2>
         {upcomingEvents.map(event => {
           return <DashboardEvent event={event} key={event.title} />;
         })}

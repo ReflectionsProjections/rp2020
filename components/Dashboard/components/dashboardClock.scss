@@ -6,7 +6,7 @@
   font-stretch: normal;
   letter-spacing: normal;
 
-  color: #7552CC;
+  color: #7552cc;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,16 +15,16 @@
 
   &__number {
     font-family: 'Roboto Slab', sans-serif !important;
-    color: #1D1554;
-    min-width: 4vw;
-    font-size: 4vw !important;
+    color: #1d1554;
+    min-width: 5vw;
+    font-size: 5vw !important;
     margin: 0 0.2vw;
     font-weight: normal;
   }
 
   &__letter {
     font-family: 'Roboto Slab', sans-serif !important;
-    color: #7552CC;
+    color: #7552cc;
     font-size: 2.5vw !important;
     margin: 0 1vw;
     font-weight: 300;
@@ -40,13 +40,13 @@
   font-stretch: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #4B39B2 !important;
+  color: #4b39b2 !important;
 }
 
 .countdownContainer {
   font-family: 'Roboto Slab', sans-serif !important;
-  background-color: #f2f5fe !important;
-  border-radius: 5px !important;
+  background-color: #ffffff !important;
+  border-radius: 1em;
   padding: 3vh 2vw 3vh 2vw !important;
   height: 25vh;
 }

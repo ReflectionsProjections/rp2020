@@ -1,16 +1,23 @@
 .eventsContainer {
   font-family: 'Roboto Slab', sans-serif;
-  background-color: #f2f5fe;
-  border-radius: 5px;
   text-align: center;
+  height: 46em;
+  // overflow-y: scroll;
 }
 
 .containerTitle {
-  color: #1d1554;
+  color: #4b39b2;
+  font-size: 1.5vw;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
 }
 
 .dashboardEvent {
-  padding: 1em;
+  border-radius: 1em;
+  background-color: #ffffff;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1.5em;
 }
 
 .eventTitle {
@@ -18,5 +25,5 @@
 }
 
 .eventDescription {
-  color: #4b39b2;
+  color: #1d1554;
 }

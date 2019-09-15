@@ -27,7 +27,7 @@ export default class Dashboard extends Component {
       visibles[index] = false;
 
       this.setState({ visibles });
-    }, 1000);
+    }, 5000);
   }
 
   randomLogos = index => {
@@ -56,24 +56,24 @@ export default class Dashboard extends Component {
 
     return (
       <Container className={classNames(styles.dashboardContainer, styles.x)}>
-        <Row>
-          <Col>
+        <Row className={styles.timeRow}>
+          <Col className={styles.logoColumn}>
             <Image
               className={styles.rpLogo}
               src="../../static/assets/2019logo.svg"
             />
           </Col>
-          <Col>
+          <Col lg={4}>
             <DashboardClock clock title="CURRENT TIME" />
           </Col>
-          <Col>
+          <Col className={styles.logoColumn}>
             <Image
               className={styles.rpWordmark}
               src="../../static/assets/wordmarkblack.svg"
             />
           </Col>
         </Row>
-        <Row>
+        <Row className={styles.mainRow}>
           <Col>
             <Row className={`justify-content-center ${styles.logoRow}`}>
               <Transition
@@ -112,16 +112,16 @@ export default class Dashboard extends Component {
               </Transition>
             </Row>
           </Col>
-          <Col>
+          <Col className={styles.eventsColumn} lg={3}>
             <DashboardEvents events={events} />
           </Col>
-          <Col className={styles.twitterContainer}>
-            <h2 className={styles.twitterTitle}>Twitter</h2>
+          <Col className={styles.twitterContainer} lg={3}>
+            <h2 className={styles.twitterTitle}>TWITTER</h2>
             <Timeline
-              dataSource={{ sourceTypr: 'profile', screenName: 'uiuc_rp' }}
+              dataSource={{ sourceType: 'profile', screenName: 'uiuc_rp' }}
               options={{
-                chrome: 'transparent nofooter noheader noscrollbar',
-                tweetLimit: 3,
+                chrome: 'noborders nofooter noheader noscrollbar',
+                tweetLimit: 4,
                 ariaPolite: 'rude',
                 username: 'uiuc_rp'
               }}

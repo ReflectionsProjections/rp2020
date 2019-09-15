@@ -9,9 +9,13 @@
   left: 0;
 }
 
+.logoColumn {
+  text-align: center;
+}
+
 .logo {
-  max-height: 65%;
-  margin-top: 1.75em;
+  max-height: 5em;
+  margin-top: 2.5em;
   padding-right: 1em;
   padding-left: 1em;
   width: auto;
@@ -19,21 +23,22 @@
 
 .logoRow {
   height: 10em;
-  border-radius: 30%;
+  border-radius: 1em;
   background-color: #ffffff;
   margin-bottom: 2em;
-  margin-top: 2em;
   margin-left: 2em;
   margin-right: 2em;
 }
 
 .rpLogo {
-  width: 5em;
+  padding-top: 3em;
+  width: 12em;
   height: auto;
 }
 
 .rpWordmark {
-  width: 15em;
+  padding-top: 5em;
+  width: 27em;
   height: auto;
 }
 
@@ -46,14 +51,36 @@
 }
 
 .twitterContainer {
-  background-color: #f2f5fe;
-  border-radius: 5px;
-  height: 60vh;
+  // background-color:#ffffff;
+  background-color: rgba(242, 245, 254, 0.9);
+  border-radius: 1em;
+  height: 46em;
   overflow: hidden;
+  margin-left: 1em;
 }
 
 .twitterTitle {
-  color: #1d1554;
+  color: #4b39b2;
   font-family: 'Roboto Slab', sans-serif;
   text-align: center;
+  font-size: 1.5vw;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.timeRow {
+  margin-top: 2em;
+}
+
+.mainRow {
+  margin-top: 2em;
+}
+
+.eventsColumn {
+  border-radius: 1em;
+  // background-color: #ffffff;
+  background-color: rgba(242, 245, 254, 0.9);
+  height: 46em;
+  margin-right: 1em;
+  overflow: hidden;
 }
