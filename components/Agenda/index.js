@@ -78,7 +78,7 @@ const DayAgenda = ({ label, events }) => {
                   <>
                     <br />
                     <a
-                      href={`/events?id=${event.id}`}
+                      href={`/events/?id=${event.id}`}
                       style={{ fontWeight: '400' }}
                     >
                       More Info &#8250;
