@@ -21,6 +21,7 @@ const getEventsList = events => {
     const event = events.byId[id];
     return {
       ...event,
+      id,
       key: id
     };
   });
@@ -73,6 +74,17 @@ const DayAgenda = ({ label, events }) => {
                 {event.title}
                 <br />
                 <span style={{ fontWeight: 200 }}>{event.location}</span>
+                {event.hasPage && (
+                  <>
+                    <br />
+                    <a
+                      href={`/events?id=${event.id}`}
+                      style={{ fontWeight: '400' }}
+                    >
+                      More Info &#8250;
+                    </a>
+                  </>
+                )}
               </UITimelineEvent.Body>
             </UITimelineEvent>
           ))}

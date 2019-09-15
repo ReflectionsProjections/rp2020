@@ -400,6 +400,8 @@
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "displayInAgenda": true,
         "displayInEvents": true,
+        "hasPage": true,
+        "pageContent": "<div class='row'><div class='col'><img src='/static/startup-fair-map.jpg' class='img-fluid'/></div></div>",
         "type": "CORPORATE",
         "tags": [],
         "time": {
@@ -452,6 +454,8 @@
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "displayInAgenda": true,
         "displayInEvents": true,
+        "hasPage": true,
+        "pageContent": "<div class='row'><div class='col'><img src='/static/career-fair-map.jpg' class='img-fluid'/></div></div>",
         "type": "CORPORATE",
         "tags": [],
         "time": {
