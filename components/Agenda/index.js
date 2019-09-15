@@ -44,14 +44,16 @@ const filterEvents = (events, day, type) => {
     )
     .filter(event => (type !== '' ? event.type === type : true))
     .sort((a, b) =>
-      moment(a.time.start, TIME_FORMAT).isBefore(b.time.start, 'minute')
+      moment(a.time.start, TIME_FORMAT).isBefore(
+        moment(b.time.start, TIME_FORMAT)
+      )
         ? -1
         : 1
     );
 };
 
 const formatTime = time => {
-  const start = moment(time.start, TIME_FORMAT).format('hh:mm');
+  const start = moment(time.start, TIME_FORMAT).format('hh:mma');
   const end = moment(time.end, TIME_FORMAT).format('hh:mma');
   return `${start} - ${end}`;
 };
