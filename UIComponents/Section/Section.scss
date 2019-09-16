@@ -25,6 +25,7 @@
   border-radius: 1.5em;
   padding-top: 3em;
   padding-bottom: 4em;
+  transform: scale(0.995);
   transition: transform 0.3s ease-in-out;
 
   @media (max-width: 768px) {
@@ -33,7 +34,7 @@
   }
 
   &:hover {
-    transform: scale(1.008);
+    transform: scale(1);
   }
 }
 

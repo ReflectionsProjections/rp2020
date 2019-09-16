@@ -7,6 +7,10 @@
         "label": "About"
       },
       {
+        "name": "agenda",
+        "label": "Agenda"
+      },
+      {
         "name": "speakers",
         "label": "Speakers"
       },

@@ -24,8 +24,10 @@ Section.Subtitle = ({ children }) => (
 
 Section.Body = ({ children }) => <div className={styles.body}>{children}</div>;
 
-Section.Header = ({ children }) => (
-  <div className={styles.header}>{children}</div>
+Section.Header = ({ children, className, ...rest }) => (
+  <div className={classNames(className, styles.header)} {...rest}>
+    {children}
+  </div>
 );
 
 Section.propTypes = {

@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const prefix =
   process.env.NODE_ENV === 'production'
-    ? 'https://raw.githubusercontent.com/ReflectionsProjections/rp2019/master'
+    ? 'https://www.reflectionsprojections.org'
     : 'http://localhost:3000';
 
 export const fetchConferenceData = async () => {

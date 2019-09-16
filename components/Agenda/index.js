@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import moment from 'moment';
 
+import { isMobile } from 'react-device-detect';
+import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -19,6 +21,7 @@ const getEventsList = events => {
     const event = events.byId[id];
     return {
       ...event,
+      id,
       key: id
     };
   });
@@ -41,14 +44,16 @@ const filterEvents = (events, day, type) => {
     )
     .filter(event => (type !== '' ? event.type === type : true))
     .sort((a, b) =>
-      moment(a.time.start, TIME_FORMAT).isBefore(b.time.start, 'minute')
+      moment(a.time.start, TIME_FORMAT).isBefore(
+        moment(b.time.start, TIME_FORMAT)
+      )
         ? -1
         : 1
     );
 };
 
 const formatTime = time => {
-  const start = moment(time.start, TIME_FORMAT).format('hh:mm');
+  const start = moment(time.start, TIME_FORMAT).format('hh:mma');
   const end = moment(time.end, TIME_FORMAT).format('hh:mma');
   return `${start} - ${end}`;
 };
@@ -71,6 +76,17 @@ const DayAgenda = ({ label, events }) => {
                 {event.title}
                 <br />
                 <span style={{ fontWeight: 200 }}>{event.location}</span>
+                {event.hasPage && (
+                  <>
+                    <br />
+                    <a
+                      href={`/events/?id=${event.id}`}
+                      style={{ fontWeight: '400' }}
+                    >
+                      More Info &#8250;
+                    </a>
+                  </>
+                )}
               </UITimelineEvent.Body>
             </UITimelineEvent>
           ))}
@@ -88,6 +104,13 @@ const Agenda = ({ events }) => {
     setSelectedType(value);
   };
 
+  const startupFairMapLink = isMobile
+    ? '/static/startup-fair-map.jpg'
+    : '/static/startup-fair-map.pdf';
+  const careerFairMapLink = isMobile
+    ? '/static/career-fair-map.jpg'
+    : '/static/career-fair-map.pdf';
+
   return (
     <Section>
       <Section.Header>
@@ -95,6 +118,16 @@ const Agenda = ({ events }) => {
       </Section.Header>
       <Section.Body>
         <Container>
+          <Row className="pb-4">
+            <Col className="text-center">
+              <Button style={{ margin: '10px' }} href={startupFairMapLink}>
+                Startup Fair Map
+              </Button>
+              <Button style={{ margin: '10px' }} href={careerFairMapLink}>
+                Career Fair Map
+              </Button>
+            </Col>
+          </Row>
           <Row className="pb-4">
             <Col className="text-center">
               <UIButtonGroupSelect
@@ -129,7 +162,7 @@ const Agenda = ({ events }) => {
               events={filterEvents(allEvents, '09-20-2019', selectedType)}
             />
             <DayAgenda
-              label="Saturday Sep 20th"
+              label="Saturday Sep 21st"
               events={filterEvents(allEvents, '09-21-2019', selectedType)}
             />
           </Row>
