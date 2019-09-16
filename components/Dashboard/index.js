@@ -13,8 +13,8 @@ export default class Dashboard extends Component {
     super(props);
 
     this.state = {
-      logos: props.sponsorImages.slice(0, 9),
-      visibles: [true, true, true, true, true, true, true, true, true],
+      logos: props.sponsorImages.slice(0, 8),
+      visibles: [true, true, true, true, true, true, true, true],
       enter: 750,
       exit: 750
     };
@@ -64,7 +64,7 @@ export default class Dashboard extends Component {
             />
           </Col>
           <Col lg={4}>
-            <DashboardClock clock title="CURRENT TIME" />
+            <DashboardClock clock title="Current Time" />
           </Col>
           <Col className={styles.logoColumn}>
             <Image
@@ -116,7 +116,7 @@ export default class Dashboard extends Component {
             <DashboardEvents events={events} />
           </Col>
           <Col className={styles.twitterContainer} lg={3}>
-            <h2 className={styles.twitterTitle}>TWITTER</h2>
+            <h2 className={styles.twitterTitle}>Twitter</h2>
             <Timeline
               dataSource={{ sourceType: 'profile', screenName: 'uiuc_rp' }}
               options={{

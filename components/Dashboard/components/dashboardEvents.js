@@ -40,20 +40,19 @@ export default class DashboardEvents extends Component {
 
   updateUpcomingEvents = () => {
     const { events } = this.props;
-    // const currentTime = moment();
-    const currentTime = moment('09-19-2019 17:00');
+    const currentTime = moment();
     const filteredEvents = events.filter(event => {
       const time = moment(event.time.end);
       return time.isAfter(currentTime);
     });
-    this.setState({ upcomingEvents: filteredEvents.slice(0, 4) });
+    this.setState({ upcomingEvents: filteredEvents.slice(0, 5) });
   };
 
   render() {
     const { upcomingEvents } = this.state;
     return (
       <Container className={styles.eventsContainer}>
-        <h2 className={styles.containerTitle}>UPCOMING EVENTS</h2>
+        <h2 className={styles.containerTitle}>Upcoming Events</h2>
         {upcomingEvents.map(event => {
           return <DashboardEvent event={event} key={event.title} />;
         })}
