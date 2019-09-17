@@ -117,15 +117,17 @@ export default class Dashboard extends Component {
           </Col>
           <Col className={styles.twitterContainer} lg={3}>
             <h2 className={styles.twitterTitle}>Twitter</h2>
-            <Timeline
-              dataSource={{ sourceType: 'profile', screenName: 'uiuc_rp' }}
-              options={{
-                chrome: 'noborders nofooter noheader noscrollbar',
-                tweetLimit: 4,
-                ariaPolite: 'rude',
-                username: 'uiuc_rp'
-              }}
-            />
+            <div className={styles.twitterInnerContainer}>
+              <Timeline
+                dataSource={{ sourceType: 'profile', screenName: 'uiuc_rp' }}
+                options={{
+                  chrome: 'noborders nofooter noheader noscrollbar',
+                  tweetLimit: 4,
+                  ariaPolite: 'rude',
+                  username: 'uiuc_rp'
+                }}
+              />
+            </div>
           </Col>
           <Col>
             <Row className={`justify-content-center ${styles.logoRow}`}>
