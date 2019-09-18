@@ -8,10 +8,25 @@
 }
 
 .dash {
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
   position: absolute !important;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+}
+
+.dashboard {
+  position: relative;
+  background: url('/static/assets/minified-websitebackground-lg.png') no-repeat
+    center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }

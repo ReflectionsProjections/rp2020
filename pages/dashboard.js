@@ -16,13 +16,7 @@ const DashboardPage = ({ events, sponsorImages }) => (
         crossOrigin="anonymous"
       />
     </Head>
-    <div className={styles.videoContainer}>
-      <video autoPlay muted loop id="video-background">
-        <source
-          src="../static/assets/dashboard_background.mp4"
-          type="video/mp4"
-        />
-      </video>
+    <div className={styles.dashboard}>
       <Dashboard events={events} sponsorImages={sponsorImages} />
     </div>
   </div>
