@@ -54,14 +54,21 @@ const About = () => (
               />
             </div>
             <Row>
-              <Col className="pb-4" md={6}>
+              <Col className="pb-4" md={4}>
                 <h3>25 Years of History</h3>
                 <p>See how far our conference has come.</p>
                 <NextLink href="/timeline">
                   <Button>Timeline</Button>
                 </NextLink>
               </Col>
-              <Col className="pb-4" md={6}>
+              <Col className="pb-4" md={4}>
+                <h3>Social Media Challenge</h3>
+                <p>Win a giveaway!</p>
+                <NextLink href="/challenge">
+                  <Button>Challenge Details</Button>
+                </NextLink>
+              </Col>
+              <Col className="pb-4" md={4}>
                 <h3>Social Media</h3>
                 <p>Follow us to stay updated!</p>
                 <div className={styles.socialMediaIcons}>
