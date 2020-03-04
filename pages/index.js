@@ -31,12 +31,12 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>Reflections | Projections 2019</title>
+        <title>Reflections | Projections 2020</title>
         <meta
           name="description"
           content="Reflections | Projections is a tech conference organized and run by students at the University of Illinois at Urbana-Champaign."
         />
-        <meta property="og:title" content="Reflections | Projections 2019" />
+        <meta property="og:title" content="Reflections | Projections 2020" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://reflectionsprojections.org/" />
         <meta property="og:image" content="/static/assets/facebook2.png" />

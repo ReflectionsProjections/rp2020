@@ -19,7 +19,7 @@ body {
 }
 
 body {
-  background: url('/static/assets/minified-websitebackground-lg.png') no-repeat
+  background: url('/static/assets/triangles.png') no-repeat
     center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

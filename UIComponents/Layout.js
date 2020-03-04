@@ -16,7 +16,7 @@ class Layout extends Component {
       <div>
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link
+          {/* <link
             rel="apple-touch-icon"
             sizes="57x57"
             href="/static/assets/icons/apple-icon-57x57.png"
@@ -84,7 +84,7 @@ class Layout extends Component {
             type="image/png"
             sizes="16x16"
             href="/static/assets/icons/favicon-16x16.png"
-          />
+          /> */}
           <link rel="manifest" href="/static/assets/icons/manifest.json" />
           <link
             rel="stylesheet"
