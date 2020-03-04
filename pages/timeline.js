@@ -1,27 +1,27 @@
-import React from 'react';
+// import React from 'react';
 
-import Footer from '../components/Footer';
-import Layout from '../UIComponents/Layout';
-import Nav from '../components/Nav';
-import Timeline from '../components/Timeline';
+// import Footer from '../components/Footer';
+// import Layout from '../UIComponents/Layout';
+// import Nav from '../components/Nav';
+// import Timeline from '../components/Timeline';
 
-import useGetStaticData from '../services/useGetStaticData';
+// import useGetStaticData from '../services/useGetStaticData';
 
-const TimelinePage = () => {
-  const { isLoaded, rpData, nav } = useGetStaticData();
-  const events = rpData.timelineSection ? rpData.timelineSection.events : [];
+// const TimelinePage = () => {
+//   const { isLoaded, rpData, nav } = useGetStaticData();
+//   const events = rpData.timelineSection ? rpData.timelineSection.events : [];
 
-  return (
-    <Layout>
-      {isLoaded && (
-        <>
-          <Nav format={nav.timeline} />
-          <Timeline events={events} />
-        </>
-      )}
-      <Footer />
-    </Layout>
-  );
-};
+//   return (
+//     <Layout>
+//       {isLoaded && (
+//         <>
+//           <Nav format={nav.timeline} />
+//           <Timeline events={events} />
+//         </>
+//       )}
+//       <Footer />
+//     </Layout>
+//   );
+// };
 
-export default TimelinePage;
+// export default TimelinePage;

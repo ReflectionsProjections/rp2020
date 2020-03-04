@@ -16,17 +16,17 @@ module.exports = (phase, { defaultConfig }) => {
     cssModules: true,
     exportPathMap: function() {
       return {
-        '/': { page: '/' },
-        '/speaker': { page: '/speaker' },
-        '/events': { page: '/events' },
-        '/timeline': { page: '/timeline' },
+        //'/': { page: '/' },
+        // '/speaker': { page: '/speaker' },
+        // '/events': { page: '/events' },
+        // '/timeline': { page: '/timeline' },
         '/sponsor': { page: '/sponsor' },
-        '/startup': { page: '/startup' },
-        '/register': { page: '/register' },
-        '/resume': { page: '/resume' },
-        '/volunteer': { page: '/volunteer' },
-        '/challenge': { page: '/challenge' },
-        '/dashboard': { page: '/dashboard' }
+        // '/startup': { page: '/startup' },
+        // '/register': { page: '/register' },
+        // '/resume': { page: '/resume' },
+        // '/volunteer': { page: '/volunteer' },
+        // '/challenge': { page: '/challenge' },
+        // '/dashboard': { page: '/dashboard' }
       };
     }
   });
