@@ -14,12 +14,12 @@ const Footer = () => (
         </a>
       </p>
       <p className={styles.contact}>
-        Questions? Interested in sponsoring? Email us at{' '}
+        Interested in sponsoring? Email us at{' '}
         <a
           className={styles.link}
-          href="mailto:contact@reflectionsprojections.org"
+          href="mailto:corporate@reflectionsprojections.org"
         >
-          contact@reflectionsprojections.org
+          corporate@reflectionsprojections.org
         </a>
       </p>
     </div>

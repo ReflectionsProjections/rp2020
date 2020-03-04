@@ -108,11 +108,13 @@ const SponsorSection = ({ sponsors }) => {
   const hasAllTiersSection = (sponsors.allTiers || []).length > 0;
   return (
     <Section>
-      <Section.Title className={styles.sponsorTitle}>Sponsors</Section.Title>
+      <Section.Title className={styles.sponsorTitle}>
+        Previous Sponsors
+      </Section.Title>
       <Section.Body>
         <Container>
           <SponsorGroup>
-            <SponsorGroup.Title>Corporate Sponsors</SponsorGroup.Title>
+            <SponsorGroup.Title></SponsorGroup.Title>
             <SponsorGroup.Body>
               {sponsors.tier1 && sponsors.tier1.length > 0 && (
                 <div
@@ -138,7 +140,7 @@ const SponsorSection = ({ sponsors }) => {
             </SponsorGroup.Body>
           </SponsorGroup>
           <SponsorGroup>
-            <SponsorGroup.Title>Startup Sponsors</SponsorGroup.Title>
+            <SponsorGroup.Title></SponsorGroup.Title>
             <SponsorGroup.Body>
               {hasAllTiersSection && (
                 <ImageViewer images={sponsors.allTiers} size="allTiers" />
@@ -146,7 +148,7 @@ const SponsorSection = ({ sponsors }) => {
             </SponsorGroup.Body>
           </SponsorGroup>
           <SponsorGroup>
-            <SponsorGroup.Title>Diversity x Tech Sponsors</SponsorGroup.Title>
+            <SponsorGroup.Title></SponsorGroup.Title>
             <SponsorGroup.Body>
               {sponsors.diversity && (
                 <>

@@ -6,7 +6,7 @@
   font-stretch: normal;
   letter-spacing: normal;
 
-  color: #7552cc;
+  color: #0cbabb;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +15,7 @@
 
   &__number {
     font-family: 'Roboto Slab', sans-serif !important;
-    color: #1d1554;
+    color: #0cbabb;
     min-width: 5vw;
     font-size: 5vw !important;
     margin: 0 0.2vw;
@@ -24,7 +24,7 @@
 
   &__letter {
     font-family: 'Roboto Slab', sans-serif !important;
-    color: #7552cc;
+    color: #0cbabb;
     font-size: 2.5vw !important;
     margin: 0 1vw;
     font-weight: 300;
@@ -40,7 +40,7 @@
   font-stretch: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #4b39b2 !important;
+  color: #0cbabb !important;
 }
 
 .countdownContainer {

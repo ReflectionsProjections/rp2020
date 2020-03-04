@@ -13,7 +13,7 @@ const Speaker = ({ speakers }) => {
   return (
     <Section className="speaker-section">
       <Section.Header>
-        <Section.Title>Speakers</Section.Title>
+        <Section.Title>Previous Speakers</Section.Title>
       </Section.Header>
       <Section.Body>
         <Container>

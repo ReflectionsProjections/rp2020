@@ -71,9 +71,9 @@ class CountdownTimer extends Component {
                       duration={500}
                       offset={-80}
                     >
-                      <Button variant="outline-primary" size="lg">
+                      {/* <Button variant="outline-primary" size="lg">
                         Conference Agenda
-                      </Button>
+                      </Button> */}
                     </Link>
                   </Col>
                 ) : (

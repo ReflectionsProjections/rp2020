@@ -60,11 +60,11 @@ const Index = () => {
                 src="/static/assets/wordmarkblack.svg"
               />
               <h2 className={`animated fadeIn ${styles.eventDate}`}>
-                Sept 16 - 21
+                Sept 21 - 26, 2020
               </h2>
-              <h6 className={`animated fadeInUp ${styles.tagline}`}>
+              {/* <h6 className={`animated fadeInUp ${styles.tagline}`}>
                 Celebrating 25 Years
-              </h6>
+              </h6> */}
               <div>
                 <CountdownTimer className="animated fadeIn" />
               </div>
@@ -91,11 +91,11 @@ const Index = () => {
             <Element name="about">
               <About />
             </Element>
-            <Element name="agenda">
+            {/* <Element name="agenda">
               <Gate gatename="AGENDA_SECTION" gates={gates} query={query}>
                 <Agenda events={events} />
               </Gate>
-            </Element>
+            </Element> */}
             <Element name="speakers">
               <Speaker speakers={speakerSection.list} />
             </Element>
@@ -105,9 +105,9 @@ const Index = () => {
                 <Events events={events} />
               </Gate>
             </Element>
-            <Element name="faq">
+            {/* <Element name="faq">
               <FAQ faqData={faqSection} />
-            </Element>
+            </Element> */}
             <Element name="sponsor-section">
               <SponsorSection sponsors={sponsors} />
             </Element>

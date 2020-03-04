@@ -43,7 +43,7 @@ main {
 }
 
 a {
-  color: #4b39b2;
+  color: #0cbabb;
 }
 a:hover {
   color: #70d0e0;
@@ -53,8 +53,8 @@ a:hover {
 .btn-primary {
   color: white;
   border: none;
-  background-color: #7552cc;
-  border-color: #7552cc;
+  background-color: #0cbabb;
+  border-color: #0cbabb;
   font-weight: 600;
   padding: 1em 2em;
   font-size: 0.8em;
@@ -62,8 +62,8 @@ a:hover {
 }
 
 .btn-primary:hover {
-  background-color: #ecd7ff;
-  color: #7552cc;
+  background-color: #f9bfcb;
+  color: #0cbabb;
 }
 
 .btn-outline-primary {
@@ -73,7 +73,7 @@ a:hover {
 .btn-outline-primary:hover {
   border-color: white;
   background-color: white;
-  color: #7552cc;
+  color: #0cbabb;
 }
 
 @media (max-width: 767.98px) {
@@ -86,7 +86,7 @@ a:hover {
 }
 
 .badge-primary {
-  background-color: #7552cc;
+  background-color: #0cbabb;
   border-radius: 1em;
   white-space: normal;
   font-size: 0.75em;

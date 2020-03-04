@@ -7,7 +7,7 @@ const buttonStyles = {
   fontWeight: 200
 };
 const selectedButtonStyles = {
-  backgroundColor: '#1d1554'
+  backgroundColor: '#0CBABB'
 };
 
 const UIButtonGroupSelect = ({ options, onSelect }) => {

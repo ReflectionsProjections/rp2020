@@ -7,16 +7,8 @@
         "label": "About"
       },
       {
-        "name": "agenda",
-        "label": "Agenda"
-      },
-      {
         "name": "speakers",
         "label": "Speakers"
-      },
-      {
-        "name": "faq",
-        "label": "FAQs"
       },
       {
         "name": "sponsor-section",
