@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import moment from 'moment';
 import { Link } from 'react-scroll';
 
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

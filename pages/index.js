@@ -8,10 +8,8 @@ import Layout from '../UIComponents/Layout';
 import Nav from '../components/Nav';
 import CountdownTimer from '../components/CountdownTimer';
 import About from '../components/About/index';
-import Agenda from '../components/Agenda';
 import Speaker from '../components/Speaker';
 import Events from '../components/Events';
-import FAQ from '../components/FAQ/index';
 import SponsorSection from '../components/SponsorSection';
 import Footer from '../components/Footer';
 
@@ -28,7 +26,7 @@ const Index = () => {
   }
 
   const { isLoaded, rpData, nav, gates } = useGetStaticData();
-  const { events, faqSection, speakerSection, sponsors } = rpData;
+  const { events, speakerSection, sponsors } = rpData;
 
   return (
     <>

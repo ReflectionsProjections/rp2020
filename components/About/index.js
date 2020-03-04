@@ -1,7 +1,5 @@
 import React from 'react';
-import NextLink from 'next/link';
 
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
