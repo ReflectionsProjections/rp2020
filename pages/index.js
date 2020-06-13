@@ -12,6 +12,7 @@ import Speaker from '../components/Speaker';
 import Events from '../components/Events';
 import SponsorSection from '../components/SponsorSection';
 import Footer from '../components/Footer';
+import NotifBanner from '../components/NotifBanner';
 
 import styles from './index.scss';
 import '../static/stylesheets/animations.scss';
@@ -60,6 +61,9 @@ const Index = () => {
               <h2 className={`animated fadeIn ${styles.eventDate}`}>
                 Sept 21 - 26, 2020
               </h2>
+              <div>
+                <NotifBanner />
+              </div>
               {/* <h6 className={`animated fadeInUp ${styles.tagline}`}>
                 Celebrating 25 Years
               </h6> */}
