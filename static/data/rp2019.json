@@ -173,6 +173,31 @@
       }
     ]
   },
+  "projectSection": {
+    "list": [
+      {
+        "name": "Machine Learning",
+        "badge": "ML",
+        "tagline": "Project Example 1",
+        "bio": "<p>Example description</p>",
+        "image": "/static/img/projects/rp"
+      },
+      {
+        "name": "Data Science",
+        "tagline": "Project Example 2",
+        "badge": "ML",
+        "bio": "<p>Description</p>",
+        "image": "/static/img/projects/rp"
+      },
+      {
+        "name": "Other Project",
+        "tagline": "Project",
+        "badge": "Mobile app",
+        "bio": "<p>Aaaaaaa</p>",
+        "image": "/static/img/projects/rp"
+      }
+    ]
+  },
   "faqSection": {
     "sections": [
       {

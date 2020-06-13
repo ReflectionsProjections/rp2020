@@ -51,7 +51,6 @@ const ImageViewer = props => {
   //  Bootstrap 4 has 12 column wide layout
   const LAYOUT_COL_WIDTH = 12;
   return (
-    
     <Col xs={12}>
       <Row>
         {images.map((image, i) => {
