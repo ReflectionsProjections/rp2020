@@ -24,7 +24,7 @@ import useGetStaticData from '../services/useGetStaticData';
 const Index = () => {
   let query = {};
   if (process.browser) {
-    query = getQueryObject(window);
+    query = getQueryObject(window); 
   }
 
   const { isLoaded, rpData, nav, gates } = useGetStaticData();
