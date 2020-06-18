@@ -62,9 +62,9 @@ const Index = () => {
               <h2 className={`animated fadeIn ${styles.eventDate}`}>
                 Sept 21 - 26, 2020
               </h2>
-              <div>
+              {/*<div className={`animated fadeIn ${styles.virtualUpdate}`}>
                 <NotifBanner />
-              </div>
+              </div>*/}
               {/* <h6 className={`animated fadeInUp ${styles.tagline}`}>
                 Celebrating 25 Years
               </h6> */}
@@ -99,25 +99,25 @@ const Index = () => {
                 <Agenda events={events} />
               </Gate>
             </Element> */}
-            <Element name="speakers">
+            {/*<Element name="speakers">
               <Speaker speakers={speakerSection.list} />
-            </Element>
+            </Element>*/}
 
-            <Element name="projects">
+            {/*<Element name="projects">
               <Project projects={projectSection.list} />
-            </Element>
+            </Element>*/}
 
-            <Element name="events">
+            {/*<Element name="events">
               <Gate gatename="EVENT_SECTION" gates={gates} query={query}>
                 <Events events={events} />
               </Gate>
-            </Element>
+            </Element>*/}
             {/* <Element name="faq">
               <FAQ faqData={faqSection} />
             </Element> */}
-            <Element name="sponsor-section">
+            {/*<Element name="sponsor-section">
               <SponsorSection sponsors={sponsors} />
-            </Element>
+            </Element>*/}
           </>
         )}
 

@@ -44,12 +44,12 @@ const About = () => (
                 kind AI hackathon. And, we can&apos;t wait for you to come to
                 R|P 2020!
               </p>
-              <img
+              {/*<img
                 className="rounded"
                 width="100%"
                 src="/static/img/team.jpg"
                 alt="Reflections Projections 2019 Staff"
-              />
+              />*/}
             </div>
             {/* <Row>
               <Col className="pb-4" md={4}>

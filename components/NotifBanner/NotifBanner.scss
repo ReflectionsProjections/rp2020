@@ -21,11 +21,12 @@
   border-radius: 1.5em; 
   height: 7.5em; 
   width: 60em; 
-  justify-content: center;
+  max-width: 100%;
+  margin: auto;
 }
 .bannerContainer {
   justify-content: center; 
-  position: absolute; 
+  min-height: 0;
   top: 22em; 
   left: 17.75em; 
 }
