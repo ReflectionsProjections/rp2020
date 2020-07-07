@@ -9,7 +9,6 @@ import Nav from '../components/Nav';
 import CountdownTimer from '../components/CountdownTimer';
 import About from '../components/About/index';
 import Speaker from '../components/Speaker';
-import Project from '../components/Project';
 import Events from '../components/Events';
 import SponsorSection from '../components/SponsorSection';
 import Footer from '../components/Footer';
@@ -62,12 +61,9 @@ const Index = () => {
               <h2 className={`animated fadeIn ${styles.eventDate}`}>
                 Sept 21 - 26, 2020
               </h2>
-              {/*<div className={`animated fadeIn ${styles.virtualUpdate}`}>
+              {<div className={`animated fadeIn ${styles.virtualUpdate}`}>
                 <NotifBanner />
-              </div>*/}
-              {/* <h6 className={`animated fadeInUp ${styles.tagline}`}>
-                Celebrating 25 Years
-              </h6> */}
+              </div>}
               <div>
                 <CountdownTimer className="animated fadeIn" />
               </div>
