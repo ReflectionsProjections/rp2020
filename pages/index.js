@@ -84,9 +84,9 @@ const Index = () => {
         </main>
         {isLoaded && (
           <>
-            <Element>
+            {/*<Element>
               <Nav format={nav.index} />
-            </Element>
+            </Element>*/}
             <Element name="about">
               <About />
             </Element>
