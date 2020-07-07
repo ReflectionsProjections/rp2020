@@ -205,11 +205,11 @@
         "questions": [
           {
             "question": "What is Reflections | Projections?",
-            "answer": "Reflections | Projections is an annual technology conference held at the University of Illinois at Urbana-Champaign. It features two job fairs, a variety of speaker events, a puzzle competition, a 24-hour hackathon, and more! This is our 25th year running R|P, and we are excited to continue our tradition of connecting attendees with premier speakers, influencers, and companies!"
+            "answer": "Reflections | Projections is an annual technology conference held at the University of Illinois at Urbana-Champaign. It features two job fairs, a variety of speaker events, a puzzle competition, a 24-hour hackathon, and more! This is our 26th year running R|P, and we are excited to continue our tradition of connecting attendees with premier speakers, influencers, and companies!"
           },
           {
             "question": "Is registration open?",
-            "answer": "Yes."
+            "answer": "Not yet, but stay tuned for updates on our socials."
           },
           {
             "question": "Who can attend?",
@@ -218,10 +218,6 @@
           {
             "question": "Is the conference free to attend?",
             "answer": "Yes! Reflections | Projections is completely free to attend! This includes MechMania and all other events."
-          },
-          {
-            "question": "Will food be provided?",
-            "answer": "A large variety of meals, snacks, and drinks will be provided for free throughout the week for registered attendees. If you have a dietary restriction, please mention it in the registration form when you register for the conference."
           }
         ]
       },
@@ -230,7 +226,7 @@
         "questions": [
           {
             "question": "What is MechMania?",
-            "answer": "MechMania is a 24-hour programming contest in which teams of students from various schools compete to create an AI capable of playing (and winning) a strategy game we have developed for the event. The competition will begin with the opening ceremony and announcement of the game on Friday, September 20th after which the programming component will commence immediately. The competition will conclude with the closing ceremony and awards presentation on Saturday, September 21st after running for 24 hours. Register for MechMania here! You must be registered for Reflections | Projections to compete in MechMania."
+            "answer": "MechMania is a 24-hour programming contest in which teams of students from various schools compete to create an AI capable of playing (and winning) a strategy game we have developed for the event. The competition dates and times will be announced soon! The competition will conclude with the closing ceremony and awards presentation, and will be livestreamed on twitch.tv. You must be registered for Reflections | Projections to compete in MechMania."
           },
           {
             "question": "Who's eligible?",
@@ -259,7 +255,7 @@
         "questions": [
           {
             "question": "What is PuzzleBang?",
-            "answer": "PuzzleBang is a puzzle contest that takes place over the course of a week. Puzzles are released online at puzzlebang.com roughly one per day until Saturday when we release several hard puzzles and a physical, on-campus metapuzzle that pulls everything together.  In the last two years, PuzzleBang also included a real-life escape room (themed to, but otherwise unrelated to the puzzlebang.com puzzles)."
+            "answer": "PuzzleBang is a puzzle contest that takes place over the course of a week. Puzzles are released online at puzzlebang.com, roughly one per day until Saturday when we release several hard puzzles. In the last two years, PuzzleBang also included a real-life escape room (themed to, but otherwise unrelated to the puzzlebang.com puzzles)."
           },
           {
             "question": "Who's eligible?",
@@ -297,10 +293,6 @@
           {
             "question": "What am I allowed to showcase?",
             "answer": "SIG/ACM projects, individual/group projects or research, open source projects or contributions and anything in-between would be awesome to have at our project fair."
-          },
-          {
-            "question": "What does R|P provide?",
-            "answer": "The booths, charging outlets, food, and visibility!"
           }
         ]
       },
@@ -310,31 +302,6 @@
           {
             "question": "What's the difference between Tech Talks and Speaker Talks?",
             "answer": "Tech Talks are given by sponsor representatives who wish to spotlight their company and talk about new products/technologies. Speaker Talks are given by experts in the tech community and are about specific technical or personal topics."
-          },
-          {
-            "question": "What's the difference between the Startup Fair and the Career Fair?",
-            "answer": "The Startup Fair is for startup companies, and the Career Fair is for established companies. The difference between startup and established companies is determined by conference staff."
-          }
-        ]
-      },
-      {
-        "name": "Gas Reimbursement",
-        "questions": [
-          {
-            "question": "How do I ask for a reimbursement?",
-            "answer": "The registration form has a transportation question that asks how you intend on getting to campus — respond indicating that you are driving and will need gas reimbursement. Please note that we are only offering reimbursements to the first 200 attendees that ask for one."
-          },
-          {
-            "question": "How much will I be reimbursed?",
-            "answer": "The amount varies depending on where you are driving from: $15 per attendee if location is beyond 160 miles from campus, $10 per attendee if location is between 60 and 160 miles, and $5 per attendee if location is within 60 miles. All distances are as the crow flies and R|P staff has the final say on which radius level your departure location falls in. Note that these numbers are per attendee to incentivize attendees to carpool."
-          },
-          {
-            "question": "How will I know if I'm within the first 200 people to sign up for a reimbursement?",
-            "answer": "Assuming you have registered, we will send you an email by September 16th notifying you of your status. If you register after that date, we will do our best to notify you as soon as possible but cannot guarantee immediate confirmation."
-          },
-          {
-            "question": "How do I collect my reimbursement?",
-            "answer": "We will hold a gas reimbursement booth on both Friday and Saturday. You must have explicitly requested reimbursements on your registration to be given money. You MUST also have your School ID as proof that you are from the school you claim to be from. We will be reimbursing via Venmo and cash."
           }
         ]
       }

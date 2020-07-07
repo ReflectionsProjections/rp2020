@@ -13,6 +13,7 @@ import Events from '../components/Events';
 import SponsorSection from '../components/SponsorSection';
 import Footer from '../components/Footer';
 import NotifBanner from '../components/NotifBanner';
+import FAQ from '../components/FAQ';
 
 import styles from './index.scss';
 import '../static/stylesheets/animations.scss';
@@ -27,7 +28,7 @@ const Index = () => {
   }
 
   const { isLoaded, rpData, nav, gates } = useGetStaticData();
-  const { events, speakerSection, projectSection, sponsors } = rpData;
+  const { events, faqSection, speakerSection, projectSection, sponsors } = rpData;
 
   return (
     <>
@@ -108,9 +109,9 @@ const Index = () => {
                 <Events events={events} />
               </Gate>
             </Element>*/}
-            {/* <Element name="faq">
+            <Element name="faq">
               <FAQ faqData={faqSection} />
-            </Element> */}
+            </Element>
             {/*<Element name="sponsor-section">
               <SponsorSection sponsors={sponsors} />
             </Element>*/}
