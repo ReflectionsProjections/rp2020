@@ -62,11 +62,6 @@ const FAQ = ({ faqData: { sections } }) => {
                   >
                     R|P Symposium
                   </Dropdown.Item>
-                  <Dropdown.Item
-                    onClick={() => setCurrSection('Gas Reimbursement')}
-                  >
-                    Gas Reimbursement
-                  </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>
