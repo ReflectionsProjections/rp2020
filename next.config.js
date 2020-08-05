@@ -22,6 +22,7 @@ module.exports = (phase, { defaultConfig }) => {
         //'/timeline': { page: '/timeline' },
         '/sponsor': { page: '/sponsor' },
         '/startup': { page: '/startup' },
+        '/register': {page: '/register'},
         //'/register': { page: '/register' },
         //'/resume': { page: '/resume' },
         //'/volunteer': { page: '/volunteer' },
