@@ -4,4 +4,5 @@ module.exports = routes()
   .add('index')
   .add('timeline')
   .add('speaker', '/speaker/:name')
-  .add('dashboard');
+  .add('dashboard')
+  .add('register');

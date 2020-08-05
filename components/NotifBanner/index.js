@@ -17,7 +17,9 @@ const NotifBanner = () => {
         <div className={styles.notifContainer}>
             <br />
             <h6 className={styles.line1}>Reflections | Projections 2020 will make history as our first ever virtual conference.</h6>
-            <h6 className={styles.line2}>Read more about our decision to go virtual below.</h6>
+            <h6 className={styles.line2}>Read more about our decision to go virtual below. To register, click 
+              <a href="/register"> here.</a>
+            </h6>
         </div>      
     </div>  
     </>
