@@ -2,8 +2,8 @@ import React from 'react';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
-class Registration extends React.Component {
-    render() {
+const Register = () => {
+    if (process.browser) {
         return (
             <Formik
                 initialValues={{
@@ -109,7 +109,9 @@ class Registration extends React.Component {
                 )}
             </Formik>
         )
-    }
-}
+      }
+      return null; 
+        
+};
 
-export { Registration };
+export default Register;
