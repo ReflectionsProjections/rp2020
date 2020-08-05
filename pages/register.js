@@ -61,6 +61,16 @@ const Register = () => {
                             <ErrorMessage name="age" component="div" className="invalid-feedback" />
                         </div>
                         <div class="form-group col">
+                            <label>Gender</label>
+                            <Field name="gender" as="select" className={'form-control' + (errors.title && touched.title ? ' is-invalid' : '')}>
+                                <option value="Female">Female</option> {/*TODO: add type in if 'other*/}
+                                <option value="Male">Male</option>
+                                <option value="Nonbinary">Nonbinary</option>
+                                <option value="Other">Other</option>
+                            </Field>
+                            <ErrorMessage name="major" component="div" className="invalid-feedback" />
+                        </div>
+                        <div class="form-group col">
                             <label>Graduation Year</label>
                             <Field name="graduation_year" as="select" className={'form-control' + (errors.title && touched.title ? ' is-invalid' : '')}>
                                 <option value="2018">2018</option>
@@ -84,6 +94,17 @@ const Register = () => {
                             </Field>
                             <ErrorMessage name="school" component="div" className="invalid-feedback" />
                         </div>
+                        <div class="form-group col">
+                            <label>Major</label>
+                            <Field name="major" as="select" className={'form-control' + (errors.title && touched.title ? ' is-invalid' : '')}>
+                                <option value="CS">Computer Science</option> {/*TODO: add more majors*/}
+                                <option value="Other">Other</option>
+                                <option value="NA">N/A</option>
+                            </Field>
+                            <ErrorMessage name="major" component="div" className="invalid-feedback" />
+                        </div>
+                        {/*TODO: interests checkbox, prior attendance checkbox, skills? rpknowledge? createdat, updatedat*/}
+
                         <div className="form-row">
                             <div className="form-group col">
                                 <label htmlFor="password">Password</label>
