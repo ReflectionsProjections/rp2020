@@ -1,6 +1,6 @@
 import React from 'react';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
-import Button from 'react-bootstrap/Button';
+import { Button } from 'react-bootstrap';
 import * as Yup from 'yup';
 import styles from './register.scss';
 
