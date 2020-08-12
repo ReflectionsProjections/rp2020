@@ -1,0 +1,42 @@
+.backdrop {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    background: url('/static/assets/triangles.png') no-repeat
+      center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    width: 1920px;
+    height: 1080px;
+  }
+  
+.form {
+    color: white;
+    font-family: 'Roboto Slab', sans-serif;
+    text-align: center;
+}
+
+.btn {
+    color: white;
+    border: none;
+    background-color: #0cbabb;
+    border-color: #0cbabb;
+    height: 2.5em;
+    text-align: center;
+    line-height: 0 !important;
+    margin: 5px;
+    border-radius: 4px;
+  }
+  .btnRegisterText {
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+  .a:hover {
+    color: #ffffff;
+    background-color: red;
+  }
+  
