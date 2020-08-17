@@ -57,15 +57,33 @@ class Layout extends Component {
             href="/static/assets/icons/apple-icon-152x152.png"
           />
           <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/static/assets/icons/apple-icon-180x180.png"
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="/static/assets/icons/android-icon-192x192.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="/static/assets/icons/favicon-96x96.png"
+          />*/}
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="512x512"
+            href="/static/assets/icons/android-chrome-512x512.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="192x192"
-            href="/static/assets/icons/android-icon-192x192.png"
+            href="/static/assets/icons/android-chrome-192x192.png"
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/static/assets/icons/apple-touch-icon.png"
           />
           <link
             rel="icon"
@@ -76,15 +94,9 @@ class Layout extends Component {
           <link
             rel="icon"
             type="image/png"
-            sizes="96x96"
-            href="/static/assets/icons/favicon-96x96.png"
-          />
-          <link
-            rel="icon"
-            type="image/png"
             sizes="16x16"
             href="/static/assets/icons/favicon-16x16.png"
-          /> */}
+          />
           <link rel="manifest" href="/static/assets/icons/manifest.json" />
           <link
             rel="stylesheet"

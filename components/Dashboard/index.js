@@ -60,7 +60,7 @@ export default class Dashboard extends Component {
           <Col className={styles.logoColumn}>
             <Image
               className={styles.rpLogo}
-              src="../../static/assets/2019logo.svg"
+              src="../../static/assets/2020logo.svg"
             />
           </Col>
           <Col lg={4}>

@@ -13,7 +13,7 @@ const Speaker = ({ speakers }) => {
   return (
     <Section className="speaker-section">
       <Section.Header>
-        <Section.Title>Previous Speakers</Section.Title>
+        <Section.Title>Speakers</Section.Title>
       </Section.Header>
       <Section.Body>
         <Container>
@@ -24,7 +24,7 @@ const Speaker = ({ speakers }) => {
               <>
                 {speakers.map(speaker => {
                   const { name, image, tagline, badge } = speaker;
-                  const imageURL = `${image}.png`;
+                  const imageURL = `${image}`;
                   return (
                     <Col
                       className={styles.speakerCardContainer}

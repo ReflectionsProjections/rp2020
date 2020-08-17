@@ -18,6 +18,9 @@ const NotifBanner = () => {
             <br />
             <h6 className={styles.line1}>Reflections | Projections 2020 will make history as our first ever virtual conference.</h6>
             <h6 className={styles.line2}>Read more about our decision to go virtual below.</h6>
+            <h6 className={styles.line2}>
+              Furthermore, we are now accepting applications<a href="https://forms.gle/GMuWSeC1xWULUnPN8"> here </a>for ACM Symposium Presenters!
+            </h6>
         </div>      
     </div>  
     </>

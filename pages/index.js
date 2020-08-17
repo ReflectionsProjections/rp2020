@@ -2,6 +2,9 @@ import React from 'react';
 import Head from 'next/head';
 import SVG from 'react-inlinesvg';
 import { Link, Element } from 'react-scroll';
+import { useState, useEffect } from 'react';
+
+import { fetchConferenceData, fetchNavData, fetchGates } from '../api/client';
 
 import Gate from '../UIComponents/Gate';
 import Layout from '../UIComponents/Layout';
@@ -24,10 +27,11 @@ import useGetStaticData from '../services/useGetStaticData';
 const Index = () => {
   let query = {};
   if (process.browser) {
-    query = getQueryObject(window); 
+    query = getQueryObject(window);
   }
 
   const { isLoaded, rpData, nav, gates } = useGetStaticData();
+
   const { events, faqSection, speakerSection, projectSection, sponsors } = rpData;
 
   return (
@@ -42,7 +46,7 @@ const Index = () => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://reflectionsprojections.org/" />
         <meta property="og:image" content="/static/assets/facebook2.png" />
-        <meta name="twitter:title" content="Reflections | Projections 2019" />
+        <meta name="twitter:title" content="Reflections | Projections 2020" />
         <meta
           name="twitter:description"
           content="Reflections | Projections is a tech conference organized and run by students at the University of Illinois at Urbana-Champaign."
@@ -96,10 +100,9 @@ const Index = () => {
                 <Agenda events={events} />
               </Gate>
             </Element> */}
-            {/*<Element name="speakers">
-              <Speaker speakers={speakerSection.list} />
-            </Element>*/}
-
+            <Element name="speakers">
+              {/*<Speaker speakers={speakerSection.list} />*/}
+            </Element>
             {/*<Element name="projects">
               <Project projects={projectSection.list} />
             </Element>*/}
@@ -110,7 +113,7 @@ const Index = () => {
               </Gate>
             </Element>*/}
             <Element name="faq">
-              <FAQ faqData={faqSection} />
+              {<FAQ faqData={faqSection} />}
             </Element>
             {/*<Element name="sponsor-section">
               <SponsorSection sponsors={sponsors} />

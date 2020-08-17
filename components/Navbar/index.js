@@ -28,9 +28,9 @@ const Nav = () => {
       <Navbar.Brand className={styles.leftNav}>
         <Link href={hrefObj}>
           <img
-            alt="Reflections Projections 2019 Logo"
+            alt="Reflections Projections 2020 Logo"
             className={styles.navbarLogo}
-            src="/static/assets/2019logo.svg"
+            src="/static/assets/2020logo.svg"
           />
         </Link>
       </Navbar.Brand>

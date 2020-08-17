@@ -1,13 +1,13 @@
 import axios from 'axios';
 
-const proxyurl = "https://cors-anywhere.herokuapp.com/"
+const proxyurl = ""
 
 const prefix =
   process.env.NODE_ENV === 'production'
     ? 'https://www.reflectionsprojections.org'
     : 'http://localhost:3000';
 export const fetchConferenceData = async () => {
-  const url = `${prefix}/static/data/rp2019.json`;
+  const url = `${prefix}/static/data/rp2020.json`;
   const api_call = await fetch(proxyurl + url)
   const data = await api_call.json();
   return data;
@@ -35,9 +35,9 @@ export const fetchRegistrationConfig = async () => {
 };
 
 
-/*
-export const fetchConferenceData = async () => {
-  const res = await axios.get(`${prefix}/static/data/rp2019.json`);
+
+/*export const fetchConferenceData = async () => {
+  const res = await axios.get(`${prefix}/static/data/rp2020.json`);
   return res.data;
 };
 
@@ -54,5 +54,4 @@ export const fetchGates = async () => {
 export const fetchRegistrationConfig = async () => {
   const res = await axios.get(`${prefix}/static/data/registration.json`);
   return res.data;
-};
-*/
+};*/
