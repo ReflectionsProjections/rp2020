@@ -11,14 +11,46 @@
     background-size: cover;
     -o-background-size: cover;
   }
+
+.whiteBox {
+    
+    background-color: white;
+    color: black;
+    width: 40%;
+    height: 95%;
+    border-radius: 10px;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
   
 .form {
     padding-top: 3%;
-    color: white;
+    color: grey;
     font-family: 'Roboto Slab', sans-serif;
     text-align: center;
 }
 
+.inputBox {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.inputBox:active {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+}
+
+.field {
+    padding-top: 1em;
+    
+}
 
 .btn {
     color: white;
@@ -30,13 +62,15 @@
     line-height: 0 !important;
     margin: 5px;
     border-radius: 4px;
-  }
-  .btnRegisterText {
+}
+
+.btnRegisterText {
     font-size: 0.8em;
     font-weight: 600;
-  }
-  .a:hover {
+}
+
+.a:hover {
     color: #ffffff;
     background-color: red;
-  }
+}
   

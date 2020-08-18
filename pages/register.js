@@ -8,6 +8,7 @@ const Register = () => {
     if (process.browser) {
         return (
             <div className={styles.backdrop}>
+                <div className={styles.whiteBox}>
                 <Formik
                     initialValues={{
                         firstName: '',
@@ -39,29 +40,27 @@ const Register = () => {
                 >
                     {({ errors, status, touched }) => (
                         <Form className={styles.form}>
-                            <div className="form-group col-5">
-                                <label htmlFor="firstName">First Name</label> <br />
-                                <Field name="firstName" type="text" className={'form-control' + (errors.firstName && touched.firstName ? ' is-invalid' : '')} />
+                            <h3>Reflections|Projections 2020 Registration</h3>
+                            <div className={styles.field}>
+                                <Field name="firstName" placeholder="First Name" type="text" className={styles.inputBox + ' form-control' + (errors.firstName && touched.firstName ? ' is-invalid' : '')} />
                                 <ErrorMessage name="firstName" component="div" className="invalid-feedback" />
                             </div>
-                            <div className="form-group col-5">
-                                <label htmlFor="lastName">Last Name</label> <br />
-                                <Field name="lastName" type="text" className={'form-control' + (errors.lastName && touched.lastName ? ' is-invalid' : '')} />
+                            <div className={styles.field}>
+                                <Field name="lastName" placeholder="Last Name" type="text" className={styles.inputBox + ' form-control' + (errors.lastName && touched.lastName ? ' is-invalid' : '')} />
                                 <ErrorMessage name="lastName" component="div" className="invalid-feedback" />
                             </div>
-                            <div className="form-group">
-                                <label htmlFor="email">Email</label> <br />
-                                <Field name="email" type="text" className={'form-control' + (errors.email && touched.email ? ' is-invalid' : '')} />
+                            <div className={styles.field}>
+                                <Field name="email" placeholder="Email" type="text" className={styles.inputBox + ' form-control' + (errors.email && touched.email ? ' is-invalid' : '')} />
                                 <ErrorMessage name="email" component="div" className="invalid-feedback" />
                             </div>
-                            <div className="form-group">
-                                <label htmlFor="age">Age</label> <br />
-                                <Field name="age" type="text" className={'form-control' + (errors.email && touched.email ? ' is-invalid' : '')} />
+                            <div className={styles.field}>
+                                <Field name="age" placeholder="Age" type="text" className={styles.inputBox + ' form-control' + (errors.email && touched.email ? ' is-invalid' : '')} />
                                 <ErrorMessage name="age" component="div" className="invalid-feedback" />
                             </div>
-                            <div class="form-group col">
+                            <div className={styles.field}>
                                 <label>Gender</label> <br />
-                                <Field name="gender" as="select" className={'form-control' + (errors.title && touched.title ? ' is-invalid' : '')}>
+                                <Field name="gender" placeholder="Gender" as="select" className={styles.inputBox + ' form-control' + (errors.title && touched.title ? ' is-invalid' : '')}>
+                                    <option value=""></option>
                                     <option value="Female">Female</option> {/*TODO: add type in if 'other*/}
                                     <option value="Male">Male</option>
                                     <option value="Nonbinary">Nonbinary</option>
@@ -69,9 +68,9 @@ const Register = () => {
                                 </Field>
                                 <ErrorMessage name="major" component="div" className="invalid-feedback" />
                             </div>
-                            <div class="form-group col">
+                            <div className={styles.field}>
                                 <label>Graduation Year</label> <br />
-                                <Field name="graduation_year" as="select" className={'form-control' + (errors.title && touched.title ? ' is-invalid' : '')}>
+                                <Field name="graduation_year" placeholder="Graduation Year" as="select" className={styles.inputBox + ' form-control' + (errors.title && touched.title ? ' is-invalid' : '')}>
                                     <option value=""></option>
                                     <option value="2018">2018</option>
                                     <option value="2019">2019</option>
@@ -85,18 +84,20 @@ const Register = () => {
                                 </Field>
                                 <ErrorMessage name="graduation_year" component="div" className="invalid-feedback" />
                             </div>
-                            <div class="form-group col">
+                            <div className={styles.field}>
                                 <label>School</label> <br />
                                 <Field name="school" as="select" className={'form-control' + (errors.title && touched.title ? ' is-invalid' : '')}>
+                                    <option value=""></option>
                                     <option value="UIUC">University of Illinois at Urbana-Champaign</option>
                                     <option value="Other">Other</option>
                                     <option value="NA">N/A</option>
                                 </Field>
                                 <ErrorMessage name="school" component="div" className="invalid-feedback" />
                             </div>
-                            <div class="form-group col">
+                            <div className={styles.field}>
                                 <label>Major</label> <br />
                                 <Field name="major" as="select" className={'form-control' + (errors.title && touched.title ? ' is-invalid' : '')}>
+                                    <option value=""></option>
                                     <option value="CS">Computer Science</option> {/*TODO: add more majors*/}
                                     <option value="Other">Other</option>
                                     <option value="NA">N/A</option>
@@ -105,17 +106,17 @@ const Register = () => {
                             </div>
                             {/*TODO: interests checkbox, prior attendance checkbox, skills? rpknowledge? createdat, updatedat*/}
 
-                            <div className="form-group form-check">
-                                <Field type="checkbox" name="acceptTerms" className={'form-check-input ' + (errors.acceptTerms && touched.acceptTerms ? ' is-invalid' : '')} />
-                                <label htmlFor="acceptTerms" className="form-check-label">Accept Terms & Conditions</label>
+                            <div className={styles.field}>
+                                <label htmlFor="acceptTerms" className="form-check-label">
+                                    <Field type="checkbox" name="acceptTerms" className={'form-check-input ' + (errors.acceptTerms && touched.acceptTerms ? ' is-invalid' : '')} />
+                                    Accept Terms & Conditions
+                                </label>
                                 <ErrorMessage name="acceptTerms" component="div" className="invalid-feedback" />
                             </div>
                             <div className="form-group">
                                 <a
                                     className={styles.a}
                                     href="/register"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
                                 >
                                     <Button className={styles.btn}>
                                         <div className={`align-self-middle ${styles.btnRegisterText}`}>
@@ -127,8 +128,6 @@ const Register = () => {
                                 <a
                                     className={styles.a}
                                     href="/register"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
                                 >
                                     <Button className={styles.btn}>
                                         <div className={`align-self-middle ${styles.btnRegisterText}`}>
@@ -140,6 +139,7 @@ const Register = () => {
                         </Form>
                     )}
                 </Formik>
+                </div>
             </div>
         )
       }
