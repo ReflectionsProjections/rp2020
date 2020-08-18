@@ -97,7 +97,7 @@ class Layout extends Component {
             sizes="16x16"
             href="/static/assets/icons/favicon-16x16.png"
           />
-          <link rel="manifest" href="/static/assets/icons/manifest.json" />
+          <link rel="manifest" href="/static/assets/icons/site.webmanifest" />
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"

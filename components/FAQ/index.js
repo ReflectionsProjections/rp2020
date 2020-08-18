@@ -57,14 +57,10 @@ const FAQ = ({ faqData: { sections } }) => {
                   <Dropdown.Item onClick={() => setCurrSection('PuzzleBang')}>
                     PuzzleBang
                   </Dropdown.Item>
-                  <Dropdown.Item
-                    onClick={() => setCurrSection('R|P Symposium for Presenters')}
-                  >
+                  <Dropdown.Item onClick={() => setCurrSection('R|P Symposium for Presenters')}>
                     R|P Symposium for Presenters
                   </Dropdown.Item>
-                  <Dropdown.Item
-                    onClick={() => setCurrSection('R|P Symposium for Schools')}
-                  >
+                  <Dropdown.Item onClick={() => setCurrSection('R|P Symposium for Schools')}>
                     R|P Symposium for Schools
                   </Dropdown.Item>
                 </Dropdown.Menu>

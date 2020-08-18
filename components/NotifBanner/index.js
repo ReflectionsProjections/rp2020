@@ -21,6 +21,7 @@ const NotifBanner = () => {
             <h6 className={styles.line2}>
               Furthermore, we are now accepting applications<a href="https://forms.gle/GMuWSeC1xWULUnPN8"> here </a>for ACM Symposium Presenters!
             </h6>
+            <br />
         </div>      
     </div>  
     </>

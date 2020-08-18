@@ -89,9 +89,9 @@ const Index = () => {
         </main>
         {isLoaded && (
           <>
-            {/*<Element>
+            {<Element>
               <Nav format={nav.index} />
-            </Element>*/}
+            </Element>}
             <Element name="about">
               <About />
             </Element>
@@ -101,7 +101,7 @@ const Index = () => {
               </Gate>
             </Element> */}
             <Element name="speakers">
-              {/*<Speaker speakers={speakerSection.list} />*/}
+              {<Speaker speakers={speakerSection.list} />}
             </Element>
             {/*<Element name="projects">
               <Project projects={projectSection.list} />

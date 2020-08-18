@@ -5,7 +5,7 @@ const proxyurl = ""
 const prefix =
   process.env.NODE_ENV === 'production'
     ? 'https://www.reflectionsprojections.org'
-    : 'http://localhost:3000';
+    : 'http://localhost:3000';  
 export const fetchConferenceData = async () => {
   const url = `${prefix}/static/data/rp2020.json`;
   const api_call = await fetch(proxyurl + url)
