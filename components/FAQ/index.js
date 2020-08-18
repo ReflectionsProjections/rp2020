@@ -58,9 +58,14 @@ const FAQ = ({ faqData: { sections } }) => {
                     PuzzleBang
                   </Dropdown.Item>
                   <Dropdown.Item
-                    onClick={() => setCurrSection('R|P Symposium')}
+                    onClick={() => setCurrSection('R|P Symposium for Presenters')}
                   >
-                    R|P Symposium
+                    R|P Symposium for Presenters
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    onClick={() => setCurrSection('R|P Symposium for Schools')}
+                  >
+                    R|P Symposium for Schools
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
