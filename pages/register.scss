@@ -26,12 +26,12 @@
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+
+    overflow: auto;
 }
   
 .form {
     padding-top: 3%;
-    color: grey;
-    font-family: 'Roboto Slab', sans-serif;
     text-align: center;
 }
 
@@ -39,13 +39,16 @@
     background: transparent;
     border: none;
     border-bottom: 1px solid grey;
+    width: 50% !important; 
 }
 
-.inputBox:active {
+.inputBox:focus {
     background: transparent;
     border: none;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #000000;
+    outline: none;
 }
+
 
 .field {
     padding-top: 1em;
