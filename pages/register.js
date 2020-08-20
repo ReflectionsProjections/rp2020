@@ -147,9 +147,13 @@ const Register = () => {
                         </Col>
                     </Form.Group>
 
-                    {/* <Form.Group>
-                        <Form.File id="resumeFile" label="Resume" />
-                    </Form.Group> */}
+                    <Form.Group>
+                        <Form.Control
+                            id="fileUpload"
+                            type="file"
+                            accept=".pdf"
+                        />
+                    </Form.Group> 
 
                     <Form.Group as={Row}>
                         <Col sm={{ span: 10, offset: 2 }}>
