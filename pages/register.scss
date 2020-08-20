@@ -42,6 +42,10 @@
     width: 50% !important; 
 }
 
+ErrorMessage {
+    color: red !important;
+}
+
 .inputBox:focus {
     background: transparent;
     border: none;

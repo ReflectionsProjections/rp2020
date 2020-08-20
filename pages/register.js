@@ -22,6 +22,10 @@ const Register = () => {
                         graduationYear: '',
                         school: '',
                         major: '',
+                        interest: '',
+                        skills: '',
+                        rpKnowledge: '',
+                        attendedBefore: false,
                         acceptTerms: false
                     }}
                     validationSchema={Yup.object().shape({
@@ -34,6 +38,22 @@ const Register = () => {
                         email: Yup.string()
                             .email('Email is invalid')
                             .required('Email is required'),
+                        age: Yup.string()
+                            .required('Age is required'),
+                        gender: Yup.string()
+                            .required('Age is required'),
+                        graduationYear: Yup.string()
+                            .required('Graduation Year is required'),
+                        school: Yup.string()
+                            .required('School is required'),
+                        major: Yup.string()
+                            .required('Major is required'),
+                        interest: Yup.string()
+                            .required('This field is required'),
+                        skills: Yup.string()
+                            .required('This field is required'),
+                        rpKnowledge: Yup.string()
+                            .required('This field is required'),
                         acceptTerms: Yup.bool()
                             .oneOf([true], 'You must accept the terms and conditions.')
                     })}
@@ -49,7 +69,7 @@ const Register = () => {
                             <Section.Body>
                                 <div className={styles.field}>
                                     <Field name="firstName" placeholder="First Name" type="text" className={styles.inputBox + ' form-control' + (errors.firstName && touched.firstName ? ' is-invalid' : '')} />
-                                    <ErrorMessage name="firstName" component="div" className="invalid-feedback" />
+                                    <ErrorMessage name="firstName" component="div" className="invalid-feedback"/>
                                 </div>
                                 <div className={styles.field}>
                                     <Field name="lastName" placeholder="Last Name" type="text" className={styles.inputBox + ' form-control' + (errors.lastName && touched.lastName ? ' is-invalid' : '')} />
@@ -60,12 +80,12 @@ const Register = () => {
                                     <ErrorMessage name="email" component="div" className="invalid-feedback" />
                                 </div>
                                 <div className={styles.field}>
-                                    <Field name="age" placeholder="Age" type="text" className={styles.inputBox + ' form-control' + (errors.email && touched.email ? ' is-invalid' : '')} />
+                                    <Field name="age" placeholder="Age" type="text" className={styles.inputBox + ' form-control' + (errors.age && touched.email ? ' is-invalid' : '')} />
                                     <ErrorMessage name="age" component="div" className="invalid-feedback" />
                                 </div>
                                 <div className={styles.field}>
                                     <label>Gender</label> <br />
-                                    <Field name="gender" placeholder="Gender" as="select" className={styles.inputBox + ' form-control' + (errors.title && touched.title ? ' is-invalid' : '')}>
+                                    <Field name="gender" placeholder="Gender" as="select" className={styles.inputBox + ' form-control' + (errors.gender ? ' is-invalid' : '')}>
                                         <option value=""></option>
                                         <option value="Female">Female</option> {/*TODO: add type in if 'other*/}
                                         <option value="Male">Male</option>
@@ -76,7 +96,7 @@ const Register = () => {
                                 </div>
                                 <div className={styles.field}>
                                     <label>Graduation Year</label> <br />
-                                    <Field name="graduation_year" placeholder="Graduation Year" as="select" className={styles.inputBox + ' form-control' + (errors.title && touched.title ? ' is-invalid' : '')}>
+                                    <Field name="graduationYear" placeholder="Graduation Year" as="select" className={styles.inputBox + ' form-control' + (errors.graduationYear ? ' is-invalid' : '')}>
                                         <option value=""></option>
                                         <option value="2018">2018</option>
                                         <option value="2019">2019</option>
@@ -88,11 +108,11 @@ const Register = () => {
                                         <option value="2025">2025</option>
                                         <option value="2026">2026</option>
                                     </Field>
-                                    <ErrorMessage name="graduation_year" component="div" className="invalid-feedback" />
+                                    <ErrorMessage name="graduationYear" component="div" className="invalid-feedback" />
                                 </div>
                                 <div className={styles.field}>
                                     <label>School</label> <br />
-                                    <Field name="school" as="select" className={styles.inputBox + ' form-control' + (errors.title && touched.title ? ' is-invalid' : '')}>
+                                    <Field name="school" as="select" className={styles.inputBox + ' form-control' + (errors.school ? ' is-invalid' : '')}>
                                         <option value=""></option>
                                         <option value="UIUC">University of Illinois at Urbana-Champaign</option>
                                         <option value="Other">Other</option>
@@ -102,7 +122,7 @@ const Register = () => {
                                 </div>
                                 <div className={styles.field}>
                                     <label>Major</label> <br />
-                                    <Field name="major" as="select" className={styles.inputBox + ' form-control' + (errors.title && touched.title ? ' is-invalid' : '')}>
+                                    <Field name="major" as="select" className={styles.inputBox + ' form-control' + (errors.major ? ' is-invalid' : '')}>
                                         <option value=""></option>
                                         <option value="CS">Computer Science</option> {/*TODO: add more majors*/}
                                         <option value="Other">Other</option>
@@ -112,7 +132,7 @@ const Register = () => {
                                 </div>
                                 <div className={styles.field}>
                                     <label>I'm looking for a</label> <br />
-                                    <Field name="interest" placeholder="Position" as="select" className={styles.inputBox + ' form-control' + (errors.title && touched.title ? ' is-invalid' : '')}>
+                                    <Field name="interest" placeholder="Position" as="select" className={styles.inputBox + ' form-control' + (errors.interest ? ' is-invalid' : '')}>
                                         <option value=""></option>
                                         <option value="Internship">Internship</option>
                                         <option value="Full-Time">Full-Time</option>
@@ -123,14 +143,15 @@ const Register = () => {
                                 </div>
                                 <div className={styles.field}>
                                     <label>What are your skills? </label> <br />
-                                    <Field name="skills" placeholder="" type="text" className={styles.inputBox + ' form-control' + (errors.firstName && touched.firstName ? ' is-invalid' : '')} />
+                                    <Field name="skills" placeholder="" type="text" className={styles.inputBox + ' form-control' + (errors.skills ? ' is-invalid' : '')} />
                                     <ErrorMessage name="skills" component="div" className="invalid-feedback" />
                                 </div>
                                 <div className={styles.field}>
                                     <label>How did you find out about Reflections Projections?</label> <br />
-                                    <Field name="rpKnowledge" placeholder="rpKnowledge" as="select" className={styles.inputBox + ' form-control' + (errors.title && touched.title ? ' is-invalid' : '')}>
+                                    {/* TODO: Replace with checkboxes */}
+                                    <Field name="rpKnowledge" placeholder="rpKnowledge" as="select" className={styles.inputBox + ' form-control' + (errors.rpKnowledge ? ' is-invalid' : '')}>
                                         <option value=""></option>
-                                        <option value="From word of mouth">Internship</option>
+                                        <option value="From word of mouth">From word of mouth</option>
                                         <option value="Full-Time">Full-Time</option>
                                         <option value="NotLooking">Not Looking</option>
                                         <option value="Other">Other</option>
