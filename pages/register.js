@@ -19,11 +19,11 @@ const Register = () => {
                         email: '',
                         age: '',
                         gender: '',
+                        race: '',
                         graduationYear: '',
                         school: '',
                         major: '',
                         interest: '',
-                        skills: '',
                         rpKnowledge: '',
                         attendedBefore: false
                     }}
@@ -39,6 +39,8 @@ const Register = () => {
                             .required('Email is required'),
                         age: Yup.string()
                             .required('Age is required'),
+                        race: Yup.string()
+                            .required('Race is required'),
                         gender: Yup.string()
                             .required('Gender is required'),
                         graduationYear: Yup.string()
@@ -48,8 +50,6 @@ const Register = () => {
                         major: Yup.string()
                             .required('Major is required'),
                         interest: Yup.string()
-                            .required('This field is required'),
-                        skills: Yup.string()
                             .required('This field is required'),
                         rpKnowledge: Yup.string()
                             .required('This field is required')
@@ -91,6 +91,18 @@ const Register = () => {
                                         <option value="Other">Other</option>
                                     </Field>
                                     <ErrorMessage name="gender" component="div" className="invalid-feedback" />
+                                </div>
+                                <div className={styles.field}>
+                                    <label>Race</label> <br />
+                                    <Field name="race" placeholder="Race" as="select" className={styles.inputBox + ' form-control' + (errors.gender ? ' is-invalid' : '')}>
+                                        <option value=""></option>
+                                        <option value="Asian">Asian</option> {/*TODO: add type in if 'other*/}
+                                        <option value="Native American">Native American</option>
+                                        <option value="Caucasian">Caucasian</option>
+                                        <option value="na">I'd rather not answer</option>
+                                        <option value="Other">Other</option>
+                                    </Field>
+                                    <ErrorMessage name="race" component="div" className="invalid-feedback" />
                                 </div>
                                 <div className={styles.field}>
                                     <label>Graduation Year</label> <br />
@@ -139,11 +151,11 @@ const Register = () => {
                                     </Field>
                                     <ErrorMessage name="interest" component="div" className="invalid-feedback" />
                                 </div>
-                                <div className={styles.field}>
+                                {/* <div className={styles.field}>
                                     <label>What are your skills? </label> <br />
                                     <Field name="skills" placeholder="" type="text" className={styles.inputBox + ' form-control' + (errors.skills ? ' is-invalid' : '')} />
                                     <ErrorMessage name="skills" component="div" className="invalid-feedback" />
-                                </div>
+                                </div> */}
                                 <div className={styles.field}>
                                     <label>How did you find out about Reflections Projections?</label> <br />
                                     {/* TODO: Replace with checkboxes */}
@@ -203,4 +215,4 @@ export default Register;
 
 
 // TODO
-// Resume upload, red text, remove scroll bar, 
+// Resume upload, red text, remove scroll bar, material-ui, form width
