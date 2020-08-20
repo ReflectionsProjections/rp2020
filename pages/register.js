@@ -25,8 +25,7 @@ const Register = () => {
                         interest: '',
                         skills: '',
                         rpKnowledge: '',
-                        attendedBefore: false,
-                        acceptTerms: false
+                        attendedBefore: false
                     }}
                     validationSchema={Yup.object().shape({
                         title: Yup.string()
@@ -53,9 +52,7 @@ const Register = () => {
                         skills: Yup.string()
                             .required('This field is required'),
                         rpKnowledge: Yup.string()
-                            .required('This field is required'),
-                        acceptTerms: Yup.bool()
-                            .oneOf([true], 'You must accept the terms and conditions.')
+                            .required('This field is required')
                     })}
                     onSubmit={fields => {
                         alert('SUCCESS!! :-)\n\n' + JSON.stringify(fields, null, 4))
@@ -90,6 +87,7 @@ const Register = () => {
                                         <option value="Female">Female</option> {/*TODO: add type in if 'other*/}
                                         <option value="Male">Male</option>
                                         <option value="Nonbinary">Nonbinary</option>
+                                        <option value="na">I'd rather not answer</option>
                                         <option value="Other">Other</option>
                                     </Field>
                                     <ErrorMessage name="gender" component="div" className="invalid-feedback" />
@@ -139,7 +137,7 @@ const Register = () => {
                                         <option value="NotLooking">Not Looking</option>
                                         <option value="Other">Other</option>
                                     </Field>
-                                    <ErrorMessage name="major" component="div" className="invalid-feedback" />
+                                    <ErrorMessage name="interest" component="div" className="invalid-feedback" />
                                 </div>
                                 <div className={styles.field}>
                                     <label>What are your skills? </label> <br />
@@ -156,7 +154,7 @@ const Register = () => {
                                         <option value="NotLooking">Not Looking</option>
                                         <option value="Other">Other</option>
                                     </Field>
-                                    <ErrorMessage name="major" component="div" className="invalid-feedback" />
+                                    <ErrorMessage name="rpKnowledge" component="div" className="invalid-feedback" />
                                 </div>
                                 <div className={styles.field}>
                                     <label htmlFor="attendedBefore" className="form-check-label">
@@ -165,13 +163,6 @@ const Register = () => {
                                     </label>
                                 </div>
 
-                                <div className={styles.field}>
-                                    <label htmlFor="acceptTerms" className="form-check-label">
-                                        <Field type="checkbox" name="acceptTerms" className={'form-check-input ' + (errors.acceptTerms && touched.acceptTerms ? ' is-invalid' : '')} />
-                                        Accept Terms & Conditions
-                                    </label>
-                                    <ErrorMessage name="acceptTerms" component="div" className="invalid-feedback" />
-                                </div>
                                 <div className="form-group">
                                     <a
                                         className={styles.a}
@@ -209,3 +200,7 @@ const Register = () => {
 };
 
 export default Register;
+
+
+// TODO
+// Resume upload, red text, remove scroll bar, 
