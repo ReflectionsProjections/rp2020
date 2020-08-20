@@ -41,7 +41,7 @@ const Register = () => {
                         age: Yup.string()
                             .required('Age is required'),
                         gender: Yup.string()
-                            .required('Age is required'),
+                            .required('Gender is required'),
                         graduationYear: Yup.string()
                             .required('Graduation Year is required'),
                         school: Yup.string()
@@ -92,7 +92,7 @@ const Register = () => {
                                         <option value="Nonbinary">Nonbinary</option>
                                         <option value="Other">Other</option>
                                     </Field>
-                                    <ErrorMessage name="major" component="div" className="invalid-feedback" />
+                                    <ErrorMessage name="gender" component="div" className="invalid-feedback" />
                                 </div>
                                 <div className={styles.field}>
                                     <label>Graduation Year</label> <br />
