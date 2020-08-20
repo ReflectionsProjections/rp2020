@@ -8,39 +8,39 @@ const Register = () => {
         <div className={styles.backdrop}>
             <div className={styles.whiteBox}>
                 <Form className={styles.form}>
-                    <Form.Group as={Row} controlId="formFirstName" className={styles.inputBox}>
-                        <Form.Label column sm={2}>First Name</Form.Label>
+                    <Form.Group as={Row} controlId="formFirstName">
+                        {/* <Form.Label column sm={2}>First Name</Form.Label> */}
                         <Col sm={10}>
-                            <Form.Control type="text" placeholder="First Name" />
+                            <Form.Control type="text" placeholder="First Name" className={styles.inputBox}/>
                         </Col>
                     </Form.Group>
 
                     <Form.Group as={Row} controlId="formLastName">
-                        <Form.Label column sm={2}>Last Name</Form.Label>
+                        {/* <Form.Label column sm={2}>Last Name</Form.Label> */}
                         <Col sm={10}>
-                            <Form.Control type="text" placeholder="Last Name" />
+                            <Form.Control type="text" placeholder="Last Name" className={styles.inputBox} />
                         </Col>
                     </Form.Group>
 
                     <Form.Group as={Row} controlId="formEmail">
-                        <Form.Label column sm={2}>Email</Form.Label>
+                        {/* <Form.Label column sm={2}>Email</Form.Label> */}
                         <Col sm={10}>
-                            <Form.Control type="email" placeholder="Email" />
+                            <Form.Control type="email" placeholder="Email" className={styles.inputBox} />
                         </Col>
                     </Form.Group>
 
                     <Form.Group as={Row} controlId="formAge">
-                        <Form.Label column sm={2}>Age</Form.Label>
+                        {/* <Form.Label column sm={2}>Age</Form.Label> */}
                         <Col sm={10}>
-                            <Form.Control type="number" placeholder="Age" />
+                            <Form.Control type="number" placeholder="Age" className={styles.inputBox} />
                         </Col>
                     </Form.Group>
 
                     <Form.Group controlId="formGender">
-                        <Form.Label column sm={2}>Gender</Form.Label>
+                        {/* <Form.Label column sm={2}>Gender</Form.Label> */}
                         <Col sm={10}>
-                            <Form.Control as="select">
-                                <option></option>
+                            <Form.Control as="select" className={styles.inputBox}>
+                                <option selected disabled>Gender</option>
                                 <option>Male</option>
                                 <option>Female</option>
                                 <option>Nonbinary</option>
@@ -51,10 +51,10 @@ const Register = () => {
                     </Form.Group>
 
                     <Form.Group controlId="formRace">
-                        <Form.Label column sm={2}>Race</Form.Label>
+                        {/* <Form.Label column sm={2}>Race</Form.Label> */}
                         <Col sm={10}>
-                            <Form.Control as="select">
-                                <option></option>
+                            <Form.Control as="select" className={styles.inputBox}>
+                                <option selected disabled>Race</option>
                                 <option>American Indian or Alaska Native</option>
                                 <option>Asian</option>
                                 <option>Black or African American</option>
@@ -68,10 +68,10 @@ const Register = () => {
                     </Form.Group>
 
                     <Form.Group controlId="formGraduation">
-                        <Form.Label column sm={2}>Graduation Year</Form.Label>
+                        {/* <Form.Label column sm={2}>Graduation Year</Form.Label> */}
                         <Col sm={10}>
-                            <Form.Control as="select">
-                                <option></option>
+                            <Form.Control as="select" className={styles.inputBox}>
+                                <option selected disabled>Graduation Year</option>
                                 <option>2018</option>
                                 <option>2019</option>
                                 <option>2020</option>
@@ -87,10 +87,10 @@ const Register = () => {
                     </Form.Group>
 
                     <Form.Group controlId="formSchool">
-                        <Form.Label column sm={2}>School</Form.Label>
+                        {/* <Form.Label column sm={2}>School</Form.Label> */}
                         <Col sm={10}>
-                            <Form.Control as="select">
-                                <option></option>
+                            <Form.Control as="select" className={styles.inputBox}>
+                                <option selected disabled>University</option>
                                 <option>University of Illinois at Urbana-Champaign</option>
                                 <option>Purdue</option>
                                 <option>University of Chicago</option>
@@ -103,10 +103,10 @@ const Register = () => {
                     </Form.Group>
 
                     <Form.Group controlId="formMajor">
-                        <Form.Label column sm={2}>Major</Form.Label>
+                        {/* <Form.Label column sm={2}>Major</Form.Label> */}
                         <Col sm={10}>
-                            <Form.Control as="select">
-                                <option></option>
+                            <Form.Control as="select" className={styles.inputBox}>
+                                <option selected disabled>Major</option>
                                 <option>Computer Science</option>
                                 <option>Electrical and Computer Engineering</option>
                                 <option>Informational Sciences</option>
@@ -117,10 +117,10 @@ const Register = () => {
                     </Form.Group>
 
                     <Form.Group controlId="formInterest">
-                        <Form.Label column sm={2}>I'm looking for a</Form.Label>
+                        {/* <Form.Label column sm={2}>I'm looking for a</Form.Label> */}
                         <Col sm={10}>
-                            <Form.Control as="select">
-                                <option></option>
+                            <Form.Control as="select" className={styles.inputBox}>
+                                <option selected disabled>I'm looking for a</option>
                                 <option>Internship</option>
                                 <option>Full-Time</option>
                                 <option>Other</option>
@@ -131,7 +131,7 @@ const Register = () => {
 
                     <Form.Group controlId="formRPKnowledge">
                         <Form.Label>How did you find out about Reflections Projections (select multiple)</Form.Label>
-                        <Form.Control as="select" multiple>
+                        <Form.Control as="select" multiple className={styles.inputBox}>
                             <option>Friends/Family</option>
                             <option>Email/Newsletter</option>
                             <option>Department</option>
