@@ -148,6 +148,7 @@ const RegistrationForm = () => {
                 </Form.Group>
 
                 <Form.Group>
+                    <Form.Label>Upload your resume</Form.Label>
                     <Form.Control
                         id="fileUpload"
                         type="file"
@@ -156,9 +157,9 @@ const RegistrationForm = () => {
                 </Form.Group> 
 
                 <Form.Group as={Row}>
-                    <Col sm={{ span: 50, offset: 2 }}>
-                        <Button type="submit">Register</Button>
-                        <Button type="reset">Reset</Button>
+                    <Col sm={{ span: 50, offset: 2 }} >
+                        <Button type="submit" style={{marginLeft:'2em'}}>Register</Button>
+                        <Button type="reset" style={{marginLeft:'2em'}}>Reset</Button>
                     </Col>
                     
                 </Form.Group>
