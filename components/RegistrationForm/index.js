@@ -16,12 +16,16 @@ const RegistrationForm = () => {
     const handleSubmit = (event) => {
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
-        event.preventDefault();
-        event.stopPropagation();
+            event.preventDefault();
+            event.stopPropagation();
         }
 
         setValidated(true);
     };
+
+    function resetValidation() {
+        setValidated(false);
+      }
 
     return (
         <Section>
@@ -90,7 +94,7 @@ const RegistrationForm = () => {
                             <Form.Label column sm={2}>Gender</Form.Label>
                             <Col sm={10}>
                                 <Form.Control required as="select">
-                                    <option selected disabled>Gender</option>
+                                    <option selected disabled value="">Gender</option>
                                     <option>Male</option>
                                     <option>Female</option>
                                     <option>Nonbinary</option>
@@ -106,7 +110,7 @@ const RegistrationForm = () => {
                         <Form.Group controlId="formRace">
                             {/* <Form.Label column sm={2}>Race</Form.Label> */}
                             <Form.Control required as="select">
-                                <option selected disabled>Race</option>
+                                <option selected disabled value="">Race</option>
                                 <option>American Indian or Alaska Native</option>
                                 <option>Asian</option>
                                 <option>Black or African American</option>
@@ -116,12 +120,15 @@ const RegistrationForm = () => {
                                 <option>Other</option>
                                 <option>I'd rather not reply</option>
                             </Form.Control>
+                            <Form.Control.Feedback type="invalid">
+                                Please provide a valid race.
+                            </Form.Control.Feedback>
                         </Form.Group>
 
                         <Form.Group controlId="formGraduation">
                             {/* <Form.Label column sm={2}>Graduation Year</Form.Label> */}
                             <Form.Control required as="select">
-                                <option selected disabled>Graduation Year</option>
+                                <option selected disabled value="">Graduation Year</option>
                                 <option>2018</option>
                                 <option>2019</option>
                                 <option>2020</option>
@@ -133,12 +140,15 @@ const RegistrationForm = () => {
                                 <option>2026</option>
                                 <option>Other</option>
                             </Form.Control>
+                            <Form.Control.Feedback type="invalid">
+                                Please provide a valid graduation year.
+                            </Form.Control.Feedback>
                         </Form.Group>
 
                         <Form.Group controlId="formSchool">
                             {/* <Form.Label column sm={2}>School</Form.Label> */}
                             <Form.Control required as="select">
-                                <option selected disabled>University</option>
+                                <option selected disabled value="">University</option>
                                 <option>University of Illinois at Urbana-Champaign</option>
                                 <option>Purdue</option>
                                 <option>University of Chicago</option>
@@ -147,33 +157,42 @@ const RegistrationForm = () => {
                                 <option>Other</option>
                                 <option>Not Applicable</option>
                             </Form.Control>
+                            <Form.Control.Feedback type="invalid">
+                                Please provide a valid school.
+                            </Form.Control.Feedback>
                         </Form.Group>
 
                         <Form.Group controlId="formMajor">
                             {/* <Form.Label column sm={2}>Major</Form.Label> */}
                             <Form.Control required as="select">
-                                <option selected disabled>Major</option>
+                                <option selected disabled value="">Major</option>
                                 <option>Computer Science</option>
                                 <option>Electrical and Computer Engineering</option>
                                 <option>Informational Sciences</option>
                                 <option>Other</option>
                                 <option>Not Applicable</option>
                             </Form.Control>
+                            <Form.Control.Feedback type="invalid">
+                                Please provide a valid major.
+                            </Form.Control.Feedback>
                         </Form.Group>
 
                         <Form.Group controlId="formInterest">
                             {/* <Form.Label column sm={2}>I'm looking for a</Form.Label> */}
                                 <Form.Control required as="select">
-                                    <option selected disabled>I'm looking for a</option>
+                                    <option selected disabled value="">I'm looking for a</option>
                                     <option>Internship</option>
                                     <option>Full-Time</option>
                                     <option>Other</option>
                                     <option>Currently not looking</option>
                                 </Form.Control>
+                                <Form.Control.Feedback type="invalid">
+                                    Please select an option.
+                                </Form.Control.Feedback>
                         </Form.Group>
 
                         <Form.Group controlId="formRPKnowledge">
-                            <Form.Label>How did you find out about Reflections Projections (select multiple)</Form.Label>
+                            <Form.Label>How did you find out about Reflections|Projections (select multiple)</Form.Label>
                             <Form.Control required as="select" multiple>
                                 <option>Friends/Family</option>
                                 <option>Email/Newsletter</option>
@@ -182,6 +201,9 @@ const RegistrationForm = () => {
                                 <option>Slack</option>
                                 <option>Previous Attendance</option>
                             </Form.Control>
+                            <Form.Control.Feedback type="invalid">
+                                Please select how you found out about Reflections|Projections.
+                            </Form.Control.Feedback>
                         </Form.Group>
                         
                         <Form.Group as={Row} controlId="formHorizontalAttendance">
@@ -202,7 +224,7 @@ const RegistrationForm = () => {
                         <Form.Group as={Row}>
                             <Col sm={{ span: 50, offset: 2 }} >
                                 <Button type="submit" style={{marginLeft:'2em'}}>Register</Button>
-                                <Button type="reset" style={{marginLeft:'2em'}}>Reset</Button>
+                                <Button type="reset" onClick={resetValidation} style={{marginLeft:'2em'}}>Reset</Button>
                             </Col>
                         </Form.Group>
                     </Form>
