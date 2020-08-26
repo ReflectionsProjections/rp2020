@@ -61,10 +61,10 @@ const Index = () => {
             <div className={`text-white text-center ${styles.leadContent}`}>
               <SVG
                 className={`img-fluid animated fadeIn ${styles.wordmark}`}
-                src="/static/assets/wordmarkblack.svg"
+                src="/static/assets/wordmarkwhite.svg"
               />
               <h2 className={`animated fadeIn ${styles.eventDate}`}>
-                Sept 21 - 26, 2020
+                Sept 21-26, 2020
               </h2>
               {<div className={`animated fadeIn ${styles.virtualUpdate}`}>
                 <NotifBanner />
@@ -115,9 +115,9 @@ const Index = () => {
             <Element name="faq">
               {<FAQ faqData={faqSection} />}
             </Element>
-            {/*<Element name="sponsor-section">
+            <Element name="sponsor-section">
               <SponsorSection sponsors={sponsors} />
-            </Element>*/}
+            </Element>
           </>
         )}
 

@@ -16,7 +16,7 @@ const SponsorGroup = ({ children }) => <div className="mb-5">{children}</div>;
 SponsorGroup.Title = ({ children }) => (
   <Row>
     <Col xs={12} className="text-center pb-3">
-      <h4 style={{ fontFamily: 'Roboto Slab' }}>{children}</h4>
+      <h4 style={{ fontFamily: 'Roboto Mono' }}>{children}</h4>
     </Col>
   </Row>
 );
@@ -109,7 +109,7 @@ const SponsorSection = ({ sponsors }) => {
   return (
     <Section>
       <Section.Title className={styles.sponsorTitle}>
-        Previous Sponsors
+        Sponsors
       </Section.Title>
       <Section.Body>
         <Container>
@@ -148,7 +148,7 @@ const SponsorSection = ({ sponsors }) => {
             </SponsorGroup.Body>
           </SponsorGroup>
           <SponsorGroup>
-            <SponsorGroup.Title></SponsorGroup.Title>
+            <SponsorGroup.Title>Diversity x Tech</SponsorGroup.Title>
             <SponsorGroup.Body>
               {sponsors.diversity && (
                 <>

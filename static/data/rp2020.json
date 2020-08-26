@@ -109,6 +109,13 @@
   "speakerSection": {
     "list": [
       {
+        "name": "Sri Shivananda",
+        "tagline": "SVP, CTO @ Paypal",
+        "badge": "Keynote Speaker",
+        "bio": "<p>Sri Shivananda plays a critical role in helping PayPal remain at the forefront of innovation as PayPal’s SVP, Chief Technology Officer (CTO). In his role, Sri oversees Technology Platforms & Experiences, leading a talented team responsible for the company’s secure, reliable and scalable global infrastructure and strategic core platform, the foundation that enables PayPal to deliver innovative products and services to consumers and merchants all over the world. Prior to his appointment as SVP and CTO, Sri was Vice President of Global Platform and Infrastructure, directing his team of technologists to drive massive growth at scale across a completely disruptive payments platform. Sri was responsible for all core technologies covering PayPal’s data centers, internal private cloud, online and offline data infrastructure, internal developer frameworks and tools, and various platform services. Before PayPal, Sri was with eBay for more than 15 years, working his way up from a software engineer to Vice President of Global Platform and Infrastructure. As VP, he was responsible for the company’s technology infrastructure that powered the eBay Inc. businesses, including eBay’s hundreds of millions of listings and PayPal’s millions of payments every day. Sri found his way to eBay via the acquisition of Deja.com. Sri is a geek at heart and his passion for learning is evident – he’s constantly pushing the boundaries of innovation, encouraging creative ideas and solutions that solve complex problems with technology.</p>",
+        "image": "/static/img/speakers/Headshot_KEYNOTE_SriShivananda.png"
+      },
+      {
         "name": "Ayanna Howard",
         "tagline": "Chair, School of Interactive Computing @ Georgia Tech & Founder and CTO @ Zyrobotics",
         "badge": "Keynote Speaker",
@@ -123,17 +130,10 @@
         "image": "/static/img/speakers/Headshot_KEYNOTE_MalloryKnodel.png"
       },
       {
-        "name": "Sri Shivananda",
-        "tagline": "SVP, CTO @ Paypal",
-        "badge": "Keynote Speaker",
-        "bio": "<p>Sri Shivananda plays a critical role in helping PayPal remain at the forefront of innovation as PayPal’s SVP, Chief Technology Officer (CTO). In his role, Sri oversees Technology Platforms & Experiences, leading a talented team responsible for the company’s secure, reliable and scalable global infrastructure and strategic core platform, the foundation that enables PayPal to deliver innovative products and services to consumers and merchants all over the world. Prior to his appointment as SVP and CTO, Sri was Vice President of Global Platform and Infrastructure, directing his team of technologists to drive massive growth at scale across a completely disruptive payments platform. Sri was responsible for all core technologies covering PayPal’s data centers, internal private cloud, online and offline data infrastructure, internal developer frameworks and tools, and various platform services. Before PayPal, Sri was with eBay for more than 15 years, working his way up from a software engineer to Vice President of Global Platform and Infrastructure. As VP, he was responsible for the company’s technology infrastructure that powered the eBay Inc. businesses, including eBay’s hundreds of millions of listings and PayPal’s millions of payments every day. Sri found his way to eBay via the acquisition of Deja.com. Sri is a geek at heart and his passion for learning is evident – he’s constantly pushing the boundaries of innovation, encouraging creative ideas and solutions that solve complex problems with technology.</p>",
-        "image": "/static/img/speakers/Headshot_KEYNOTE_SriShivananda.png"
-      },
-      {
-        "name": "Mark Ciaccio",
-        "tagline": "Senior Data Scientist @ AbbVie",
-        "bio": "<p>Dr. Ciaccio uses Artificial Intelligence and Machine Learning to help accelerate Pharmaceutical Development at AbbVie Biopharmaceutical company. He is a member of the AbbVie RAIDERS (Rapid A.I. Developers) that are dedicated to the implementation of A.I. throughout the company. Mark specifically focuses on Clinical studies, currently working to simulate clinical trial enrollment, write chatbots to help answer regulatory questions, and design machine learning models to implement wearable devices in the clinic.</p>",
-        "image": "/static/img/speakers/MarkCiaccio.jpg"
+        "name": "Saleema Amershi",
+        "tagline": "Principal Researcher @ Microsoft Research AI",
+        "bio": "<p><a target='_blank' href='https://saleemaamershi.com/'>Saleema Amershi</a> is a Principal Researcher at Microsoft Research AI and currently chairs Microsoft's Aether Working Group on Human-AI Interaction and Collaboration. Aether is Microsoft’s advisory committee on responsible and ethical AI. Saleema's research focuses on helping people create effective and responsible AI user experiences. Her recent work includes leading Microsoft's effort to develop general <a target='_blank' href='https://aka.ms/aiguidelines'>Guidelines for Human-AI Interaction</a>, a unified and validated set of guidelines to establish a foundation for human-AI interaction design. Throughout the years, she has developed tools and methodologies to support practitioners in designing and building AI-based products and services, including general purpose platforms and visualizations for data scientists building predictive models, and application specific techniques for supporting end-users interacting with AI-systems in their everyday lives.</p>",
+        "image": "/static/img/speakers/Headshot_SaleemaAmershi.png"
       },
       {
         "name": "Jessica Li",
@@ -160,10 +160,10 @@
         "image": "/static/img/speakers/Headshot_AngelaLungati.png"
       },
       {
-        "name": "Saleema Amershi",
-        "tagline": "Principal Researcher @ Microsoft Research AI",
-        "bio": "<p><a target='_blank' href='https://saleemaamershi.com/'>Saleema Amershi</a> is a Principal Researcher at Microsoft Research AI and currently chairs Microsoft's Aether Working Group on Human-AI Interaction and Collaboration. Aether is Microsoft’s advisory committee on responsible and ethical AI. Saleema's research focuses on helping people create effective and responsible AI user experiences. Her recent work includes leading Microsoft's effort to develop general <a target='_blank' href='https://aka.ms/aiguidelines'>Guidelines for Human-AI Interaction</a>, a unified and validated set of guidelines to establish a foundation for human-AI interaction design. Throughout the years, she has developed tools and methodologies to support practitioners in designing and building AI-based products and services, including general purpose platforms and visualizations for data scientists building predictive models, and application specific techniques for supporting end-users interacting with AI-systems in their everyday lives.</p>",
-        "image": "/static/img/speakers/Headshot_SaleemaAmershi.png"
+        "name": "Mark Ciaccio",
+        "tagline": "Senior Data Scientist @ AbbVie",
+        "bio": "<p>Dr. Ciaccio uses Artificial Intelligence and Machine Learning to help accelerate Pharmaceutical Development at AbbVie Biopharmaceutical company. He is a member of the AbbVie RAIDERS (Rapid A.I. Developers) that are dedicated to the implementation of A.I. throughout the company. Mark specifically focuses on Clinical studies, currently working to simulate clinical trial enrollment, write chatbots to help answer regulatory questions, and design machine learning models to implement wearable devices in the clinic.</p>",
+        "image": "/static/img/speakers/MarkCiaccio.jpg"
       },
       {
         "name": "Aditya Agashe",
@@ -211,10 +211,6 @@
       {
         "name": "General",
         "questions": [
-          {
-            "question": "What is Reflections | Projections?",
-            "answer": "Reflections | Projections is an annual technology conference held at the University of Illinois at Urbana-Champaign. It features two job fairs, a variety of speaker events, a puzzle competition, a 24-hour hackathon, and more! This is our 26th year running R|P, and we are excited to continue our tradition of connecting attendees with premier speakers, influencers, and companies!"
-          },
           {
             "question": "Is registration open?",
             "answer": "Not yet, but stay tuned for updates on our socials."
@@ -291,12 +287,12 @@
             "answer": "The R|P Symposium is the outreach arm of the event focused on bringing computing concepts in a simple manner to K-12 classrooms. The goal is to use college student presentations to inspire younger students, especially those with fewer opportunities to be exposed to CS, to consider computing as a field."
           },
           {
-            "question": "What is the motivation behind the R|P Symposium?",
-            "answer": "We stand by our commitment to serve the community and create a more diverse space within computing. By hosting symposium, we hope to support a more diverse generation of new computer scientists."
-          },
-          {
             "question": "How do I register to present?",
             "answer": "Fill out the form at acmrp.org/symposium and we'll be in touch with you soon!"
+          },
+          {
+            "question": "What is the motivation behind the R|P Symposium?",
+            "answer": "We stand by our commitment to serve the community and create a more diverse space within computing. By hosting symposium, we hope to support a more diverse generation of new computer scientists."
           },
           {
             "question": "Who can present?",
@@ -512,344 +508,6 @@
           "end": "09-18-2019 16:00"
         },
         "location": "Siebel Center Atrium"
-      },
-      "777c440b3590": {
-        "title": "Asana Social",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": false,
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-18-2019 18:00",
-          "end": "09-18-2019 19:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "5cb22e88c744": {
-        "title": "Amazon Social",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-18-2019 19:00",
-          "end": "09-18-2019 20:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "18b875f72e": {
-        "title": "Goldman Sachs Corporate Table",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-19-2019 10:00",
-          "end": "09-19-2019 16:00"
-        },
-        "location": "Siebel Center Atrium"
-      },
-      "35ca09b68f": {
-        "title": "Diversity × Tech Networking Lunch",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": false,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-19-2019 11:00",
-          "end": "09-19-2019 13:00"
-        },
-        "location": "Siebel Center Atrium"
-      },
-      "4f46f935c5": {
-        "title": "Two Sigma Tech Talk",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-19-2019 14:00",
-          "end": "09-19-2019 15:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "2363b1fbd8": {
-        "title": "Diversity × Tech Social, sponsored by Two Sigma",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": false,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-19-2019 15:00",
-          "end": "09-19-2019 16:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "6003a53d6f11": {
-        "title": "Diversity × Tech Speaker: Mindy Ferguson",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": false,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-19-2019 16:00",
-          "end": "09-19-2019 17:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "640457a2e663": {
-        "title": "Diversity × Tech Lean In, sponsored by Synchrony",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": false,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-19-2019 17:00",
-          "end": "09-19-2019 18:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "0549cc3dbd4e": {
-        "title": "Diversity × Tech Spotlight Speaker: Alexandria Butler",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": false,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-19-2019 19:30",
-          "end": "09-19-2019 20:30"
-        },
-        "location": "Siebel Center 1404"
-      },
-      "2f1f43278d35": {
-        "title": "Diversity × Tech Dinner, sponsored by Synchrony",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-19-2019 20:30",
-          "end": "09-19-2019 21:30"
-        },
-        "location": "Siebel Center Atrium"
-      },
-      "2abbd8f0a2ed": {
-        "title": "ITA Women-Only Coding Competition",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-20-2019 10:00",
-          "end": "09-20-2019 13:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "d154bc49d7ce": {
-        "title": "Speaker: Derrick Higgins",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-20-2019 15:00",
-          "end": "09-20-2019 16:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "7fd13f15eb37": {
-        "title": "Speaker: Christine Bakan",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-20-2019 16:00",
-          "end": "09-20-2019 17:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "d3d12ed819af": {
-        "title": "Speaker: Donald Kossmann",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-20-2019 17:00",
-          "end": "09-20-2019 18:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "7b7e3976caf1": {
-        "title": "Keynote Speaker: Alfred Spector",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-20-2019 18:00",
-          "end": "09-20-2019 19:00"
-        },
-        "location": "Siebel Center 1404"
-      },
-      "e89b92f4c0cd": {
-        "title": "Dinner, sponsored by Zillow",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-20-2019 19:00",
-          "end": "09-20-2019 20:00"
-        },
-        "location": "Siebel Center Atrium"
-      },
-      "a0c589060f03": {
-        "title": "MechMania: A 24 Hour AI Hackathon",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-20-2019 19:30",
-          "end": "09-21-2019 19:30"
-        },
-        "location": "Siebel Center 1404"
-      },
-      "234i290j2i34": {
-        "title": "Breakfast, sponsored by Bayer",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-21-2019 09:00",
-          "end": "09-21-2019 10:00"
-        },
-        "location": "Siebel Center Atrium"
-      },
-      "c41112d3ea62": {
-        "title": "Escape Room",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-21-2019 10:00",
-          "end": "09-21-2019 19:00"
-        },
-        "location": "Siebel Center 1302"
-      },
-      "5c5672ca4f6d": {
-        "title": "Speaker: Jennison Asuncion",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-21-2019 10:00",
-          "end": "09-21-2019 11:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "f1f22e577a86": {
-        "title": "Speaker: Jason Yosinski",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-21-2019 11:00",
-          "end": "09-21-2019 12:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "4e501602e922": {
-        "title": "Lunch, sponsored by Salesforce",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-21-2019 12:00",
-          "end": "09-21-2019 13:00"
-        },
-        "location": "Siebel Center Atrium"
-      },
-      "c4a7a9cc7f24": {
-        "title": "Speaker: Joydeep Ganguly",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-21-2019 13:00",
-          "end": "09-21-2019 14:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "47be8fde4a03": {
-        "title": "Speaker: Joe Jablonski",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-21-2019 14:00",
-          "end": "09-21-2019 15:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "h20cb7m8s8js": {
-        "title": "Dinner",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-21-2019 19:00",
-          "end": "09-21-2019 20:00"
-        },
-        "location": "Siebel Center Atrium"
-      },
-      "9u3232bh324s": {
-        "title": "Closing Ceremony",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CONFERENCE",
-        "tags": [],
-        "time": {
-          "start": "09-21-2019 20:30",
-          "end": "09-21-2019 21:00"
-        },
-        "location": "Siebel Center 1404"
       }
     },
     "allIds": [
@@ -863,96 +521,18 @@
       "6791f40bb3c7",
       "c53bf561a806",
       "3d1512ee196d",
-      "ff80e113164a",
-      "777c440b3590",
-      "5cb22e88c744",
-      "18b875f72e",
-      "35ca09b68f",
-      "4f46f935c5",
-      "2363b1fbd8",
-      "6003a53d6f11",
-      "640457a2e663",
-      "0549cc3dbd4e",
-      "2f1f43278d35",
-      "2abbd8f0a2ed",
-      "d154bc49d7ce",
-      "7fd13f15eb37",
-      "d3d12ed819af",
-      "7b7e3976caf1",
-      "e89b92f4c0cd",
-      "a0c589060f03",
-      "234i290j2i34",
-      "c41112d3ea62",
-      "5c5672ca4f6d",
-      "f1f22e577a86",
-      "4e501602e922",
-      "c4a7a9cc7f24",
-      "47be8fde4a03",
-      "h20cb7m8s8js",
-      "9u3232bh324s"
+      "ff80e113164a"
     ]
   },
   "sponsors": {
-    "allTiers": [
-      {
-        "name": "Checkbook",
-        "img": "/static/assets/img/sponsors/Checkbook.png",
-        "website": "https://angel.co/company/checkbook-io/jobs"
-      },
-      {
-        "name": "CityScholars",
-        "img": "/static/assets/img/sponsors/CityScholars.png",
-        "website": "https://cityscholars.engineering.illinois.edu/"
-      },
-      {
-        "name": "Cruise",
-        "img": "/static/assets/img/sponsors/Cruise.png",
-        "website": "https://getcruise.com/careers"
-      },
-      {
-        "name": "Ocient",
-        "img": "/static/assets/img/sponsors/Ocient.png",
-        "website": "http://www.ocient.com/careers"
-      },
-      {
-        "name": "Samsara",
-        "img": "/static/assets/img/sponsors/Samsara.png",
-        "website": "https://www.samsara.com/careers"
-      },
-      {
-        "name": "Sentry",
-        "img": "/static/assets/img/sponsors/Sentry.png",
-        "website": "https://sentry.io/careers/"
-      }
-    ],
+    "allTiers": [],
     "tier1": [],
-    "tier2": [
-      {
-        "name": "Bayer",
-        "img": "/static/assets/img/sponsors/Bayer.jpg",
-        "website": "https://career.bayer.com/en/career/"
-      },
-      {
-        "name": "Salesforce",
-        "img": "/static/assets/img/sponsors/Salesforce.png",
-        "website": "https://www.salesforce.com/company/careers/"
-      },
-      {
-        "name": "Zillow",
-        "img": "/static/assets/img/sponsors/Zillow.png",
-        "website": "https://www.zillow.com/careers/"
-      }
-    ],
+    "tier2": [],
     "tier3": [
       {
-        "name": "Capital One",
-        "img": "/static/assets/img/sponsors/CapitalOne.png",
-        "website": "https://www.capitalonecareers.com/"
-      },
-      {
-        "name": "Caterpillar",
-        "img": "/static/assets/img/sponsors/Caterpillar.jpg",
-        "website": "https://www.caterpillar.com/en/careers.html"
+        "name": "Aechelon Technology",
+        "img": "/static/assets/img/sponsors/AechelonTechnology.png",
+        "website": "http://aechelon.com/"
       },
       {
         "name": "Goldman Sachs",
@@ -960,148 +540,31 @@
         "website": "https://www.goldmansachs.com/careers/"
       },
       {
-        "name": "IMO",
-        "img": "/static/assets/img/sponsors/IMO.png",
-        "website": "https://www.imohealth.com/careers/"
+        "name": "Human Capital",
+        "img": "/static/assets/img/sponsors/HumanCapital.png",
+        "website": "https://human.capital/"
       },
       {
-        "name": "Microsoft",
-        "img": "/static/assets/img/sponsors/Microsoft.png",
-        "website": "https://careers.microsoft.com/us/en"
-      },
-      {
-        "name": "Robinhood",
-        "img": "/static/assets/img/sponsors/Robinhood.png",
-        "website": "https://careers.robinhood.com/"
+        "name": "IMC Trading",
+        "img": "/static/assets/img/sponsors/IMC.png",
+        "website": "https://www.imc.com/us/"
       },
       {
         "name": "Qualtrics",
-        "img": "/static/assets/img/sponsors/Qualtrics.png",
+        "img": "/static/assets/img/sponsors/Qualtrics.jpg",
         "website": "https://www.qualtrics.com/careers/"
-      },
-      {
-        "name": "Quora",
-        "img": "/static/assets/img/sponsors/Quora.png",
-        "website": "https://www.quora.com/careers"
-      },
-      {
-        "name": "tastytrade",
-        "img": "/static/assets/img/sponsors/TastyTrade.jpg",
-        "website": "https://recruiting.tastytrade.com/recruit/Portal.na"
-      },
-      {
-        "name": "West Monroe Partners",
-        "img": "/static/assets/img/sponsors/westmonroe.png",
-        "website": "https://www.acceptthechallenge.com/"
       }
     ],
-    "tier4": [
-      {
-        "name": "Aechelon Technology",
-        "img": "/static/assets/img/sponsors/AechelonTechnology.png",
-        "website": "http://aechelon.com/"
-      },
-      {
-        "name": "Affirm",
-        "img": "/static/assets/img/sponsors/Affirm.png",
-        "website": "https://www.affirm.com/careers"
-      },
-      {
-        "name": "Amazon",
-        "img": "/static/assets/img/sponsors/Amazon.png",
-        "website": "https://www.amazon.jobs/en-gb"
-      },
-      {
-        "name": "Asana",
-        "img": "/static/assets/img/sponsors/Asana.png",
-        "website": "https://asana.com/jobs"
-      },
-      {
-        "name": "Businessolver",
-        "img": "/static/assets/img/sponsors/Businessolver.jpg",
-        "website": "https://www.businessolver.com/who-we-are/careers"
-      },
-      {
-        "name": "Cloudflare",
-        "img": "/static/assets/img/sponsors/Cloudflare.png",
-        "website": "https://www.cloudflare.com/careers/"
-      },
-      {
-        "name": "Confluent",
-        "img": "/static/assets/img/sponsors/Confluent.png",
-        "website": "https://www.confluent.io/careers"
-      },
-      {
-        "name": "Facebook",
-        "img": "/static/assets/img/sponsors/facebook.png",
-        "website": "https://www.facebook.com/careers/jobs"
-      },
-      {
-        "name": "Forcepoint",
-        "img": "/static/assets/img/sponsors/Forcepoint.png",
-        "website": "https://www.forcepoint.com/company/careers"
-      },
-      {
-        "name": "Ford",
-        "img": "/static/assets/img/sponsors/Ford.jpeg",
-        "website": "https://corporate.ford.com/careers.html"
-      },
-      {
-        "name": "Google",
-        "img": "/static/assets/img/sponsors/Google.png",
-        "website": "https://careers.google.com/"
-      },
-      {
-        "name": "JPMorgan Chase",
-        "img": "/static/assets/img/sponsors/jpmorgan.jpg",
-        "website": "https://careers.jpmorgan.com/us/en/professionals"
-      },
-      {
-        "name": "Lyft",
-        "img": "/static/assets/img/sponsors/Lyft.png",
-        "website": "https://www.lyft.com/careers"
-      },
-      {
-        "name": "PwC",
-        "img": "/static/assets/img/sponsors/PWC.png",
-        "website": "https://www.pwc.com/us/en/careers.html"
-      },
-      {
-        "name": "Relativity",
-        "img": "/static/assets/img/sponsors/Relativity.jpg",
-        "website": "https://www.relativity.com/careers/available-positions/"
-      },
-      {
-        "name": "Roche",
-        "img": "/static/assets/img/sponsors/Roche.png",
-        "website": "https://www.roche.com/careers.htm"
-      },
-      {
-        "name": "Sandia",
-        "img": "/static/assets/img/sponsors/Sandia.jpg",
-        "website": "https://www.sandia.gov/careers/"
-      },
-      {
-        "name": "Uber",
-        "img": "/static/assets/img/sponsors/uber.jpg",
-        "website": "https://www.uber.com/us/en/careers/"
-      }
-    ],
+    "tier4": [],
     "diversity": {
       "divTier1": [
         {
-          "name": "Synchrony",
-          "img": "/static/assets/img/sponsors/synchrony.jpg",
-          "website": "https://synchronycareers.com/jobs/"
+          "name": "Balsamiq",
+          "img": "/static/assets/img/sponsors/Balsamiq.png",
+          "website": ""
         }
       ],
-      "divTier2": [
-        {
-          "name": "Two Sigma",
-          "img": "/static/assets/img/sponsors/TwoSigma.jpg",
-          "website": "https://careers.twosigma.com/"
-        }
-      ]
+      "divTier2": []
     }
   }
 }
