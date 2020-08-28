@@ -1,10 +1,12 @@
+import React, {useEffect} from 'react';
+
 const API = 'https://api.hackillinois.org';
 
 function request(method, endpoint, body) {
   return fetch(API + endpoint, {
     method,
     headers: {
-      Authorization: sessionStorage.getItem('token'),
+      Authorization: window.sessionStorage.getItem('token'),
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(body),
@@ -17,12 +19,12 @@ function request(method, endpoint, body) {
 }
 
 export function isAuthenticated() {
-  return sessionStorage.getItem('token');
+  return window.sessionStorage.getItem('token');
 }
 
 export function authenticate(to) {
   if (process.env.REACT_APP_TOKEN) {
-    sessionStorage.setItem('token', process.env.REACT_APP_TOKEN);
+    window.sessionStorage.setItem('token', process.env.REACT_APP_TOKEN);
   } else {
     to = `${process.env.REACT_APP_URL}/auth/?to=${to}`;
     to = `${API}/auth/google/?redirect_uri=${to}`;
@@ -31,7 +33,7 @@ export function authenticate(to) {
 }
 
 export function getToken(code) {
-  return request('POST', '/auth/code/github/', { code })
+  return request('POST', '/auth/code/google/', { code })
     .then(res => res.token);
 }
 

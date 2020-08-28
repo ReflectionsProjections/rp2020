@@ -27,6 +27,7 @@ const RegistrationForm = () => {
         setValidated(false);
       }
 
+
     return (
         <Section>
             <Section.Header>
@@ -39,9 +40,9 @@ const RegistrationForm = () => {
                             <Form.Label column sm={2}>First Name</Form.Label>
                             <Col sm={10}>
                                 <Form.Control 
-                                  required
-                                  type="text" 
-                                  placeholder="First Name"
+                                    required
+                                    type="text" 
+                                    placeholder="First Name"
                                 />
                                 <Form.Control.Feedback type="invalid">
                                     Please provide a valid first name.
@@ -52,9 +53,9 @@ const RegistrationForm = () => {
                             <Form.Label column sm={2}>Last Name</Form.Label>
                             <Col sm={10}>
                                 <Form.Control 
-                                  required
-                                  type="text" 
-                                  placeholder="Last Name"
+                                    required
+                                    type="text" 
+                                    placeholder="Last Name"
                                 />
                                 <Form.Control.Feedback type="invalid">
                                     Please provide a valid last name.
@@ -66,9 +67,9 @@ const RegistrationForm = () => {
                             <Form.Label column sm={2}>Email</Form.Label>
                             <Col sm={10}>
                                 <Form.Control 
-                                  required
-                                  type="email" 
-                                  placeholder="Email"
+                                    required
+                                    type="email" 
+                                    placeholder="Email"
                                 />
                                 <Form.Control.Feedback type="invalid">
                                     Please provide a valid email.
@@ -80,9 +81,9 @@ const RegistrationForm = () => {
                             <Form.Label column sm={2}>Age</Form.Label>
                             <Col sm={10}>
                                 <Form.Control 
-                                  required
-                                  type="number" 
-                                  placeholder="Age"
+                                    required
+                                    type="number" 
+                                    placeholder="Age"
                                 />
                                 <Form.Control.Feedback type="invalid">
                                     Please provide a valid age.
@@ -232,6 +233,7 @@ const RegistrationForm = () => {
             </Section.Body>
         </Section>
     );
+    
 };
 
 export default RegistrationForm;
