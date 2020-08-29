@@ -6,7 +6,7 @@ function request(method, endpoint, body) {
   return fetch(API + endpoint, {
     method,
     headers: {
-      Authorization: window.sessionStorage.getItem('token'),
+      Authorization: window.sessionStorage.getItem('rptoken'),
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(body),
@@ -35,6 +35,30 @@ export function authenticate(to) {
 export function getToken(code) {
   return request('POST', '/auth/code/google/', { code })
     .then(res => res.token);
+}
+
+export function getRegistration(role) {
+  return request('GET', `/registration/${role}/`);
+}
+
+export function register(isEditing, role, registration) {
+  const method = isEditing ? 'PUT' : 'POST';
+  return request(method, `/registration/${role}/`, registration);
+}
+
+export function uploadFile(file, type) {
+  return request('GET', `/upload/${type}/upload/`)
+    .then(res => fetch(res[type], {
+      method: 'PUT',
+      headers: { 'Content-Type': file.type },
+      body: file,
+    }))
+    .then(res => {
+      if (res.ok) {
+        return res;
+      }
+      throw Error(res);
+    });
 }
 
 /*export function uploadFile(file, type) {
