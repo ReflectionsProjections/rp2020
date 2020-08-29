@@ -13,7 +13,7 @@ const NotifBanner = () => {
   return (
     <>
     <div className={styles.bannerContainer}>
-        <div className={styles.updateDate}>07/05 EVENT UPDATE</div>
+        <div className={styles.updateDate}>08/30 EVENT UPDATE</div>
         <div className={styles.notifContainer}>
             <br />
             <h6 className={styles.line1}>Reflections | Projections 2020 will make history as our first ever virtual conference.</h6>

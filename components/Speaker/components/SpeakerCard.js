@@ -24,7 +24,6 @@ const SpeakerCard = ({ name, cardImage, tagline, badge }) => {
   const badgeJSX = badge ? <Badge variant="primary">{badge}</Badge> : null;
 
   return (
-    <Link key={name} href={hrefObj}>
       <Card className={styles.speakerCard} key={name}>
         <Card.Img variant="top" src={cardImage} className={styles.cardImage} />
         <Card.Body>
@@ -36,7 +35,6 @@ const SpeakerCard = ({ name, cardImage, tagline, badge }) => {
           <Card.Text className={styles.speakerTagline}>{tagline}</Card.Text>
         </Card.Body>
       </Card>
-    </Link>
   );
 };
 

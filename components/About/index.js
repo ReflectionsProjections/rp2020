@@ -56,12 +56,6 @@ const About = () => (
               <p>
                 As a result of the novel coronavirus pandemic, we are moving the conference to a virtual format. We are excited about the opportunity to leverage this virtual format to make our talks and conference events more accessible to people throughout the global CS community.
               </p>
-              {/*<img
-                className="rounded"
-                width="100%"
-                src="/static/img/team.jpg"
-                alt="Reflections Projections 2019 Staff"
-              />*/}
             </div>
             {/* <Row>
               <Col className="pb-4" md={4}>

@@ -4,7 +4,7 @@ import { Element } from 'react-scroll';
 import Layout from '../UIComponents/Layout';
 import Footer from '../components/Footer';
 
-import { isAuthenticated, authenticate, getToken } from '../api/api';
+import { getToken } from '../api/api';
 
 import styles from './index.scss';
 import '../static/stylesheets/animations.scss';

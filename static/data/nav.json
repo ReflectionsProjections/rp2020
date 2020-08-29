@@ -11,21 +11,16 @@
         "label": "Speakers"
       },
       {
+        "name": "faq",
+        "label": "FAQs"
+      },
+      {
         "name": "sponsor-section",
         "label": "Sponsors"
       }
     ]
   },
   "speaker": {
-    "type": "BACK_HOME"
-  },
-  "timeline": {
-    "type": "BACK_HOME"
-  },
-  "events": {
-    "type": "BACK_HOME"
-  },
-  "challenge": {
     "type": "BACK_HOME"
   }
 }
