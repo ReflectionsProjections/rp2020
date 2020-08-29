@@ -387,141 +387,11 @@
           "end": "09-16-2019 16:00"
         },
         "location": "Siebel Center Atrium"
-      },
-      "y12n2189329": {
-        "title": "Checkbook.io Tech Talk",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": false,
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-16-2019 17:00",
-          "end": "09-16-2019 18:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "e79e85be3d": {
-        "title": "Asana Tech Talk",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": false,
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-16-2019 18:00",
-          "end": "09-16-2019 19:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "6756df0cc5": {
-        "title": "Salesforce Social",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-16-2019 19:00",
-          "end": "09-16-2019 20:00"
-        },
-        "location": "Joe's Brewery - 706 S 5th St, Champaign"
-      },
-      "483dc703ecdb": {
-        "title": "Google Tech Talk",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-16-2019 20:00",
-          "end": "09-16-2019 21:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "f15cd2f2600e": {
-        "title": "Startup Fair",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "hasPage": true,
-        "pageContent": "<div class='row'><div class='col'><img src='/static/startup-fair-map.jpg' class='img-fluid'/></div></div>",
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-17-2019 10:00",
-          "end": "09-17-2019 16:00"
-        },
-        "location": "Siebel Center Atrium"
-      },
-      "6791f40bb3c7": {
-        "title": "Quora Tech Talk",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": false,
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-17-2019 18:00",
-          "end": "09-17-2019 19:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "c53bf561a806": {
-        "title": "Aechelon Social",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-17-2019 19:00",
-          "end": "09-17-2019 20:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "3d1512ee196d": {
-        "title": "Microsoft Tech Talk",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-17-2019 20:00",
-          "end": "09-17-2019 21:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "ff80e113164a": {
-        "title": "Career Fair",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "hasPage": true,
-        "pageContent": "<div class='row'><div class='col'><img src='/static/career-fair-map.jpg' class='img-fluid'/></div></div>",
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-18-2019 10:00",
-          "end": "09-18-2019 16:00"
-        },
-        "location": "Siebel Center Atrium"
       }
     },
     "allIds": [
       "12nj3j55j31",
-      "5ad72c8753",
-      "y12n2189329",
-      "e79e85be3d",
-      "6756df0cc5",
-      "483dc703ecdb",
-      "f15cd2f2600e",
-      "6791f40bb3c7",
-      "c53bf561a806",
-      "3d1512ee196d",
-      "ff80e113164a"
+      "5ad72c8753"
     ]
   },
   "sponsors": {
@@ -561,7 +431,7 @@
         {
           "name": "Balsamiq",
           "img": "/static/assets/img/sponsors/Balsamiq.png",
-          "website": ""
+          "website": "https://balsamiq.com/"
         }
       ],
       "divTier2": []
