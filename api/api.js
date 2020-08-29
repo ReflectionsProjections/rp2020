@@ -19,14 +19,14 @@ function request(method, endpoint, body) {
 }
 
 export function isAuthenticated() {
-  return window.sessionStorage.getItem('token');
+  return sessionStorage.getItem('rptoken');
 }
 
 export function authenticate(to) {
   if (process.env.REACT_APP_TOKEN) {
-    window.sessionStorage.setItem('token', process.env.REACT_APP_TOKEN);
+    window.sessionStorage.setItem('rptoken', process.env.REACT_APP_TOKEN);
   } else {
-    to = `${process.env.REACT_APP_URL}/auth/?to=${to}`;
+    //to = `${process.env.REACT_APP_URL}/auth/?to=${to}`;
     to = `${API}/auth/google/?redirect_uri=${to}`;
   }
   window.location.replace(to);

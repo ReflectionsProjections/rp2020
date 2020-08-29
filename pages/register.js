@@ -1,7 +1,4 @@
-import React from "react";
-import { Form, Button, Row, Col } from "react-bootstrap"
-import Head from 'next/head';
-import SVG from 'react-inlinesvg';
+import React, { useEffect } from "react";
 import { Element } from 'react-scroll';
 
 import Layout from '../UIComponents/Layout';
@@ -13,26 +10,15 @@ import { isAuthenticated, authenticate } from '../api/api';
 import styles from './index.scss';
 import '../static/stylesheets/animations.scss';
 
-import { getQueryObject } from '../lib/path';
-import useGetStaticData from '../services/useGetStaticData';
-
 const Register = () => {
 
-    let query = {};
-    if (process.browser) {
-        query = getQueryObject(window); 
+  useEffect(() => {
+    if (!isAuthenticated()) {
+      authenticate('http://localhost:3000/auth')
     }
-
-    const { isLoaded, rpData, nav, gates } = useGetStaticData();
-    const { events, faqSection, speakerSection, projectSection, sponsors } = rpData;
-
-    if (isAuthenticated()) {
-      return (
-        <Layout>
-          <h1>hello</h1>
-        </Layout>
-      ); 
-    } else {
+  });
+    
+    {
       return (
           <>
         <Layout>
