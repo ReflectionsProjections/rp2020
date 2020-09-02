@@ -178,6 +178,12 @@
         "image": "/static/img/speakers/Headshot_JessicaLi.png"
       },
       {
+        "name": "Paulo Tanaka",
+        "tagline": "Software Engineer @ Facebook",
+        "bio": "<p></p>",
+        "image": "/static/img/speakers/Headshot_PauloTanaka.jpeg"
+      },
+      {
         "name": "Aditya Agashe",
         "tagline": "Product Manager @ Microsoft",
         "badge": "Swipe to Unlock Panel",
@@ -190,6 +196,20 @@
         "badge": "Swipe to Unlock Panel",
         "bio": "<p>Parth Detroja is a distinguished Product Manager and the Author of the bestselling technology strategy book, Swipe to Unlock. He has been featured in the Wall Street Journal, Forbes, Business Insider, Inc. and more. Parth is currently a Product Manager at Facebook where he leads social music product efforts such as adding music to stories on Facebook and Instagram. He has previously worked product management and growth roles at other top tech companies including Microsoft, Amazon, and IBM.</p>",
         "image": "/static/img/speakers/Headshot_PANEL_ParthDetroja.png"
+      },
+      {
+        "name": "Jon Bass",
+        "tagline": "CTO @ Sym",
+        "badge": "Breaking into Startups Panel",
+        "bio": "<p></p>",
+        "image": "/static/img/speakers/Headshot_PANEL_JonBass.jpeg"
+      },
+      {
+        "name": "Adam Kirsh",
+        "tagline": "Product Manager @ Sym",
+        "badge": "Breaking into Startups Panel",
+        "bio": "<p></p>",
+        "image": "/static/img/speakers/Headshot_PANEL_AdamKirsh.png"
       },
       {
         "name": "Jin Zhang",
