@@ -130,16 +130,22 @@
         "image": "/static/img/speakers/Headshot_KEYNOTE_MalloryKnodel.png"
       },
       {
+        "name": "Nick Sullivan",
+        "tagline": "Head of Research @ Cloudflare",
+        "bio": "<p></p>",
+        "image": "/static/img/speakers/Headshot_NickSullivan.jpg"
+      },
+      {
         "name": "Saleema Amershi",
         "tagline": "Principal Researcher @ Microsoft Research AI",
         "bio": "<p><a target='_blank' href='https://saleemaamershi.com/'>Saleema Amershi</a> is a Principal Researcher at Microsoft Research AI and currently chairs Microsoft's Aether Working Group on Human-AI Interaction and Collaboration. Aether is Microsoft’s advisory committee on responsible and ethical AI. Saleema's research focuses on helping people create effective and responsible AI user experiences. Her recent work includes leading Microsoft's effort to develop general <a target='_blank' href='https://aka.ms/aiguidelines'>Guidelines for Human-AI Interaction</a>, a unified and validated set of guidelines to establish a foundation for human-AI interaction design. Throughout the years, she has developed tools and methodologies to support practitioners in designing and building AI-based products and services, including general purpose platforms and visualizations for data scientists building predictive models, and application specific techniques for supporting end-users interacting with AI-systems in their everyday lives.</p>",
         "image": "/static/img/speakers/Headshot_SaleemaAmershi.png"
       },
       {
-        "name": "Jessica Li",
-        "tagline": "Venture Capitalist @ Soma Capital",
-        "bio": "<p>Jessica is an investor at Soma Capital (investments include Cruise, Rappi, Lambda School, Ironclad, Coda, Astranis) and head of content at Elpha (platform of 26K+ women in tech), Harvard in Tech, the Emerging VC Association, and Techstars Boston. She is a mentor with Alchemist, Techstars, Zane, and Loop and a venture scout with Gold Rush. She is one of Medium's Top VC Writers of 2020. Previously, she worked in VC with General Catalyst, Romulus Capital, Female Founders Fund, and Global Founders Capital; in startups with Morning Brew and Luxe (acquired by Volvo); and in investment banking at Morgan Stanley. She graduated with high honors from Harvard, where she completed her senior thesis with the 2016 Economics Nobel Laureate Oliver Hart. </p>",
-        "image": "/static/img/speakers/Headshot_JessicaLi.png"
+        "name": "Charith Mendis",
+        "tagline": "Incoming Assistant Professor @ UIUC",
+        "bio": "<p></p>",
+        "image": "/static/img/speakers/Headshot_CharithMendis.jpeg"
       },
       {
         "name": "Angela Hooker",
@@ -154,10 +160,22 @@
         "image": "/static/img/speakers/Headshot_AaronSaunders.jpg"
       },
       {
+        "name": "Yasyf Mohamedali",
+        "tagline": "CEO and Founder @ Sym",
+        "bio": "<p>Yasyf is the CEO and founder of Sym, a workflow automation platform that empowers teams to build perfect security and privacy controls. His last adventure was a healthcare startup: Karuna. Karuna builds software that automates common care management tasks. He recently finished his Master's and undergrad at MIT, exploring the intersection of Venture and CS while working in tandem with First Round to build the one-stop shop for first time founders raising seed rounds. He also supported student founders around MIT and Boston through his work with Dorm Room Fund. In the past, Yasyf spent time as the Chief Software Architect at Foxtrot (“a 21st century approach to last mile logistics”), an engineer at Facebook and Square, and a Managing Partner at Dorm Room Fund Boston.</p>",
+        "image": "/static/img/speakers/Headshot_YasyfMohamedali.jpeg"
+      },
+      {
         "name": "Angela Oduor Lungati",
         "tagline": "Executive Director @ Ushahidi",
         "bio": "<p>Angela Oduor Lungati is a technologist, community builder and an open source software advocate. She is passionate about building and using appropriate technology tools to create impact in lives of marginalised groups. With over 10 years experience, she currently serves as the Executive Director at Ushahidi, a global non-profit technology company that builds tools for democratising information, increasing transparency and lowering barriers for individuals to raise their voices. She previously served as the Director of Community Engagement, creating and managing programs for Ushahidi’s diverse global community. She is also a co-founder at AkiraChix, a non-profit organisation that nurtures generations of women who use technology to develop innovations and solutions for Africa.</p>",
         "image": "/static/img/speakers/Headshot_AngelaLungati.png"
+      },
+      {
+        "name": "Jessica Li",
+        "tagline": "Venture Capitalist @ Soma Capital",
+        "bio": "<p>Jessica is an investor at Soma Capital (investments include Cruise, Rappi, Lambda School, Ironclad, Coda, Astranis) and head of content at Elpha (platform of 26K+ women in tech), Harvard in Tech, the Emerging VC Association, and Techstars Boston. She is a mentor with Alchemist, Techstars, Zane, and Loop and a venture scout with Gold Rush. She is one of Medium's Top VC Writers of 2020. Previously, she worked in VC with General Catalyst, Romulus Capital, Female Founders Fund, and Global Founders Capital; in startups with Morning Brew and Luxe (acquired by Volvo); and in investment banking at Morgan Stanley. She graduated with high honors from Harvard, where she completed her senior thesis with the 2016 Economics Nobel Laureate Oliver Hart. </p>",
+        "image": "/static/img/speakers/Headshot_JessicaLi.png"
       },
       {
         "name": "Mark Ciaccio",
@@ -166,18 +184,45 @@
         "image": "/static/img/speakers/MarkCiaccio.jpg"
       },
       {
+        "name": "Paulo Tanaka",
+        "tagline": "Software Engineer @ Facebook",
+        "bio": "<p></p>",
+        "image": "/static/img/speakers/Headshot_PauloTanaka.jpeg"
+      },
+      {
         "name": "Aditya Agashe",
         "tagline": "Product Manager @ Microsoft",
-        "badge": "Panel",
+        "badge": "Swipe to Unlock Panel",
         "bio": "<p>Aditya Agashe is a prominent Product Manager and the Author of the bestselling technology strategy book, Swipe to Unlock. He has been featured in the Wall Street Journal, Forbes, Business Insider, Inc. and more. He works on Azure cloud growth team to build hyper-converged and hybrid features that help customers adopt cloud technologies. He is the host of Product Alliance, and has previously managed product and engineering teams as the founder of Belle Applications and Head of Product at Speare.</p>",
         "image": "/static/img/speakers/Headshot_PANEL_AdityaAgashe.png"
       },
       {
         "name": "Parth Detroja",
         "tagline": "Product Manager @ Facebook",
-        "badge": "Panel",
+        "badge": "Swipe to Unlock Panel",
         "bio": "<p>Parth Detroja is a distinguished Product Manager and the Author of the bestselling technology strategy book, Swipe to Unlock. He has been featured in the Wall Street Journal, Forbes, Business Insider, Inc. and more. Parth is currently a Product Manager at Facebook where he leads social music product efforts such as adding music to stories on Facebook and Instagram. He has previously worked product management and growth roles at other top tech companies including Microsoft, Amazon, and IBM.</p>",
         "image": "/static/img/speakers/Headshot_PANEL_ParthDetroja.png"
+      },
+      {
+        "name": "Jon Bass",
+        "tagline": "CTO @ Sym",
+        "badge": "Breaking into Startups Panel",
+        "bio": "<p></p>",
+        "image": "/static/img/speakers/Headshot_PANEL_JonBass.jpeg"
+      },
+      {
+        "name": "Adam Kirsh",
+        "tagline": "Product Manager @ Sym",
+        "badge": "Breaking into Startups Panel",
+        "bio": "<p></p>",
+        "image": "/static/img/speakers/Headshot_PANEL_AdamKirsh.png"
+      },
+      {
+        "name": "Jin Zhang",
+        "tagline": "Operations Associate @ Sym",
+        "badge": "Breaking into Startups Panel",
+        "bio": "<p></p>",
+        "image": "/static/img/speakers/Headshot_PANEL_JinZhang.jpeg"
       }
     ]
   },
@@ -387,141 +432,11 @@
           "end": "09-16-2019 16:00"
         },
         "location": "Siebel Center Atrium"
-      },
-      "y12n2189329": {
-        "title": "Checkbook.io Tech Talk",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": false,
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-16-2019 17:00",
-          "end": "09-16-2019 18:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "e79e85be3d": {
-        "title": "Asana Tech Talk",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": false,
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-16-2019 18:00",
-          "end": "09-16-2019 19:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "6756df0cc5": {
-        "title": "Salesforce Social",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-16-2019 19:00",
-          "end": "09-16-2019 20:00"
-        },
-        "location": "Joe's Brewery - 706 S 5th St, Champaign"
-      },
-      "483dc703ecdb": {
-        "title": "Google Tech Talk",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-16-2019 20:00",
-          "end": "09-16-2019 21:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "f15cd2f2600e": {
-        "title": "Startup Fair",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "hasPage": true,
-        "pageContent": "<div class='row'><div class='col'><img src='/static/startup-fair-map.jpg' class='img-fluid'/></div></div>",
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-17-2019 10:00",
-          "end": "09-17-2019 16:00"
-        },
-        "location": "Siebel Center Atrium"
-      },
-      "6791f40bb3c7": {
-        "title": "Quora Tech Talk",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": false,
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-17-2019 18:00",
-          "end": "09-17-2019 19:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "c53bf561a806": {
-        "title": "Aechelon Social",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-17-2019 19:00",
-          "end": "09-17-2019 20:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "3d1512ee196d": {
-        "title": "Microsoft Tech Talk",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-17-2019 20:00",
-          "end": "09-17-2019 21:00"
-        },
-        "location": "Siebel Center 2405"
-      },
-      "ff80e113164a": {
-        "title": "Career Fair",
-        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        "displayInAgenda": true,
-        "displayInEvents": true,
-        "hasPage": true,
-        "pageContent": "<div class='row'><div class='col'><img src='/static/career-fair-map.jpg' class='img-fluid'/></div></div>",
-        "type": "CORPORATE",
-        "tags": [],
-        "time": {
-          "start": "09-18-2019 10:00",
-          "end": "09-18-2019 16:00"
-        },
-        "location": "Siebel Center Atrium"
       }
     },
     "allIds": [
       "12nj3j55j31",
-      "5ad72c8753",
-      "y12n2189329",
-      "e79e85be3d",
-      "6756df0cc5",
-      "483dc703ecdb",
-      "f15cd2f2600e",
-      "6791f40bb3c7",
-      "c53bf561a806",
-      "3d1512ee196d",
-      "ff80e113164a"
+      "5ad72c8753"
     ]
   },
   "sponsors": {
@@ -561,7 +476,7 @@
         {
           "name": "Balsamiq",
           "img": "/static/assets/img/sponsors/Balsamiq.png",
-          "website": ""
+          "website": "https://balsamiq.com/"
         }
       ],
       "divTier2": []
