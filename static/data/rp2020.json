@@ -143,7 +143,7 @@
       },
       {
         "name": "Charith Mendis",
-        "tagline": "Visiting Faculty Researcher @ Google",
+        "tagline": "Incoming Assistant Professor @ UIUC",
         "bio": "<p></p>",
         "image": "/static/img/speakers/Headshot_CharithMendis.jpeg"
       },
@@ -160,22 +160,28 @@
         "image": "/static/img/speakers/Headshot_AaronSaunders.jpg"
       },
       {
+        "name": "Yasyf Mohamedali",
+        "tagline": "CEO and Founder @ Sym",
+        "bio": "<p>Yasyf is the CEO and founder of Sym, a workflow automation platform that empowers teams to build perfect security and privacy controls. His last adventure was a healthcare startup: Karuna. Karuna builds software that automates common care management tasks. He recently finished his Master's and undergrad at MIT, exploring the intersection of Venture and CS while working in tandem with First Round to build the one-stop shop for first time founders raising seed rounds. He also supported student founders around MIT and Boston through his work with Dorm Room Fund. In the past, Yasyf spent time as the Chief Software Architect at Foxtrot (“a 21st century approach to last mile logistics”), an engineer at Facebook and Square, and a Managing Partner at Dorm Room Fund Boston.</p>",
+        "image": "/static/img/speakers/Headshot_YasyfMohamedali.jpeg"
+      },
+      {
         "name": "Angela Oduor Lungati",
         "tagline": "Executive Director @ Ushahidi",
         "bio": "<p>Angela Oduor Lungati is a technologist, community builder and an open source software advocate. She is passionate about building and using appropriate technology tools to create impact in lives of marginalised groups. With over 10 years experience, she currently serves as the Executive Director at Ushahidi, a global non-profit technology company that builds tools for democratising information, increasing transparency and lowering barriers for individuals to raise their voices. She previously served as the Director of Community Engagement, creating and managing programs for Ushahidi’s diverse global community. She is also a co-founder at AkiraChix, a non-profit organisation that nurtures generations of women who use technology to develop innovations and solutions for Africa.</p>",
         "image": "/static/img/speakers/Headshot_AngelaLungati.png"
       },
       {
-        "name": "Mark Ciaccio",
-        "tagline": "Senior Data Scientist @ AbbVie",
-        "bio": "<p>Dr. Ciaccio uses Artificial Intelligence and Machine Learning to help accelerate Pharmaceutical Development at AbbVie Biopharmaceutical company. He is a member of the AbbVie RAIDERS (Rapid A.I. Developers) that are dedicated to the implementation of A.I. throughout the company. Mark specifically focuses on Clinical studies, currently working to simulate clinical trial enrollment, write chatbots to help answer regulatory questions, and design machine learning models to implement wearable devices in the clinic.</p>",
-        "image": "/static/img/speakers/MarkCiaccio.jpg"
-      },
-      {
         "name": "Jessica Li",
         "tagline": "Venture Capitalist @ Soma Capital",
         "bio": "<p>Jessica is an investor at Soma Capital (investments include Cruise, Rappi, Lambda School, Ironclad, Coda, Astranis) and head of content at Elpha (platform of 26K+ women in tech), Harvard in Tech, the Emerging VC Association, and Techstars Boston. She is a mentor with Alchemist, Techstars, Zane, and Loop and a venture scout with Gold Rush. She is one of Medium's Top VC Writers of 2020. Previously, she worked in VC with General Catalyst, Romulus Capital, Female Founders Fund, and Global Founders Capital; in startups with Morning Brew and Luxe (acquired by Volvo); and in investment banking at Morgan Stanley. She graduated with high honors from Harvard, where she completed her senior thesis with the 2016 Economics Nobel Laureate Oliver Hart. </p>",
         "image": "/static/img/speakers/Headshot_JessicaLi.png"
+      },
+      {
+        "name": "Mark Ciaccio",
+        "tagline": "Senior Data Scientist @ AbbVie",
+        "bio": "<p>Dr. Ciaccio uses Artificial Intelligence and Machine Learning to help accelerate Pharmaceutical Development at AbbVie Biopharmaceutical company. He is a member of the AbbVie RAIDERS (Rapid A.I. Developers) that are dedicated to the implementation of A.I. throughout the company. Mark specifically focuses on Clinical studies, currently working to simulate clinical trial enrollment, write chatbots to help answer regulatory questions, and design machine learning models to implement wearable devices in the clinic.</p>",
+        "image": "/static/img/speakers/MarkCiaccio.jpg"
       },
       {
         "name": "Paulo Tanaka",
