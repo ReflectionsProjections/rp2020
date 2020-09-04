@@ -26,8 +26,6 @@ const Auth = () => {
             window.location.replace('https://reflectionsprojections.org/register')
             //window.location.replace('http://localhost:3000/register')
         })
-        //sessionStorage.setItem('rptoken', query.code);
-        //window.location.replace('http://localhost:3000/register')
     }
   });
 

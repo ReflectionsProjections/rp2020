@@ -22,11 +22,6 @@ const RegistrationForm = () => {
         console.log(query)
     }
 
-    const checkboxFunction = (event) => {
-        setPreviousAttendance(!previousAttendance)
-        console.log(previousAttendance)
-    }
-
     useEffect(() => {
         if (sessionStorage.getItem('successfulRegistration') === 'true') {
             //window.location.replace('http://localhost:3000/?registered=true')
@@ -39,7 +34,7 @@ const RegistrationForm = () => {
             "firstName": form.formFirstName.value,
             "lastName": form.formLastName.value,
             "email": form.formEmail.value,
-            "age": parseInt(form.formAge.value),
+            "age": 100,
             "gender": form.formGender.value,
             "race": form.formRace.value,
             "graduationYear": parseInt(form.formGraduation.value),
@@ -56,6 +51,15 @@ const RegistrationForm = () => {
         if (form.checkValidity() === false) {
             event.preventDefault();
             event.stopPropagation();
+        } else {
+            const registrationData = JSON.stringify(setData(form))
+
+            let isEditing = false
+    
+            if (getRegistration('attendee') !== null) {
+                isEditing = true
+            }
+            register(isEditing, 'attendee', registrationData)
         }
 
         setValidated(true);
@@ -63,16 +67,6 @@ const RegistrationForm = () => {
         /*if (form.fileUpload.value != '') {
             uploadFile(form.fileUpload.value, 'resume')
         }*/
-
-        const registrationData = JSON.stringify(setData(form))
-
-        let isEditing = false
-
-        if (getRegistration('attendee') !== null) {
-            isEditing = true
-        }
-        register(isEditing, 'attendee', registrationData)
-
     };
 
     const uploadResume = (event) => {
@@ -86,8 +80,7 @@ const RegistrationForm = () => {
         setValidated(false);
     }
     const change = (event) => {
-        let form = event.currentTarget
-        console.log(setData(form))
+        const form = event.currentTarget
     }
 
 
@@ -136,20 +129,6 @@ const RegistrationForm = () => {
                                 />
                                 <Form.Control.Feedback type="invalid">
                                     Please provide a valid email.
-                                </Form.Control.Feedback>
-                            </Col>
-                        </Form.Group>
-
-                        <Form.Group as={Row} controlId="formAge">
-                            <Form.Label column sm={2}>Age</Form.Label>
-                            <Col sm={10}>
-                                <Form.Control 
-                                    required
-                                    type="number" 
-                                    placeholder="Age"
-                                />
-                                <Form.Control.Feedback type="invalid">
-                                    Please provide a valid age.
                                 </Form.Control.Feedback>
                             </Col>
                         </Form.Group>
