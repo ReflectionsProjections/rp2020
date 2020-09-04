@@ -21,12 +21,13 @@ const Auth = () => {
 
   useEffect(() => {
     if (query.code !== undefined) {
-        /*getToken(query.code).then(token => {
+        getToken(query.code).then(token => {
             sessionStorage.setItem('rptoken', token);
-            window.location.replace('http://localhost:3000/register')
-        })*/
-        sessionStorage.setItem('rptoken', query.code);
-        window.location.replace('http://localhost:3000/register')
+            window.location.replace('https://reflectionsprojections.org/register')
+            //window.location.replace('http://localhost:3000/register')
+        })
+        //sessionStorage.setItem('rptoken', query.code);
+        //window.location.replace('http://localhost:3000/register')
     }
   });
 

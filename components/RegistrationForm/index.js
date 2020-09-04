@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import moment from 'moment';
 
 import { Form, Button, Row, Col } from "react-bootstrap"
@@ -9,9 +9,47 @@ import { DAY_FORMAT, TIME_FORMAT, EVENT_TYPE } from '../../constants/events';
 import Section from '../../UIComponents/Section';
 import UIButtonGroupSelect from '../../UIComponents/Input/UIButtonGroupSelect';
 import { UITimeline, UITimelineEvent } from '../../UIComponents/UITimeline';
+import { getRegistration, register, uploadFile } from '../../api/api';
+import { getQueryObject } from '../../lib/path';
 
 const RegistrationForm = () => {
     const [validated, setValidated] = useState(false);
+    const [previousAttendance, setPreviousAttendance] = useState(true);
+
+    let query = {};
+    if (process.browser) {
+        query = getQueryObject(window);
+        console.log(query)
+    }
+
+    const checkboxFunction = (event) => {
+        setPreviousAttendance(!previousAttendance)
+        console.log(previousAttendance)
+    }
+
+    useEffect(() => {
+        if (sessionStorage.getItem('successfulRegistration') === 'true') {
+            //window.location.replace('http://localhost:3000/?registered=true')
+            window.location.replace('https://reflectionsprojections.org/?registered=true')
+        }
+    });
+
+    const setData = (form) => {
+        return {
+            "firstName": form.formFirstName.value,
+            "lastName": form.formLastName.value,
+            "email": form.formEmail.value,
+            "age": parseInt(form.formAge.value),
+            "gender": form.formGender.value,
+            "race": form.formRace.value,
+            "graduationYear": parseInt(form.formGraduation.value),
+            "school": form.formSchool.value,
+            "major": form.formMajor.value,
+            "interests": form.formInterest.value,
+            "rpKnowledge": form.formRPKnowledge.value,
+            "priorAttendance": true
+        };
+    }
 
     const handleSubmit = (event) => {
         const form = event.currentTarget;
@@ -21,21 +59,46 @@ const RegistrationForm = () => {
         }
 
         setValidated(true);
+
+        /*if (form.fileUpload.value != '') {
+            uploadFile(form.fileUpload.value, 'resume')
+        }*/
+
+        const registrationData = JSON.stringify(setData(form))
+
+        let isEditing = false
+
+        if (getRegistration('attendee') !== null) {
+            isEditing = true
+        }
+        register(isEditing, 'attendee', registrationData)
+
     };
+
+    const uploadResume = (event) => {
+        if (event.target.value == '') {
+            console.log('invalid value')
+        }
+        uploadFile(event.target.value, 'resume')
+    }
 
     function resetValidation() {
         setValidated(false);
-      }
+    }
+    const change = (event) => {
+        let form = event.currentTarget
+        console.log(setData(form))
+    }
 
 
     return (
         <Section>
             <Section.Header>
-                <Section.Title>Reflections|Projections 2020 Registration</Section.Title>
+                <Section.Title>Reflections | Projections 2020 Registration</Section.Title>
             </Section.Header>
             <Section.Body>
                 <Container>
-                    <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                    <Form noValidate validated={validated} onSubmit={handleSubmit} onChange={change}>
                         <Form.Group as={Row} controlId="formFirstName">
                             <Form.Label column sm={2}>First Name</Form.Label>
                             <Col sm={10}>
@@ -151,7 +214,10 @@ const RegistrationForm = () => {
                             <Form.Control required as="select">
                                 <option selected disabled value="">University</option>
                                 <option>University of Illinois at Urbana-Champaign</option>
+                                <option>University of Illinois at Chicago</option>
+                                <option>University of Illinois at Springfield</option>
                                 <option>Purdue</option>
+                                <option>Indiana University</option>
                                 <option>University of Chicago</option>
                                 <option>University of Michigan at Ann-Arbor</option>
                                 <option>University of Wisconsin - Madison</option>
@@ -169,7 +235,7 @@ const RegistrationForm = () => {
                                 <option selected disabled value="">Major</option>
                                 <option>Computer Science</option>
                                 <option>Electrical and Computer Engineering</option>
-                                <option>Informational Sciences</option>
+                                <option>Information Science</option>
                                 <option>Other</option>
                                 <option>Not Applicable</option>
                             </Form.Control>
@@ -193,7 +259,7 @@ const RegistrationForm = () => {
                         </Form.Group>
 
                         <Form.Group controlId="formRPKnowledge">
-                            <Form.Label>How did you find out about Reflections|Projections (select multiple)</Form.Label>
+                            <Form.Label>How did you find out about Reflections | Projections</Form.Label>
                             <Form.Control required as="select" multiple>
                                 <option>Friends/Family</option>
                                 <option>Email/Newsletter</option>
@@ -203,14 +269,26 @@ const RegistrationForm = () => {
                                 <option>Previous Attendance</option>
                             </Form.Control>
                             <Form.Control.Feedback type="invalid">
-                                Please select how you found out about Reflections|Projections.
+                                Please select how you found out about Reflections | Projections.
                             </Form.Control.Feedback>
                         </Form.Group>
                         
-                        <Form.Group as={Row} controlId="formHorizontalAttendance">
+                        {/*<Form.Group as={Row} controlId="formHorizontalAttendance">
                             <Col sm={10}>
-                            <Form.Check label="Have you attended Reflections|Projections before?" />
+                            <Form.Check label="Have you attended Reflections | Projections before?" onChange={checkboxFunction} />
                             </Col>
+                        </Form.Group>*/}
+
+                        <Form.Group controlId="formAttendance">
+                            {/* <Form.Label column sm={2}>Race</Form.Label> */}
+                            <Form.Control required as="select">
+                                <option selected disabled value="">Have you attended RP in the past?</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </Form.Control>
+                            <Form.Control.Feedback type="invalid">
+                                Please provide a valid answer
+                            </Form.Control.Feedback>
                         </Form.Group>
 
                         <Form.Group>
@@ -219,14 +297,17 @@ const RegistrationForm = () => {
                                 id="fileUpload"
                                 type="file"
                                 accept=".pdf"
+                                onChange={uploadResume}
                             />
                         </Form.Group> 
 
                         <Form.Group as={Row}>
-                            <Col sm={{ span: 50, offset: 2 }} >
+                            <Col />
+                            <Col >
                                 <Button type="submit" style={{marginLeft:'2em'}}>Register</Button>
-                                <Button type="reset" onClick={resetValidation} style={{marginLeft:'2em'}}>Reset</Button>
+                                <Button type="reset" onClick={resetValidation} style={{marginLeft:'2em', color:'#FF6347'}}>Reset</Button>
                             </Col>
+                            <Col />
                         </Form.Group>
                     </Form>
                 </Container>

@@ -14,7 +14,8 @@ const Register = () => {
 
   useEffect(() => {
     if (!isAuthenticated()) {
-      authenticate('http://localhost:3000/auth')
+      authenticate('https://reflectionsprojections.org/auth')
+      //authenticate('http://localhost:3000/auth')
     }
   });
     
