@@ -259,15 +259,15 @@
         "questions": [
           {
             "question": "What is PuzzleBang?",
-            "answer": "PuzzleBang is a puzzle contest that takes place over the course of a week. Puzzles are released online at puzzlebang.com, roughly one per day until Saturday when we release several hard puzzles. In the last two years, PuzzleBang also included a real-life escape room (themed to, but otherwise unrelated to the puzzlebang.com puzzles)."
+            "answer": "PuzzleBang is a puzzle hunt that takes place over the course of the Reflections|Projections week. Puzzles are released online at puzzlebang.com with the first puzzle coming out on Monday, September 21.  Expect one or two per day until Saturday when we release the final set of puzzles along with a metapuzzle."
           },
           {
             "question": "Who's eligible?",
-            "answer": "Anyone can play! We recommend teams of no more than four human beings. If you haven't met any other friends that are interested in playing, drop us a line at GameControl@puzzlebang.com and we'll see about pairing you up with a new friend or two."
+            "answer": "Anyone can play! We strongly recommend playing with friends, because the more the merrier. If you haven't met any friends who are interested in playing, drop us a line at GameControl@puzzlebang.com and we'll see about pairing you up with a new friend or two."
           },
           {
             "question": "What you will need to have?",
-            "answer": "Access to a functional human brain, an internet connection (ideally at or better than 28.8kb), and a computer with a good web browser. A mobile device (smartphone, laptop, tablet, dumbphone with a friend at a computer on the other end, etc) with internet capabilities might be useful for Friday and Saturday."
+            "answer": "Access to a functional human brain, an internet connection, a computer with a current web browser, and an open mind.  We're also adding video chat support this year, so a webcam or at least a microphone will enhance the experience."
           },
           {
             "question": "What do you need to know?",
@@ -275,7 +275,7 @@
           },
           {
             "question": "What do you not need to know?",
-            "answer": "How to code. It might be useful to be able to write a script to print out all the ways you can rearrange a set of letters, or apply different ciphers to them, but in general, you should be able to do everything by hand or ask Google and find a tool online to do it for you"
+            "answer": "How to write code. It might be useful to be able to write a script to print out all the ways you can rearrange a set of letters, or apply different ciphers to them, but in general, you should be able to do everything by hand or ask Google and find a tool online to do it for you."
           }
         ]
       },
