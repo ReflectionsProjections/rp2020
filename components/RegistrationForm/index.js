@@ -18,6 +18,8 @@ import axios from 'axios';
 const RegistrationForm = () => {
     const [validated, setValidated] = useState(false);
     const [previousAttendance, setPreviousAttendance] = useState(true);
+    const [schoolSelected, setSchoolSelected] = useState(""); 
+    const [otherSchool, setOtherSchool] = useState(""); 
 
     let query = {};
     if (process.browser) {
@@ -38,6 +40,14 @@ const RegistrationForm = () => {
         }
     }, []);
 
+    const handleSchoolChange = (event) => {
+        setSchoolSelected(event.target.value); 
+    }
+
+    const handleOtherSchoolChange = (event) => {
+        setOtherSchool(event.target.value); 
+    }
+
     const setData = (form) => {
         return {
             "firstName": form.formFirstName.value,
@@ -47,7 +57,7 @@ const RegistrationForm = () => {
             "gender": form.formGender.value,
             "race": form.formRace.value,
             "graduationYear": parseInt(form.formGraduation.value),
-            "school": form.formSchool.value,
+            "school": form.formSchool.value === "Other" ? otherSchool : form.formSchool.value,
             "major": form.formMajor.value,
             "interests": form.formInterest.value,
             "rpKnowledge": form.formRPKnowledge.value,
@@ -162,83 +172,109 @@ const RegistrationForm = () => {
                             </Col>
                         </Form.Group>
 
-                        <Form.Group controlId="formRace">
-                            {/* <Form.Label column sm={2}>Race</Form.Label> */}
-                            <Form.Control required as="select">
-                                <option selected disabled value="">Race</option>
-                                <option>American Indian or Alaska Native</option>
-                                <option>Asian</option>
-                                <option>Black or African American</option>
-                                <option>Hispanic or Latino</option>
-                                <option>Native Hawaiian or Other Pacific Islander</option>
-                                <option>White</option>
-                                <option>Other</option>
-                                <option>I'd rather not reply</option>
-                            </Form.Control>
-                            <Form.Control.Feedback type="invalid">
-                                Please provide a valid race.
-                            </Form.Control.Feedback>
+                        <Form.Group as={Row} controlId="formRace">
+                            <Form.Label column sm={2}>Race</Form.Label>
+                            <Col sm={10}>
+                                <Form.Control required as="select">
+                                    <option selected disabled value="">Race</option>
+                                    <option>American Indian or Alaska Native</option>
+                                    <option>Asian</option>
+                                    <option>Black or African American</option>
+                                    <option>Hispanic or Latino</option>
+                                    <option>Native Hawaiian or Other Pacific Islander</option>
+                                    <option>White</option>
+                                    <option>Other</option>
+                                    <option>I'd rather not reply</option>
+                                </Form.Control>
+                                <Form.Control.Feedback type="invalid">
+                                    Please provide a valid race.
+                                </Form.Control.Feedback>
+                            </Col>
                         </Form.Group>
 
-                        <Form.Group controlId="formGraduation">
-                            {/* <Form.Label column sm={2}>Graduation Year</Form.Label> */}
-                            <Form.Control required as="select">
-                                <option selected disabled value="">Graduation Year</option>
-                                <option>2018</option>
-                                <option>2019</option>
-                                <option>2020</option>
-                                <option>2021</option>
-                                <option>2022</option>
-                                <option>2023</option>
-                                <option>2024</option>
-                                <option>2025</option>
-                                <option>2026</option>
-                                <option>Other</option>
-                            </Form.Control>
-                            <Form.Control.Feedback type="invalid">
-                                Please provide a valid graduation year.
-                            </Form.Control.Feedback>
+                        <Form.Group as={Row} controlId="formGraduation">
+                            <Form.Label column sm={2}>Graduation Year</Form.Label> 
+                            <Col sm={10}>
+                                <Form.Control required as="select">
+                                    <option selected disabled value="">Graduation Year</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>Other</option>
+                                </Form.Control>
+                                <Form.Control.Feedback type="invalid">
+                                    Please provide a valid graduation year.
+                                </Form.Control.Feedback>
+                            </Col>
                         </Form.Group>
 
-                        <Form.Group controlId="formSchool">
-                            {/* <Form.Label column sm={2}>School</Form.Label> */}
-                            <Form.Control required as="select">
-                                <option selected disabled value="">University</option>
-                                <option>University of Illinois at Urbana-Champaign</option>
-                                <option>University of Illinois at Chicago</option>
-                                <option>University of Illinois at Springfield</option>
-                                <option>Purdue</option>
-                                <option>Indiana University</option>
-                                <option>University of Chicago</option>
-                                <option>University of Michigan at Ann-Arbor</option>
-                                <option>University of Wisconsin - Madison</option>
-                                <option>Other</option>
-                                <option>Not Applicable</option>
-                            </Form.Control>
+                        <Form.Group as={Row} controlId="formSchool">
+                            <Form.Label column sm={2}>School</Form.Label>
+                            <Col sm={10}>
+                                <Form.Control required as="select" onChange={handleSchoolChange}>
+                                    <option selected disabled value="">University</option>
+                                    <option>University of Illinois at Urbana-Champaign</option>
+                                    <option>University of Illinois at Chicago</option>
+                                    <option>University of Illinois at Springfield</option>
+                                    <option>Purdue</option>
+                                    <option>Indiana University</option>
+                                    <option>University of Chicago</option>
+                                    <option>University of Michigan at Ann-Arbor</option>
+                                    <option>University of Wisconsin - Madison</option>
+                                    <option>Other</option>
+                                    <option>Not Applicable</option>
+                                </Form.Control>
+
+                                {schoolSelected === 'Other' && 
+                                <Form.Group as={Row} controlId="otherSchool">
+                                    <Col>
+                                        <Form.Control 
+                                            required
+                                            type="text" 
+                                            placeholder="Type your university name here"
+                                            onChange={handleOtherSchoolChange}
+                                        />
+                                        <Form.Control.Feedback type="invalid">
+                                            Please provide a valid school. 
+                                        </Form.Control.Feedback>
+                                    </Col>
+                                </Form.Group>
+                            }
                             <Form.Control.Feedback type="invalid">
                                 Please provide a valid school.
                             </Form.Control.Feedback>
+                            </Col>
+                            
                         </Form.Group>
 
-                        <Form.Group controlId="formMajor">
-                            {/* <Form.Label column sm={2}>Major</Form.Label> */}
-                            <Form.Control required as="select">
-                                <option selected disabled value="">Major</option>
-                                <option>Computer Science</option>
-                                <option>Electrical and Computer Engineering</option>
-                                <option>Information Science</option>
-                                <option>Other</option>
-                                <option>Not Applicable</option>
-                            </Form.Control>
-                            <Form.Control.Feedback type="invalid">
-                                Please provide a valid major.
-                            </Form.Control.Feedback>
-                        </Form.Group>
-
-                        <Form.Group controlId="formInterest">
-                            {/* <Form.Label column sm={2}>I'm looking for a</Form.Label> */}
+                        <Form.Group as={Row} controlId="formMajor">
+                            <Form.Label column sm={2}>Major</Form.Label>
+                            <Col sm={10}>
                                 <Form.Control required as="select">
-                                    <option selected disabled value="">I'm looking for a</option>
+                                    <option selected disabled value="">Major</option>
+                                    <option>Computer Science</option>
+                                    <option>Electrical and Computer Engineering</option>
+                                    <option>Information Science</option>
+                                    <option>Other</option>
+                                    <option>Not Applicable</option>
+                                </Form.Control>
+                                <Form.Control.Feedback type="invalid">
+                                    Please provide a valid major.
+                                </Form.Control.Feedback>
+                            </Col>
+                        </Form.Group>
+
+                        <Form.Group as={Row} controlId="formInterest">
+                            <Form.Label column sm={2}>I'm looking for a: </Form.Label>
+                            <Col sm={10}>
+                                <Form.Control required as="select">
+                                    <option selected disabled value="">Select option...</option>
                                     <option>Internship</option>
                                     <option>Full-Time</option>
                                     <option>Other</option>
@@ -247,6 +283,7 @@ const RegistrationForm = () => {
                                 <Form.Control.Feedback type="invalid">
                                     Please select an option.
                                 </Form.Control.Feedback>
+                            </Col>
                         </Form.Group>
 
                         <Form.Group controlId="formRPKnowledge">
