@@ -14,9 +14,9 @@ const Register = () => {
 
   useEffect(() => {
     
-    // if (!isAuthenticated()) {
-    //   authenticate('https://reflectionsprojections.org/auth')
-    // }
+    if (!isAuthenticated()) {
+      authenticate('https://reflectionsprojections.org/auth')
+    }
   });
     
     {

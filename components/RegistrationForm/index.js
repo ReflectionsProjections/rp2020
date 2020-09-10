@@ -26,17 +26,17 @@ const RegistrationForm = () => {
     }
 
     useEffect(() => {
-        axios.get('registration/').then(function (response) {
-            console.log('hi' + response);
-        }).catch(function (error) {
-            console.log(error);
-        });
-
+        
         if (sessionStorage.getItem('successfulRegistration') === 'true') {
-            window.location.replace('http://localhost:3000/?registered=true')
-            //window.location.replace('https://reflectionsprojections.org/?registered=true')
+            // window.location.replace('http://localhost:3000/?registered=true')
+            window.location.replace('https://reflectionsprojections.org/?registered=true')
+            // axios.get('registration/').then(function (response) {
+                
+            // }).catch(function (error) {
+            //     console.log(error);
+            // })
         }
-    });
+    }, []);
 
     const setData = (form) => {
         return {
@@ -68,33 +68,25 @@ const RegistrationForm = () => {
             if (getRegistration('attendee') !== null) {
                 isEditing = true
             }
-            uploadResume('');
             register(isEditing, 'attendee', registrationData)
+            alert("Successfully registered!");
         }
 
         setValidated(true);
-        alert("Successfully registered!");
+        
 
-        /*if (form.fileUpload.value != '') {
+        if (form.fileUpload.value != '') {
             uploadFile(form.fileUpload.value, 'resume')
-        }*/
+        }
     };
 
-    // function uploadResume(file) {
-    //     if (file == '') {
-    //         console.log('invalid resume');
+    // const uploadResume = (event) => {
+    //     if (event.target.value == '') {
+    //         console.log('invalid value')
     //     } else {
-    //         uploadFile(file, 'resume');
+    //         uploadFile(event.target.value, 'resume')
     //     }
     // }
-
-    const uploadResume = (event) => {
-        if (event.target.value == '') {
-            console.log('invalid value')
-        } else {
-            uploadFile(event.target.value, 'resume')
-        }
-    }
 
     function resetValidation() {
         setValidated(false);
@@ -296,7 +288,7 @@ const RegistrationForm = () => {
                                 id="fileUpload"
                                 type="file"
                                 accept=".pdf"
-                                onChange={uploadResume}
+                                // onChange={uploadResume}
                             />
                         </Form.Group> 
 
