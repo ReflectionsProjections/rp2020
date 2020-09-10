@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "stable"
+  - 10
 before_install:
   - npm i -g npm@6.6.0
 install:
@@ -16,7 +16,7 @@ deploy:
    skip_cleanup: true
    local_dir: out
    on:
-    branch: master
+    branch: no-branches
  - provider: s3
    access_key_id: $RP_ACCESS_KEY
    secret_access_key: $RP_SECRET_KEY
@@ -24,6 +24,6 @@ deploy:
    skip_cleanup: true
    local_dir: out
    on:
-    branch: staging
+    branch: no-branches-2
 after_deploy:
   - ./scripts/invalidate.sh

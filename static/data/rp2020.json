@@ -136,16 +136,28 @@
         "image": "/static/img/speakers/Headshot_NickSullivan.jpg"
       },
       {
-        "name": "Saleema Amershi",
-        "tagline": "Principal Researcher @ Microsoft Research AI",
-        "bio": "<p><a target='_blank' href='https://saleemaamershi.com/'>Saleema Amershi</a> is a Principal Researcher at Microsoft Research AI and currently chairs Microsoft's Aether Working Group on Human-AI Interaction and Collaboration. Aether is Microsoft’s advisory committee on responsible and ethical AI. Saleema's research focuses on helping people create effective and responsible AI user experiences. Her recent work includes leading Microsoft's effort to develop general <a target='_blank' href='https://aka.ms/aiguidelines'>Guidelines for Human-AI Interaction</a>, a unified and validated set of guidelines to establish a foundation for human-AI interaction design. Throughout the years, she has developed tools and methodologies to support practitioners in designing and building AI-based products and services, including general purpose platforms and visualizations for data scientists building predictive models, and application specific techniques for supporting end-users interacting with AI-systems in their everyday lives.</p>",
-        "image": "/static/img/speakers/Headshot_SaleemaAmershi.png"
+        "name": "Tatiana Arthur Murphy",
+        "tagline": "Chief of Staff for Global People Sustainability & Diversity and Inclusion @ SAP",
+        "bio": "<p></p>",
+        "image": "/static/img/speakers/Headshot_TatianaArthurMurphy.jpg"
+      },
+      {
+        "name": "Wendy Pfeiffer",
+        "tagline": "CIO @ Nutanix",
+        "bio": "<p></p>",
+        "image": "/static/img/speakers/Headshot_WendyPfeiffer.jpg"
       },
       {
         "name": "Charith Mendis",
         "tagline": "Incoming Assistant Professor @ UIUC",
         "bio": "<p></p>",
         "image": "/static/img/speakers/Headshot_CharithMendis.jpeg"
+      },
+      {
+        "name": "Saleema Amershi",
+        "tagline": "Principal Researcher @ Microsoft Research AI",
+        "bio": "<p><a target='_blank' href='https://saleemaamershi.com/'>Saleema Amershi</a> is a Principal Researcher at Microsoft Research AI and currently chairs Microsoft's Aether Working Group on Human-AI Interaction and Collaboration. Aether is Microsoft’s advisory committee on responsible and ethical AI. Saleema's research focuses on helping people create effective and responsible AI user experiences. Her recent work includes leading Microsoft's effort to develop general <a target='_blank' href='https://aka.ms/aiguidelines'>Guidelines for Human-AI Interaction</a>, a unified and validated set of guidelines to establish a foundation for human-AI interaction design. Throughout the years, she has developed tools and methodologies to support practitioners in designing and building AI-based products and services, including general purpose platforms and visualizations for data scientists building predictive models, and application specific techniques for supporting end-users interacting with AI-systems in their everyday lives.</p>",
+        "image": "/static/img/speakers/Headshot_SaleemaAmershi.png"
       },
       {
         "name": "Angela Hooker",
@@ -190,20 +202,6 @@
         "image": "/static/img/speakers/Headshot_PauloTanaka.jpeg"
       },
       {
-        "name": "Aditya Agashe",
-        "tagline": "Product Manager @ Microsoft",
-        "badge": "Swipe to Unlock Panel",
-        "bio": "<p>Aditya Agashe is a prominent Product Manager and the Author of the bestselling technology strategy book, Swipe to Unlock. He has been featured in the Wall Street Journal, Forbes, Business Insider, Inc. and more. He works on Azure cloud growth team to build hyper-converged and hybrid features that help customers adopt cloud technologies. He is the host of Product Alliance, and has previously managed product and engineering teams as the founder of Belle Applications and Head of Product at Speare.</p>",
-        "image": "/static/img/speakers/Headshot_PANEL_AdityaAgashe.png"
-      },
-      {
-        "name": "Parth Detroja",
-        "tagline": "Product Manager @ Facebook",
-        "badge": "Swipe to Unlock Panel",
-        "bio": "<p>Parth Detroja is a distinguished Product Manager and the Author of the bestselling technology strategy book, Swipe to Unlock. He has been featured in the Wall Street Journal, Forbes, Business Insider, Inc. and more. Parth is currently a Product Manager at Facebook where he leads social music product efforts such as adding music to stories on Facebook and Instagram. He has previously worked product management and growth roles at other top tech companies including Microsoft, Amazon, and IBM.</p>",
-        "image": "/static/img/speakers/Headshot_PANEL_ParthDetroja.png"
-      },
-      {
         "name": "Jon Bass",
         "tagline": "CTO @ Sym",
         "badge": "Breaking into Startups Panel",
@@ -223,6 +221,20 @@
         "badge": "Breaking into Startups Panel",
         "bio": "<p></p>",
         "image": "/static/img/speakers/Headshot_PANEL_JinZhang.jpeg"
+      },
+      {
+        "name": "Aditya Agashe",
+        "tagline": "Product Manager @ Microsoft",
+        "badge": "Swipe to Unlock Panel",
+        "bio": "<p>Aditya Agashe is a prominent Product Manager and the Author of the bestselling technology strategy book, Swipe to Unlock. He has been featured in the Wall Street Journal, Forbes, Business Insider, Inc. and more. He works on Azure cloud growth team to build hyper-converged and hybrid features that help customers adopt cloud technologies. He is the host of Product Alliance, and has previously managed product and engineering teams as the founder of Belle Applications and Head of Product at Speare.</p>",
+        "image": "/static/img/speakers/Headshot_PANEL_AdityaAgashe.png"
+      },
+      {
+        "name": "Parth Detroja",
+        "tagline": "Product Manager @ Facebook",
+        "badge": "Swipe to Unlock Panel",
+        "bio": "<p>Parth Detroja is a distinguished Product Manager and the Author of the bestselling technology strategy book, Swipe to Unlock. He has been featured in the Wall Street Journal, Forbes, Business Insider, Inc. and more. Parth is currently a Product Manager at Facebook where he leads social music product efforts such as adding music to stories on Facebook and Instagram. He has previously worked product management and growth roles at other top tech companies including Microsoft, Amazon, and IBM.</p>",
+        "image": "/static/img/speakers/Headshot_PANEL_ParthDetroja.png"
       }
     ]
   },
@@ -258,7 +270,7 @@
         "questions": [
           {
             "question": "Is registration open?",
-            "answer": "Not yet, but stay tuned for updates on our socials."
+            "answer": "Yes! Be sure to click the link on the navigation bar to register!"
           },
           {
             "question": "Who can attend?",

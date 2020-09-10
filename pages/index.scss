@@ -1,21 +1,21 @@
 /* Landing Styles */
 .leadContent {
-  padding-top: 20vh;
+  padding-top: 30vh;
 }
 
 .wordmark {
   display: block;
-  width: 20em;
-  height: 4.5em;
+  width: 25em;
+  height: 10em;
   margin: 0.1em auto;
   fill: white;
 }
 .eventDate {
   margin: 10px auto;
-  margin-top: 1.3em;
+  margin-top: 0em;
   font-family: 'Roboto Mono';
   font-weight: 500;
-  font-size: 1.6em;
+  font-size: 1.2em;
   color: white;
 }
 .virtualUpdate {
@@ -32,7 +32,7 @@
 @media (min-width: 576px) {
   .wordmark {
     width: 30em;
-    height: 6em;
+    height: 10em;
   }
   .eventDate {
     font-size: 1.9em;
@@ -46,13 +46,16 @@
 }
 
 @media (min-width: 992px) {
+  .leadContent {
+    padding-top: 28vh;
+  }
   .eventDate {
     font-size: 2.1em;
-    margin-top: 2em;
+    margin-top: 0em;
   }
   .wordmark {
-    width: 35em;
-    height: 6em;
+    width: 40em;
+    height: 15em;
   }
   .tagline {
     font-size: 1.1em;
@@ -143,4 +146,8 @@
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
   }
+}
+
+.registrationForm {
+  
 }

@@ -4,7 +4,6 @@ import SVG from 'react-inlinesvg';
 import { Link, Element } from 'react-scroll';
 import { useState, useEffect } from 'react';
 
-import { fetchConferenceData, fetchNavData, fetchGates } from '../api/client';
 
 import Gate from '../UIComponents/Gate';
 import Layout from '../UIComponents/Layout';
@@ -17,6 +16,7 @@ import SponsorSection from '../components/SponsorSection';
 import Footer from '../components/Footer';
 import NotifBanner from '../components/NotifBanner';
 import FAQ from '../components/FAQ';
+import NavButton from '../components/Navbar/components/NavButton';
 
 import styles from './index.scss';
 import '../static/stylesheets/animations.scss';
@@ -66,12 +66,6 @@ const Index = () => {
               <h2 className={`animated fadeIn ${styles.eventDate}`}>
                 Sept 21-26, 2020
               </h2>
-              {<div className={`animated fadeIn ${styles.virtualUpdate}`}>
-                <NotifBanner />
-              </div>}
-              <div>
-                <CountdownTimer className="animated fadeIn" />
-              </div>
             </div>
             <Link
               activeClass="active"
