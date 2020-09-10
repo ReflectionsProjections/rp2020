@@ -250,7 +250,7 @@ const RegistrationForm = () => {
                         </Form.Group>
 
                         <Form.Group controlId="formRPKnowledge">
-                            <Form.Label>How did you find out about Reflections | Projections</Form.Label>
+                            <Form.Label>How did you find out about Reflections | Projections?</Form.Label>
                             <Form.Control required as="select" multiple>
                                 <option>Friends/Family</option>
                                 <option>Email/Newsletter</option>
