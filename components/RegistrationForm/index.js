@@ -11,6 +11,9 @@ import UIButtonGroupSelect from '../../UIComponents/Input/UIButtonGroupSelect';
 import { UITimeline, UITimelineEvent } from '../../UIComponents/UITimeline';
 import { getRegistration, register, uploadFile } from '../../api/api';
 import { getQueryObject } from '../../lib/path';
+import axios from 'axios';
+
+
 
 const RegistrationForm = () => {
     const [validated, setValidated] = useState(false);
@@ -23,9 +26,15 @@ const RegistrationForm = () => {
     }
 
     useEffect(() => {
+        axios.get('registration/').then(function (response) {
+            console.log('hi' + response);
+        }).catch(function (error) {
+            console.log(error);
+        });
+
         if (sessionStorage.getItem('successfulRegistration') === 'true') {
-            // window.location.replace('http://localhost:3000/?registered=true')
-            window.location.replace('https://reflectionsprojections.org/?registered=true')
+            window.location.replace('http://localhost:3000/?registered=true')
+            //window.location.replace('https://reflectionsprojections.org/?registered=true')
         }
     });
 
@@ -48,7 +57,6 @@ const RegistrationForm = () => {
 
     const handleSubmit = (event) => {
         const form = event.currentTarget;
-        
         if (form.checkValidity() === false) {
             event.preventDefault();
             event.stopPropagation();
