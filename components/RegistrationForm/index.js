@@ -24,8 +24,8 @@ const RegistrationForm = () => {
 
     useEffect(() => {
         if (sessionStorage.getItem('successfulRegistration') === 'true') {
-            window.location.replace('http://localhost:3000/?registered=true')
-            // window.location.replace('https://reflectionsprojections.org/?registered=true')
+            // window.location.replace('http://localhost:3000/?registered=true')
+            window.location.replace('https://reflectionsprojections.org/?registered=true')
         }
     });
 
@@ -48,8 +48,7 @@ const RegistrationForm = () => {
 
     const handleSubmit = (event) => {
         const form = event.currentTarget;
-        console.log(form);
-        alert(form);
+        
         if (form.checkValidity() === false) {
             event.preventDefault();
             event.stopPropagation();
@@ -66,27 +65,28 @@ const RegistrationForm = () => {
         }
 
         setValidated(true);
+        alert("Successfully registered!");
 
         /*if (form.fileUpload.value != '') {
             uploadFile(form.fileUpload.value, 'resume')
         }*/
     };
 
-    function uploadResume(file) {
-        if (file == '') {
-            console.log('invalid resume');
-        } else {
-            uploadFile(file, 'resume');
-        }
-    }
-
-    // const uploadResume = (event) => {
-    //     if (event.target.value == '') {
-    //         console.log('invalid value')
+    // function uploadResume(file) {
+    //     if (file == '') {
+    //         console.log('invalid resume');
     //     } else {
-    //         uploadFile(event.target.value, 'resume')
+    //         uploadFile(file, 'resume');
     //     }
     // }
+
+    const uploadResume = (event) => {
+        if (event.target.value == '') {
+            console.log('invalid value')
+        } else {
+            uploadFile(event.target.value, 'resume')
+        }
+    }
 
     function resetValidation() {
         setValidated(false);
@@ -288,7 +288,7 @@ const RegistrationForm = () => {
                                 id="fileUpload"
                                 type="file"
                                 accept=".pdf"
-                                // onChange={uploadResume}
+                                onChange={uploadResume}
                             />
                         </Form.Group> 
 

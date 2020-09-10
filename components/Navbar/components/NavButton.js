@@ -7,10 +7,10 @@ const NavButton = () => (
   <a
     className={styles.a}
     href="/register"
-    target="_blank"
     rel="noopener noreferrer"
   >
     <Button className={styles.btn}>
+      {/* ${'registered=true' in window.location.pathname ? styles.btnRegistered : ''} */}
       <div className={`align-self-middle ${styles.btnRegisterText}`}>
         Register
       </div>
