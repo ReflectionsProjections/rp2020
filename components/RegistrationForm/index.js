@@ -29,7 +29,7 @@ const RegistrationForm = () => {
 
     function autofill(response) {
         let firstName = document.querySelector("#firstnamefield");
-        // firstName.value = response.data.
+        // firstName.value = response.data.firstName
         let lastName = document.querySelector("#lastnamefield");
         let email = document.querySelector("#emailfield");
         let gender = document.querySelector("#genderfield");
@@ -174,6 +174,8 @@ const RegistrationForm = () => {
                         </Form.Group>
 
                         <Form.Group as={Row} controlId="formGraduation">
+                            <Form.Label column sm={2}>Graduation Year</Form.Label>
+                            <Col sm={10}>
                                 <Form.Control required as="select" id="graduationfield">
                                     <option selected disabled value="">Graduation Year</option>
                                     <option>2018</option>
@@ -190,9 +192,12 @@ const RegistrationForm = () => {
                                 <Form.Control.Feedback type="invalid">
                                     Please provide a valid graduation year.
                                 </Form.Control.Feedback>
+                            </Col>
                         </Form.Group>
 
                         <Form.Group as={Row} controlId="formSchool">
+                            <Form.Label column sm={2}>School</Form.Label>
+                            <Col sm={10}>
                                 <Form.Control required as="select" id="schoolfield" onChange={handleSchoolChange}>
                                     <option selected disabled value="">University</option>
                                     <option>University of Illinois at Urbana-Champaign</option>
@@ -226,26 +231,31 @@ const RegistrationForm = () => {
                             <Form.Control.Feedback type="invalid">
                                 Please provide a valid school.
                             </Form.Control.Feedback>
-                            
+                            </Col>
                         </Form.Group>
 
                         <Form.Group as={Row} controlId="formMajor">
-                            <Form.Control required as="select" id="majorfield">
-                                <option selected disabled value="">Major</option>
-                                <option>Computer Science</option>
-                                <option>Electrical and Computer Engineering</option>
-                                <option>Information Science</option>
-                                <option>Other</option>
-                                <option>Not Applicable</option>
-                            </Form.Control>
-                            <Form.Control.Feedback type="invalid">
-                                Please provide a valid major.
-                            </Form.Control.Feedback>
+                            <Form.Label column sm={2}>Major</Form.Label>
+                            <Col sm={10}>
+                                <Form.Control required as="select" id="majorfield">
+                                    <option selected disabled value="">Major</option>
+                                    <option>Computer Science</option>
+                                    <option>Electrical and Computer Engineering</option>
+                                    <option>Information Science</option>
+                                    <option>Other</option>
+                                    <option>Not Applicable</option>
+                                </Form.Control>
+                                <Form.Control.Feedback type="invalid">
+                                    Please provide a valid major.
+                                </Form.Control.Feedback>
+                            </Col>
                         </Form.Group>
 
                         <Form.Group as={Row} controlId="formInterest">
+                            <Form.Label column sm={2}>I'm looking for a: </Form.Label>
+                            <Col sm={10}>
                             <Form.Control required as="select" id="interestfield">
-                                <option selected disabled value="">I'm looking for a: </option>
+                                <option selected disabled value="">Select an option...</option>
                                 <option>Internship</option>
                                 <option>Full-Time</option>
                                 <option>Other</option>
@@ -254,6 +264,7 @@ const RegistrationForm = () => {
                             <Form.Control.Feedback type="invalid">
                                 Please select an option.
                             </Form.Control.Feedback>
+                            </Col>
                         </Form.Group>
 
                         <Form.Group controlId="formRPKnowledge">
@@ -290,6 +301,8 @@ const RegistrationForm = () => {
                         </Form.Group>
 
                         <Form.Group as={Row} controlId="formGender">
+                            <Form.Label column sm={2}>Gender </Form.Label>
+                            <Col sm={10}>
                                 <Form.Control as="select" id="genderfield">
                                     <option selected disabled value="">Gender (Optional)</option>
                                     <option>Male</option>
@@ -301,9 +314,12 @@ const RegistrationForm = () => {
                                 <Form.Control.Feedback type="invalid">
                                     Please provide a valid gender.
                                 </Form.Control.Feedback>
+                            </Col>
                         </Form.Group>
 
                         <Form.Group as={Row} controlId="formRace">
+                            <Form.Label column sm={2}>Race: </Form.Label>
+                            <Col sm={10}>
                                 <Form.Control as="select" id="racefield">
                                     <option selected disabled value="">Race (Optional)</option>
                                     <option>American Indian or Alaska Native</option>
@@ -318,6 +334,7 @@ const RegistrationForm = () => {
                                 <Form.Control.Feedback type="invalid">
                                     Please provide a valid race.
                                 </Form.Control.Feedback>
+                            </Col>
                         </Form.Group>
 
 
