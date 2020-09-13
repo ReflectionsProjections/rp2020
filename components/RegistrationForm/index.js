@@ -19,8 +19,8 @@ const RegistrationForm = () => {
     const [validated, setValidated] = useState(false);
     const [previousAttendance, setPreviousAttendance] = useState(true);
     const [schoolSelected, setSchoolSelected] = useState(""); 
-    const [majorSelected, setMajorSelected] = useState(""); 
     const [otherSchool, setOtherSchool] = useState(""); 
+    const [majorSelected, setMajorSelected] = useState(""); 
     const [otherMajor, setOtherMajor] = useState(""); 
 
     let query = {};
@@ -29,18 +29,33 @@ const RegistrationForm = () => {
         console.log(query)
     }
 
-    useEffect(() => {
-        axios.get('registration/').then(function (response) {
-            console.log('hi' + response);
-        }).catch(function (error) {
-            console.log(error);
-        });
+    function autofill(response) {
+        let firstName = document.querySelector("#firstnamefield");
+        // firstName.value = response.data.firstName
+        let lastName = document.querySelector("#lastnamefield");
+        let email = document.querySelector("#emailfield");
+        let gender = document.querySelector("#genderfield");
+        let race = document.querySelector("#firstname");
+        let graduationYear = document.querySelector("#graduationfield");
+        let school = document.querySelector("#schoolfield");
+        let major = document.querySelector("#majorfield");
+        let interest = document.querySelector("#interestfield");
+        let rpKnowledge = document.querySelector("#rpknowledgefield");
+        let attendance = document.querySelector("#attendancefield");
+    }
 
+    useEffect(() => {
         if (sessionStorage.getItem('successfulRegistration') === 'true') {
-            window.location.replace('http://localhost:3000/?registered=true')
-            //window.location.replace('https://reflectionsprojections.org/?registered=true')
+            // window.location.replace('http://localhost:3000/?registered=true')
+            window.location.replace('https://reflectionsprojections.org/?registered=true')
+            axios.get('registration/').then(function (response) {
+                autofill(response);
+            }).catch(function (error) {
+                console.log(error);
+            })
         }
-    });
+        
+    }, []);
 
     const handleSchoolChange = (event) => {
         setSchoolSelected(event.target.value); 
@@ -55,7 +70,7 @@ const RegistrationForm = () => {
     }
 
     const handleOtherMajorChange = (event) => {
-        setOtherMajorSelected(event.target.value); 
+        setOtherMajor(event.target.value); 
     }
 
     const setData = (form) => {
@@ -88,33 +103,25 @@ const RegistrationForm = () => {
             if (getRegistration('attendee') !== null) {
                 isEditing = true
             }
-            uploadResume('');
             register(isEditing, 'attendee', registrationData)
+            alert("Successfully registered!");
         }
 
         setValidated(true);
-        alert("Successfully registered!");
+        
 
-        /*if (form.fileUpload.value != '') {
+        if (form.fileUpload.value != '') {
             uploadFile(form.fileUpload.value, 'resume')
-        }*/
+        }
     };
 
-    // function uploadResume(file) {
-    //     if (file == '') {
-    //         console.log('invalid resume');
+    // const uploadResume = (event) => {
+    //     if (event.target.value == '') {
+    //         console.log('invalid value')
     //     } else {
-    //         uploadFile(file, 'resume');
+    //         uploadFile(event.target.value, 'resume')
     //     }
     // }
-
-    const uploadResume = (event) => {
-        if (event.target.value == '') {
-            console.log('invalid value')
-        } else {
-            uploadFile(event.target.value, 'resume')
-        }
-    }
 
     function resetValidation() {
         setValidated(false);
@@ -139,6 +146,7 @@ const RegistrationForm = () => {
                                     required
                                     type="text" 
                                     placeholder="First Name"
+                                    id="firstnamefield"
                                 />
                                 <Form.Control.Feedback type="invalid">
                                     Please provide a valid first name.
@@ -152,6 +160,7 @@ const RegistrationForm = () => {
                                     required
                                     type="text" 
                                     placeholder="Last Name"
+                                    id="lastnamefield"
                                 />
                                 <Form.Control.Feedback type="invalid">
                                     Please provide a valid last name.
@@ -166,6 +175,7 @@ const RegistrationForm = () => {
                                     required
                                     type="email" 
                                     placeholder="Email"
+                                    id="emailfield"
                                 />
                                 <Form.Control.Feedback type="invalid">
                                     Please provide a valid email.
@@ -173,47 +183,10 @@ const RegistrationForm = () => {
                             </Col>
                         </Form.Group>
 
-                        <Form.Group as={Row} controlId="formGender">
-                            <Form.Label column sm={2}>Gender</Form.Label>
-                            <Col sm={10}>
-                                <Form.Control required as="select">
-                                    <option selected disabled value="">Gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                    <option>Nonbinary</option>
-                                    <option>Other</option>
-                                    <option>I'd rather not reply</option>
-                                </Form.Control>
-                                <Form.Control.Feedback type="invalid">
-                                    Please provide a valid gender.
-                                </Form.Control.Feedback>
-                            </Col>
-                        </Form.Group>
-
-                        <Form.Group as={Row} controlId="formRace">
-                            <Form.Label column sm={2}>Race</Form.Label>
-                            <Col sm={10}>
-                                <Form.Control required as="select">
-                                    <option selected disabled value="">Race</option>
-                                    <option>American Indian or Alaska Native</option>
-                                    <option>Asian</option>
-                                    <option>Black or African American</option>
-                                    <option>Hispanic or Latino</option>
-                                    <option>Native Hawaiian or Other Pacific Islander</option>
-                                    <option>White</option>
-                                    <option>Other</option>
-                                    <option>I'd rather not reply</option>
-                                </Form.Control>
-                                <Form.Control.Feedback type="invalid">
-                                    Please provide a valid race.
-                                </Form.Control.Feedback>
-                            </Col>
-                        </Form.Group>
-
                         <Form.Group as={Row} controlId="formGraduation">
-                            <Form.Label column sm={2}>Graduation Year</Form.Label> 
+                            <Form.Label column sm={2}>Graduation Year</Form.Label>
                             <Col sm={10}>
-                                <Form.Control required as="select">
+                                <Form.Control required as="select" id="graduationfield">
                                     <option selected disabled value="">Graduation Year</option>
                                     <option>2018</option>
                                     <option>2019</option>
@@ -235,7 +208,7 @@ const RegistrationForm = () => {
                         <Form.Group as={Row} controlId="formSchool">
                             <Form.Label column sm={2}>School</Form.Label>
                             <Col sm={10}>
-                                <Form.Control required as="select" onChange={handleSchoolChange}>
+                                <Form.Control required as="select" id="schoolfield" onChange={handleSchoolChange}>
                                     <option selected disabled value="">University</option>
                                     <option>University of Illinois at Urbana-Champaign</option>
                                     <option>University of Illinois at Chicago</option>
@@ -245,6 +218,7 @@ const RegistrationForm = () => {
                                     <option>University of Chicago</option>
                                     <option>University of Michigan at Ann-Arbor</option>
                                     <option>University of Wisconsin - Madison</option>
+                                    <option>Rutgers University</option>
                                     <option>Other</option>
                                     <option>Not Applicable</option>
                                 </Form.Control>
@@ -268,13 +242,12 @@ const RegistrationForm = () => {
                                 Please provide a valid school.
                             </Form.Control.Feedback>
                             </Col>
-                            
                         </Form.Group>
 
                         <Form.Group as={Row} controlId="formMajor" onChange={handleMajorChange}>
                             <Form.Label column sm={2}>Major</Form.Label>
                             <Col sm={10}>
-                                <Form.Control required as="select">
+                                <Form.Control required as="select" id="majorfield">
                                     <option selected disabled value="">Major</option>
                                     <option>Computer Science</option>
                                     <option>Electrical and Computer Engineering</option>
@@ -289,7 +262,7 @@ const RegistrationForm = () => {
                                             <Form.Control 
                                                 required
                                                 type="text" 
-                                                placeholder="Type your major here"
+                                                placeholder="Type your major name here"
                                                 onChange={handleOtherMajorChange}
                                             />
                                             <Form.Control.Feedback type="invalid">
@@ -308,22 +281,22 @@ const RegistrationForm = () => {
                         <Form.Group as={Row} controlId="formInterest">
                             <Form.Label column sm={2}>I'm looking for a: </Form.Label>
                             <Col sm={10}>
-                                <Form.Control required as="select">
-                                    <option selected disabled value="">Select option...</option>
-                                    <option>Internship</option>
-                                    <option>Full-Time</option>
-                                    <option>Other</option>
-                                    <option>Currently not looking</option>
-                                </Form.Control>
-                                <Form.Control.Feedback type="invalid">
-                                    Please select an option.
-                                </Form.Control.Feedback>
+                            <Form.Control required as="select" id="interestfield">
+                                <option selected disabled value="">Select an option...</option>
+                                <option>Internship</option>
+                                <option>Full-Time</option>
+                                <option>Other</option>
+                                <option>Currently not looking</option>
+                            </Form.Control>
+                            <Form.Control.Feedback type="invalid">
+                                Please select an option.
+                            </Form.Control.Feedback>
                             </Col>
                         </Form.Group>
 
                         <Form.Group controlId="formRPKnowledge">
                             <Form.Label>How did you find out about Reflections | Projections?</Form.Label>
-                            <Form.Control required as="select" multiple>
+                            <Form.Control required as="select" id="rpknowledgefield" multiple>
                                 <option>Friends/Family</option>
                                 <option>Email/Newsletter</option>
                                 <option>Department</option>
@@ -344,7 +317,7 @@ const RegistrationForm = () => {
 
                         <Form.Group controlId="formAttendance">
                             {/* <Form.Label column sm={2}>Race</Form.Label> */}
-                            <Form.Control required as="select">
+                            <Form.Control required as="select" id="attendancefield">
                                 <option selected disabled value="">Have you attended RP in the past?</option>
                                 <option>Yes</option>
                                 <option>No</option>
@@ -354,13 +327,51 @@ const RegistrationForm = () => {
                             </Form.Control.Feedback>
                         </Form.Group>
 
+                        <Form.Group as={Row} controlId="formGender">
+                            <Form.Label column sm={2}>Gender </Form.Label>
+                            <Col sm={10}>
+                                <Form.Control as="select" id="genderfield">
+                                    <option selected disabled value="">Gender (Optional)</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Nonbinary</option>
+                                    <option>Other</option>
+                                    <option>I'd rather not reply</option>
+                                </Form.Control>
+                                <Form.Control.Feedback type="invalid">
+                                    Please provide a valid gender.
+                                </Form.Control.Feedback>
+                            </Col>
+                        </Form.Group>
+
+                        <Form.Group as={Row} controlId="formRace">
+                            <Form.Label column sm={2}>Race: </Form.Label>
+                            <Col sm={10}>
+                                <Form.Control as="select" id="racefield">
+                                    <option selected disabled value="">Race (Optional)</option>
+                                    <option>American Indian or Alaska Native</option>
+                                    <option>Asian</option>
+                                    <option>Black or African American</option>
+                                    <option>Hispanic or Latino</option>
+                                    <option>Native Hawaiian or Other Pacific Islander</option>
+                                    <option>White</option>
+                                    <option>Other</option>
+                                    <option>I'd rather not reply</option>
+                                </Form.Control>
+                                <Form.Control.Feedback type="invalid">
+                                    Please provide a valid race.
+                                </Form.Control.Feedback>
+                            </Col>
+                        </Form.Group>
+
+
                         <Form.Group>
                             <Form.Label>Upload your resume (optional)</Form.Label>
                             <Form.Control
                                 id="fileUpload"
                                 type="file"
                                 accept=".pdf"
-                                onChange={uploadResume}
+                                // onChange={uploadResume}
                             />
                         </Form.Group> 
 
