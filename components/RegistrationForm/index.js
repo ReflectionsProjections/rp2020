@@ -19,6 +19,8 @@ const RegistrationForm = () => {
     const [previousAttendance, setPreviousAttendance] = useState(true);
     const [schoolSelected, setSchoolSelected] = useState(""); 
     const [otherSchool, setOtherSchool] = useState(""); 
+    const [majorSelected, setMajorSelected] = useState(""); 
+    const [otherMajor, setOtherMajor] = useState(""); 
 
     let query = {};
     if (process.browser) {
@@ -76,6 +78,14 @@ const RegistrationForm = () => {
         setOtherSchool(event.target.value); 
     }
 
+    const handleMajorChange = (event) => {
+        setMajorSelected(event.target.value); 
+    }
+
+    const handleOtherMajorChange = (event) => {
+        setOtherMajor(event.target.value); 
+    }
+
     const setData = (form) => {
         return {
             "firstName": form.formFirstName.value,
@@ -86,7 +96,7 @@ const RegistrationForm = () => {
             "race": form.formRace.value,
             "graduationYear": parseInt(form.formGraduation.value),
             "school": form.formSchool.value === "Other" ? otherSchool : form.formSchool.value,
-            "major": form.formMajor.value,
+            "major": form.formMajor.value === "Other" ? otherMajor : form.formMajor.value,
             "interests": form.formInterest.value,
             "rpKnowledge": form.formRPKnowledge.value,
             "priorAttendance": true
@@ -246,7 +256,7 @@ const RegistrationForm = () => {
                             </Col>
                         </Form.Group>
 
-                        <Form.Group as={Row} controlId="formMajor">
+                        <Form.Group as={Row} controlId="formMajor" onChange={handleMajorChange}>
                             <Form.Label column sm={2}>Major</Form.Label>
                             <Col sm={10}>
                                 <Form.Control required as="select" id="majorfield">
@@ -257,6 +267,23 @@ const RegistrationForm = () => {
                                     <option>Other</option>
                                     <option>Not Applicable</option>
                                 </Form.Control>
+
+                                {majorSelected === 'Other' && 
+                                    <Form.Group as={Row} controlId="otherMajor">
+                                        <Col>
+                                            <Form.Control 
+                                                required
+                                                type="text" 
+                                                placeholder="Type your major name here"
+                                                onChange={handleOtherMajorChange}
+                                            />
+                                            <Form.Control.Feedback type="invalid">
+                                                Please provide a valid major. 
+                                            </Form.Control.Feedback>
+                                        </Col>
+                                    </Form.Group>
+                                }
+
                                 <Form.Control.Feedback type="invalid">
                                     Please provide a valid major.
                                 </Form.Control.Feedback>
