@@ -13,9 +13,8 @@ import '../static/stylesheets/animations.scss';
 const Register = () => {
 
   useEffect(() => {
-    
     if (!isAuthenticated()) {
-      //authenticate('https://reflectionsprojections.org/auth')
+      authenticate('https://reflectionsprojections.org/auth')
     }
   });
     

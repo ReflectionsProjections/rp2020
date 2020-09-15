@@ -37,7 +37,7 @@ const RegistrationForm = () => {
         email.value = response.email;
         let gender = document.querySelector("#genderfield");
         gender.value = response.gender;
-        let race = document.querySelector("#firstname");
+        let race = document.querySelector("#racefield");
         race.value = response.race;
         let graduationYear = document.querySelector("#graduationfield");
         graduationYear.value = response.graduationYear;
@@ -49,22 +49,22 @@ const RegistrationForm = () => {
         interests.value = response.interests;
         let rpKnowledge = document.querySelector("#rpknowledgefield");
         rpKnowledge.value = response.rpKnowledge;
-        let attendance = document.querySelector("#attendancefield");
-        attendance.value = response.priorAttendance;
     }
 
     useEffect(() => {
-        axios.get('registration/').then(function (response) {
-            autofill(response.json());
-            if (response.json().status != 500) {
-                setGotRegistration(true);
-            }
-        }).catch(function (error) {
-            setGotRegistration(false);
-        })
+        console.log('Running')
+        sessionStorage.setItem('rpToken', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbXJham1vb3JqYW5pQGdtYWlsLmNvbSIsImV4cCI6MTYwMDc5ODc4NiwiaWQiOiJnaXRodWIxMTk0NTI4MyIsInJvbGVzIjpbIlVzZXIiLCJBcHBsaWNhbnQiXX0.hAhibBaK05mOovClsCxxpxLBCei7mlwm0Y3gZS6KODI')
+        
+        let response = null;
+        if (response = getRegistration('attendee')) {
+            // getRegistration('attendee');
+            console.log(response);
+            autofill(response);
+            setGotRegistration(true);
+        }
 
         if (sessionStorage.getItem('successfulRegistration') === 'true') {
-            // window.location.replace('http://localhost:3000/?registered=true')
+            //window.location.replace('http://localhost:3000/?registered=true')
             window.location.replace('https://reflectionsprojections.org/?registered=true')
         }
         
