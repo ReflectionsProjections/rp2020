@@ -13,10 +13,9 @@ import { getRegistration, register, uploadFile } from '../../api/api';
 import { getQueryObject } from '../../lib/path';
 import axios from 'axios';
 
-
-
 const RegistrationForm = () => {
     const [validated, setValidated] = useState(false);
+    const [gotRegistration, setGotRegistration] = useState(false);
     const [previousAttendance, setPreviousAttendance] = useState(true);
     const [schoolSelected, setSchoolSelected] = useState(""); 
     const [otherSchool, setOtherSchool] = useState(""); 
@@ -29,28 +28,42 @@ const RegistrationForm = () => {
 
     function autofill(response) {
         let firstName = document.querySelector("#firstnamefield");
-        // firstName.value = response.data.firstName
+        firstName.value = response.firstName;
         let lastName = document.querySelector("#lastnamefield");
+        lastName.value = response.lastName;
         let email = document.querySelector("#emailfield");
+        email.value = response.email;
         let gender = document.querySelector("#genderfield");
+        gender.value = response.gender;
         let race = document.querySelector("#firstname");
+        race.value = response.race;
         let graduationYear = document.querySelector("#graduationfield");
+        graduationYear.value = response.graduationYear;
         let school = document.querySelector("#schoolfield");
+        school.value = response.school;
         let major = document.querySelector("#majorfield");
-        let interest = document.querySelector("#interestfield");
+        major.value = response.major;
+        let interests = document.querySelector("#interestfield");
+        interests.value = response.interests;
         let rpKnowledge = document.querySelector("#rpknowledgefield");
+        rpKnowledge.value = response.rpKnowledge;
         let attendance = document.querySelector("#attendancefield");
+        attendance.value = response.priorAttendance;
     }
 
     useEffect(() => {
+        axios.get('registration/').then(function (response) {
+            autofill(response.json());
+            if (response.json().status != 500) {
+                setGotRegistration(true);
+            }
+        }).catch(function (error) {
+            setGotRegistration(false);
+        })
+
         if (sessionStorage.getItem('successfulRegistration') === 'true') {
             // window.location.replace('http://localhost:3000/?registered=true')
             window.location.replace('https://reflectionsprojections.org/?registered=true')
-            axios.get('registration/').then(function (response) {
-                autofill(response);
-            }).catch(function (error) {
-                console.log(error);
-            })
         }
         
     }, []);
@@ -90,7 +103,7 @@ const RegistrationForm = () => {
 
             let isEditing = false
     
-            if (getRegistration('attendee') !== null) {
+            if (gotRegistration) {
                 isEditing = true
             }
             register(isEditing, 'attendee', registrationData)
@@ -98,7 +111,6 @@ const RegistrationForm = () => {
         }
 
         setValidated(true);
-        
 
         if (form.fileUpload.value != '') {
             uploadFile(form.fileUpload.value, 'resume')

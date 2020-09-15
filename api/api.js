@@ -42,8 +42,8 @@ export function getRegistration(role) {
 }
 
 export function register(isEditing, role, registration) {
-  //const method = isEditing ? 'PUT' : 'POST';
-  const method = 'POST'
+  const method = isEditing ? 'PUT' : 'POST';
+  // const method = 'POST'
   return requestRegistration(method, `/registration/${role}/`, registration);
 }
 
