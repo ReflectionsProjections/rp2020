@@ -6,7 +6,7 @@ import styles from './NavButton.scss';
 const NavButton = () => (
   <a
     className={styles.a}
-    href="/register"
+    href="/registerselector"
     rel="noopener noreferrer"
   >
     <Button className={styles.btn}>

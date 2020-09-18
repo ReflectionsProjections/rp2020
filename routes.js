@@ -5,4 +5,5 @@ module.exports = routes()
   .add('timeline')
   .add('speaker', '/speaker/:name')
   .add('dashboard')
-  .add('register');
+  .add('register')
+  .add('registerselector');
