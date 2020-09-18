@@ -23,6 +23,7 @@ module.exports = (phase, { defaultConfig }) => {
         '/sponsor': { page: '/sponsor' },
         '/startup': { page: '/startup' },
         '/register': {page: '/register'},
+        '/registerselector': {page: '/registerselector'}, 
         '/symposium': { page: '/symposium' },
         '/auth': { page: '/auth' },
         //'/register': { page: '/register' },

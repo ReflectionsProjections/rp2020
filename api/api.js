@@ -38,12 +38,26 @@ export function getToken(code) {
 }
 
 export function getRegistration(role) {
-  return request('GET', `/registration/${role}/`);
+  // return request('GET', `/registration/${role}/`);
+
+  var requestOptions = {
+    method: 'GET',
+    headers: {
+      Authorization: sessionStorage.getItem('rptoken'),
+      'Content-Type': 'application/json',
+    },
+  };
+  console.log('ready to make request')
+
+  return fetch("https://api.reflectionsprojections.org/registration/attendee/", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
 }
 
 export function register(isEditing, role, registration) {
-  //const method = isEditing ? 'PUT' : 'POST';
-  const method = 'POST'
+  const method = isEditing ? 'PUT' : 'POST';
+  // const method = 'POST'
   return requestRegistration(method, `/registration/${role}/`, registration);
 }
 
