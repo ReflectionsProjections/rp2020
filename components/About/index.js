@@ -8,6 +8,7 @@ import Section from '../../UIComponents/Section';
 import styles from './about.scss';
 
 const About = () => (
+  <>
   <Section className={styles.aboutSection}>
     <Section.Header>
       <Section.Title>About</Section.Title>
@@ -28,7 +29,7 @@ const About = () => (
                 Reflections | Projections is an annual technology conference
                 held at the University of Illinois at Urbana-Champaign. Inviting
                 premier speakers, influencers, and companies, it features a
-                puzzle competition, speaker events, and a 24-hour AI hackathon.
+                puzzle hunt, speaker events, and a 24-hour AI hackathon.
                 Reflections | Projections is coming on its 26th anniversary this
                 year, upholding its standards of excellence.
               </p>
@@ -66,46 +67,18 @@ const About = () => (
                 Please feel free to contact angiesc2@illinois.edu if you have any other questions!
               </p>
               <p>
-                Preregistration is currently open at <a href="https://docs.google.com/forms/d/e/1FAIpQLScaHV4dPpOYCxWQ-Mur8T9T5gg7L8lhUbXBqu4c3aZnU6hWqQ/viewform">tinyurl.com/mm26registration</a>
+                Preregistration is currently open at <a href="https://docs.google.com/forms/d/e/1FAIpQLScaHV4dPpOYCxWQ-Mur8T9T5gg7L8lhUbXBqu4c3aZnU6hWqQ/viewform">tinyurl.com/mm26registration</a>.
+              </p>
+              <p>
+                Also, you can join our discord which contains up to date announcements about the hackathon <a href="https://discord.gg/KfwrcqV">here</a>.
               </p>
             </div>
-
-            {/* <Row>
-              <Col className="pb-4" md={4}>
-                <h3>25 Years of History</h3>
-                <p>See how far our conference has come.</p>
-                <NextLink href="/timeline">
-                  <Button>Timeline</Button>
-                </NextLink>
-              </Col>
-              <Col className="pb-4" md={4}>
-                <h3>Social Media Challenge</h3>
-                <p>Win a giveaway!</p>
-                <NextLink href="/challenge">
-                  <Button>Challenge Details</Button>
-                </NextLink>
-              </Col>
-              <Col className="pb-4" md={4}>
-                <h3>Social Media</h3>
-                <p>Follow us to stay updated!</p>
-                <div className={styles.socialMediaIcons}>
-                  <a href="https://www.facebook.com/acmrp/">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="https://www.instagram.com/uiuc_rp/">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="https://twitter.com/uiuc_rp">
-                    <i className="fab fa-twitter" />
-                  </a>
-                </div>
-              </Col>
-            </Row> */}
           </Col>
         </Row>
       </Container>
     </Section.Body>
   </Section>
+  </>
 );
 
 export default About;

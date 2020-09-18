@@ -104,12 +104,6 @@ const Agenda = ({ events }) => {
     setSelectedType(value);
   };
 
-  const startupFairMapLink = isMobile
-    ? '/static/startup-fair-map.jpg'
-    : '/static/startup-fair-map.pdf';
-  const careerFairMapLink = isMobile
-    ? '/static/career-fair-map.jpg'
-    : '/static/career-fair-map.pdf';
 
   return (
     <Section>
@@ -118,16 +112,6 @@ const Agenda = ({ events }) => {
       </Section.Header>
       <Section.Body>
         <Container>
-          <Row className="pb-4">
-            <Col className="text-center">
-              <Button style={{ margin: '10px' }} href={startupFairMapLink}>
-                Startup Fair Map
-              </Button>
-              <Button style={{ margin: '10px' }} href={careerFairMapLink}>
-                Career Fair Map
-              </Button>
-            </Col>
-          </Row>
           <Row className="pb-4">
             <Col className="text-center">
               <UIButtonGroupSelect

@@ -457,6 +457,26 @@
     "tier2": [],
     "tier3": [
       {
+        "name": "Microsoft",
+        "img": "/static/assets/img/sponsors/Microsoft.png",
+        "website": "https://careers.microsoft.com/us/en/"
+      },
+      {
+        "name": "Facebook",
+        "img": "/static/assets/img/sponsors/Facebook.png",
+        "website": "https://www.facebook.com/careers"
+      },
+      {
+        "name": "Grainger",
+        "img": "/static/assets/img/sponsors/Grainger.png",
+        "website": "https://jobs.grainger.com/"
+      },
+      {
+        "name": "AT&T",
+        "img": "/static/assets/img/sponsors/Att.png",
+        "website": "https://www.att.jobs/"
+      },
+      {
         "name": "Aechelon Technology",
         "img": "/static/assets/img/sponsors/AechelonTechnology.png",
         "website": "http://aechelon.com/"

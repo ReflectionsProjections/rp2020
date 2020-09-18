@@ -18,6 +18,33 @@ body {
   padding: 0;
 }
 
+
+@-webkit-keyframes Animation {
+  0%{background-position:0% 76%}
+  50%{background-position:100% 25%}
+  100%{background-position:0% 76%}
+}
+@-moz-keyframes Animation {
+  0%{background-position:0% 76%}
+  50%{background-position:100% 25%}
+  100%{background-position:0% 76%}
+}
+@keyframes Animation {
+  0%{background-position:0% 76%}
+  50%{background-position:100% 25%}
+  100%{background-position:0% 76%}
+}
+
+.extra {
+  background: linear-gradient(228deg, #33cccc, #007ab7, #041c47);
+  background-size: 600% 600%;
+
+  -webkit-animation: Animation 13s ease infinite;
+  -moz-animation: Animation 13s ease infinite;
+  animation: Animation 13s ease infinite;
+
+}
+
 body {
   background: url('/static/assets/triangles.png') no-repeat
     center center fixed;

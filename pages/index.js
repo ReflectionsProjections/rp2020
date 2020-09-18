@@ -8,13 +8,15 @@ import { useState, useEffect } from 'react';
 import Gate from '../UIComponents/Gate';
 import Layout from '../UIComponents/Layout';
 import Nav from '../components/Nav';
-import CountdownTimer from '../components/CountdownTimer';
 import About from '../components/About/index';
+import Agenda from '../components/Agenda/index';
 import Speaker from '../components/Speaker';
 import Events from '../components/Events';
 import SponsorSection from '../components/SponsorSection';
 import Footer from '../components/Footer';
 import NotifBanner from '../components/NotifBanner';
+import Banner from '../components/Banner';
+import BackgroundVideo from 'react-background-video-player'
 import FAQ from '../components/FAQ';
 import NavButton from '../components/Navbar/components/NavButton';
 
@@ -25,10 +27,18 @@ import { getQueryObject } from '../lib/path';
 import useGetStaticData from '../services/useGetStaticData';
 
 const Index = () => {
+  const [registered, setRegistered] = useState(false);
+
   let query = {};
   if (process.browser) {
-    query = getQueryObject(window);
+      query = getQueryObject(window);
   }
+
+  useEffect(() => {
+    if (query.registered === "true") {
+      setRegistered(true)
+    }
+  });
 
   const { isLoaded, rpData, nav, gates } = useGetStaticData();
 
@@ -56,9 +66,14 @@ const Index = () => {
         <meta name="twitter:creator" content="@uiuc_rp" />
       </Head>
       <Layout>
+        
         <main className="landing">
           <div className="container">
             <div className={`text-white text-center ${styles.leadContent}`}>
+              {/*registered && (<Banner
+                title="Thank you for registering for R|P 2020!"
+                css={{ color: "#FFF", backgroundColor: "#FFC0CB", fontSize: 20 }}
+              />)*/}
               <SVG
                 className={`img-fluid animated fadeIn ${styles.wordmark}`}
                 src="/static/assets/wordmarkwhite.svg"
@@ -81,21 +96,22 @@ const Index = () => {
             </Link>
           </div>
         </main>
+        
         {isLoaded && (
           <>
             {<Element>
               <Nav format={nav.index} />
             </Element>}
+            {/*<Element name="agenda">
+              <Agenda events={events} />
+            </Element>*/}
+            
             <Element name="about">
+              
               <About />
             </Element>
-            {/* <Element name="agenda">
-              <Gate gatename="AGENDA_SECTION" gates={gates} query={query}>
-                <Agenda events={events} />
-              </Gate>
-            </Element> */}
             <Element name="speakers">
-              {<Speaker speakers={speakerSection.list} />}
+              <Speaker speakers={speakerSection.list} />
             </Element>
             {/*<Element name="projects">
               <Project projects={projectSection.list} />
