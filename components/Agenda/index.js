@@ -73,9 +73,9 @@ const DayAgenda = ({ label, events }) => {
                 {formatTime(event.time)}
               </UITimelineEvent.Time>
               <UITimelineEvent.Body>
-                {event.title}
+                <a href={event.link}>{event.title} </a>
                 <br />
-                <span style={{ fontWeight: 200 }}>{event.location}</span>
+                <span style={{ fontWeight: 200 }}><a href={event.link}>{event.location}</a></span>
                 {event.hasPage && (
                   <>
                     <br />
@@ -126,28 +126,28 @@ const Agenda = ({ events }) => {
           </Row>
           <Row>
             <DayAgenda
-              label="Monday Sep 16th"
-              events={filterEvents(allEvents, '09-16-2019', selectedType)}
+              label="Monday Sep 21st"
+              events={filterEvents(allEvents, '09-21-2020', selectedType)}
             />
             <DayAgenda
-              label="Tuesday Sep 17th"
-              events={filterEvents(allEvents, '09-17-2019', selectedType)}
+              label="Tuesday Sep 22nd"
+              events={filterEvents(allEvents, '09-22-2020', selectedType)}
             />
             <DayAgenda
-              label="Wednesday Sep 18th"
-              events={filterEvents(allEvents, '09-18-2019', selectedType)}
+              label="Wednesday Sep 23rd"
+              events={filterEvents(allEvents, '09-23-2020', selectedType)}
             />
             <DayAgenda
-              label="Thursday Sep 19th"
-              events={filterEvents(allEvents, '09-19-2019', selectedType)}
+              label="Thursday Sep 24th"
+              events={filterEvents(allEvents, '09-24-2020', selectedType)}
             />
             <DayAgenda
-              label="Friday Sep 20th"
-              events={filterEvents(allEvents, '09-20-2019', selectedType)}
+              label="Friday Sep 25th"
+              events={filterEvents(allEvents, '09-25-2020', selectedType)}
             />
             <DayAgenda
-              label="Saturday Sep 21st"
-              events={filterEvents(allEvents, '09-21-2019', selectedType)}
+              label="Saturday Sep 26th"
+              events={filterEvents(allEvents, '09-26-2020', selectedType)}
             />
           </Row>
         </Container>

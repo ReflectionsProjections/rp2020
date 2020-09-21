@@ -19,33 +19,37 @@ body {
 }
 
 
-@-webkit-keyframes Animation {
-  0%{background-position:0% 76%}
-  50%{background-position:100% 25%}
-  100%{background-position:0% 76%}
+body {
+  background: radial-gradient(#041c47, #0058af, #00a8c4, #83ddcc, #ffe6e6);
+  background-size: 800% 8000%;
+  -webkit-animation: gradient 35s ease infinite;
+  -moz-animation: gradient 35s ease infinite;
+  animation: gradient 35s ease infinite;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: 'Roboto', sans-serif;
+
 }
-@-moz-keyframes Animation {
-  0%{background-position:0% 76%}
-  50%{background-position:100% 25%}
-  100%{background-position:0% 76%}
+@-webkit-keyframes gradient {
+  0%{background-position:20% 75%}
+  50%{background-position:80% 25%}
+  100%{background-position:20% 75%}
 }
-@keyframes Animation {
-  0%{background-position:0% 76%}
-  50%{background-position:100% 25%}
-  100%{background-position:0% 76%}
+@-moz-keyframes gradient {
+  0%{background-position:20% 75%}
+  50%{background-position:80% 25%}
+  100%{background-position:20% 75%}
+}
+@keyframes gradient {
+  0%{background-position:20% 75%}
+  50%{background-position:80% 25%}
+  100%{background-position:20% 75%}
 }
 
 .extra {
-  background: linear-gradient(228deg, #33cccc, #007ab7, #041c47);
-  background-size: 600% 600%;
-
-  -webkit-animation: Animation 13s ease infinite;
-  -moz-animation: Animation 13s ease infinite;
-  animation: Animation 13s ease infinite;
-
-}
-
-body {
   background: url('/static/assets/triangles.png') no-repeat
     center center fixed;
   -webkit-background-size: cover;

@@ -7,7 +7,6 @@ const NavButton = () => (
   <a
     className={styles.a}
     href="/register"
-    target="_blank"
     rel="noopener noreferrer"
   >
     <Button className={styles.btn}>

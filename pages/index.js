@@ -70,10 +70,10 @@ const Index = () => {
         <main className="landing">
           <div className="container">
             <div className={`text-white text-center ${styles.leadContent}`}>
-              {/*registered && (<Banner
-                title="Thank you for registering for R|P 2020!"
-                css={{ color: "#FFF", backgroundColor: "#FFC0CB", fontSize: 20 }}
-              />)*/}
+              {registered && (<Banner
+                title="Thank you for registering for R|P!"
+                css={{ color: "#FFF", backgroundColor: "#FFC0CB", fontSize: 20, "border-radius": "25px", height: "2em", "line-height": "2em"}}
+              />)}
               <SVG
                 className={`img-fluid animated fadeIn ${styles.wordmark}`}
                 src="/static/assets/wordmarkwhite.svg"
@@ -102,9 +102,9 @@ const Index = () => {
             {<Element>
               <Nav format={nav.index} />
             </Element>}
-            {/*<Element name="agenda">
+            <Element name="agenda">
               <Agenda events={events} />
-            </Element>*/}
+            </Element>
             
             <Element name="about">
               

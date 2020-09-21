@@ -3,6 +3,10 @@
     "type": "BASIC_NAV",
     "items": [
       {
+        "name": "agenda",
+        "label": "Schedule"
+      },
+      {
         "name": "about",
         "label": "About"
       },
