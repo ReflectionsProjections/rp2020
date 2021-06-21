@@ -133,41 +133,6 @@ const RegistrationForm = () => {
                             </Col>
                         </Form.Group>
 
-                        <Form.Group as={Row} controlId="formGender">
-                            <Form.Label column sm={2}>Gender</Form.Label>
-                            <Col sm={10}>
-                                <Form.Control required as="select">
-                                    <option selected disabled value="">Gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                    <option>Nonbinary</option>
-                                    <option>Other</option>
-                                    <option>I'd rather not reply</option>
-                                </Form.Control>
-                                <Form.Control.Feedback type="invalid">
-                                    Please provide a valid gender.
-                                </Form.Control.Feedback>
-                            </Col>
-                        </Form.Group>
-
-                        <Form.Group controlId="formRace">
-                            {/* <Form.Label column sm={2}>Race</Form.Label> */}
-                            <Form.Control required as="select">
-                                <option selected disabled value="">Race</option>
-                                <option>American Indian or Alaska Native</option>
-                                <option>Asian</option>
-                                <option>Black or African American</option>
-                                <option>Hispanic or Latino</option>
-                                <option>Native Hawaiian or Other Pacific Islander</option>
-                                <option>White</option>
-                                <option>Other</option>
-                                <option>I'd rather not reply</option>
-                            </Form.Control>
-                            <Form.Control.Feedback type="invalid">
-                                Please provide a valid race.
-                            </Form.Control.Feedback>
-                        </Form.Group>
-
                         <Form.Group controlId="formGraduation">
                             {/* <Form.Label column sm={2}>Graduation Year</Form.Label> */}
                             <Form.Control required as="select">
@@ -200,6 +165,12 @@ const RegistrationForm = () => {
                                 <option>University of Chicago</option>
                                 <option>University of Michigan at Ann-Arbor</option>
                                 <option>University of Wisconsin - Madison</option>
+                                <option>Rutgers</option>
+                                <option>UC Berkeley</option>
+                                <option>Carnegie Mellon University</option>
+                                <option>Stanford</option>
+                                <option>Cornell</option>
+                                <option>University of Waterloo</option>
                                 <option>Other</option>
                                 <option>Not Applicable</option>
                             </Form.Control>
@@ -219,7 +190,7 @@ const RegistrationForm = () => {
                                 <option>Not Applicable</option>
                             </Form.Control>
                             <Form.Control.Feedback type="invalid">
-                                Please provide a valid major.
+                                Please provide a valid major, or select other.
                             </Form.Control.Feedback>
                         </Form.Group>
 
@@ -252,11 +223,6 @@ const RegistrationForm = () => {
                             </Form.Control.Feedback>
                         </Form.Group>
                         
-                        {/*<Form.Group as={Row} controlId="formHorizontalAttendance">
-                            <Col sm={10}>
-                            <Form.Check label="Have you attended Reflections | Projections before?" onChange={checkboxFunction} />
-                            </Col>
-                        </Form.Group>*/}
 
                         <Form.Group controlId="formAttendance">
                             {/* <Form.Label column sm={2}>Race</Form.Label> */}
@@ -270,8 +236,40 @@ const RegistrationForm = () => {
                             </Form.Control.Feedback>
                         </Form.Group>
 
+                        <Form.Group controlId="formGender">
+                            <Form.Control required as="select">
+                                <option selected disabled value="">Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Nonbinary</option>
+                                <option>Other</option>
+                                <option>I'd rather not reply</option>
+                            </Form.Control>
+                            <Form.Control.Feedback type="invalid">
+                                Please provide a valid option.
+                            </Form.Control.Feedback>
+                        </Form.Group>
+
+                        <Form.Group controlId="formRace">
+                            {/* <Form.Label column sm={2}>Race</Form.Label> */}
+                            <Form.Control required as="select">
+                                <option selected disabled value="">Race</option>
+                                <option>American Indian or Alaska Native</option>
+                                <option>Asian</option>
+                                <option>Black or African American</option>
+                                <option>Hispanic or Latino</option>
+                                <option>Native Hawaiian or Other Pacific Islander</option>
+                                <option>White</option>
+                                <option>Other</option>
+                                <option>I'd rather not reply</option>
+                            </Form.Control>
+                            <Form.Control.Feedback type="invalid">
+                                Please provide a valid option.
+                            </Form.Control.Feedback>
+                        </Form.Group>
+
                         <Form.Group>
-                            <Form.Label>Upload your resume (optional)</Form.Label>
+                            <Form.Label>Upload your resume (optional) : You can update this at a later time</Form.Label>
                             <Form.Control
                                 id="fileUpload"
                                 type="file"
@@ -282,9 +280,8 @@ const RegistrationForm = () => {
 
                         <Form.Group as={Row}>
                             <Col />
-                            <Col >
-                                <Button type="submit" style={{marginLeft:'2em'}}>Register</Button>
-                                <Button type="reset" onClick={resetValidation} style={{marginLeft:'2em', color:'#FF6347'}}>Reset</Button>
+                            <Col className="text-center" >
+                                <Button type="submit">Register</Button>
                             </Col>
                             <Col />
                         </Form.Group>

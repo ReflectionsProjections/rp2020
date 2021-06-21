@@ -18,7 +18,38 @@ body {
   padding: 0;
 }
 
+
 body {
+  background: radial-gradient(#041c47, #0058af, #00a8c4, #83ddcc, #ffe6e6);
+  background-size: 800% 8000%;
+  -webkit-animation: gradient 35s ease infinite;
+  -moz-animation: gradient 35s ease infinite;
+  animation: gradient 35s ease infinite;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: 'Roboto', sans-serif;
+
+}
+@-webkit-keyframes gradient {
+  0%{background-position:20% 75%}
+  50%{background-position:80% 25%}
+  100%{background-position:20% 75%}
+}
+@-moz-keyframes gradient {
+  0%{background-position:20% 75%}
+  50%{background-position:80% 25%}
+  100%{background-position:20% 75%}
+}
+@keyframes gradient {
+  0%{background-position:20% 75%}
+  50%{background-position:80% 25%}
+  100%{background-position:20% 75%}
+}
+
+.extra {
   background: url('/static/assets/triangles.png') no-repeat
     center center fixed;
   -webkit-background-size: cover;

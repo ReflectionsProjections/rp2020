@@ -427,28 +427,391 @@
         "type": "CONFERENCE",
         "tags": [],
         "time": {
-          "start": "09-16-2019 00:00",
-          "end": "09-21-2019 24:00"
+          "start": "09-21-2020 00:00",
+          "end": "09-26-2020 24:00"
         },
-        "location": "PuzzleBang.com"
+        "location": "PuzzleBang.com",
+        "link": "https://PuzzleBang.com"
       },
       "5ad72c8753": {
-        "title": "R|P Symposium",
+        "title": "Speaker: Nick Sullivan",
         "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "displayInAgenda": true,
         "displayInEvents": true,
         "type": "CONFERENCE",
         "tags": [],
         "time": {
-          "start": "09-16-2019 14:00",
-          "end": "09-16-2019 16:00"
+          "start": "09-21-2020 16:00",
+          "end": "09-21-2020 17:00"
         },
-        "location": "Siebel Center Atrium"
+        "location": "The Myth of End-to-End Encryption on the Web",
+        "link": "https://events.reflectionsprojections.org/nick-sullivan"
+      },
+      "1b67d2439505": {
+        "title": "Goldman Sachs Tech Talk",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CORPORATE",
+        "tags": [],
+        "time": {
+          "start": "09-21-2020 17:00",
+          "end": "09-21-2020 18:00"
+        },
+        "location": "Goldman Sachs Engineering 101",
+        "link": "https://events.reflectionsprojections.org/goldman-sachs"
+      },
+      "585f6a3cac10": {
+        "title": "Speaker: Yasyf Mohamedali",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-21-2020 19:00",
+          "end": "09-21-2020 20:00"
+        },
+        "location": "Anecdotes from a Tech Founder",
+        "link": "https://events.reflectionsprojections.org/yasyf-mohamedali"
+      },
+      "fc17bc9bf96b": {
+        "title": "Speaker: Angela Oduor Lungati",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-22-2020 10:00",
+          "end": "09-22-2020 11:00"
+        },
+        "location": "Technology's Role in Social Change",
+        "link": "https://events.reflectionsprojections.org/angela-oduor-lungati"
+      },
+      "ff52346eba47": {
+        "title": "IMC Tech Talk",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CORPORATE",
+        "tags": [],
+        "time": {
+          "start": "09-22-2020 12:00",
+          "end": "09-22-2020 13:00"
+        },
+        "location": "Software Engineering at IMC",
+        "link": "https://events.reflectionsprojections.org/imc"
+      },
+      "5a981eb8011e": {
+        "title": "Grainger Tech Talk",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CORPORATE",
+        "tags": [],
+        "time": {
+          "start": "09-22-2020 15:00",
+          "end": "09-22-2020 16:00"
+        },
+        "location": "Intro to the Grainger Technology Group and CI/CD at Grainger",
+        "link": "https://events.reflectionsprojections.org/grainger"
+      },
+      "10ac138e4b54": {
+        "title": "Speaker: Tatiana Arthur",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-22-2020 17:00",
+          "end": "09-22-2020 18:00"
+        },
+        "location": "Tech-cessibility",
+        "link": "https://events.reflectionsprojections.org/tatiana-arthur-murphy"
+      },
+      "d358e94ec40e": {
+        "title": "Speaker: Dr. Mark Ciaccio",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-22-2020 18:00",
+          "end": "09-22-2020 19:00"
+        },
+        "location": "Rapid Artificial Intelligence in Pharmaceutical Research",
+        "link": "https://events.reflectionsprojections.org/mark-ciacco"
+      },
+      "ad0928119ac9": {
+        "title": "Keynote Speaker: Mallory Knodel",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-22-2020 19:00",
+          "end": "09-22-2020 20:00"
+        },
+        "location": "Fireside Chat with a Public Interest Technologist",
+        "link": "https://events.reflectionsprojections.org/mallory-knodel"
+      },
+      "528b93d7d896": {
+        "title": "Speaker: Saleema Amershi",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-23-2020 16:00",
+          "end": "09-23-2020 17:00"
+        },
+        "location": "Toward Responsible AI by Planning to Fail",
+        "link": "https://events.reflectionsprojections.org/saleema-amershi"
+      },
+      "20786e4ff4a0": {
+        "title": "Panel: Breaking into Startups",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-23-2020 17:00",
+          "end": "09-23-2020 18:30"
+        },
+        "location": "Jon Bass, CTO; Adam Kirsh, Project Manager; Jin Zhang, Operations Associate @ Sym",
+        "link": "https://events.reflectionsprojections.org/breaking-into-startups"
+      },
+      "1aa5cc91e264": {
+        "title": "Keynote Speaker: Sri Shivananda",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-23-2020 19:00",
+          "end": "09-23-2020 20:00"
+        },
+        "location": "The Future of Commerce and Payments",
+        "link": "https://events.reflectionsprojections.org/sri-shivananda"
+      },
+      "ed4709ff9761": {
+        "title": "Speaker: Jessica Li",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-24-2020 15:00",
+          "end": "09-24-2020 16:00"
+        },
+        "location": "VC 101 — Everything You Need to Get Started with a Career in Venture Capital",
+        "link": "https://events.reflectionsprojections.org/jessica-li"
+      },
+      "76f91f1ac1d3": {
+        "title": "Speaker: Wendy Pfeiffer",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-24-2020 16:00",
+          "end": "09-24-2020 17:00"
+        },
+        "location": "Our Robot Overlords and the Future of Tech",
+        "link": "https://events.reflectionsprojections.org/wendy-pfeiffer"
+      },
+      "3b8abdf86c64": {
+        "title": "Panel: Swipe to Unlock",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-24-2020 17:00",
+          "end": "09-24-2020 18:30"
+        },
+        "location": "Aditya Agashe, Product Manager @ Microsoft; Parth Detroja, Product Manager @ Facebook",
+        "link": "https://events.reflectionsprojections.org/swipe-to-unlock"
+      },
+      "55eaad8b89f6": {
+        "title": "Speaker: Aaron Saunders",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-24-2020 19:00",
+          "end": "09-24-2020 20:00"
+        },
+        "location": "The Journey to Inclusive Innovation Incubator (In3DC)",
+        "link": "https://events.reflectionsprojections.org/aaron-saunders"
+      },
+      "5da96459b8e1": {
+        "title": "Microsoft Tech Talk",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CORPORATE",
+        "tags": [],
+        "time": {
+          "start": "09-25-2020 13:00",
+          "end": "09-25-2020 14:00"
+        },
+        "location": "Virtual Technology Interviewing Tips",
+        "link": "https://events.reflectionsprojections.org/microsoft"
+      },
+      "a3de94c1bd15": {
+        "title": "Aechelon Tech Talk",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CORPORATE",
+        "tags": [],
+        "time": {
+          "start": "09-25-2020 15:00",
+          "end": "09-25-2020 16:00"
+        },
+        "location": "Real-time 3D Graphics for Flight Simulation and Visualization",
+        "link": "https://events.reflectionsprojections.org/aechelon-technology"
+      },
+      "14522521b6d3": {
+        "title": "Speaker: Paolo Tanaka",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-25-2020 16:00",
+          "end": "09-25-2020 17:00"
+        },
+        "location": "Data Classification at Scale",
+        "link": "https://events.reflectionsprojections.org/paulo-tanaka"
+      },
+      "a47221476cce": {
+        "title": "Speaker: Charith Mendis",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-25-2020 17:00",
+          "end": "09-25-2020 18:00"
+        },
+        "location": "Modernizing Compiler Technology Using Machine Learning",
+        "link": "https://events.reflectionsprojections.org/charith-mendis"
+      },
+      "433fac9133e4": {
+        "title": "Speaker: Angela Hooker",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-25-2020 18:00",
+          "end": "09-25-2020 19:00"
+        },
+        "location": "How to Put the PM in Accessibility",
+        "link": "https://events.reflectionsprojections.org/angela-hooker"
+      },
+      "d9bae03f7964": {
+        "title": "Keynote Speaker: Dr. Ayanna Howard",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-25-2020 19:00",
+          "end": "09-25-2020 20:00"
+        },
+        "location": "Making the World Better with AI",
+        "link": "https://events.reflectionsprojections.org/ayanna-howard"
+      },
+      "9ca174e89e9d": {
+        "title": "Mechmania",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-25-2020 20:00",
+          "end": "09-26-2020 20:00"
+        },
+        "location": "24 Hour AI Hackathon Begins!",
+        "link": "https://discord.gg/KfwrcqV"
+      },
+      "abefd9138da4": {
+        "title": "Puzzlebang Wrap-up",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-26-2020 17:00",
+          "end": "09-27-2020 17:00"
+        },
+        "location": "End of Puzzlebang",
+        "link": "https://PuzzleBang.com"
+      },
+      "ed12227ddb9e": {
+        "title": "Mechmania Wrap-up",
+        "thumbnailPath": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "displayInAgenda": true,
+        "displayInEvents": true,
+        "type": "CONFERENCE",
+        "tags": [],
+        "time": {
+          "start": "09-26-2020 20:00",
+          "end": "09-27-2020 20:00"
+        },
+        "location": "End of Hackathon",
+        "link": "https://discord.gg/KfwrcqV"
       }
+      
     },
     "allIds": [
       "12nj3j55j31",
-      "5ad72c8753"
+      "5ad72c8753",
+      "1b67d2439505",
+      "585f6a3cac10",
+      "fc17bc9bf96b",
+      "ff52346eba47",
+      "5a981eb8011e",
+      "10ac138e4b54",
+      "d358e94ec40e",
+      "ad0928119ac9",
+      "528b93d7d896",
+      "20786e4ff4a0",
+      "1aa5cc91e264",
+      "ed4709ff9761",
+      "76f91f1ac1d3",
+      "3b8abdf86c64",
+      "55eaad8b89f6",
+      "5da96459b8e1",
+      "a3de94c1bd15",
+      "14522521b6d3",
+      "a47221476cce",
+      "433fac9133e4",
+      "d9bae03f7964",
+      "9ca174e89e9d",
+      "abefd9138da4",
+      "ed12227ddb9e"
     ]
   },
   "sponsors": {
@@ -456,6 +819,26 @@
     "tier1": [],
     "tier2": [],
     "tier3": [
+      {
+        "name": "Microsoft",
+        "img": "/static/assets/img/sponsors/Microsoft.png",
+        "website": "https://careers.microsoft.com/us/en/"
+      },
+      {
+        "name": "Facebook",
+        "img": "/static/assets/img/sponsors/Facebook.png",
+        "website": "https://www.facebook.com/careers"
+      },
+      {
+        "name": "Grainger",
+        "img": "/static/assets/img/sponsors/Grainger.png",
+        "website": "https://jobs.grainger.com/"
+      },
+      {
+        "name": "AT&T",
+        "img": "/static/assets/img/sponsors/Att.png",
+        "website": "https://www.att.jobs/"
+      },
       {
         "name": "Aechelon Technology",
         "img": "/static/assets/img/sponsors/AechelonTechnology.png",
